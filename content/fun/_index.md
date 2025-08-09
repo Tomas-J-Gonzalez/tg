@@ -1,5 +1,4 @@
 ---
 title: Fun
-description: Testing
+description: Entertainment
 ---
-
