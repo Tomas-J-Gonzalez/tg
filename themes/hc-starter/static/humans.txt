@@ -2,9 +2,9 @@
 
 Creator: Harry Cresswell
 Site: Harry Cresswell
-Url: https://www.harrycresswell.com/
-Contact: studio@harrycresswell
-Social: @harrycresswell
+Url: https://tomasjgonzalez.com/
+Contact: admin@tomasjgonzalez.com
+Social: @Tomas-J-Gonzalez
 Location: London, UK
 
 /* THANKS */

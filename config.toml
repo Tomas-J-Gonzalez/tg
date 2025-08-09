@@ -15,8 +15,8 @@ enableEmoji = true
 
 [params]
 keywords = "Product Design, UX Design, UI Design, Small businesses, Automation, Typography"
-description = "Tomás Gonález is an Experience Designer based in Auckland, New Zealand."
-strapline = "Experience Design"
+description = "Tomás González is an Experience designer based in Auckland, New Zealand."
+strapline = "Experience designer"
 location = "Auckland, New Zealand"
 card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
