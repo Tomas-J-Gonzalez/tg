@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <header class="Hero region">
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <section class="TagList region">
+  {{ range .Site.Taxonomies.topics }}
+    <article class="TagListItem">
+      <h2>
+        <a class="u-url" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
+      </h2>
+    </article>
+  {{ end }}
+  </section>
+   
+{{ end }}

@@ -1,0 +1,40 @@
+<!-- See: https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/ -->
+<!-- Assign .Paginator object to a $paginator variable -->
+{{ $paginator := .Paginator }}
+<!-- If there's more than one page. -->
+{{ if gt $paginator.TotalPages 1 }}
+<section class="region">
+  <ul class="Pagination | cluster">
+
+    <!-- Previous page. -->
+    {{ if $paginator.HasPrev }}
+    <li>
+      <a href="{{ $paginator.Prev.URL }}">
+        <span class="visually-hidden">Previous page</span> &larr;
+      </a>
+    </li>
+    {{ end }}
+
+  <!-- Page numbers. -->
+  {{ range $paginator.Pagers }}
+  <li 
+    {{ if eq . $paginator }}data-state="active"{{ end }}
+  >
+    <a href="{{ .URL }}">
+      {{ .PageNumber }}
+    </a>
+  </li>
+  {{ end }}
+
+    <!-- Next page. -->
+    {{ if $paginator.HasNext }}
+    <li>
+      <a href="{{ $paginator.Next.URL }}">
+      <span class="visually-hidden">Next page</span>
+      &rarr;
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
