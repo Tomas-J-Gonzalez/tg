@@ -1,9 +1,9 @@
 <!-- Post Author. -->
 <div class="cluster">
-  <img alt="Harry Cresswell" class="Avatar u-photo" src="https://harrycresswell.com/img/hc.jpg">
+  <img alt="{{ .Site.Params.author.name }}" class="Avatar u-photo" src="{{ .Site.Params.cloudinary_url }}{{ .Site.Params.author.photo }}">
   <div>
     <h2>Was this helpful?</h2>
-    <p><a href="https://www.buymeacoffee.com/harrycresswell">Buy me a coffee</a> or sign up to my newsletter &darr;</p>
+    <p><a href="/support/">Support my work</a></p>
   </div>
 </div>
 
@@ -11,7 +11,7 @@
 <div hidden>
   <a class="u-url" href="{{ .Permalink }}">{{ .Title }}</a>
   <p class="h-card p-author">
-    <a class="p-name u-url" href="{{ $.Site.BaseURL }}" rel="author">Harry Cresswell</a>
-    <img alt="Harry Cresswell" class="u-photo" src="https://harrycresswell.com/img/hc.jpg">
+    <a class="p-name u-url" href="{{ $.Site.BaseURL }}" rel="author">{{ .Site.Params.author.name }}</a>
+    <img alt="{{ .Site.Params.author.name }}" class="u-photo" src="{{ .Site.Params.cloudinary_url }}{{ .Site.Params.author.photo }}">
   </p>
 </div>

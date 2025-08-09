@@ -11,7 +11,7 @@
         <a data-variant="naked" href="{{ .Permalink }}" class="u-url">{{ .Title }}</a>
       </h2>
       <div hidden>
-        <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Harry Cresswell</a>
+        <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">{{ $.Site.Params.author.name }}</a>
       </div>
       <div class="cluster">
           <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>

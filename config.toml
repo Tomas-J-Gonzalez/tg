@@ -1,7 +1,7 @@
-baseurl = "https://harrycresswell.com/"
+baseurl = "https://tomasjgonzalez.com/"
 theme = "hc-starter"
 languageCode = "en-gb"
-title = "Harry Cresswell"
+title = "Tomás González"
 pluralizelisttitles = false
 # Enable for syntax highlighting
 pygmentsUseClasses = true
@@ -15,18 +15,19 @@ enableEmoji = true
 
 [params]
 keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
-description = "Harry Cresswell is a professional designer and front-end web developer from London, England. Read technical articles and notes on designing and coding websites."
+description = "Tomás Gonález is an Experience Designer based in Auckland, New Zealand."
 strapline = "Design and front-end web development"
-location = "London, UK"
+location = "Auckland, New Zealand"
 card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
-cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload/"
+cloudinary_url = "https://res.cloudinary.com/tomasgo/image/upload/"
 
 [params.author]
-name = "Harry Cresswell"
-email = "harry.pq0hx@aleeas.com"
-github = "https://github.com/harrycresswell"
-linkedin = "https://linkedin.com/in/harrycresswell/"
+name = "Tomás González"
+email = "admin@tomasjgonzalez.com"
+github = "https://github.com/Tomas-J-Gonzalez"
+linkedin = "https://www.linkedin.com/in/tomasjgo/"
+photo = "v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
 
 [taxonomies]
 topic = "topics"

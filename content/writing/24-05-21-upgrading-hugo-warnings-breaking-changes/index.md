@@ -37,8 +37,8 @@ With author key now been depreciated, adding something like the following to you
 ```toml
 [Author]
   name = "Harry Cresswell"
-  github = "https://github.com/harrycresswell"
-  linkedin = "https://linkedin.com/in/harrycresswell/"
+  github = "https://github.com/Tomas-J-Gonzalez"
+  linkedin = "https://www.linkedin.com/in/tomasjgo/"
 ```
 
 Instead, Hugo wants you to treat author as a param:
@@ -47,8 +47,8 @@ Instead, Hugo wants you to treat author as a param:
 [params]
   [params.author]
     name = "Harry Cresswell"
-    github = "https://github.com/harrycresswell"
-    linkedin = "https://linkedin.com/in/harrycresswell/"
+    github = "https://github.com/Tomas-J-Gonzalez"
+    linkedin = "https://www.linkedin.com/in/tomasjgo/"
 ```
 
 Inside your templates, what was once this:

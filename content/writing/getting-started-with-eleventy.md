@@ -827,4 +827,4 @@ My understanding of NPM Scripts and the script workflow I used was heavily inspi
 - [A modern front-end workflow](https://css-irl.info/a-modern-front-end-workflow-part-1/) by Michelle Barker
 - [Why NPM Scripts](https://css-tricks.com/why-npm-scripts/) by Damon Bauer
 
-_I’ve done my best to crosscheck everything in this article, but if you spot any mistakes or have any issues [please let me know](mailto:studio@harrycresswell.com) and I will endeavor to make the necessary changes or help you out where I can._
+_I’ve done my best to crosscheck everything in this article, but if you spot any mistakes or have any issues [please let me know](mailto:admin@tomasjgonzalez.com) and I will endeavor to make the necessary changes or help you out where I can._

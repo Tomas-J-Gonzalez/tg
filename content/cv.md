@@ -85,6 +85,6 @@ _Sept 1996 - July 2007_
 
 ## Social
 
-- [linkedin.com/in/harrycresswell/](https://www.linkedin.com/in/harrycresswell/)
+- [linkedin.com/in/tomasjgo/](https://www.linkedin.com/in/tomasjgo/)
 - [codepen.io/harrycresswell](https://codepen.io/harrycresswell)
-- [github.com/harrycresswell](https://github.com/harrycresswell)
+- [github.com/Tomas-J-Gonzalez](https://github.com/Tomas-J-Gonzalez)
