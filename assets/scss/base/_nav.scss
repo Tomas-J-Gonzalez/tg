@@ -1,0 +1,10 @@
+/* 
+Nav styles
+*/
+
+nav[data-variant='main'],
+nav[data-variant='footer'] {
+  a[data-state='active'] {
+    text-decoration: underline;
+  }
+}
