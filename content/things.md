@@ -1,7 +1,7 @@
 +++
 title = "Things"
 date = "2019-02-20T22:30:25Z"
-description = "Things on the internet made by Harry Cresswell"
+description = "Things on the internet made by Tomás González"
 draft = "false"
 slug = "things"
 layout= "page"
