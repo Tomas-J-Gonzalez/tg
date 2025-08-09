@@ -91,6 +91,11 @@ name = "Topics"
 url = "/topics/"
 weight = 20
 
+[[menu.main]]
+name = "Fun"
+url = "/fun/"
+weight = 25
+
 [[menu.footer]]
 name = "Index"
 url = "/"
