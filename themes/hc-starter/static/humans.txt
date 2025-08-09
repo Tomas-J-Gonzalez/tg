@@ -1,16 +1,15 @@
 /* TEAM */
 
-Creator: Harry Cresswell
-Site: Harry Cresswell
-Url: https://www.harrycresswell.com/
-Contact: studio@harrycresswell
-Social: @harrycresswell
-Location: London, UK
+Creator: Tomás González
+Site: Tomás González
+Url: https://tomasjgonzalez.com/
+Contact: admin@tomasjgonzalez.com
+Social: https://www.linkedin.com/in/tomasjgo/, https://github.com/Tomas-J-Gonzalez
+Location: Auckland, New Zealand
 
 /* THANKS */
 
 Name: Rachel Andrew 
-Twitter: @rachelandrew
 Url: https://rachelandrew.co.uk/
 
 Michelle Barker - @MicheBarks
