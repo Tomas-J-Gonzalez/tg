@@ -1,0 +1,10 @@
+/* 
+VISUALLY HIDDEN
+Info: https://piccalil.li/quick-tip/visually-hidden/ 
+*/
+
+.visually-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}

@@ -1,0 +1,22 @@
+/*
+Pagination
+*/
+
+.Pagination {
+  --space: var(--space-3xs);
+
+  a {
+    font-family: var(--font-accent);
+    padding-block: var(--space-3xs); 
+    padding-inline: var(--space-xs);
+  }
+
+  [data-state='active'] {
+    background-color: var(--color-brand);
+
+    a  {
+      color: var(--color-bg);
+      text-decoration: none;
+    }
+  }
+}

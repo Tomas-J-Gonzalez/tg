@@ -1,0 +1,43 @@
+/* 
+Code styles
+
+Used for inline code and code blocks
+*/
+
+code,
+kbd,
+samp {
+  background-color: var(--color-bg-mod-2);
+  color: var(--color-text);
+  font-size: 90%;
+  border-radius: 2px
+}
+
+pre {
+  background: var(--color-bg-mod-2);
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-wrap: normal;
+  padding: 3%;
+}
+
+p code,
+li code {
+  padding: .125rem .35rem;
+}
+
+code,
+pre {
+  font-family: var(--font-accent);
+}
+
+pre {
+  margin: 2rem 0;
+}
+
+pre code {
+  font-size: 90%;
+  padding: 0;
+  color: inherit;
+  background-color: transparent
+}
