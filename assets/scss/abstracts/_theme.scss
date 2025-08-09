@@ -21,14 +21,14 @@ Global theme tokens
   Colors created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
- --color-text: #000000;           /* Main text: black */
+ --color-text: #061b11;;           /* Main text: black */
 --color-text-mod-1: #4a5a3a;     /* Slightly muted text in greenish tone */
 --color-text-mod-2: #7c8f6a;     /* More muted secondary text */
   --color-bg: #ffffff;             /* Main background: white */
-  --color-bg-mod-1: #e6efde;       /* Darker light green tint */
+  --color-bg-mod-1: #ffffff;       /* Darker light green tint */
   --color-bg-mod-2: #dbe8cf;       /* Slightly deeper green tint */
 --color-border: #97AB70;         /* Borders in accent color */
---color-brand: #97AB70;          /* Brand color */
+--color-brand: #123c27;          /* Brand color — Links */ 
 /*rgb*/
 --color-brand-rgb: 151, 171, 112; /* RGB for #97AB70 */
 --color-accent: #97AB70;         /* Accent color */
