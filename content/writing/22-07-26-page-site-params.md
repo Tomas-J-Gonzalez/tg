@@ -1,9 +1,9 @@
 ---
-title: "Page, Site and Params"
-date: 2022-07-26T10:29:42+01:00
+title: "The Genius of Burial"
+date: 2024-03-23T10:29:42+01:00
 draft: false
-description: "Methods and parameters play a major role in storing, accessing and returning data in Hugo projects. So understanding how they work is critical."
-slug: "page-site-params"
+description: "In the vast landscape of electronic music, one artist stands out like a shadowy figure in the night: Burial."
+slug: "genius-of-burial"
 topics: ["Hugo"]
 syndicate: "false"
 ---

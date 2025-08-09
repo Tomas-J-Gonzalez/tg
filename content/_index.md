@@ -5,9 +5,9 @@ description: "Tomás González is an Experience designer based in Auckland, New 
 draft: false
 ---
 
-{{< pullImage src="v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg" alt="Tomás González – Experience designer" caption="" >}}
+{{< pullImage src="v1709798879/tomas-master/img/tomas_wvj9lh.jpg" alt="Tomás González – Experience designer" caption="" >}}
 
-I design fast, accessible, content-based websites and services.
+Currently designing at AKQA Tāmaki Makaurau.
 
 Here on my personal site, I write about [building static websites with Hugo](/topics/hugo/), [improving privacy and security online](/topics/privacy/)  and the [tools I use](/uses/), day to day.
 
