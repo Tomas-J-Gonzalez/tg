@@ -21,32 +21,33 @@ Global theme tokens
   Colors created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
-  --color-text: #172240;
-  --color-text-mod-1: #5D70A6;
-  --color-text-mod-2: #9CA7C3;
-  --color-bg: #ffffff;
-  --color-bg-mod-1:#F5F8FE;
-  --color-bg-mod-2: #EBEFF7;
-  --color-border: #172240;
-  --color-brand: #542bff;
-  /* #542bff in decimal RGB */
-  --color-brand-rgb: 84, 43, 255;
-  --color-accent: #542bff;
-  --color-highlight: #eefbc1;
+ --color-text: #000000;           /* Main text: black */
+--color-text-mod-1: #4a5a3a;     /* Slightly muted text in greenish tone */
+--color-text-mod-2: #7c8f6a;     /* More muted secondary text */
+--color-bg: #ffffff;             /* Main background: white */
+--color-bg-mod-1: #f6f9f3;       /* Very light green tint */
+--color-bg-mod-2: #edf3e7;       /* Slightly deeper green tint */
+--color-border: #97AB70;         /* Borders in accent color */
+--color-brand: #97AB70;          /* Brand color */
+/*rgb*/
+--color-brand-rgb: 151, 171, 112; /* RGB for #97AB70 */
+--color-accent: #97AB70;         /* Accent color */
+--color-highlight: #e6f0d6;      /* Soft highlight for emphasis */
+
   
   @media (prefers-color-scheme: dark) {
     /* 
       If theme doesn’t require a dark mode then remove this media query altogether
     */
-    --color-text: #CED3E8;
-    --color-text-mod-1: #C4CAE3;
-    --color-text-mod-2: #8995C8;
-    --color-bg: #212845;
-    --color-bg-mod-1:#121626;
-    --color-bg-mod-2: #212845;
-    --color-border: #CED3E8;
-    --color-brand: #a08aff;
-    --color-accent: #FF70AE;
+ --color-text: #ffffff;         /* Main text: white */
+  --color-text-mod-1: #c9d5c0;   /* Slightly muted text */
+  --color-text-mod-2: #aebda3;   /* More muted text */
+  --color-bg: #061b11;           /* Main background: deep green */
+  --color-bg-mod-1: #061b11;     /* Slightly lighter dark green */
+  --color-bg-mod-2: #123c27;     /* Even lighter green tone */
+  --color-border: #97AB70;       /* Border/accent */
+  --color-brand: #97AB70;        /* Brand color */
+  --color-accent: #97AB70;       /* Accent color */
   }
 
   /* Grid */

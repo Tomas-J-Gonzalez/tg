@@ -1,6 +1,6 @@
-# harrycresswell.com
+# tomasjgonzalez.com
 
-A Hugo starter project and theme used for [harrycresswell.com](https://harrycresswell.com/).
+A Hugo site for [tomasjgonzalez.com](https://tomasjgonzalez.com/).
 
 ## Features
 
@@ -10,7 +10,7 @@ A Hugo starter project and theme used for [harrycresswell.com](https://harrycres
 - Responsive image with [Cloudinary](https://cloudinary.com/documentation/responsive_images#automating_responsive_images_with_javascript)
 - Minimal dependencies
 
-Read more about it in [How I built this site](https://harrycresswell.com/build/).
+Read more about Hugo at [gohugo.io](https://gohugo.io/).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ You need to have [Hugo](https://gohugo.io/) installed locally.
 Clone this repository:
 
 ```
-git clone https://github.com/harrycresswell/harry.git
+git clone https://github.com/Tomas-J-Gonzalez/tg.git
 ```
 
 
@@ -47,6 +47,4 @@ This will clean the `/public` folder and run a fresh build ready for production.
 ### Licence information
 
 All of the content on this site is produced under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en).
-
-Head to my [Licence page](https://harrycresswell.com/license/) for more information on what you can do with it, and how to provide attribution correctly.
 

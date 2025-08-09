@@ -31,7 +31,7 @@
   <meta property="og:image" content="{{ .Params.feature }}">
   <!-- else if no image in frontmatter, and sections are not equal to articles or notes, then display image --> 
   {{ else }}
-  <meta property="og:image" content="https://res.cloudinary.com/harrycresswell/image/upload/v1634728990/hc/harrycresswell-og-image.png">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ with .Site.Params.card_image }}{{ . }}{{ else }}img/apple-touch-icon.png{{ end }}">
   {{ end }}
   <!-- Twitter -->
   {{ if not .Site.Params.Twitter.hide }}
@@ -48,7 +48,7 @@
   <meta property="twitter:image" content="{{ .Params.feature }}">
   <!-- else if no image in frontmatter, and sections are not equal to articles or notes, then display image --> 
   {{ else }}
-  <meta property="twitter:image" content="https://res.cloudinary.com/harrycresswell/image/upload/v1634728990/hc/harrycresswell-og-image.png">
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ with .Site.Params.card_image }}{{ . }}{{ else }}img/apple-touch-icon.png{{ end }}">
   {{ end }}
   {{ end }}
   <!-- canonical link tag -->
@@ -66,8 +66,7 @@
   {{ with .Site.Params.author.github }}<link href="{{ . }}" rel="me">{{ end }}
   {{ with .Site.Params.author.linkedin }}<link href="{{ . }}" rel="me">{{ end }}
   <!-- IndieCert -->
-  <link rel="webmention" href="https://webmention.io/harrycresswell.com/webmention" />
-  <link rel="pingback" href="https://webmention.io/harrycresswell.com/xmlrpc" />
+  <!-- webmention endpoints can be configured later if needed -->
 
   {{ partial "head/css.html" . }}
 
