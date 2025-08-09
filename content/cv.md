@@ -1,5 +1,5 @@
 ---
-title: "Harry Cresswell "
+title: "Tomás González"
 subtitle: "Freelance designer and front-end web developer from London."
 date: 2024-10-24T09:45:40+01:00
 draft: false

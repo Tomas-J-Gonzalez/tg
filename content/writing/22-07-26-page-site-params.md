@@ -510,9 +510,9 @@ Consider my `config.toml` file.
 
 ```toml
 baseURL = "https://harrycresswell.com/"
-title = "Harry Cresswell"
+title = "Tomás González"
 [params]
-  description = "Harry Cresswell is a professional designer and front-end web developer from London, England."
+  description = "Tomás González is a professional designer and front-end web developer from Auckland, New Zealand."
   strapline = "Design and front-end web development"
   location = "London, UK"
   card_image = "img/card-image.png"
@@ -697,8 +697,8 @@ Now my Homepage will display this:
 
 ```html
 <head>
-  <title>Harry Cresswell | Design and front end web development</title>
-  <meta name="description" content="Harry Cresswell is a professional designer and front-end web developer from London, England.">
+  <title>Tomás González | Design and front end web development</title>
+  <meta name="description" content="Tomás González is a professional designer and front-end web developer from Auckland, New Zealand.">
 </head>
 ```
 
@@ -706,7 +706,7 @@ Whereas a post page display something like this:
 
 ```html
 <head>
-  <title>Masking email | Harry Cresswell</title>
+  <title>Masking email | Tomás González</title>
   <meta name="description" content="How to protect your privacy, fight spam and reclaim control of your email address.">
 </head>
 ```

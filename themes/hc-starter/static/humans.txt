@@ -1,7 +1,7 @@
 /* TEAM */
 
-Creator: Harry Cresswell
-Site: Harry Cresswell
+Creator: Tomás González
+Site: Tomás González
 Url: https://tomasjgonzalez.com/
 Contact: admin@tomasjgonzalez.com
 Social: @Tomas-J-Gonzalez

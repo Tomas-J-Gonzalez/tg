@@ -96,9 +96,9 @@ Global theme tokens
   /* More muted secondary text */
   --color-bg: #ffffff;
   /* Main background: white */
-  --color-bg-mod-1: #f6f9f3;
-  /* Very light green tint */
-  --color-bg-mod-2: #edf3e7;
+  --color-bg-mod-1: #e6efde;
+  /* Darker light green tint */
+  --color-bg-mod-2: #dbe8cf;
   /* Slightly deeper green tint */
   --color-border: #97AB70;
   /* Borders in accent color */
@@ -133,11 +133,11 @@ Global theme tokens
       /* Slightly lighter dark green */
       --color-bg-mod-2: #123c27;
       /* Even lighter green tone */
-      --color-border: #97AB70;
+      --color-border: #b5c88f;
       /* Border/accent */
-      --color-brand: #97AB70;
+      --color-brand: #b5c88f;
       /* Brand color */
-      --color-accent: #97AB70;
+      --color-accent: #b5c88f;
       /* Accent color */ } }
 /* 
 * Embrace the cascade and inheritance to 

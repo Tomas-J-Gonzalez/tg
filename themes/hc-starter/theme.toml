@@ -8,11 +8,11 @@ features = ["some", "awesome", "features"]
 min_version = "0.80.0"
 
 [author]
-    name = "Harry Cresswell"
-    homepage = "https:/harrycresswell.com"
+    name = "Tomás González"
+    homepage = "https:/tomasjgonzalez.com"
 
 # If porting an existing theme
 [original]
-    author = "Harry Cresswell"
-    homepage = "https:/harrycresswell.com"
+    author = "Tomás González"
+    homepage = "https:/tomasjgonzalez.com"
     repo = "Link to source code of original theme"

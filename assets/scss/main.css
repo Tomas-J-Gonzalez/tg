@@ -98,8 +98,8 @@ Global theme tokens
   --color-text-mod-1: #4a5a3a; /* Slightly muted text in greenish tone */
   --color-text-mod-2: #7c8f6a; /* More muted secondary text */
   --color-bg: #ffffff; /* Main background: white */
-  --color-bg-mod-1: #f6f9f3; /* Very light green tint */
-  --color-bg-mod-2: #edf3e7; /* Slightly deeper green tint */
+  --color-bg-mod-1: #e6efde; /* Darker light green tint */
+  --color-bg-mod-2: #dbe8cf; /* Slightly deeper green tint */
   --color-border: #97AB70; /* Borders in accent color */
   --color-brand: #97AB70; /* Brand color */
   /*rgb*/
@@ -123,9 +123,9 @@ Global theme tokens
     --color-bg: #061b11; /* Main background: deep green */
     --color-bg-mod-1: #061b11; /* Slightly lighter dark green */
     --color-bg-mod-2: #123c27; /* Even lighter green tone */
-    --color-border: #97AB70; /* Border/accent */
-    --color-brand: #97AB70; /* Brand color */
-    --color-accent: #97AB70; /* Accent color */
+    --color-border: #b5c88f; /* Border/accent */
+    --color-brand: #b5c88f; /* Brand color */
+    --color-accent: #b5c88f; /* Accent color */
   }
 }
 
