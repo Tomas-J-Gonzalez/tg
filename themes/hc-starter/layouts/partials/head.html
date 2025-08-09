@@ -1,3 +1,38 @@
+<!-- 
+  © Tomás Jose González 2024 
+
+              .@.                                    .
+              @m@,.                                 .@
+             .@m%nm@,.                            .@m@
+            .@nvv%vnmm@,.                      .@mn%n@
+           .@mnvvv%vvnnmm@,.                .@mmnv%vn@,
+           @mmnnvvv%vvvvvnnmm@,.        .@mmnnvvv%vvnm@
+           @mmnnvvvvv%vvvvvvnnmm@, ;;;@mmnnvvvvv%vvvnm@,
+           `@mmnnvvvvvv%vvvvvnnmmm;;@mmnnvvvvvv%vvvvnmm@
+            `@mmmnnvvvvvv%vvvnnmmm;%mmnnvvvvvv%vvvvnnmm@
+              `@m%v%v%v%v%v;%;%;%;%;%;%;%%%vv%vvvvnnnmm@
+              .,mm@@@@@mm%;;@@m@m@@m@@m@mm;;%%vvvnnnmm@;@,.
+           .,@mmmmmmvv%%;;@@vmvvvvvvvvvmvm@@;;%%vvnnm@;%mmm@,
+        .,@mmnnvvvvv%%;;@@vvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@,
+     .,@mnnvv%v%v%v%%;;@mmvvvv%%;*;*;%%vvvvmmm@;;%m;%%v%v%v%vmm@,.
+ ,@mnnvv%v%v%v%v%v%v%;;@@vvvv%%;*;*;*;%%vvvvm@@;;m%%%v%v%v%v%v%vnnm@,
+ `    `@mnnvv%v%v%v%%;;@mvvvvv%%;;*;;%%vvvmmmm@;;%m;%%v%v%v%vmm@'   '
+         `@mmnnvvvvv%%;;@@mvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@'
+            `@mmmmmmvv%%;;@@mvvvvvvvvvvmmm@@;;%%mmnmm@;%mmm@'
+               `mm@@@@@mm%;;@m@@m@m@m@@m@@;;%%vvvvvnmm@;@'
+              ,@m%v%v%v%v%v;%;%;%;%;%;%;%;%vv%vvvvvnnmm@
+            .@mmnnvvvvvvv%vvvvnnmm%mmnnvvvvvvv%vvvvnnmm@
+           .@mmnnvvvvvv%vvvvvvnnmm'`@mmnnvvvvvv%vvvnnmm@
+           @mmnnvvvvv%vvvvvvnnmm@':%::`@mmnnvvvv%vvvnm@'
+           @mmnnvvv%vvvvvnnmm@'`:::%%:::'`@mmnnvv%vvmm@
+           `@mnvvv%vvnnmm@'     `:;%%;:'     `@mvv%vm@'
+            `@mnv%vnnm@'          `;%;'         `@n%n@
+             `@m%mm@'              ;%;.           `@m@
+              @m@'                 `;%;             `@
+              `@'                   ;%;.             '    
+               `                    `;%;          
+-->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,9 +107,8 @@
 
   <!-- Icons -->
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://res.cloudinary.com/tomasgo/image/upload/v1711762206/tomas-master/img/favicon_j8oaji.png" type="image/png">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/tomasgo/image/upload/v1711762206/tomas-master/img/favicon_j8oaji.png" type="image/png">
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
