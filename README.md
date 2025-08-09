@@ -50,5 +50,3 @@ All of the content on this site is produced under the [Creative Commons Attribut
 
 Head to my [Licence page](https://harrycresswell.com/license/) for more information on what you can do with it, and how to provide attribution correctly.
 
-
-# tg

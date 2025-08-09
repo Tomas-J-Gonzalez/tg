@@ -14,9 +14,9 @@ enableGitInfo = true
 enableEmoji = true
 
 [params]
-keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
+keywords = "Product Design, UX Design, UI Design, Small businesses, Automation, Typography"
 description = "Tomás Gonález is an Experience Designer based in Auckland, New Zealand."
-strapline = "Design and front-end web development"
+strapline = "Experience Design"
 location = "Auckland, New Zealand"
 card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
