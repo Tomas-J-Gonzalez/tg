@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+  <section class="Hero region">
+    <h1>{{ .Title }}</h1>
+    <p class="visually-hidden">{{ .Description }}</p>
+  </section>
+
+  {{ with .Site.Data.bookmarks }}
+    <ul role="list">
+    {{ range .bookmark }}
+      <li class="cluster">
+        <span>{{ .date | time.Format ":date_long" }}</span>
+        <span>{{ .title }}</span>
+        <span>{{ .category }}</span>
+      </li>
+    {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

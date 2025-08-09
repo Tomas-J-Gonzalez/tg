@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+  <section class="Hero region flow">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description | markdownify }}</p>
+  </section>
+  <section>
+    {{ range .Paginator.Pages }}
+    <article class="PostListItem region flow h-entry">
+      <h2 class="p-name">
+        <a data-variant="naked" href="{{ .Permalink }}" class="u-url">{{ .Title }}</a>
+      </h2>
+      <div hidden>
+        <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Harry Cresswell</a>
+      </div>
+      <div class="cluster">
+          <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
+          {{ partial "post/topics.html" . }}
+      </div>
+      <p>{{ .Content }}</p>
+      {{ $source_title := .Params.source_title }}
+      {{ $source_link := .Params.source_link  }}
+      {{ $author := .Params.author }}
+      {{ if eq .Section "links" }}
+        {{ with $source_link }}
+        <div>
+          <a href="{{ . }}">{{ $source_title }} <span>&#8599;</span></a> {{ with $author }}from {{ . }}.{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </article>
+    {{ end }}
+  </section>
+  {{ partial "pagination.html" . }}
+
+{{ end }}

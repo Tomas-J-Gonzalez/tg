@@ -1,0 +1,33 @@
+{{/*  Get current time to determine whether it’s CSS Naked Day  */}}
+{{ $now := time.Now }}
+{{/*  Get current year so we can update logic for each year  */}}
+{{ $year := time.Now.Year }}
+{{/*  Convert year from integer to string so we can pass it to the printf function  */}}
+{{ $yearString := print $year }}
+{{/*  Set start date and pass $yearString to make it dynamic */}}
+{{ $startDate := printf "09 Apr %s" $yearString }}
+{{/*  Set end date and pass $yearString to make it dynamic  */}}
+{{ $endDate := printf "10 Apr %s" $yearString }}
+{{/*  Update start date to include correct timezone (UTC+14:00)  */}}
+{{ $start := time.AsTime $startDate "Etc/GMT-14" }}
+{{/*  Update end date to include correct timezone (UTC-12:00)  */}}
+{{ $end := time.AsTime $endDate "Etc/GMT+12" }}
+
+{{/*  If $now is >= $start and <= $end  */}}
+{{ if and (ge $now $start) (le $now $end) }}
+  <p><mark>It’s <a href="/writing/css-naked-day/">CSS Naked Day</a> somewhere in the world!</mark></p>
+{{ else }}
+  <!-- Styles -->
+  {{- with resources.Get "scss/main.scss" }}
+    {{- if eq hugo.Environment "development" }}
+      {{ $styles := . | toCSS (dict "enableSourceMap" true) }}
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+    {{- else }}
+      <!-- Set target path -->
+      {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
+      {{- with . | toCSS $cssOpts | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{ end }}
