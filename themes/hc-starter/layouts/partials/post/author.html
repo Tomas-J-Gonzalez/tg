@@ -1,6 +1,6 @@
 <!-- Post Author. -->
 <div class="cluster">
-  <img alt="Tomás González" class="Avatar u-photo" src="{{ with .Site.Params.author.photo }}{{ . }}{{ else }}img/hc.jpg{{ end }}">
+  <img alt="Tomás González" class="Avatar u-photo lazyload" data-src="{{ with .Site.Params.author.photo }}{{ . }}{{ else }}img/hc.jpg{{ end }}">
   <div>
     <h2>Was this helpful?</h2>
     <p>Sign up to my newsletter &darr;</p>
@@ -12,6 +12,6 @@
   <a class="u-url" href="{{ .Permalink }}">{{ .Title }}</a>
   <p class="h-card p-author">
     <a class="p-name u-url" href="{{ $.Site.BaseURL }}" rel="author">{{ .Site.Params.author.name }}</a>
-    <img alt="{{ .Site.Params.author.name }}" class="u-photo" src="{{ with .Site.Params.author.photo }}{{ . }}{{ end }}">
+    <img alt="{{ .Site.Params.author.name }}" class="u-photo lazyload" data-src="{{ with .Site.Params.author.photo }}{{ . }}{{ end }}">
   </p>
 </div>
