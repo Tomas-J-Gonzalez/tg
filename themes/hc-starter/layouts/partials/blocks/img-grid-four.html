@@ -11,7 +11,7 @@
         <source 
           type="image/avif" 
           class="lazyload object-fit-cover"
-          srcset="{{ $baseURL }}/f_avif,q_auto,w_256/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} 256w,
+          data-srcset="{{ $baseURL }}/f_avif,q_auto,w_256/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} 256w,
                   {{ $baseURL }}/f_avif,q_auto,w_512/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} 512w,
                   {{ $baseURL }}/f_avif,q_auto,w_768/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} 768w,
                   {{ $baseURL }}/f_avif,q_auto,w_1024/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".avif" }} 1024w,
@@ -20,22 +20,22 @@
         <source 
           type="image/webp"
           class="lazyload object-fit-cover"
-          srcset="{{ $baseURL }}/f_webp,q_auto,w_500/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 256w,
+          data-srcset="{{ $baseURL }}/f_webp,q_auto,w_500/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 256w,
                   {{ $baseURL }}/f_webp,q_auto,w_710/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 512w,
                   {{ $baseURL }}/f_webp,q_auto,w_768/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 768w,
                   {{ $baseURL }}/f_webp,q_auto,w_1024/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1024w,
                   {{ $baseURL }}/f_webp,q_auto,w_1280/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1280w,
                   {{ $baseURL }}/f_webp,q_auto,w_1640/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1640w" >
         <img
-          srcset="
+          data-srcset="
           {{ $baseURL }}/f_auto,q_80,w_256/{{ . }} 256w,
           {{ $baseURL }}/f_auto,q_80,w_512/{{ . }} 512w,
           {{ $baseURL }}/f_auto,q_80,w_768/{{ . }} 768w,
           {{ $baseURL }}/f_auto,q_80,w_1024/{{ . }} 1024w,
           {{ $baseURL }}/f_auto,q_80,w_1280/{{ . }} 1280w,
           {{ $baseURL }}/f_auto,q_80,w_1640/{{ . }} 1640w"
-          sizes="(min-width: 768px) 25vw, 50vw"
-          src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
+          data-sizes="(min-width: 768px) 25vw, 50vw"
+          data-src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
           class="lazyload " 
           alt="{{- with $image_one_alt -}}{{ markdownify . }}{{- end -}}"
           decoding="async"
@@ -82,15 +82,15 @@
                   {{ $baseURL }}/f_webp,q_auto,w_1280/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1280w,
                   {{ $baseURL }}/f_webp,q_auto,w_1640/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1640w" >
         <img
-          srcset="
+          data-srcset="
           {{ $baseURL }}/f_auto,q_80,w_256/{{ . }} 256w,
           {{ $baseURL }}/f_auto,q_80,w_512/{{ . }} 512w,
           {{ $baseURL }}/f_auto,q_80,w_768/{{ . }} 768w,
           {{ $baseURL }}/f_auto,q_80,w_1024/{{ . }} 1024w,
           {{ $baseURL }}/f_auto,q_80,w_1280/{{ . }} 1280w,
           {{ $baseURL }}/f_auto,q_80,w_1640/{{ . }} 1640w"
-          sizes="(min-width: 768px) 25vw, 100vw"
-          src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
+          data-sizes="(min-width: 768px) 25vw, 100vw"
+          data-src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
           class="lazyload " 
           alt="{{- with $image_two_alt -}}{{ markdownify . }}{{- end -}}"
           decoding="async"
@@ -137,15 +137,15 @@
                   {{ $baseURL }}/f_webp,q_auto,w_1280/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1280w,
                   {{ $baseURL }}/f_webp,q_auto,w_1640/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1640w" >
         <img
-          srcset="
+          data-srcset="
           {{ $baseURL }}/f_auto,q_80,w_256/{{ . }} 256w,
           {{ $baseURL }}/f_auto,q_80,w_512/{{ . }} 512w,
           {{ $baseURL }}/f_auto,q_80,w_768/{{ . }} 768w,
           {{ $baseURL }}/f_auto,q_80,w_1024/{{ . }} 1024w,
           {{ $baseURL }}/f_auto,q_80,w_1280/{{ . }} 1280w,
           {{ $baseURL }}/f_auto,q_80,w_1640/{{ . }} 1640w"
-          sizes="(min-width: 768px) 25vw, 100vw"
-          src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
+          data-sizes="(min-width: 768px) 25vw, 100vw"
+          data-src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
           class="lazyload " 
           alt="{{- with $image_three_alt -}}{{ markdownify . }}{{- end -}}"
           decoding="async"
@@ -192,15 +192,15 @@
                   {{ $baseURL }}/f_webp,q_auto,w_1280/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1280w,
                   {{ $baseURL }}/f_webp,q_auto,w_1640/{{ . | replaceRE ".jpg|.jpeg|.JPG|.png|.PNG" ".webp" }} 1640w" >
         <img
-          srcset="
+          data-srcset="
           {{ $baseURL }}/f_auto,q_80,w_256/{{ . }} 256w,
           {{ $baseURL }}/f_auto,q_80,w_512/{{ . }} 512w,
           {{ $baseURL }}/f_auto,q_80,w_768/{{ . }} 768w,
           {{ $baseURL }}/f_auto,q_80,w_1024/{{ . }} 1024w,
           {{ $baseURL }}/f_auto,q_80,w_1280/{{ . }} 1280w,
           {{ $baseURL }}/f_auto,q_80,w_1640/{{ . }} 1640w"
-          sizes="(min-width: 768px) 25vw, 100vw"
-          src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
+          data-sizes="(min-width: 768px) 25vw, 100vw"
+          data-src="{{ $baseURL }}/f_auto,q_80,w_500/{{ . }}"
           class="lazyload " 
           alt="{{- with $image_four_alt -}}{{ markdownify . }}{{- end -}}"
           decoding="async"
