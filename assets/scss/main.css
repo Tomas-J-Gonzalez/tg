@@ -94,39 +94,22 @@ Global theme tokens
   Colors created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
-  --color-text: #061b11; /* Main text: black */
-  --color-text-mod-1: #4a5a3a; /* Slightly muted text in greenish tone */
-  --color-text-mod-2: #7c8f6a; /* More muted secondary text */
-  --color-bg: #ffffff; /* Main background: white */
-  --color-bg-mod-1: #ffffff; /* Darker light green tint */
-  --color-bg-mod-2: #dbe8cf; /* Slightly deeper green tint */
-  --color-border: #97AB70; /* Borders in accent color */
-  --color-brand: #123c27; /* Brand color — Links */
-  /*rgb*/
-  --color-brand-rgb: 151, 171, 112; /* RGB for #97AB70 */
-  --color-accent: #97AB70; /* Accent color */
-  --color-highlight: #e6f0d6; /* Soft highlight for emphasis */
+  /* Default to dark theme colors */
+  --color-text: #f7fff1;
+  --color-text-mod-1: #c9d5c0;
+  --color-text-mod-2: #aebda3;
+  --color-bg: #061b11;
+  --color-bg-mod-1: #061b11;
+  --color-bg-mod-2: #123c27;
+  --color-border: #b5c88f;
+  --color-brand: #b5c88f;
+  --color-accent: #b5c88f;
+  --color-highlight: #1a4d2e;
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
   --border-radius: 0;
   --shadow: 0px 3px 7px rgba(0, 0, 0, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.025);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* 
-      If theme doesn’t require a dark mode then remove this media query altogether
-    */
-    --color-text: #ffffff; /* Main text: white */
-    --color-text-mod-1: #c9d5c0; /* Slightly muted text */
-    --color-text-mod-2: #aebda3; /* More muted text */
-    --color-bg: #061b11; /* Main background: deep green */
-    --color-bg-mod-1: #061b11; /* Slightly lighter dark green */
-    --color-bg-mod-2: #123c27; /* Even lighter green tone */
-    --color-border: #b5c88f; /* Border/accent */
-    --color-brand: #b5c88f; /* Brand color */
-    --color-accent: #b5c88f; /* Accent color */
-  }
 }
 
 /* 
@@ -1774,4 +1757,274 @@ Font
   border-top: 0;
   border-bottom: 2px dotted;
   max-width: var(--width-longform);
+}
+
+/*
+Theme Toggle Button
+*/
+nav[data-variant=main] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav[data-variant=main] ul {
+  flex: 1;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-radius: var(--border-radius, 0.25rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  margin-left: auto;
+}
+.theme-toggle:hover {
+  background: var(--color-bg-mod-1);
+  border-color: var(--color-brand);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+.theme-toggle[aria-pressed=true] {
+  background: var(--color-brand);
+  color: var(--color-bg);
+  border-color: var(--color-brand);
+}
+.theme-toggle[aria-pressed=true]:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.theme-toggle .theme-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+@media (max-width: 47.99em) {
+  .theme-toggle .theme-label {
+    display: none;
+  }
+}
+
+.theme-light {
+  --color-text: #061b11;
+  --color-text-mod-1: #4a5a3a;
+  --color-text-mod-2: #7c8f6a;
+  --color-bg: #ffffff;
+  --color-bg-mod-1: #ffffff;
+  --color-bg-mod-2: #dbe8cf;
+  --color-border: #97AB70;
+  --color-brand: #123c27;
+  --color-accent: #97AB70;
+  --color-highlight: #e6f0d6;
+}
+
+.theme-dark {
+  --color-text: #f7fff1;
+  --color-text-mod-1: #c9d5c0;
+  --color-text-mod-2: #aebda3;
+  --color-bg: #061b11;
+  --color-bg-mod-1: #061b11;
+  --color-bg-mod-2: #123c27;
+  --color-border: #b5c88f;
+  --color-brand: #b5c88f;
+  --color-accent: #b5c88f;
+  --color-highlight: #1a4d2e;
+}
+.theme-dark .chroma {
+  color: #ef9f76;
+  background-color: var(--color-bg-mod-2);
+}
+.theme-dark .chroma .err {
+  color: #e78284;
+}
+.theme-dark .chroma .lnt {
+  color: #774f3b;
+}
+.theme-dark .chroma .ln {
+  color: #774f3b;
+}
+.theme-dark .chroma .k {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kc {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kd {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kn {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kp {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kr {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .kt {
+  color: #e5c890;
+}
+.theme-dark .chroma .n {
+  color: #babbf1;
+}
+.theme-dark .chroma .na {
+  color: #e5c890;
+}
+.theme-dark .chroma .nb {
+  color: #c6d0f5;
+}
+.theme-dark .chroma .bp {
+  color: #babbf1;
+}
+.theme-dark .chroma .nc {
+  color: #e5c890;
+}
+.theme-dark .chroma .no {
+  color: #e5c890;
+}
+.theme-dark .chroma .nd {
+  color: #f4b8e4;
+}
+.theme-dark .chroma .ni {
+  color: #f4b8e4;
+}
+.theme-dark .chroma .ne {
+  color: #ea999c;
+}
+.theme-dark .chroma .nf {
+  color: #99d1db;
+}
+.theme-dark .chroma .fm {
+  color: #babbf1;
+}
+.theme-dark .chroma .nl {
+  color: #e5c890;
+}
+.theme-dark .chroma .nn {
+  color: #e5c890;
+}
+.theme-dark .chroma .nt {
+  color: #ca9ee6;
+}
+.theme-dark .chroma .vc {
+  color: #babbf1;
+}
+.theme-dark .chroma .vg {
+  color: #babbf1;
+}
+.theme-dark .chroma .vi {
+  color: #babbf1;
+}
+.theme-dark .chroma .vm {
+  color: #babbf1;
+}
+.theme-dark .chroma .s {
+  color: #a6d189;
+}
+.theme-dark .chroma .sa {
+  color: #a6d189;
+}
+.theme-dark .chroma .sb {
+  color: #a6d189;
+}
+.theme-dark .chroma .sc {
+  color: #a6d189;
+}
+.theme-dark .chroma .dl {
+  color: #a6d189;
+}
+.theme-dark .chroma .sd {
+  color: #a6d189;
+}
+.theme-dark .chroma .s2 {
+  color: #a6d189;
+}
+.theme-dark .chroma .se {
+  color: #8caaee;
+}
+.theme-dark .chroma .sh {
+  color: #a6d189;
+}
+.theme-dark .chroma .si {
+  color: #a6d189;
+}
+.theme-dark .chroma .sx {
+  color: #a6d189;
+}
+.theme-dark .chroma .sr {
+  color: #8caaee;
+}
+.theme-dark .chroma .s1 {
+  color: #a6d189;
+}
+.theme-dark .chroma .ss {
+  color: #a6d189;
+}
+.theme-dark .chroma .mi {
+  color: #a6d189;
+}
+.theme-dark .chroma .o {
+  color: #99d1db;
+}
+.theme-dark .chroma .ow {
+  color: #99d1db;
+}
+.theme-dark .chroma .p {
+  color: #c6d0f5;
+}
+.theme-dark .chroma .c {
+  color: #626880;
+}
+.theme-dark .chroma .ch {
+  color: #626880;
+}
+.theme-dark .chroma .cm {
+  color: #626880;
+}
+.theme-dark .chroma .c1 {
+  color: #626880;
+}
+.theme-dark .chroma .cs {
+  color: #626880;
+}
+.theme-dark .chroma .cp {
+  color: #8caaee;
+}
+.theme-dark .chroma .cpf {
+  color: #8caaee;
+}
+.theme-dark .chroma .gd {
+  color: #ea999c;
+}
+.theme-dark .chroma .gr {
+  color: #ea999c;
+}
+.theme-dark .chroma .gh {
+  color: #99d1db;
+}
+.theme-dark .chroma .gi {
+  color: #a6d189;
+}
+.theme-dark .chroma .gp {
+  color: #737994;
+}
+.theme-dark .chroma .gu {
+  color: #99d1db;
+}
+.theme-dark .chroma .gt {
+  color: #ea999c;
+}
+.theme-dark .chroma .w {
+  color: #414559;
 }/*# sourceMappingURL=main.css.map */

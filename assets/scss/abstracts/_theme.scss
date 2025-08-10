@@ -21,34 +21,17 @@ Global theme tokens
   Colors created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
- --color-text: #061b11;;           /* Main text: black */
---color-text-mod-1: #4a5a3a;     /* Slightly muted text in greenish tone */
---color-text-mod-2: #7c8f6a;     /* More muted secondary text */
-  --color-bg: #ffffff;             /* Main background: white */
-  --color-bg-mod-1: #ffffff;       /* Darker light green tint */
-  --color-bg-mod-2: #dbe8cf;       /* Slightly deeper green tint */
---color-border: #97AB70;         /* Borders in accent color */
---color-brand: #123c27;          /* Brand color — Links */ 
-/*rgb*/
---color-brand-rgb: 151, 171, 112; /* RGB for #97AB70 */
---color-accent: #97AB70;         /* Accent color */
---color-highlight: #e6f0d6;      /* Soft highlight for emphasis */
-
-  
-  @media (prefers-color-scheme: dark) {
-    /* 
-      If theme doesn’t require a dark mode then remove this media query altogether
-    */
- --color-text: #f7fff1;         /* Main text: light green */
-  --color-text-mod-1: #c9d5c0;   /* Slightly muted text */
-  --color-text-mod-2: #aebda3;   /* More muted text */
-  --color-bg: #061b11;           /* Main background: deep green */
-  --color-bg-mod-1: #061b11;     /* Slightly lighter dark green */
-  --color-bg-mod-2: #123c27;     /* Even lighter green tone */
-  --color-border: #b5c88f;       /* Border/accent */
-  --color-brand: #b5c88f;        /* Brand color */
-  --color-accent: #b5c88f;       /* Accent color */
-  }
+  /* Default to dark theme colors */
+  --color-text: #f7fff1;
+  --color-text-mod-1: #c9d5c0;
+  --color-text-mod-2: #aebda3;
+  --color-bg: #061b11;
+  --color-bg-mod-1: #061b11;
+  --color-bg-mod-2: #123c27;
+  --color-border: #b5c88f;
+  --color-brand: #b5c88f;
+  --color-accent: #b5c88f;
+  --color-highlight: #1a4d2e;
 
   /* Grid */
   --gutter: var(--space-s-m);
