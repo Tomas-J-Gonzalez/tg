@@ -2,15 +2,15 @@
 title: "Evolution of a Work Program"
 date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "UX/UI Research for Web and Mobile work program evolution"
+description: "UX Research project for work program optimization"
 slug: "evolution-work-program"
-topics: ["UX Research", "UI Design", "Web Design", "Mobile Design"]
-image: "/img/hc.jpg"
+topics: ["UX Research", "Work Programs", "Process Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "Desktop mockup of BH Connect work program interface"
 client: "BH Connect"
-role: "UX/UI Designer"
-duration: "6 months"
-tools: ["Figma", "Adobe Creative Suite", "User Research"]
+role: "UX Researcher"
+duration: "8 months"
+tools: ["User Research", "Figma", "Process Mapping"]
 live_url: "#"
 ---
 

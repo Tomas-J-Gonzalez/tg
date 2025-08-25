@@ -2,15 +2,15 @@
 title: "Link-up"
 date: 2024-03-01T00:00:00+00:00
 draft: false
-description: "UX/UI Visual Research project for Link-up platform"
+description: "Networking platform for professionals"
 slug: "link-up"
-topics: ["UX Research", "UI Design", "Visual Design"]
-image: "/img/hc.jpg"
+topics: ["UX Research", "Networking", "Platform Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "Link-up mockups showcasing the platform interface"
 client: "Link-up"
-role: "UX/UI Designer"
+role: "UX Researcher"
 duration: "5 months"
-tools: ["Figma", "Adobe Creative Suite", "Visual Research"]
+tools: ["User Research", "Figma", "Prototyping"]
 live_url: "#"
 ---
 
