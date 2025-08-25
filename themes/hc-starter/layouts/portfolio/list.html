@@ -6,60 +6,9 @@
   </section>
   
   <section class="region">
-    <div class="flow" style="--flow-space: 3rem;">
+    <div class="portfolio-grid">
       {{ range .Paginator.Pages }}
-      <article class="PostListItem flow h-entry" style="max-width: 100%;">
-        <div class="cluster" style="align-items: flex-start; gap: 2rem;">
-          {{ if .Params.image }}
-          <div class="aspect-ratio-16-9" style="flex: 0 0 300px; min-width: 300px;">
-            <img src="{{ .Params.image }}" alt="{{ .Params.image_alt | default .Title }}" class="object-fit-cover" style="border-radius: 8px;">
-          </div>
-          {{ end }}
-          
-          <div class="flow" style="flex: 1; min-width: 0;">
-            <h2 class="p-name" style="margin-top: 0;">
-              <a data-variant="naked" href="{{ .Permalink }}" class="u-url">{{ .Title }}</a>
-            </h2>
-            
-            <div hidden>
-              <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Tomás González</a>
-            </div>
-            
-            <div class="cluster" style="gap: 1rem; margin-bottom: 1rem;">
-              <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
-              {{ partial "post/topics.html" . }}
-            </div>
-            
-            <p style="margin-bottom: 1rem;">{{ .Description }}</p>
-            
-            {{ if .Params.client }}
-            <div class="cluster" style="gap: 1rem; margin-bottom: 1rem;">
-              <span><strong>Client:</strong> {{ .Params.client }}</span>
-              {{ if .Params.role }}<span><strong>Role:</strong> {{ .Params.role }}</span>{{ end }}
-              {{ if .Params.duration }}<span><strong>Duration:</strong> {{ .Params.duration }}</span>{{ end }}
-            </div>
-            {{ end }}
-            
-            {{ if .Params.tools }}
-            <div class="cluster" style="gap: 0.5rem; margin-bottom: 1rem;">
-              <span><strong>Tools:</strong></span>
-              {{ range .Params.tools }}
-              <span class="tag" style="background: var(--color-bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.875rem;">{{ . }}</span>
-              {{ end }}
-            </div>
-            {{ end }}
-            
-            <div class="cluster" style="gap: 1rem;">
-              {{ if .Params.live_url }}
-              <a href="{{ .Params.live_url }}" target="_blank" rel="noopener" style="text-decoration: underline;">View Live <span>&#8599;</span></a>
-              {{ end }}
-              {{ if .Params.github_url }}
-              <a href="{{ .Params.github_url }}" target="_blank" rel="noopener" style="text-decoration: underline;">View Code <span>&#8599;</span></a>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </article>
+        {{ partial "blocks/case-study-card.html" . }}
       {{ end }}
     </div>
   </section>

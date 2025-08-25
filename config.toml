@@ -89,11 +89,6 @@ name = "Portfolio"
 url = "/portfolio/"
 weight = 15
 
-[[menu.main]]
-name = "Topics"
-url = "/topics/"
-weight = 20
-
 [[menu.footer]]
 name = "Index"
 url = "/"
@@ -108,11 +103,6 @@ weight = 10
 name = "Portfolio"
 url = "/portfolio/"
 weight = 15
-
-[[menu.footer]]
-name = "Topics"
-url = "/topics/"
-weight = 20
 
 [[menu.footer]]
 name = "Slashes"
