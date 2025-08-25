@@ -5,7 +5,7 @@ draft: false
 description: "UX/UI Visual Research project for Dploi platform"
 slug: "dploi"
 topics: ["UX Research", "UI Design", "Visual Design"]
-image: "dploi-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "Dploi Instagram Story mockups showcasing the platform interface"
 client: "Dploi"
 role: "UX/UI Designer"

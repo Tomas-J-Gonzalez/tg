@@ -5,7 +5,7 @@ draft: false
 description: "UI E-commerce Identity design for Karü platform"
 slug: "karu"
 topics: ["UI Design", "E-commerce", "Brand Identity"]
-image: "karu-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "Design mockups of Karu E-commerce store interface"
 client: "Karü"
 role: "UI Designer"

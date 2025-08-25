@@ -5,7 +5,7 @@ draft: false
 description: "UX/UI Visual Research project for Arion platform"
 slug: "arion"
 topics: ["UX Research", "UI Design", "Visual Design"]
-image: "arion-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "Arion mockups showcasing the platform interface"
 client: "Arion"
 role: "UX/UI Designer"

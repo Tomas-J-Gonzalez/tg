@@ -5,7 +5,7 @@ draft: false
 description: "UX/UI Research for Web and Mobile work program evolution"
 slug: "evolution-work-program"
 topics: ["UX Research", "UI Design", "Web Design", "Mobile Design"]
-image: "evolution-work-program-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "Desktop mockup of BH Connect work program interface"
 client: "BH Connect"
 role: "UX/UI Designer"

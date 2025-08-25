@@ -5,7 +5,7 @@ draft: false
 description: "UX/UI Visual Research project for Link-up platform"
 slug: "link-up"
 topics: ["UX Research", "UI Design", "Visual Design"]
-image: "link-up-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "Link-up mockups showcasing the platform interface"
 client: "Link-up"
 role: "UX/UI Designer"

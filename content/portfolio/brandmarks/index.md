@@ -5,7 +5,7 @@ draft: false
 description: "Identity and Logo design collection showcasing brand development work"
 slug: "brandmarks"
 topics: ["Brand Identity", "Logo Design", "Visual Design"]
-image: "brandmarks-thumbnail.jpg"
+image: "/img/hc.jpg"
 image_alt: "A collection of logos and brands I've worked on"
 client: "Various Clients"
 role: "Brand Identity Designer"
