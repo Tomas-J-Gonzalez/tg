@@ -1,4 +1,7 @@
-baseurl = "http://localhost:1313/"
+# Environment-based configuration
+# For local development: HUGO_ENV=development
+# For production: HUGO_ENV=production
+baseurl = "https://tomasjgonzalez.com/"
 theme = "hc-starter"
 languageCode = "en-gb"
 title = "Tomás González"
@@ -82,19 +85,14 @@ url = "/writing/"
 weight = 10
 
 [[menu.main]]
-name = "Links"
-url = "/links/"
+name = "Portfolio"
+url = "/portfolio/"
 weight = 15
 
 [[menu.main]]
 name = "Topics"
 url = "/topics/"
 weight = 20
-
-[[menu.main]]
-name = "Fun"
-url = "/fun/"
-weight = 25
 
 [[menu.footer]]
 name = "Index"
@@ -107,8 +105,8 @@ url = "/writing/"
 weight = 10
 
 [[menu.footer]]
-name = "Links"
-url = "/links/"
+name = "Portfolio"
+url = "/portfolio/"
 weight = 15
 
 [[menu.footer]]

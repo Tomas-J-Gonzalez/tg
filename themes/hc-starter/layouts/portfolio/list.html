@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+  <section class="Hero region flow">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description | markdownify }}</p>
+  </section>
+  
+  <section class="region">
+    <div class="grid" style="--grid-min: 20rem;">
+      {{ range .Paginator.Pages }}
+      <article class="PostListItem flow h-entry">
+        {{ if .Params.image }}
+        <div class="aspect-ratio-16-9">
+          <img src="{{ .Params.image }}" alt="{{ .Params.image_alt | default .Title }}" class="object-fit-cover">
+        </div>
+        {{ end }}
+        
+        <h2 class="p-name">
+          <a data-variant="naked" href="{{ .Permalink }}" class="u-url">{{ .Title }}</a>
+        </h2>
+        
+        <div hidden>
+          <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Tomás González</a>
+        </div>
+        
+        <div class="cluster">
+          <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
+          {{ partial "post/topics.html" . }}
+        </div>
+        
+        <p>{{ .Description }}</p>
+        
+        {{ if .Params.client }}
+        <div class="cluster">
+          <span><strong>Client:</strong> {{ .Params.client }}</span>
+          {{ if .Params.role }}<span><strong>Role:</strong> {{ .Params.role }}</span>{{ end }}
+          {{ if .Params.duration }}<span><strong>Duration:</strong> {{ .Params.duration }}</span>{{ end }}
+        </div>
+        {{ end }}
+        
+        {{ if .Params.tools }}
+        <div class="cluster">
+          <span><strong>Tools:</strong></span>
+          {{ range .Params.tools }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <div class="cluster">
+          {{ if .Params.live_url }}
+          <a href="{{ .Params.live_url }}" target="_blank" rel="noopener">View Live <span>&#8599;</span></a>
+          {{ end }}
+          {{ if .Params.github_url }}
+          <a href="{{ .Params.github_url }}" target="_blank" rel="noopener">View Code <span>&#8599;</span></a>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  
+  {{ partial "pagination.html" . }}
+
+{{ end }}
