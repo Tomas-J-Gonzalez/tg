@@ -1,71 +1,87 @@
 {{ $project := . }}
 <article class="case-study-card" data-project="{{ $project.Slug }}">
-  <div class="case-study-card__image">
-    {{ if $project.Params.image }}
-    <img 
-      src="{{ $project.Params.image }}" 
-      alt="{{ $project.Params.image_alt | default $project.Title }}"
-      loading="lazy"
-      class="case-study-card__img"
-    >
-    {{ end }}
-    <div class="case-study-card__overlay">
-      <div class="case-study-card__overlay-content">
-        {{ if $project.Params.live_url }}
-        <a href="{{ $project.Params.live_url }}" target="_blank" rel="noopener" class="case-study-card__link">
-          <i class="fas fa-external-link-alt"></i>
-          <span>View Live</span>
+  <div class="case-study-card__container">
+    <!-- Left: Dark Card with Image -->
+    <div class="case-study-card__image-section">
+      {{ if .Params.image }}
+      <div class="case-study-card__image">
+        <img 
+          src="{{ .Params.image }}" 
+          alt="{{ .Params.image_alt | default .Title }}"
+          loading="lazy"
+          class="case-study-card__img"
+        >
+      </div>
+      {{ end }}
+      <div class="case-study-card__title-overlay">
+        <h3 class="case-study-card__title-main">{{ .Title }}</h3>
+        {{ if .Params.client }}
+        <div class="case-study-card__client">{{ .Params.client }}</div>
+        {{ end }}
+      </div>
+    </div>
+    
+    <!-- Right: White Content Area -->
+    <div class="case-study-card__content">
+      <header class="case-study-card__header">
+        <h3 class="case-study-card__title">{{ .Title }}</h3>
+        <time class="case-study-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan 2006" }}
+        </time>
+      </header>
+      
+      {{ if .Params.topics }}
+      <div class="case-study-card__tags">
+        {{ range .Params.topics }}
+        <span class="case-study-card__tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <p class="case-study-card__description">{{ .Description }}</p>
+      
+      {{ if .Params.client }}
+      <div class="case-study-card__meta">
+        <div class="case-study-card__meta-item">
+          <span class="case-study-card__meta-label">Client:</span>
+          <span class="case-study-card__meta-value">{{ .Params.client }}</span>
+        </div>
+        {{ if .Params.role }}
+        <div class="case-study-card__meta-item">
+          <span class="case-study-card__meta-label">Role:</span>
+          <span class="case-study-card__meta-value">{{ .Params.role }}</span>
+        </div>
+        {{ end }}
+        {{ if .Params.duration }}
+        <div class="case-study-card__meta-item">
+          <span class="case-study-card__meta-label">Duration:</span>
+          <span class="case-study-card__meta-value">{{ .Params.duration }}</span>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      {{ if .Params.tools }}
+      <div class="case-study-card__tools">
+        {{ range .Params.tools }}
+        <span class="case-study-card__tool">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <div class="case-study-card__actions">
+        {{ if .Params.live_url }}
+        <a href="{{ .Params.live_url }}" target="_blank" rel="noopener" class="case-study-card__action-btn">
+          View Project
         </a>
         {{ end }}
-        {{ if $project.Params.github_url }}
-        <a href="{{ $project.Params.github_url }}" target="_blank" rel="noopener" class="case-study-card__link">
+        {{ if .Params.github_url }}
+        <a href="{{ .Params.github_url }}" target="_blank" rel="noopener" class="case-study-card__action-btn case-study-card__action-btn--secondary">
           <i class="fab fa-github"></i>
-          <span>View Code</span>
+          View Code
         </a>
         {{ end }}
       </div>
     </div>
-  </div>
-  
-  <div class="case-study-card__content">
-    <header class="case-study-card__header">
-      <h3 class="case-study-card__title">
-        <a href="{{ $project.Permalink }}" class="case-study-card__title-link">{{ $project.Title }}</a>
-      </h3>
-      <time class="case-study-card__date" datetime="{{ $project.Date.Format "2006-01-02" }}">
-        {{ $project.Date.Format "Jan 2006" }}
-      </time>
-    </header>
-    
-    <p class="case-study-card__description">{{ $project.Description }}</p>
-    
-    {{ if $project.Params.client }}
-    <div class="case-study-card__meta">
-      <div class="case-study-card__meta-item">
-        <span class="case-study-card__meta-label">Client:</span>
-        <span class="case-study-card__meta-value">{{ $project.Params.client }}</span>
-      </div>
-      {{ if $project.Params.role }}
-      <div class="case-study-card__meta-item">
-        <span class="case-study-card__meta-label">Role:</span>
-        <span class="case-study-card__meta-value">{{ $project.Params.role }}</span>
-      </div>
-      {{ end }}
-      {{ if $project.Params.duration }}
-      <div class="case-study-card__meta-item">
-        <span class="case-study-card__meta-label">Duration:</span>
-        <span class="case-study-card__meta-value">{{ $project.Params.duration }}</span>
-      </div>
-      {{ end }}
-    </div>
-    {{ end }}
-    
-    {{ if $project.Params.tools }}
-    <div class="case-study-card__tools">
-      {{ range $project.Params.tools }}
-      <span class="case-study-card__tool">{{ . }}</span>
-      {{ end }}
-    </div>
-    {{ end }}
   </div>
 </article>
