@@ -1,4 +1,4 @@
-baseurl = "https://tomasjgonzalez.com/"
+baseurl = "http://localhost:1313/"
 theme = "hc-starter"
 languageCode = "en-gb"
 title = "Tomás González"
