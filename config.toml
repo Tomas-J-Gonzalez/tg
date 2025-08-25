@@ -23,7 +23,7 @@ strapline = "Experience designer"
 location = "Auckland, New Zealand"
 card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
-cloudinary_url = "https://res.cloudinary.com/tomasgo/image/upload/"
+cloudinary_url = "https://res.cloudinary.com/tomasgo/image/upload"
 
 [params.author]
 name = "Tomás González"
