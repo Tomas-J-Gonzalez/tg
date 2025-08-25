@@ -1,4 +1,0 @@
----
-title: Fun
-description: Entertainment
----

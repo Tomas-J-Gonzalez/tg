@@ -1,0 +1,5 @@
+# Development configuration - overrides production settings
+baseurl = "http://localhost:1313/"
+
+[params]
+# Override any development-specific parameters here
