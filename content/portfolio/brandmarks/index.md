@@ -2,15 +2,15 @@
 title: "Brandmarks"
 date: 2024-06-01T00:00:00+00:00
 draft: false
-description: "Identity and Logo design collection showcasing brand development work"
+description: "A collection of logos and brands I've worked on"
 slug: "brandmarks"
 topics: ["Brand Identity", "Logo Design", "Visual Design"]
-image: "/img/hc.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "A collection of logos and brands I've worked on"
 client: "Various Clients"
-role: "Brand Identity Designer"
+role: "Brand Designer"
 duration: "Ongoing"
-tools: ["Adobe Creative Suite", "Illustrator", "Photoshop", "Brand Strategy"]
+tools: ["Adobe Illustrator", "Adobe Photoshop", "Figma"]
 live_url: "#"
 ---
 

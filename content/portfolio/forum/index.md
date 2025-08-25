@@ -5,7 +5,7 @@ draft: false
 description: "Networking platform for Charities - coming soon"
 slug: "forum"
 topics: ["UX Design", "UI Design", "Networking", "Charity Platform"]
-image: "/img/hc.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "Forum networking platform for charities interface mockup"
 client: "Charity Network"
 role: "UX/UI Designer"

@@ -2,15 +2,15 @@
 title: "Karü"
 date: 2024-05-01T00:00:00+00:00
 draft: false
-description: "UI E-commerce Identity design for Karü platform"
+description: "E-commerce platform for sustainable products"
 slug: "karu"
-topics: ["UI Design", "E-commerce", "Brand Identity"]
-image: "/img/hc.jpg"
+topics: ["UI Design", "E-commerce", "UX Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "Design mockups of Karu E-commerce store interface"
 client: "Karü"
-role: "UI Designer"
-duration: "7 months"
-tools: ["Figma", "Adobe Creative Suite", "E-commerce Design"]
+role: "UI/UX Designer"
+duration: "6 months"
+tools: ["Figma", "Adobe Creative Suite", "Prototyping"]
 live_url: "#"
 ---
 

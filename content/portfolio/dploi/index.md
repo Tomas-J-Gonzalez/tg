@@ -2,15 +2,15 @@
 title: "Dploi"
 date: 2024-04-01T00:00:00+00:00
 draft: false
-description: "UX/UI Visual Research project for Dploi platform"
+description: "Deployment platform for developers"
 slug: "dploi"
-topics: ["UX Research", "UI Design", "Visual Design"]
-image: "/img/hc.jpg"
+topics: ["UX Research", "Platform Design", "Developer Tools"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
 image_alt: "Dploi Instagram Story mockups showcasing the platform interface"
 client: "Dploi"
-role: "UX/UI Designer"
-duration: "3 months"
-tools: ["Figma", "Adobe Creative Suite", "Visual Research"]
+role: "UX Researcher"
+duration: "4 months"
+tools: ["User Research", "Figma", "Prototyping"]
 live_url: "#"
 ---
 
