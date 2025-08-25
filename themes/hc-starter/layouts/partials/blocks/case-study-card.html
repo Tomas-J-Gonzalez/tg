@@ -1,34 +1,14 @@
 {{ $project := . }}
 <article class="case-study-card" data-project="{{ $project.Slug }}">
   <div class="case-study-card__container">
-    <!-- Left: Dark Card with Image -->
-    <div class="case-study-card__image-section">
-      {{ if .Params.image }}
-      <div class="case-study-card__image">
-        <img 
-          src="{{ .Params.image }}" 
-          alt="{{ .Params.image_alt | default .Title }}"
-          loading="lazy"
-          class="case-study-card__img"
-        >
-      </div>
-      {{ end }}
-      <div class="case-study-card__title-overlay">
-        <h3 class="case-study-card__title-main">{{ .Title }}</h3>
-        {{ if .Params.client }}
-        <div class="case-study-card__client">{{ .Params.client }}</div>
-        {{ end }}
-      </div>
-    </div>
-    
-    <!-- Right: White Content Area -->
+    <!-- Left: White Content Section -->
     <div class="case-study-card__content">
       <header class="case-study-card__header">
         <h3 class="case-study-card__title">{{ .Title }}</h3>
-        <time class="case-study-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
-          {{ .Date.Format "Jan 2006" }}
-        </time>
+        <p class="case-study-card__question">How might we help solve this problem?</p>
       </header>
+      
+      <p class="case-study-card__description">{{ .Description }}</p>
       
       {{ if .Params.topics }}
       <div class="case-study-card__tags">
@@ -37,8 +17,6 @@
         {{ end }}
       </div>
       {{ end }}
-      
-      <p class="case-study-card__description">{{ .Description }}</p>
       
       {{ if .Params.client }}
       <div class="case-study-card__meta">
@@ -81,6 +59,57 @@
           View Code
         </a>
         {{ end }}
+      </div>
+    </div>
+    
+    <!-- Right: Colored Section with Digital Screens -->
+    <div class="case-study-card__visual-section">
+      {{ if .Params.image }}
+      <div class="case-study-card__screen case-study-card__screen--large">
+        <div class="case-study-card__screen-header">
+          <div class="case-study-card__logo">STATE</div>
+          <div class="case-study-card__time">09:51</div>
+        </div>
+        <div class="case-study-card__screen-content">
+          <h4 class="case-study-card__screen-question">What's your {{ .Title }} worth?</h4>
+          <div class="case-study-card__screen-image">
+            <img 
+              src="{{ .Params.image }}" 
+              alt="{{ .Params.image_alt | default .Title }}"
+              loading="lazy"
+              class="case-study-card__img"
+            >
+          </div>
+          <div class="case-study-card__slider">
+            <span class="case-study-card__slider-min">$</span>
+            <div class="case-study-card__slider-track">
+              <div class="case-study-card__slider-handle"></div>
+            </div>
+            <span class="case-study-card__slider-max">$$$</span>
+          </div>
+          <div class="case-study-card__screen-actions">
+            <button class="case-study-card__screen-btn case-study-card__screen-btn--back">&lt; Back</button>
+            <button class="case-study-card__screen-btn case-study-card__screen-btn--primary">Add +</button>
+            <button class="case-study-card__screen-btn case-study-card__screen-btn--skip">Skip &gt;</button>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      
+      <div class="case-study-card__screen case-study-card__screen--small">
+        <div class="case-study-card__screen-header">
+          <div class="case-study-card__logo">STATE</div>
+          <div class="case-study-card__phone-status">📶 🔋</div>
+        </div>
+        <div class="case-study-card__screen-content">
+          <div class="case-study-card__mobile-icon">➕</div>
+          <h4 class="case-study-card__mobile-title">{{ .Title }}</h4>
+          <p class="case-study-card__mobile-tagline">Find out what your stuff's worth</p>
+          <button class="case-study-card__mobile-btn">Let's go</button>
+        </div>
+        <div class="case-study-card__mobile-nav">
+          <span class="case-study-card__mobile-url">tally.state.co.nz</span>
+        </div>
       </div>
     </div>
   </div>
