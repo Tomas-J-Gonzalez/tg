@@ -1,5 +1,5 @@
 /*
-Theme Toggle Button
+Theme Toggle Button - Theme-specific styles
 */
 
 // Update nav to use flexbox for alignment
@@ -13,54 +13,66 @@ nav[data-variant="main"] {
   }
 }
 
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg);
-  color: var(--color-text);
-  border-radius: var(--border-radius, 0.25rem);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.875rem;
-  line-height: 1;
-  min-width: 2.5rem;
-  height: 2.5rem;
+// Theme toggle specific styles
+#theme-toggle {
   margin-left: auto;
+  position: relative;
+  overflow: hidden;
   
-  &:hover {
-    background: var(--color-bg-mod-1);
-    border-color: var(--color-brand);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, var(--color-brand) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
   }
   
-  &:focus-visible {
-    outline: 2px solid var(--color-brand);
-    outline-offset: 2px;
+  &:hover::before {
+    opacity: 0.1;
+  }
+  
+  .theme-icon {
+    font-size: 1.125rem;
+    line-height: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  &:hover .theme-icon {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  &:active .theme-icon {
+    transform: scale(0.95);
   }
   
   // Toggle button pressed state
   &[aria-pressed="true"] {
-    background: var(--color-brand);
-    color: var(--color-bg);
-    border-color: var(--color-brand);
+    background-color: var(--color-brand) !important;
+    color: var(--color-bg) !important;
+    border-color: var(--color-brand) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     
     &:hover {
-      background: var(--color-accent);
-      border-color: var(--color-accent);
+      background-color: var(--color-accent) !important;
+      border-color: var(--color-accent) !important;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      filter: none !important;
+      transform: none !important;
     }
-  }
-  
-  .theme-icon {
-    font-size: 1rem;
-    line-height: 1;
-  }
-  
-  .theme-label {
-    @media (max-width: 47.99em) {
-      display: none;
+    
+    .theme-icon {
+      transform: rotate(180deg);
+    }
+    
+    &::before {
+      background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
     }
   }
 }
@@ -342,10 +354,4 @@ nav[data-variant="main"] {
   }
 }
 
-// Override prefers-color-scheme when manual theme is set
-.theme-light,
-.theme-dark {
-  @media (prefers-color-scheme: dark) {
-    // Keep manual theme colors instead of system preference
-  }
-}
+/* Manual theme switching overrides system preferences */

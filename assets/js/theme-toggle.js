@@ -47,8 +47,8 @@
     if (!themeToggle || !themeIcon || !themeLabel) return;
     
     const iconMap = {
-      [THEMES.LIGHT]: '☀️',
-      [THEMES.DARK]: '🌙'
+      [THEMES.LIGHT]: 'fas fa-sun',
+      [THEMES.DARK]: 'fas fa-moon'
     };
     
     const labelMap = {
@@ -56,16 +56,15 @@
       [THEMES.DARK]: 'Switch to light mode'
     };
     
-    themeIcon.textContent = iconMap[theme];
+    // Update Font Awesome icon class
+    themeIcon.className = `theme-icon ${iconMap[theme]}`;
     themeLabel.textContent = labelMap[theme];
     themeToggle.setAttribute('aria-label', labelMap[theme]);
     
     // Update button pressed state for toggle button
-    if (theme === THEMES.DARK) {
-      themeToggle.setAttribute('aria-pressed', 'true');
-    } else {
-      themeToggle.setAttribute('aria-pressed', 'false');
-    }
+    // When dark mode is active, button should be pressed (true)
+    // When light mode is active, button should be unpressed (false)
+    themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
   }
 
   // Toggle theme
@@ -78,7 +77,7 @@
     applyTheme(newTheme);
   }
 
-  // Initialize theme
+  // Initialize theme immediately to prevent flash
   function initTheme() {
     const theme = getCurrentTheme();
     applyTheme(theme);
@@ -88,6 +87,12 @@
       themeToggle.addEventListener('click', toggleTheme);
     }
   }
+
+  // Apply theme immediately to prevent flash of unstyled content
+  const theme = getCurrentTheme();
+  const root = document.documentElement;
+  root.classList.remove('theme-light', 'theme-dark');
+  root.classList.add(`theme-${theme}`);
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
