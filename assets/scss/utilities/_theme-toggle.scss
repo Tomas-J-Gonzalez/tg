@@ -22,6 +22,15 @@ nav[data-variant="main"] #theme-toggle {
   border: 1px solid transparent !important;
   color: var(--color-text) !important;
   
+  // Add subtle outline in light mode
+  .theme-light & {
+    border-color: var(--color-border) !important;
+    
+    &:hover {
+      border-color: var(--color-brand) !important;
+    }
+  }
+  
   &::before {
     content: '';
     position: absolute;
