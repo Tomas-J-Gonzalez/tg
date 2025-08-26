@@ -12,6 +12,15 @@ html[class*="theme-"] {
   visibility: visible;
 }
 
+// Additional flicker prevention
+body {
+  transition: none !important;
+}
+
+html[class*="theme-"] body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 // Update nav to use flexbox for alignment
 nav[data-variant="main"] {
   display: flex;
