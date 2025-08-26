@@ -31,8 +31,8 @@ if (!document.documentElement.className.includes('theme-')) {
 let themeInitialized = false;
 
 function initTheme() {
-  // Prevent double initialization - check both local and global flags
-  if (themeInitialized || window.themeInitialized) return;
+  // Prevent double initialization - only check local flag
+  if (themeInitialized) return;
   themeInitialized = true;
 
   const themeToggle = document.getElementById('theme-toggle');
