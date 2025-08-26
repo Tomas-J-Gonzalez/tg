@@ -14,7 +14,11 @@
     justify-content: flex-start;
   }
   
-  &__text-link {
+  &__text-container {
+    padding: 2rem;
+  }
+  
+  &__title-link {
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
@@ -22,10 +26,12 @@
     &:hover {
       text-decoration: none;
       color: inherit;
-      
-      .case-study-card__title {
-        color: var(--color-brand);
-      }
+    }
+    
+    &:focus-visible {
+      outline: 2px solid var(--color-brand);
+      outline-offset: 2px;
+      border-radius: 4px;
     }
   }
   
@@ -35,7 +41,12 @@
     color: var(--color-text);
     margin: 0 0 1.5rem 0;
     line-height: 1.2;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: var(--color-brand);
+      transform: translateX(4px);
+    }
   }
   
   &__description {
@@ -50,12 +61,15 @@
     flex: 0 0 50%;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   
   &__image-link {
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
+    width: 100%;
+    display: block;
     
     &:hover {
       text-decoration: none;
@@ -66,11 +80,16 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
       }
     }
+    
+    &:focus-visible {
+      outline: 2px solid var(--color-brand);
+      outline-offset: 2px;
+      border-radius: 12px;
+    }
   }
   
   &__image {
     width: 100%;
-    max-width: 480px;
     height: 320px;
     border-radius: 12px;
     overflow: hidden;
@@ -86,7 +105,6 @@
   
   &__placeholder {
     width: 100%;
-    max-width: 480px;
     height: 320px;
     border-radius: 12px;
     background: var(--color-bg-mod-2);
@@ -108,6 +126,14 @@
   margin-top: 3rem;
 }
 
+// Accessibility: Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .case-study-card * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 // Responsive adjustments
 @media (max-width: 768px) {
   .case-study-card {
@@ -120,8 +146,16 @@
       width: 100%;
     }
     
+    &__text-container {
+      padding: 1.5rem;
+    }
+    
     &__title {
       font-size: 2.25rem;
+      
+      &:hover {
+        transform: translateX(2px);
+      }
     }
     
     &__description {
@@ -131,11 +165,16 @@
     &__visual {
       flex: none;
       width: 100%;
+      justify-content: stretch;
+    }
+    
+    &__image-link {
+      width: 100%;
     }
     
     &__image,
     &__placeholder {
-      max-width: 100%;
+      width: 100%;
       height: 240px;
     }
   }
