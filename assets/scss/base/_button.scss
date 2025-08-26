@@ -71,6 +71,41 @@ input[type="button"][data-variant='secondary'] {
   color: var(--color-text);
 }
 
+/* 
+Theme-aware button styles
+
+For buttons that need to adapt to theme changes
+*/
+.button--theme-aware {
+  transition: all 0.3s ease;
+  
+  // Light theme styles
+  .theme-light & {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-bg);
+    
+    &:hover {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+      filter: brightness(1.1);
+    }
+  }
+  
+  // Dark theme styles
+  .theme-dark & {
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
+    color: var(--color-text);
+    
+    &:hover {
+      background-color: var(--color-brand);
+      border-color: var(--color-brand);
+      color: var(--color-bg);
+    }
+  }
+}
+
 /*
 Mary UI Button Circle Component
 
@@ -120,48 +155,32 @@ Font Awesome Icons:
     outline-offset: 2px;
   }
   
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  &:hover {
+    transform: translateY(-1px);
   }
   
-  &:hover {
-    filter: none !important;
-    transform: none !important;
+  &:active {
+    transform: translateY(0);
   }
 }
 
 .btn-circle {
-  border-radius: 9999px;
   width: 2.5rem;
   height: 2.5rem;
+  border-radius: 50%;
   padding: 0;
   min-height: auto;
 }
 
 .btn-ghost {
   background-color: transparent !important;
-  color: var(--color-text) !important;
   border-color: transparent !important;
   
   &:hover {
-    background-color: var(--color-bg-mod-1) !important;
-    border-color: var(--color-border) !important;
-    filter: none !important;
-    transform: none !important;
-  }
-  
-  &:active {
     background-color: var(--color-bg-mod-2) !important;
-  }
-  
-  &:focus-visible {
-    background-color: var(--color-bg-mod-1) !important;
-    border-color: var(--color-brand) !important;
   }
 }
 
-/* Screen reader only class for accessibility */
 .sr-only {
   position: absolute;
   width: 1px;

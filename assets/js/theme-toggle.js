@@ -12,8 +12,10 @@ function applyThemeImmediately() {
   document.documentElement.className = `theme-${savedTheme}`;
 }
 
-// Apply theme immediately when script loads
-applyThemeImmediately();
+// Only apply theme if it hasn't been applied yet (prevents double application)
+if (!document.documentElement.className.includes('theme-')) {
+  applyThemeImmediately();
+}
 
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
