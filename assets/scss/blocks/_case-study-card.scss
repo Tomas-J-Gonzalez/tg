@@ -1,13 +1,20 @@
-// Case Study Card Component - Improved 2-Column Layout
+// Case Study Card Component - Separate Containers Layout
 .case-study-card {
   width: 100%;
   margin-bottom: 5rem;
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
   
-  &__link {
+  // Left: Project Title and Description
+  &__content {
+    flex: 0 0 50%;
     display: flex;
-    align-items: center;
-    gap: 4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  &__text-link {
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
@@ -19,49 +26,55 @@
       .case-study-card__title {
         color: var(--color-brand);
       }
-      
-      .case-study-card__image {
-        transform: scale(1.02);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      }
     }
   }
   
-  // Left: Project Title and Description
-  &__content {
-    flex: 0 0 55%;
-  }
-  
   &__title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-text);
-    margin: 0 0 1.25rem 0;
+    margin: 0 0 1.5rem 0;
     line-height: 1.2;
     transition: color 0.3s ease;
   }
   
   &__description {
     color: var(--color-text-mod-1);
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     line-height: 1.6;
     margin: 0;
   }
   
   // Right: Visual
   &__visual {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
     display: flex;
     justify-content: center;
   }
   
+  &__image-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+      
+      .case-study-card__image {
+        transform: scale(1.03);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  
   &__image {
     width: 100%;
-    max-width: 400px;
-    height: 280px;
+    max-width: 480px;
+    height: 320px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     
     img {
@@ -73,16 +86,16 @@
   
   &__placeholder {
     width: 100%;
-    max-width: 400px;
-    height: 280px;
+    max-width: 480px;
+    height: 320px;
     border-radius: 12px;
     background: var(--color-bg-mod-2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-text-mod-2);
-    font-size: 2.5rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
 }
@@ -98,13 +111,9 @@
 // Responsive adjustments
 @media (max-width: 768px) {
   .case-study-card {
+    flex-direction: column;
+    gap: 3rem;
     margin-bottom: 4rem;
-    
-    &__link {
-      flex-direction: column;
-      gap: 2.5rem;
-      text-align: center;
-    }
     
     &__content {
       flex: none;
@@ -112,11 +121,11 @@
     }
     
     &__title {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
     
     &__description {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
     }
     
     &__visual {
@@ -127,7 +136,7 @@
     &__image,
     &__placeholder {
       max-width: 100%;
-      height: 220px;
+      height: 240px;
     }
   }
   
