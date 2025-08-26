@@ -2,10 +2,12 @@
 <article class="case-study-card">
   <!-- Left: Project Title and Description -->
   <div class="case-study-card__content">
-    <a href="{{ .Permalink }}" class="case-study-card__text-link" aria-label="View {{ .Title }} case study">
-      <h3 class="case-study-card__title">{{ .Title }}</h3>
+    <div class="case-study-card__text-container">
+      <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-label="View {{ .Title }} case study">
+        <h3 class="case-study-card__title">{{ .Title }}</h3>
+      </a>
       <p class="case-study-card__description">{{ .Description }}</p>
-    </a>
+    </div>
   </div>
   
   <!-- Right: Visual -->
