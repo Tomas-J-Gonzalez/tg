@@ -61,7 +61,7 @@ function initTheme() {
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
   }
 
-  // Set initial state based on current theme class
+  // Set initial state based on current theme class without triggering updateTheme
   const currentThemeClass = document.documentElement.className;
   let savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
   
@@ -72,7 +72,11 @@ function initTheme() {
     savedTheme = THEMES.DARK;
   }
   
-  updateTheme(savedTheme);
+  // Only update UI elements, don't change the theme class again
+  themeIcon.className = `theme-icon ${iconMap[savedTheme]}`;
+  themeLabel.textContent = labelMap[savedTheme];
+  themeToggle.setAttribute('aria-label', labelMap[savedTheme]);
+  themeToggle.setAttribute('aria-pressed', savedTheme === THEMES.DARK ? 'true' : 'false');
 
   // Handle toggle click
   themeToggle.addEventListener('click', () => {

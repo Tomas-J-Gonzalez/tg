@@ -63,6 +63,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    max-width: 50%;
   }
   
   &__image-link {
@@ -70,6 +71,7 @@
     color: inherit;
     transition: all 0.3s ease;
     width: 100%;
+    max-width: 100%;
     display: block;
     
     &:hover {
@@ -92,6 +94,7 @@
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    max-width: 100%;
     
     img {
       width: 100%;
@@ -112,6 +115,7 @@
     font-size: 3rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    max-width: 100%;
   }
 }
 
@@ -162,11 +166,13 @@
     &__visual {
       flex: none;
       width: 100%;
+      max-width: 100%;
       justify-content: stretch;
     }
     
     &__image-link {
       width: 100%;
+      max-width: 100%;
       
       &:hover {
         transform: translateY(-2px);
@@ -177,6 +183,7 @@
     &__placeholder {
       width: 100%;
       height: 240px;
+      max-width: 100%;
     }
   }
   
