@@ -1,14 +1,16 @@
 {{ $project := . }}
 <article class="case-study-card">
-  <a href="{{ .Permalink }}" class="case-study-card__link" aria-label="View {{ .Title }} case study">
-    <!-- Left: Project Title and Description -->
-    <div class="case-study-card__content">
+  <!-- Left: Project Title and Description -->
+  <div class="case-study-card__content">
+    <a href="{{ .Permalink }}" class="case-study-card__text-link" aria-label="View {{ .Title }} case study">
       <h3 class="case-study-card__title">{{ .Title }}</h3>
       <p class="case-study-card__description">{{ .Description }}</p>
-    </div>
-    
-    <!-- Right: Visual -->
-    <div class="case-study-card__visual">
+    </a>
+  </div>
+  
+  <!-- Right: Visual -->
+  <div class="case-study-card__visual">
+    <a href="{{ .Permalink }}" class="case-study-card__image-link" aria-label="View {{ .Title }} case study">
       {{ if .Params.image }}
       <div class="case-study-card__image">
         <img 
@@ -23,6 +25,6 @@
         <i class="fas fa-image"></i>
       </div>
       {{ end }}
-    </div>
-  </a>
+    </a>
+  </div>
 </article>
