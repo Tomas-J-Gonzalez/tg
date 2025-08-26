@@ -43,8 +43,15 @@
     (function() {
       const THEMES = { LIGHT: 'light', DARK: 'dark' };
       const STORAGE_KEY = 'theme-preference';
-      const savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
-      document.documentElement.className = `theme-${savedTheme}`;
+      
+      // Set global flag to prevent double initialization
+      window.themeInitialized = true;
+      
+      // Only apply if theme hasn't been set yet
+      if (!document.documentElement.className.includes('theme-')) {
+        const savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
+        document.documentElement.className = `theme-${savedTheme}`;
+      }
     })();
   </script>
   
