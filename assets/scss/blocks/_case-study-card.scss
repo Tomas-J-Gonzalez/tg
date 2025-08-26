@@ -1,427 +1,72 @@
-// Case Study Card Component - Tally Design Clone
+// Case Study Card Component - Minimalist Design
 .case-study-card {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   background: white;
-  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: #d1d5db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
   }
   
-  &__container {
-    display: flex;
-    min-height: 500px;
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+      text-decoration: none;
+    }
   }
   
-  // Left: White Content Section
   &__content {
-    flex: 0 0 50%;
-    background: white;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  &__header {
-    margin-bottom: 2rem;
+    padding: 2rem;
   }
   
   &__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-  }
-  
-  &__question {
-    font-size: 1.1rem;
-    color: #666;
-    margin: 0;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.3;
   }
   
   &__description {
-    color: #555;
+    color: #6b7280;
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-  
-  &__tags {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  &__tag {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #f0f0f0;
-    color: #333;
-    font-size: 0.875rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  &__meta {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-  
-  &__meta-item {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  
-  &__meta-label {
-    color: #666;
-    font-weight: 600;
-    min-width: 70px;
-  }
-  
-  &__meta-value {
-    color: #333;
-    font-weight: 500;
-  }
-  
-  &__tools {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-  }
-  
-  &__tool {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #007bff;
-    color: white;
-    font-size: 0.875rem;
-    font-weight: 600;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  &__actions {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  &__action-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    
-    &:hover {
-      background: #0056b3;
-      transform: translateY(-1px);
-    }
-    
-    &--secondary {
-      background: transparent;
-      color: #007bff;
-      border: 2px solid #007bff;
-      
-      &:hover {
-        background: #007bff;
-        color: white;
-      }
-    }
-    
-    i {
-      font-size: 1rem;
-    }
-  }
-  
-  // Right: Colored Section with Digital Screens
-  &__visual-section {
-    flex: 0 0 50%;
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  &__screen {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    
-    &--large {
-      width: 280px;
-      height: 200px;
-      background: #ff9800;
-      position: relative;
-      z-index: 2;
-    }
-    
-    &--small {
-      width: 160px;
-      height: 280px;
-      background: #e91e63;
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-    }
-  }
-  
-  &__screen-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  &__logo {
-    background: #2196f3;
-    color: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-  
-  &__time {
-    color: white;
-    font-size: 0.875rem;
-    font-weight: 500;
-  }
-  
-  &__phone-status {
-    color: white;
-    font-size: 0.875rem;
-  }
-  
-  &__screen-content {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  &__screen-question {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
-  }
-  
-  &__screen-image {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1rem;
-    border-radius: 8px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.2);
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  
-  &__slider {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    
-    span {
-      color: white;
-      font-size: 0.875rem;
-      font-weight: 600;
-    }
-  }
-  
-  &__slider-track {
-    flex: 1;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
-    position: relative;
-  }
-  
-  &__slider-handle {
-    position: absolute;
-    right: 20%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  &__screen-actions {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-  }
-  
-  &__screen-btn {
-    padding: 0.5rem 0.75rem;
-    border: none;
-    border-radius: 16px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    
-    &--back, &--skip {
-      background: rgba(255, 255, 255, 0.3);
-      color: white;
-    }
-    
-    &--primary {
-      background: #333;
-      color: white;
-    }
-    
-    &:hover {
-      transform: translateY(-1px);
-    }
-  }
-  
-  &__mobile-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  &__mobile-title {
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-  }
-  
-  &__mobile-tagline {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.875rem;
-    margin: 0 0 1rem 0;
-  }
-  
-  &__mobile-btn {
-    background: white;
-    color: #333;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    
-    &:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  }
-  
-  &__mobile-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    text-align: center;
-  }
-  
-  &__mobile-url {
-    color: white;
-    font-size: 0.75rem;
-    font-family: monospace;
+    margin: 0;
   }
 }
 
-// Portfolio grid layout - single column full width
+// Portfolio grid layout
 .portfolio-grid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 // Responsive adjustments
 @media (max-width: 768px) {
   .case-study-card {
-    &__container {
-      flex-direction: column;
-      min-height: auto;
-    }
+    margin-bottom: 1.5rem;
     
     &__content {
-      flex: none;
-      padding: 2rem;
-    }
-    
-    &__title {
-      font-size: 2rem;
-    }
-    
-    &__visual-section {
-      flex: none;
-      min-height: 300px;
       padding: 1.5rem;
     }
     
-    &__screen {
-      &--large {
-        width: 240px;
-        height: 180px;
-      }
-      
-      &--small {
-        width: 140px;
-        height: 240px;
-        right: 0.5rem;
-      }
-    }
-    
-    &__actions {
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    
-    &__action-btn {
-      justify-content: center;
+    &__title {
+      font-size: 1.25rem;
     }
   }
   
   .portfolio-grid {
-    gap: 2rem;
+    gap: 1rem;
   }
 }
