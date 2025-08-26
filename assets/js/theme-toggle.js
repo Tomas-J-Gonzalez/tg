@@ -17,7 +17,14 @@ if (!document.documentElement.className.includes('theme-')) {
   applyThemeImmediately();
 }
 
+// Track if theme has been initialized to prevent double initialization
+let themeInitialized = false;
+
 function initTheme() {
+  // Prevent double initialization
+  if (themeInitialized) return;
+  themeInitialized = true;
+
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
   const themeLabel = document.getElementById('theme-label');

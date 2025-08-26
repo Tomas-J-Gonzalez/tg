@@ -489,6 +489,30 @@ input[type="button"][data-variant='secondary'] {
   border: solid 2px var(--color-bg);
   color: var(--color-text); }
 
+/* 
+Theme-aware button styles
+
+For buttons that need to adapt to theme changes
+*/
+.button--theme-aware {
+  transition: all 0.3s ease; }
+  .theme-light .button--theme-aware {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-bg); }
+    .theme-light .button--theme-aware:hover {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+      filter: brightness(1.1); }
+  .theme-dark .button--theme-aware {
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
+    color: var(--color-text); }
+    .theme-dark .button--theme-aware:hover {
+      background-color: var(--color-brand);
+      border-color: var(--color-brand);
+      color: var(--color-bg); }
+
 /*
 Mary UI Button Circle Component
 
@@ -535,36 +559,24 @@ Font Awesome Icons:
   .btn:focus-visible {
     outline: 2px solid var(--color-brand);
     outline-offset: 2px; }
-  .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
   .btn:hover {
-    filter: none !important;
-    transform: none !important; }
+    transform: translateY(-1px); }
+  .btn:active {
+    transform: translateY(0); }
 
 .btn-circle {
-  border-radius: 9999px;
   width: 2.5rem;
   height: 2.5rem;
+  border-radius: 50%;
   padding: 0;
   min-height: auto; }
 
 .btn-ghost {
   background-color: transparent !important;
-  color: var(--color-text) !important;
   border-color: transparent !important; }
   .btn-ghost:hover {
-    background-color: var(--color-bg-mod-1) !important;
-    border-color: var(--color-border) !important;
-    filter: none !important;
-    transform: none !important; }
-  .btn-ghost:active {
     background-color: var(--color-bg-mod-2) !important; }
-  .btn-ghost:focus-visible {
-    background-color: var(--color-bg-mod-1) !important;
-    border-color: var(--color-brand) !important; }
 
-/* Screen reader only class for accessibility */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1007,6 +1019,95 @@ Hero
 .Hero {
   --region-space: var(--space-3xl); }
 
+.case-study-card {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  transition: all 0.3s ease; }
+  .case-study-card:hover {
+    transform: translateY(-2px); }
+  .case-study-card__content {
+    flex: 0 0 60%; }
+  .case-study-card__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 1rem 0;
+    line-height: 1.2; }
+  .case-study-card__description {
+    color: var(--color-text-mod-1);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0; }
+  .case-study-card__visual {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center; }
+  .case-study-card__image {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+    .case-study-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .case-study-card__placeholder {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    border-radius: 8px;
+    background: var(--color-bg-mod-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-mod-2);
+    font-size: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+  .case-study-card__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-decoration: none; }
+    .case-study-card__link:hover {
+      text-decoration: none; }
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3rem; }
+
+@media (max-width: 768px) {
+  .case-study-card {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    text-align: center; }
+    .case-study-card__content {
+      flex: none;
+      width: 100%; }
+    .case-study-card__title {
+      font-size: 1.75rem; }
+    .case-study-card__description {
+      font-size: 1rem; }
+    .case-study-card__visual {
+      flex: none;
+      width: 100%; }
+    .case-study-card__image, .case-study-card__placeholder {
+      max-width: 100%;
+      height: 180px; }
+  .portfolio-grid {
+    gap: 3rem; } }
+
 /* 
 * High level, flexible layouts that provide a 
 * skeleton to support any variant of a component
@@ -1309,11 +1410,18 @@ nav[data-variant="main"] {
   nav[data-variant="main"] ul {
     flex: 1; }
 
-#theme-toggle {
+nav[data-variant="main"] #theme-toggle {
   margin-left: auto;
   position: relative;
-  overflow: hidden; }
-  #theme-toggle::before {
+  overflow: hidden;
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  color: var(--color-text) !important; }
+  .theme-light nav[data-variant="main"] #theme-toggle {
+    border-color: var(--color-border) !important; }
+    .theme-light nav[data-variant="main"] #theme-toggle:hover {
+      border-color: var(--color-brand) !important; }
+  nav[data-variant="main"] #theme-toggle::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1324,32 +1432,32 @@ nav[data-variant="main"] {
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none; }
-  #theme-toggle:hover::before {
+  nav[data-variant="main"] #theme-toggle:hover::before {
     opacity: 0.1; }
-  #theme-toggle .theme-icon {
+  nav[data-variant="main"] #theme-toggle .theme-icon {
     font-size: 1.125rem;
     line-height: 1;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 1; }
-  #theme-toggle:hover .theme-icon {
+  nav[data-variant="main"] #theme-toggle:hover .theme-icon {
     transform: scale(1.1) rotate(5deg); }
-  #theme-toggle:active .theme-icon {
+  nav[data-variant="main"] #theme-toggle:active .theme-icon {
     transform: scale(0.95); }
-  #theme-toggle[aria-pressed="true"] {
+  nav[data-variant="main"] #theme-toggle[aria-pressed="true"] {
     background-color: var(--color-brand) !important;
     color: var(--color-bg) !important;
     border-color: var(--color-brand) !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
-    #theme-toggle[aria-pressed="true"]:hover {
+    nav[data-variant="main"] #theme-toggle[aria-pressed="true"]:hover {
       background-color: var(--color-accent) !important;
       border-color: var(--color-accent) !important;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       filter: none !important;
       transform: none !important; }
-    #theme-toggle[aria-pressed="true"] .theme-icon {
+    nav[data-variant="main"] #theme-toggle[aria-pressed="true"] .theme-icon {
       transform: rotate(180deg); }
-    #theme-toggle[aria-pressed="true"]::before {
+    nav[data-variant="main"] #theme-toggle[aria-pressed="true"]::before {
       background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%); }
 
 .theme-light {

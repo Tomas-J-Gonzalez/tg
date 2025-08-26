@@ -105,6 +105,11 @@ url = "/portfolio/"
 weight = 15
 
 [[menu.footer]]
+name = "Topics"
+url = "/topics/"
+weight = 20
+
+[[menu.footer]]
 name = "Slashes"
 url = "/slashes/"
 weight = 25
