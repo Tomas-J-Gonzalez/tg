@@ -1,7 +1,7 @@
 ---
 title: "Testimonials"
 date: 2024-09-26T11:26:14+01:00
-draft: false
+draft: true
 slug: "testimonials"
 layout: "page"
 description: ""
