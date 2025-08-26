@@ -1,31 +1,27 @@
 {{ $project := . }}
 <article class="case-study-card">
-  <div class="case-study-card__container">
-    <!-- Left: Project Title and Description -->
-    <div class="case-study-card__content">
-      <h3 class="case-study-card__title">{{ .Title }}</h3>
-      <p class="case-study-card__description">{{ .Description }}</p>
+  <!-- Left: Project Title and Description -->
+  <div class="case-study-card__content">
+    <h3 class="case-study-card__title">{{ .Title }}</h3>
+    <p class="case-study-card__description">{{ .Description }}</p>
+  </div>
+  
+  <!-- Right: Visual -->
+  <div class="case-study-card__visual">
+    {{ if .Params.image }}
+    <div class="case-study-card__image">
+      <img 
+        src="{{ .Params.image }}" 
+        alt="{{ .Params.image_alt | default .Title }}"
+        loading="lazy"
+        class="case-study-card__img"
+      >
     </div>
-    
-    <!-- Right: Visual Card -->
-    <div class="case-study-card__visual">
-      <div class="case-study-card__card">
-        {{ if .Params.image }}
-        <div class="case-study-card__image">
-          <img 
-            src="{{ .Params.image }}" 
-            alt="{{ .Params.image_alt | default .Title }}"
-            loading="lazy"
-            class="case-study-card__img"
-          >
-        </div>
-        {{ else }}
-        <div class="case-study-card__placeholder">
-          <i class="fas fa-image"></i>
-        </div>
-        {{ end }}
-      </div>
+    {{ else }}
+    <div class="case-study-card__placeholder">
+      <i class="fas fa-image"></i>
     </div>
+    {{ end }}
   </div>
   
   <!-- Clickable overlay for navigation -->
