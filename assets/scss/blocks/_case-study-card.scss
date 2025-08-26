@@ -6,7 +6,6 @@
   align-items: flex-start;
   gap: 4rem;
   max-width: 100%;
-  overflow: hidden;
   
   // Left: Project Title and Description
   &__content {
@@ -62,9 +61,8 @@
   &__visual {
     flex: 0 0 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    max-width: 50%;
   }
   
   &__image-link {
@@ -77,11 +75,7 @@
     &:hover {
       text-decoration: none;
       color: inherit;
-      
-      .case-study-card__image {
-        transform: scale(1.03);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      }
+      transform: translateY(-4px);
     }
     
     &:focus-visible {
@@ -98,7 +92,6 @@
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    max-width: 100%;
     
     img {
       width: 100%;
@@ -119,7 +112,6 @@
     font-size: 3rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    max-width: 100%;
   }
 }
 
@@ -143,7 +135,7 @@
 @media (max-width: 768px) {
   .case-study-card {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-bottom: 4rem;
     
     &__content {
@@ -170,19 +162,21 @@
     &__visual {
       flex: none;
       width: 100%;
-      max-width: 100%;
       justify-content: stretch;
     }
     
     &__image-link {
       width: 100%;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
     
     &__image,
     &__placeholder {
       width: 100%;
       height: 240px;
-      max-width: 100%;
     }
   }
   
@@ -207,6 +201,12 @@
     &__image,
     &__placeholder {
       height: 280px;
+    }
+    
+    &__image-link {
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
   }
 }
