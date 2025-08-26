@@ -2,6 +2,16 @@
 Theme Toggle Button - Theme-specific styles
 */
 
+// Prevent flash of unstyled content during theme initialization
+html:not([class*="theme-"]) {
+  // Hide content until theme is applied
+  visibility: hidden;
+}
+
+html[class*="theme-"] {
+  visibility: visible;
+}
+
 // Update nav to use flexbox for alignment
 nav[data-variant="main"] {
   display: flex;

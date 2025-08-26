@@ -6,23 +6,33 @@ const THEMES = {
 
 const STORAGE_KEY = 'theme-preference';
 
+// Track if theme has been applied to prevent double application
+let themeApplied = false;
+
 // Apply theme immediately to prevent flicker
 function applyThemeImmediately() {
+  // Only apply if theme hasn't been applied yet
+  if (themeApplied) return;
+  
   const savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
   document.documentElement.className = `theme-${savedTheme}`;
+  themeApplied = true;
 }
 
-// Only apply theme if it hasn't been applied yet (prevents double application)
+// Only apply theme if it hasn't been applied yet
 if (!document.documentElement.className.includes('theme-')) {
   applyThemeImmediately();
+} else {
+  // Theme already applied by inline script
+  themeApplied = true;
 }
 
 // Track if theme has been initialized to prevent double initialization
 let themeInitialized = false;
 
 function initTheme() {
-  // Prevent double initialization
-  if (themeInitialized) return;
+  // Prevent double initialization - check both local and global flags
+  if (themeInitialized || window.themeInitialized) return;
   themeInitialized = true;
 
   const themeToggle = document.getElementById('theme-toggle');
@@ -51,8 +61,17 @@ function initTheme() {
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
   }
 
-  // Set initial state
-  const savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
+  // Set initial state based on current theme class
+  const currentThemeClass = document.documentElement.className;
+  let savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
+  
+  // If theme class is already set, use that instead of localStorage
+  if (currentThemeClass.includes('theme-light')) {
+    savedTheme = THEMES.LIGHT;
+  } else if (currentThemeClass.includes('theme-dark')) {
+    savedTheme = THEMES.DARK;
+  }
+  
   updateTheme(savedTheme);
 
   // Handle toggle click
