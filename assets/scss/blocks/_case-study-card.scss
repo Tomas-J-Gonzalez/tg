@@ -1,38 +1,40 @@
-// Case Study Card Component - Minimalist Design
+// Case Study Card Component - 2-Column Layout Design
 .case-study-card {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   background: white;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
   
   &:hover {
     border-color: #d1d5db;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
   }
   
-  &__link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    
-    &:hover {
-      text-decoration: none;
-    }
+  &__container {
+    display: flex;
+    min-height: 200px;
   }
   
+  // Left: Project Title and Description
   &__content {
-    padding: 2rem;
+    flex: 0 0 60%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
   }
   
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     color: #111827;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.3;
   }
   
@@ -42,31 +44,109 @@
     line-height: 1.6;
     margin: 0;
   }
+  
+  // Right: Visual Card
+  &__visual {
+    flex: 0 0 40%;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  &__card {
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    max-height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__image {
+    width: 100%;
+    height: 100%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #f3f4f6;
+    color: #9ca3af;
+    font-size: 2rem;
+  }
+  
+  // Clickable overlay
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 // Portfolio grid layout
 .portfolio-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 // Responsive adjustments
 @media (max-width: 768px) {
   .case-study-card {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    
+    &__container {
+      flex-direction: column;
+      min-height: auto;
+    }
     
     &__content {
-      padding: 1.5rem;
+      flex: none;
+      padding: 2rem;
     }
     
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+    }
+    
+    &__visual {
+      flex: none;
+      padding: 1.5rem;
+      min-height: 200px;
+    }
+    
+    &__card {
+      max-width: 100%;
+      max-height: 150px;
     }
   }
   
   .portfolio-grid {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
