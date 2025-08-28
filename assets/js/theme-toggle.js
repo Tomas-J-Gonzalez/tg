@@ -57,8 +57,21 @@ function initTheme() {
     
     themeIcon.className = `theme-icon ${iconMap[theme]}`;
     themeLabel.textContent = labelMap[theme];
-    themeToggle.setAttribute('aria-label', labelMap[theme]);
+    themeToggle.setAttribute('aria-label', `Switch to ${theme === THEMES.DARK ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
+    
+    // Announce theme change to screen readers
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.setAttribute('aria-atomic', 'true');
+    announcement.className = 'sr-only';
+    announcement.textContent = `Switched to ${theme} mode`;
+    document.body.appendChild(announcement);
+    
+    // Remove announcement after it's been read
+    setTimeout(() => {
+      document.body.removeChild(announcement);
+    }, 1000);
   }
 
   // Set initial state based on current theme class without triggering updateTheme
