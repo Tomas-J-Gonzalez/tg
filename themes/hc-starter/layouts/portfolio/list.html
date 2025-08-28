@@ -6,10 +6,12 @@
   </section>
   
   <section class="region">
-    <div class="portfolio-grid">
-      {{ range .Paginator.Pages }}
-        {{ partial "blocks/case-study-card.html" . }}
-      {{ end }}
+    <div class="portfolio-container">
+      <div class="portfolio-grid">
+        {{ range .Paginator.Pages }}
+          {{ partial "blocks/case-study-card.html" . }}
+        {{ end }}
+      </div>
     </div>
   </section>
   
