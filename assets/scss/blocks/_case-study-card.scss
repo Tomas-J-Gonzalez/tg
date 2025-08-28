@@ -43,11 +43,6 @@
     color: var(--color-text);
     margin: 0 0 1.5rem 0;
     line-height: 1.2;
-    transition: transform 0.2s ease;
-    
-    &:hover {
-      transform: translateX(4px);
-    }
   }
   
   // Description styling
@@ -166,10 +161,6 @@
     
     &__title {
       font-size: var(--step-2);
-      
-      &:hover {
-        transform: translateX(2px);
-      }
     }
     
     &__description {
