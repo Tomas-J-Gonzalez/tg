@@ -1,12 +1,12 @@
 {{ $project := . }}
-<article class="case-study-card">
+<article class="case-study-card" itemscope itemtype="https://schema.org/CreativeWork">
   <!-- Left: Project Title and Description -->
   <div class="case-study-card__content">
     <div class="case-study-card__text-container">
       <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-label="View {{ .Title }} case study">
-        <h3 class="case-study-card__title">{{ .Title }}</h3>
+        <h3 class="case-study-card__title" itemprop="name">{{ .Title }}</h3>
       </a>
-      <p class="case-study-card__description">{{ .Description }}</p>
+      <p class="case-study-card__description" itemprop="description">{{ .Description }}</p>
     </div>
   </div>
   
@@ -17,14 +17,15 @@
       <div class="case-study-card__image">
         <img 
           src="{{ .Params.image }}" 
-          alt="{{ .Params.image_alt | default .Title }}"
+          alt="{{ .Params.image_alt | default (printf "Screenshot of %s project" .Title) }}"
           loading="lazy"
           class="case-study-card__img"
+          itemprop="image"
         >
       </div>
       {{ else }}
-      <div class="case-study-card__placeholder">
-        <i class="fas fa-image"></i>
+      <div class="case-study-card__placeholder" aria-hidden="true">
+        <i class="fas fa-image" aria-label="No image available"></i>
       </div>
       {{ end }}
     </a>
