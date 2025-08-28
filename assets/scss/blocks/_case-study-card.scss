@@ -1,124 +1,132 @@
-// Case Study Card Component - Separate Containers Layout
+// Case Study Card Component - Best Practices Implementation
 .case-study-card {
-  width: 100%;
-  margin-bottom: 5rem;
+  // Layout
   display: flex;
   align-items: flex-start;
-  gap: 4rem;
-  max-width: 100%;
-  overflow: hidden;
+  gap: clamp(2rem, 4vw, 4rem);
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+  width: 100%;
   
-  // Left: Project Title and Description
+  // Content container
   &__content {
-    flex: 0 0 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex: 1 1 50%;
+    min-width: 0; // Prevents flex item from overflowing
   }
   
   &__text-container {
-    padding: 0;
+    // No padding needed - follows design system
   }
   
+  // Title link styling
   &__title-link {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    transition: color 0.2s ease;
     
     &:hover {
-      text-decoration: none;
-      color: inherit;
+      color: var(--color-brand);
     }
     
     &:focus-visible {
       outline: 2px solid var(--color-brand);
-      outline-offset: 2px;
+      outline-offset: 4px;
       border-radius: 4px;
     }
   }
   
+  // Title styling
   &__title {
     font-size: var(--step-2);
     font-weight: 600;
     color: var(--color-text);
     margin: 0 0 1.5rem 0;
     line-height: 1.2;
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease;
     
     &:hover {
-      color: var(--color-brand);
       transform: translateX(4px);
     }
   }
   
+  // Description styling
   &__description {
     color: var(--color-text-mod-1);
-    font-size: 1.375rem;
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
     line-height: 1.6;
     margin: 0;
   }
   
-  // Right: Visual
+  // Visual container
   &__visual {
     flex: 0 0 50%;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    max-width: 50%;
-    overflow: hidden;
+    min-width: 0; // Prevents flex item from overflowing
   }
   
+  // Image link container
   &__image-link {
+    display: block;
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 100%;
-    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    overflow: hidden; // Contains the image border radius
     
     &:hover {
-      text-decoration: none;
-      color: inherit;
       transform: translateY(-4px);
     }
     
     &:focus-visible {
       outline: 2px solid var(--color-brand);
-      outline-offset: 2px;
+      outline-offset: 4px;
       border-radius: 12px;
     }
   }
   
+  // Image container
   &__image {
+    position: relative;
     width: 100%;
-    height: 320px;
+    height: clamp(240px, 40vh, 320px);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    max-width: 100%;
+    transition: box-shadow 0.3s ease;
     
+    // Enhanced shadow on hover
+    .case-study-card__image-link:hover & {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    // Image styling
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      max-width: 100%;
+      object-position: center;
+      display: block; // Removes inline spacing
     }
   }
   
+  // Placeholder styling
   &__placeholder {
     width: 100%;
-    height: 320px;
+    height: clamp(240px, 40vh, 320px);
     border-radius: 12px;
     background: var(--color-bg-mod-2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-text-mod-2);
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    max-width: 100%;
+    transition: box-shadow 0.3s ease;
+    
+    // Enhanced shadow on hover
+    .case-study-card__image-link:hover & {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
@@ -126,17 +134,14 @@
 .portfolio-container {
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .portfolio-grid {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: clamp(3rem, 5vw, 5rem);
   margin-top: 3rem;
   width: 100%;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 // Accessibility: Reduced motion support
@@ -147,20 +152,16 @@
   }
 }
 
-// Responsive adjustments
+// Responsive design - Mobile first approach
 @media (max-width: 768px) {
   .case-study-card {
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     
     &__content {
       flex: none;
       width: 100%;
-    }
-    
-    &__text-container {
-      padding: 0;
     }
     
     &__title {
@@ -172,20 +173,15 @@
     }
     
     &__description {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
     
     &__visual {
       flex: none;
       width: 100%;
-      max-width: 100%;
-      justify-content: stretch;
     }
     
     &__image-link {
-      width: 100%;
-      max-width: 100%;
-      
       &:hover {
         transform: translateY(-2px);
       }
@@ -193,21 +189,20 @@
     
     &__image,
     &__placeholder {
-      width: 100%;
-      height: 240px;
-      max-width: 100%;
+      height: 200px;
     }
   }
   
   .portfolio-grid {
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 
-// Tablet breakpoint for better responsive design
-@media (max-width: 1024px) and (min-width: 769px) {
+// Tablet breakpoint
+@media (min-width: 769px) and (max-width: 1024px) {
   .case-study-card {
     gap: 2rem;
+    margin-bottom: 4rem;
     
     &__title {
       font-size: var(--step-2);
@@ -227,5 +222,9 @@
         transform: translateY(-3px);
       }
     }
+  }
+  
+  .portfolio-grid {
+    gap: 4rem;
   }
 }
