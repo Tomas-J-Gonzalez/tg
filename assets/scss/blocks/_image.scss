@@ -5,7 +5,7 @@ Image
 @include breakpoint(sm) {
 .Image {
     &[data-layout='pull-right'] {
-      width: 55%; 
+      width: 40%; 
       float: right; 
       margin-left: 48px; 
       margin-bottom: 32px; 
