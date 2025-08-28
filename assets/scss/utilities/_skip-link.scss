@@ -1,23 +1,31 @@
 /*
 Skip-link
+Accessibility: Skip links for keyboard navigation
 */
 
-.skip-link:not(:focus) {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
+.skip-link {
+  background: var(--color-brand);
+  color: var(--color-bg);
+  font-weight: 600;
+  left: 50%;
+  padding: 0.5rem 1rem;
   position: absolute;
-  width: 1px;
-  white-space: nowrap;
+  text-decoration: none;
+  top: -100px;
+  transform: translateX(-50%);
+  transition: top 0.3s ease;
+  z-index: 9999;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skip-link:focus {
-  background-color: var(--color-bg);
-  position: absolute;
-  z-index: 2;
   top: 1rem;
-  right: 1rem;
+  outline: 2px solid var(--color-bg);
+  outline-offset: 2px;
+}
+
+.skip-link:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
 }

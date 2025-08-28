@@ -1,5 +1,5 @@
-<section class="region flow" id="signup">
-  <h2>
+<section class="region flow" id="signup" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading">
     {{ with .Params.signup_title }}
       {{ . }}
     {{ else }}
@@ -14,16 +14,16 @@
     {{ end }}
   </p>
 
-  <form class="Subscribe switcher validate" data-layout="33x3" action="{{ with .Params.signup_listURL }}{{ . }}{{ else }}{{ .Site.Data.settings.signup.list_url }}{{ end }}" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+  <form class="Subscribe switcher validate" data-layout="33x3" action="{{ with .Params.signup_listURL }}{{ . }}{{ else }}{{ .Site.Data.settings.signup.list_url }}{{ end }}" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate aria-labelledby="newsletter-heading">
       
     <div>
-      <label for="name">First Name</label>
-      <input id="name" name="NAME" placeholder="e.g. Tomás" type="text">
+      <label for="name">First Name <span aria-label="required" class="sr-only">(required)</span></label>
+      <input id="name" name="NAME" placeholder="e.g. Tomás" type="text" aria-required="true" autocomplete="given-name">
     </div>
 
     <div>
-      <label for="email">Email Address</label>
-      <input id="email" name="EMAIL" placeholder="e.g. tomas@gmail.com" type="email">
+      <label for="email">Email Address <span aria-label="required" class="sr-only">(required)</span></label>
+      <input id="email" name="EMAIL" placeholder="e.g. tomas@gmail.com" type="email" aria-required="true" autocomplete="email">
     </div>
     <div>
     

@@ -27,6 +27,8 @@
     
     &:hover {
       text-decoration: underline;
+      background-color: transparent !important;
+      color: inherit !important;
     }
     
     &:focus-visible {

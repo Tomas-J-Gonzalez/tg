@@ -1,18 +1,18 @@
 {{ $project := . }}
-<article class="case-study-card" itemscope itemtype="https://schema.org/CreativeWork">
+<article class="case-study-card" itemscope itemtype="https://schema.org/CreativeWork" aria-labelledby="project-{{ .File.UniqueID }}-title">
   <!-- Left: Project Title and Description -->
   <div class="case-study-card__content">
     <div class="case-study-card__text-container">
-      <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-label="View {{ .Title }} case study">
-        <h3 class="case-study-card__title" itemprop="name">{{ .Title }}</h3>
+      <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-describedby="project-{{ .File.UniqueID }}-description">
+        <h3 id="project-{{ .File.UniqueID }}-title" class="case-study-card__title" itemprop="name">{{ .Title }}</h3>
       </a>
-      <p class="case-study-card__description" itemprop="description">{{ .Description }}</p>
+      <p id="project-{{ .File.UniqueID }}-description" class="case-study-card__description" itemprop="description">{{ .Description }}</p>
     </div>
   </div>
   
   <!-- Right: Visual -->
   <div class="case-study-card__visual">
-    <a href="{{ .Permalink }}" class="case-study-card__image-link" aria-label="View {{ .Title }} case study">
+    <a href="{{ .Permalink }}" class="case-study-card__image-link" aria-describedby="project-{{ .File.UniqueID }}-title">
       {{ if .Params.image }}
       <div class="case-study-card__image">
         <img 
@@ -25,7 +25,8 @@
       </div>
       {{ else }}
       <div class="case-study-card__placeholder" aria-hidden="true">
-        <i class="fas fa-image" aria-label="No image available"></i>
+        <i class="fas fa-image" aria-hidden="true"></i>
+        <span class="sr-only">No image available for {{ .Title }}</span>
       </div>
       {{ end }}
     </a>
