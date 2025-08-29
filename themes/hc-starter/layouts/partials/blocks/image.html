@@ -1,9 +1,9 @@
-{{ if .src }}
+{{ if .Params.src }}
 <div class="Grid-7-6">
   <figure> 
-    <img class="Image" src="{{ .src }}" {{ if .alt }}alt="{{ .alt }}"{{ end }}> 
-    {{ if .caption }}
-      <figcaption class="mono"><small>{{ .caption }}</small></figcaption>
+    <img class="Image" src="{{ .Params.src }}" {{ if .Params.alt }}alt="{{ .Params.alt }}"{{ end }}> 
+    {{ if .Params.caption }}
+      <figcaption class="mono"><small>{{ .Params.caption }}</small></figcaption>
     {{ end }}
   </figure>
 </div>

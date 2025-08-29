@@ -4,7 +4,6 @@ date: 2021-11-18T00:00:00+00:00
 draft: false
 description: "Community gardening program for Hamilton refugee community"
 type: project
-layout: project
 blocks:
   - template: hero
     image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798882/tomas-master/img/group-sug_dhvobc.jpg"
