@@ -16,14 +16,13 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798881/tomas-master/img/textile-thumb_kgqj8f.jpg"
     alt: "Textile waste initiative workshop"
-  - template: content
+  - template: body-copy
+    heading: "Project Overview"
     content: |
-      ## Overview
-
       The Textile Waste Initiative is a community program designed to address the growing problem of textile waste and promote sustainable fashion practices within the community.
-
-      ## Key Objectives
-
+  - template: body-copy
+    heading: "Key Objectives"
+    content: |
       **General Objectives were defined as:**
 
       - Reduce textile waste in the community through education and practical workshops.
@@ -35,9 +34,9 @@ blocks:
       - Teach practical skills for repairing, upcycling, and repurposing clothing.
       - Create a community network for sharing and exchanging clothing items.
       - Develop sustainable fashion awareness and responsible consumption habits.
-
-      ## Program Details
-
+  - template: body-copy
+    heading: "Program Details"
+    content: |
       The initiative focuses on empowering community members with the knowledge and skills needed to make more sustainable fashion choices. Through a series of workshops and community events, participants learn about:
 
       - The environmental impact of textile production and waste
@@ -47,19 +46,18 @@ blocks:
   - template: video
     src: "https://res.cloudinary.com/tomasgo/video/upload/v1709374363/tomas-master/videos/Textile_Waste_Initiative_Program_czwuc0.mp4"
     caption: "Program recap"
-  - template: content
+  - template: body-copy
+    heading: "Community Impact"
     content: |
-      ## Community Impact
-
       The program has successfully engaged community members in sustainable fashion practices, leading to:
 
       - Increased awareness of textile waste issues
       - Development of practical skills for clothing repair and upcycling
       - Formation of community networks for clothing exchange
       - Reduction in textile waste through education and practical application
-
-      ## Future Goals
-
+  - template: body-copy
+    heading: "Future Goals"
+    content: |
       The initiative aims to expand its reach and continue promoting sustainable fashion practices throughout the community, with plans to:
 
       - Develop additional workshops and educational materials

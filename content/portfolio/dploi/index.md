@@ -16,22 +16,20 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710825018/tomas-master/img/Hire_with_esse_post_xkhxil.jpg"
     alt: "Mobile story of Dploi"
-  - template: content
+  - template: body-copy
+    heading: "Project Overview"
     content: |
-      ## Project Overview
-
       Operational system for recruiters to source talent, filter quality applicants, and hire successful applicants. From initial application, to recruitment pipeline, to interview, to assisting with immigration process, and finally to onboarding.
-
-      ## The Problem
-
+  - template: body-copy
+    heading: "The Problem"
+    content: |
       Existing recruitment platforms lack industry-specific features, leading to fragmented tools and inefficient processes for recruiters in New Zealand and Australia.
   - template: video
     src: "https://res.cloudinary.com/tomasgo/video/upload/v1710736453/tomas-master/videos/Dploi_ygh0yb.mp4"
     caption: "Dploi Brand Video"
-  - template: content
+  - template: body-copy
+    heading: "Key Objectives"
     content: |
-      ## Key Objectives
-
       1. Create a seamless user experience for recruiters in the Healthcare, Infrastructure, and IT industries.
       2. Design a unified platform that streamlines the recruitment process from sourcing talent to onboarding.
       3. Incorporate industry-specific features tailored to the needs of New Zealand and Australia markets.
@@ -40,14 +38,13 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710733914/tomas-master/img/dploi_parachute_ymipaz.jpg"
     alt: "Dploi parachute logo design"
     caption: "Designed the 'Parachute' icon on a 80x80 grid, creating a more solid and structured mark."
-  - template: content
+  - template: body-copy
+    heading: "Initial Brief"
     content: |
-      ## Initial Brief
-
       To design a user-centric platform that simplifies and enhances the recruitment and hiring processes for recruiters in the Healthcare, Infrastructure, and IT industries in New Zealand and Australia.
-
-      ## Solution
-
+  - template: body-copy
+    heading: "Solution"
+    content: |
       Dploi Platform offers a comprehensive solution for recruiters by providing a unified platform with industry-specific features. It includes:
 
       - Intuitive user interface for easy navigation and efficient workflow.
@@ -55,8 +52,10 @@ blocks:
       - Integration with immigration processes to assist with hiring from outbound countries.
       - Extensive candidate database with profiles from South America and the Philippines.
       - Customisable recruitment pipelines to streamline the hiring process.
-
-      ## Branding
+  - template: body-copy
+    heading: "Branding"
+    content: |
+      Designed the 'Parachute' icon on a 80x80 grid, creating a more solid and structured mark. Developed comprehensive brand identity including color palette, typography, and visual elements that reflect the platform's values and target audience.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710734797/tomas-master/img/dploi_color_gopcyo.jpg"
     alt: "Dploi brand colors"
@@ -77,11 +76,12 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710735214/tomas-master/img/dploi-industries_d8w7wr.jpg"
     alt: "Dploi industries"
     caption: "Dploi target industries"
-  - template: content
+  - template: body-copy
+    heading: "How Might We?"
     content: |
-      ## How Might We?
-
       I framed up a 'HMW' statement to help clarify the primary goal, taking 'How', 'Who', and 'What' into consideration.
+
+      **How might we enhance the efficiency of day-to-day operations for labor hire companies, through an intuitive workforce management web-app to improve communication between clients, employees and internal team?**
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710735211/tomas-master/img/dploi_hmw_zyvscp.jpg"
     alt: "Dploi How Might We statement"
@@ -94,19 +94,17 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710827526/tomas-master/img/dploi_landing_page_mockup_ceeqqw.jpg"
     alt: "Dploi landing page mockup"
     caption: "Dploi landing page mockup"
-  - template: content
+  - template: body-copy
+    heading: "Proto-personas"
     content: |
-      ## Proto-personas
-
       The creation of a proto-persona for the project was driven by the need to establish a foundational understanding of our potential users and their anticipated needs. It's important to note that this persona is a prototype, formed primarily from general assumptions rather than empirical data. This proto-persona is not conclusive and requires validation through further research. While it offers a valuable framework for understanding our users, its assumptions need to be verified and refined through further research methods such as interviews, surveys, or observational studies.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710809549/tomas-master/img/dploi_persona_obnbob.jpg"
     alt: "Dploi proto-persona"
     caption: "Dploi proto-persona"
-  - template: content
+  - template: body-copy
+    heading: "Assumption Mapping"
     content: |
-      ## Assumption Mapping
-
       Using IDEO's Desirability, Viability, Feasibility [Framework](https://makeiterate.com/ideos-desirability-viability-feasibility-framework-a-practical-guide/) (DVF) I created some diagrams using Miro to complete an assumption map. The three main question areas were: 1. Do they want this (Yellow), 2. Can we do this? (Blue), and 3. Should we do this? (Green). Of course the assumption map will need to be validated, we don't want to base our design decisions on assumptions.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710826198/tomas-master/img/dploi_assumption_q_s_hs3xgt.jpg"
@@ -116,10 +114,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710824636/tomas-master/img/dploi_assumption-mapping_iri5ly.jpg"
     alt: "Dploi assumption mapping"
     caption: "Dploi assumption mapping"
-  - template: content
+  - template: body-copy
+    heading: "Designs"
     content: |
-      ## Designs
-
       A few visual design snapshots of the Dploi platform. **I soon will be adding more design photos to this case study.**
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710819775/tomas-master/img/dploi_dash_sketch_jahu4u.jpg"
@@ -137,10 +134,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1713087420/tomas-master/img/dploi_login-mockups_i8hqqg.jpg"
     alt: "Dploi login design"
     caption: "Dploi login design"
-  - template: content
+  - template: body-copy
+    heading: "Process"
     content: |
-      ## Process
-
       ## Research & Strategy
       Conducted comprehensive research into recruitment industry needs, user behavior patterns, and market requirements.
 
@@ -152,25 +148,25 @@ blocks:
 
       ## Prototyping & Testing
       Created wireframes and prototypes focusing on user flow optimization and interface clarity.
-
-      ## Deliverables
-
+  - template: body-copy
+    heading: "Deliverables"
+    content: |
       1. Brand Concept and Style Guide
       2. UI Designs for Dploi Platform
       3. Interactive Prototypes
       4. User Flows and Wireframes
-
-      ## Key Learnings
-
+  - template: body-copy
+    heading: "Key Learnings"
+    content: |
       1. Importance of thorough research in understanding user needs and pain points.
       2. Iterative design process leads to better outcomes and user satisfaction.
       3. Collaboration with stakeholders and continuous feedback loops are essential for project success.
       4. Flexibility and adaptability to accommodate changing requirements and market dynamics.
       5. Recognising that the project was primarily visual and UI design-based highlights the significance of crafting an appealing and user-friendly interface to enhance user engagement and satisfaction.
       6. Managing a project within a small time frame, particularly when building a concept for investors, underscores the need for efficient project management, prioritisation, and clear communication to meet deadlines and deliver high-quality results.
-
-      ## Technologies Used
-
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
       - **Design Tools:** Figma, Miro, Illustrator
       - **Research Methods:** User interviews, market research, competitor analysis
       - **Prototyping:** Interactive prototypes, user flows
