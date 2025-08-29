@@ -4,48 +4,20 @@ Creator: Tomás González
 Site: Tomás González
 Url: https://tomasjgonzalez.com/
 Contact: admin@tomasjgonzalez.com
-Social: @Tomas-J-Gonzalez
-Location: London, UK
+Location: Auckland, New Zealand
 
 /* THANKS */
 
-Name: Rachel Andrew 
-Twitter: @rachelandrew
-Url: https://rachelandrew.co.uk/
-
-Michelle Barker - @MicheBarks
-https://css-irl.info/
+Harry Cresswell
+https://harrycresswell.com/
 
 Andy Bell - @andybelldesign
-https://andy-bell.design/
 
-Frank Chimero - @frank_chimero
-https://frankchimero.com/
 
-Chris Ferdinandi - @ChrisFerdinandi
-https://gomakethings.com/
-
-Fershad Irani - @fershad
-https://fershad.com/
-
-Jeremy Keith - @adactio
-https://adactio.com/
-
-Regis Philibert - @regisphilibert
-https://www.regisphilibert.com/
-
-Haydon Pickering - @heydonworks
-https://heydonworks.com
-
-Jen Simmons - @jensimmons
-https://jensimmons.com/
-
-Sara Soueidan - @sarasoueidan
-https://www.sarasoueidan.com/
 
 /* SITE */
 
-Last update: 2022/06/01
+Last update: 2025/09/01
 Standards: HTML5, CSS3
 Components: Autoprefixer, Postcss-cli, NPM scripts
 Software: Hugo, VSCode, Obsidian

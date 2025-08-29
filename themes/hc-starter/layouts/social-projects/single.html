@@ -12,12 +12,6 @@
             <span class="label">Date:</span>
             {{ .Date.Format "Jan 2 2006" }}
           </time>
-          {{ if .Params.metadata.type }}
-            <div class="meta-item">
-              <span class="label">Type:</span>
-              {{ .Params.metadata.type }}
-            </div>
-          {{ end }}
           {{ partial "post/topics.html" . }}
         </div>
       </header>

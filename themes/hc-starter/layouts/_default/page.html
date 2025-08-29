@@ -1,12 +1,14 @@
 {{ define "main" }}
 
-  <article>
-    <header class="Hero region flow">
+  <article{{ if eq .Type "project" }} class="project"{{ end }}>
+    <header{{ if eq .Type "project" }} class="project__header"{{ end }} class="Hero region flow">
       <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
+      {{ if and (eq .Type "project") .Params.description }}
+        <p class="project-description">{{ .Params.description }}</p>
+      {{ else if .Params.subtitle }}
         <p class="font-step-1">{{ . }}</p>
       {{ end }}
-      <div> 
+      <div{{ if eq .Type "project" }} class="project-meta cluster"{{ end }}> 
         {{ $published := .PublishDate | time.Format ":date_medium" }}
         {{ $modified := .Lastmod | time.Format ":date_medium" }}
         {{ if ne $published $modified }}
@@ -15,7 +17,7 @@
       </div>
     </header>
 
-    <section class="e-content flow">
+    <section{{ if eq .Type "project" }} class="project__content"{{ end }} class="e-content flow">
       {{ if .Params.blocks }}
         {{- range .Params.blocks -}}
             {{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url ) }}{{- end -}}
@@ -25,6 +27,8 @@
             {{- if eq .template "image-grid-four" -}}{{ partial "blocks/img-grid-four" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url) }}{{- end -}} 
             {{- if eq .template "quote" -}}{{ partial "blocks/quote" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url) }}{{- end -}} 
             {{- if eq .template "link-big" -}}{{ partial "blocks/link-big" (dict "Params" .) }}{{- end -}} 
+            {{- if eq .template "video" -}}{{ partial "blocks/video" (dict "Params" .) }}{{- end -}} 
+            {{- if eq .template "image" -}}{{ partial "blocks/image" (dict "Params" .) }}{{- end -}} 
             {{- if eq .template "iframe-full" -}}{{ partial "blocks/iframe-full" (dict "Params" .) }}{{- end -}} 
             {{- if eq .template "iframe-grid-one" -}}{{ partial "blocks/iframe-grid-one" (dict "Params" .) }}{{- end -}} 
             {{- if eq .template "iframe-grid-two" -}}{{ partial "blocks/iframe-grid-two" (dict "Params" .) }}{{- end -}} 

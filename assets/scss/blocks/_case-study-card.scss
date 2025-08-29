@@ -94,7 +94,7 @@
   &__image {
     position: relative;
     width: 100%;
-    height: clamp(240px, 40vh, 320px);
+    height: 520px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@
   // Placeholder styling
   &__placeholder {
     width: 100%;
-    height: clamp(240px, 40vh, 320px);
+    height: 520px;
     border-radius: 12px;
     background: var(--color-bg-mod-2);
     display: flex;
@@ -191,7 +191,7 @@
     
     &__image,
     &__placeholder {
-      height: 200px;
+      height: 520px;
     }
   }
   
@@ -216,7 +216,7 @@
     
     &__image,
     &__placeholder {
-      height: 280px;
+      height: 520px;
     }
     
     &__image-link {
