@@ -1403,6 +1403,10 @@ Ratio
   padding-bottom: calc(564 / 395 * 100%);
   /* 5:7 Aspect Ratio */ }
 
+.aspect-ratio-headshot {
+  padding-bottom: 120%;
+  /* 5:6 Aspect Ratio - Perfect for headshots */ }
+
 .aspect-ratio-full {
   padding-top: calc(276 / 414 * 100%);
   object-fit: cover; }
