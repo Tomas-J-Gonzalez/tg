@@ -15,7 +15,7 @@ tools: ["Figma", "Adobe Creative Suite", "User Research"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=675&fit=crop&crop=center"
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1710825018/tomas-master/img/Hire_with_esse_post_xkhxil.jpg"
     image_alt: "Dploi Instagram Story"
     image_ratio: "16-9"
   - template: body-copy

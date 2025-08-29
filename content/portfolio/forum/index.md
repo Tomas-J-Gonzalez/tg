@@ -15,7 +15,7 @@ tools: ["Figma", "Adobe Creative Suite", "Community Design"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&h=675&fit=crop&crop=center"
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798730/tomas-master/img/forum-thumb_r8xvvx.jpg"
     image_alt: "Forum Networking project"
     image_ratio: "16-9"
   - template: body-copy
