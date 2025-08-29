@@ -3,67 +3,95 @@ title: "Dploi"
 date: 2024-01-15T00:00:00+00:00
 draft: false
 type: project
-description: "UX/UI Visual Research project"
+description: "Effortless Recruitment — From Source to Hire. As the sole UX designer on the team I was charged with researching and designing the brand concept and UI for Dploi Platform (AUS/NZ)."
 slug: "dploi"
-topics: ["UX/UI", "Visual Research", "Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/dploi_instagram.jpg"
-image_alt: "Dploi Instagram Story"
+topics: ["Recruitment", "Platform Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1710825018/tomas-master/img/Hire_with_esse_post_xkhxil.jpg"
+image_alt: "Mobile story of Dploi"
 client: "Dploi"
-role: "UX/UI Designer"
-duration: "4 months"
-tools: ["Figma", "Adobe Creative Suite", "User Research"]
+role: "UX/UI Designer, Brand Strategist & Researcher"
+duration: "2 months"
+tools: ["Figma", "Miro", "Illustrator"]
 live_url: "#"
 blocks:
   - template: hero
     image: "https://res.cloudinary.com/tomasgo/image/upload/v1710825018/tomas-master/img/Hire_with_esse_post_xkhxil.jpg"
-    image_alt: "Dploi Instagram Story"
+    image_alt: "Mobile story of Dploi"
     image_ratio: "16-9"
   - template: body-copy
     heading: "Project Overview"
     content: |
-      <p>A comprehensive UX/UI visual research project focused on creating engaging and innovative interface designs. This project involved extensive visual research, user testing, and the development of modern design solutions for digital platforms.</p>
+      Operational system for recruiters to source talent, filter quality applicants, and hire successful applicants. From initial application, to recruitment pipeline, to interview, to assisting with immigration process, and finally to onboarding.
   - template: body-copy
-    heading: "The Challenge"
+    heading: "The Problem"
     content: |
-      <p>Design and develop a visually compelling and user-friendly interface that enhances user experience while maintaining modern design standards and ensuring excellent usability across different digital platforms.</p>
+      Existing recruitment platforms lack industry-specific features, leading to fragmented tools and inefficient processes for recruiters in New Zealand and Australia.
   - template: body-copy
-    heading: "The Solution"
+    heading: "Key Objectives"
     content: |
-      <p>Implemented a comprehensive visual research methodology that combines user-centered design principles with innovative visual aesthetics. The solution includes a modern design system, intuitive user interactions, and optimized visual experiences.</p>
+      1. Create a seamless user experience for recruiters in the Healthcare, Infrastructure, and IT industries.
+      2. Design a unified platform that streamlines the recruitment process from sourcing talent to onboarding.
+      3. Incorporate industry-specific features tailored to the needs of New Zealand and Australia markets.
+      4. Expand the candidate pool by offering a large database of applicants from outbound countries such as South America and the Philippines.
   - template: body-copy
-    heading: "Key Features"
+    heading: "Initial Brief"
     content: |
-      <ul>
-        <li><strong>Modern Design System:</strong> Consistent and scalable visual components</li>
-        <li><strong>User Experience Focus:</strong> Intuitive navigation and interaction patterns</li>
-        <li><strong>Visual Innovation:</strong> Creative and contemporary design solutions</li>
-        <li><strong>Platform Optimization:</strong> Tailored experiences for different digital environments</li>
-      </ul>
+      To design a user-centric platform that simplifies and enhances the recruitment and hiring processes for recruiters in the Healthcare, Infrastructure, and IT industries in New Zealand and Australia.
   - template: body-copy
-    heading: "Process"
+    heading: "Solution"
     content: |
-      <h3>Visual Research & Analysis</h3>
-      <p>Conducted comprehensive research into current design trends, user behavior patterns, and visual preferences to inform the design strategy.</p>
+      Dploi Platform offers a comprehensive solution for recruiters by providing a unified platform with industry-specific features. It includes:
       
-      <h3>Design System Development</h3>
-      <p>Created a modern design system with consistent visual language, component libraries, and interaction patterns.</p>
-      
-      <h3>Prototyping & User Testing</h3>
-      <p>Developed interactive prototypes and conducted extensive user testing to validate design decisions and optimize user experience.</p>
-      
-      <h3>Implementation & Refinement</h3>
-      <p>Collaborated with development teams to ensure design fidelity and made iterative improvements based on user feedback and performance metrics.</p>
+      - Intuitive user interface for easy navigation and efficient workflow.
+      - Advanced search and filtering options to source quality candidates.
+      - Integration with immigration processes to assist with hiring from outbound countries.
+      - Extensive candidate database with profiles from South America and the Philippines.
+      - Customisable recruitment pipelines to streamline the hiring process.
   - template: body-copy
-    heading: "Results"
+    heading: "Branding"
     content: |
-      <p>Successfully delivered a modern and visually appealing interface that significantly improved user engagement and satisfaction, with measurable improvements in user experience metrics and platform performance.</p>
+      Designed the 'Parachute' icon on a 80x80 grid, creating a more solid and structured mark. Developed comprehensive brand identity including color palette, typography, and visual elements that reflect the platform's values and target audience.
+  - template: body-copy
+    heading: "How Might We?"
+    content: |
+      I framed up a 'HMW' statement to help clarify the primary goal, taking 'How', 'Who', and 'What' into consideration.
+      
+      **How might we enhance the efficiency of day-to-day operations for labor hire companies, through an intuitive workforce management web-app to improve communication between clients, employees and internal team?**
+  - template: body-copy
+    heading: "Design Process"
+    content: |
+      ## Research & Strategy
+      Conducted comprehensive research into recruitment industry needs, user behavior patterns, and market requirements.
+      
+      ## Brand Development
+      Created unique brand identity including logo design, color palette, typography, and visual elements.
+      
+      ## UI Design System
+      Developed comprehensive design system with consistent components, patterns, and guidelines.
+      
+      ## Prototyping & Testing
+      Created wireframes and prototypes focusing on user flow optimization and interface clarity.
+  - template: body-copy
+    heading: "Deliverables"
+    content: |
+      1. Brand Concept and Style Guide
+      2. UI Designs for Dploi Platform
+      3. Interactive Prototypes
+      4. User Flows and Wireframes
+  - template: body-copy
+    heading: "Key Learnings"
+    content: |
+      - Importance of thorough research in understanding user needs and pain points.
+      - Iterative design process leads to better outcomes and user satisfaction.
+      - Collaboration with stakeholders and continuous feedback loops are essential for project success.
+      - Flexibility and adaptability to accommodate changing requirements and market dynamics.
+      - Recognising that the project was primarily visual and UI design-based highlights the significance of crafting an appealing and user-friendly interface to enhance user engagement and satisfaction.
+      - Managing a project within a small time frame, particularly when building a concept for investors, underscores the need for efficient project management, prioritisation, and clear communication to meet deadlines and deliver high-quality results.
   - template: body-copy
     heading: "Technologies Used"
     content: |
-      <ul>
-        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
-        <li><strong>Research Methods:</strong> User interviews, usability testing, visual preference studies</li>
-        <li><strong>Prototyping:</strong> Interactive prototypes and user flow mapping</li>
-        <li><strong>Collaboration:</strong> Design system development and cross-functional team coordination</li>
-      </ul>
+      - **Design Tools:** Figma, Miro, Illustrator
+      - **Research Methods:** User interviews, market research, competitor analysis
+      - **Prototyping:** Interactive prototypes, user flows
+      - **Brand Strategy:** Visual identity, design systems
 ---

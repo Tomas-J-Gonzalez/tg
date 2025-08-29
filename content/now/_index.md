@@ -1,8 +1,18 @@
-+++
-title = "Now"
-date = "2017-05-02T22:05:42+01:00"
-description = "Welcome to my [now page](https://nownownow.com/about), inspired by Derek Sivers and the [IndieWeb](https://indieweb.org/). Here you can find out what I’m focusing on right now, or at least what I *was* up to at certain moments in my life. "
-slug = "now"
-+++
+---
+title: "Now"
+date: 2024-01-15T00:00:00+00:00
+draft: false
+description: "What I'm doing now"
+---
 
-Welcome to my [now page](https://nownownow.com/about), inspired by Derek Sivers, the [IndieWeb](https://indieweb.org/) and [the evolution of /now pages](/writing/evolution-of-now-pages/). Here you can find out what I’m focusing on right now, or what I’ve been up to recently. 
+# Now
+
+This is where I share what I'm currently working on, thinking about, and focusing on.
+
+## Latest Updates
+
+- [Draft Now Page - Template](/now/draft-now/) (Draft)
+
+---
+
+*This page is inspired by [Derek Sivers' now page](https://sivers.org/now).*

@@ -1,8 +1,8 @@
-<section class="grid region" data-layout="50-50">
-  <div>
+<section class="content-section">
+  {{ if .Params.heading }}
     <h2>{{ .Params.heading | markdownify }}</h2>
-  </div>
+  {{ end }}
   <div class="flow">
-  {{ .Params.content | safeHTML }}
+    {{ .Params.content | markdownify }}
   </div>
 </section>

@@ -21,49 +21,45 @@ blocks:
   - template: body-copy
     heading: "Project Overview"
     content: |
-      <p>An upcoming networking platform designed specifically for charities and community organizations. This project aims to create a digital space that facilitates connections, collaboration, and resource sharing among nonprofit organizations and community groups.</p>
+      An upcoming networking platform designed specifically for charities and community organizations. This project aims to create a digital space that facilitates connections, collaboration, and resource sharing among nonprofit organizations and community groups.
   - template: body-copy
     heading: "The Challenge"
     content: |
-      <p>Design a user-friendly networking platform that enables charities and community organizations to connect, collaborate, and share resources effectively while maintaining a professional and trustworthy environment for nonprofit collaboration.</p>
+      Design a user-friendly networking platform that enables charities and community organizations to connect, collaborate, and share resources effectively while maintaining a professional and trustworthy environment for nonprofit collaboration.
   - template: body-copy
     heading: "The Solution"
     content: |
-      <p>Developing a comprehensive networking platform that combines community-building features with professional networking tools. The solution will include intuitive user interfaces, secure communication channels, and resource sharing capabilities tailored specifically for the nonprofit sector.</p>
+      Developing a comprehensive networking platform that combines community-building features with professional networking tools. The solution will include intuitive user interfaces, secure communication channels, and resource sharing capabilities tailored specifically for the nonprofit sector.
   - template: body-copy
     heading: "Key Features"
     content: |
-      <ul>
-        <li><strong>Community Building:</strong> Tools for creating and managing nonprofit communities</li>
-        <li><strong>Resource Sharing:</strong> Platform for sharing knowledge, tools, and best practices</li>
-        <li><strong>Professional Networking:</strong> Connect with other organizations and professionals</li>
-        <li><strong>Collaboration Tools:</strong> Features to facilitate partnerships and joint initiatives</li>
-      </ul>
+      - **Community Building:** Tools for creating and managing nonprofit communities
+      - **Resource Sharing:** Platform for sharing knowledge, tools, and best practices
+      - **Professional Networking:** Connect with other organizations and professionals
+      - **Collaboration Tools:** Features to facilitate partnerships and joint initiatives
   - template: body-copy
     heading: "Process"
     content: |
-      <h3>Research & Discovery</h3>
-      <p>Conducting extensive research into the needs of charities and community organizations to understand their networking and collaboration requirements.</p>
+      ## Research & Discovery
+      Conducting extensive research into the needs of charities and community organizations to understand their networking and collaboration requirements.
       
-      <h3>Design & Prototyping</h3>
-      <p>Creating user-centered design solutions that address the unique challenges and opportunities in the nonprofit networking space.</p>
+      ## Design & Prototyping
+      Creating user-centered design solutions that address the unique challenges and opportunities in the nonprofit networking space.
       
-      <h3>Development & Testing</h3>
-      <p>Building and testing the platform with input from nonprofit organizations to ensure it meets their specific needs and requirements.</p>
+      ## Development & Testing
+      Building and testing the platform with input from nonprofit organizations to ensure it meets their specific needs and requirements.
       
-      <h3>Launch & Community Building</h3>
-      <p>Launching the platform and supporting the growth of the nonprofit networking community.</p>
+      ## Launch & Community Building
+      Launching the platform and supporting the growth of the nonprofit networking community.
   - template: body-copy
     heading: "Results"
     content: |
-      <p>This project is currently in development and will provide a valuable platform for charities and community organizations to connect, collaborate, and share resources effectively.</p>
+      This project is currently in development and will provide a valuable platform for charities and community organizations to connect, collaborate, and share resources effectively.
   - template: body-copy
     heading: "Technologies Used"
     content: |
-      <ul>
-        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
-        <li><strong>Platform Development:</strong> User research, community design, networking features</li>
-        <li><strong>Nonprofit Focus:</strong> Understanding of charity sector needs and requirements</li>
-        <li><strong>Collaboration:</strong> Cross-functional team coordination and stakeholder engagement</li>
-      </ul>
+      - **Design Tools:** Figma, Adobe Creative Suite
+      - **Platform Development:** User research, community design, networking features
+      - **Nonprofit Focus:** Understanding of charity sector needs and requirements
+      - **Collaboration:** Cross-functional team coordination and stakeholder engagement
 ---
