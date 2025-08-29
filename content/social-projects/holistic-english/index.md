@@ -4,7 +4,6 @@ date: 2024-01-15T00:00:00+00:00
 draft: false
 description: "Alternative language learning for Latin American immigrants"
 type: project
-layout: project
 blocks:
   - template: hero
     image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798885/tomas-master/img/hol_eng-thumb_ftgtp7.jpg"

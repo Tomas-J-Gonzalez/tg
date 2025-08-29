@@ -4,7 +4,6 @@ date: 2021-06-18T00:00:00+00:00
 draft: false
 description: "Empowering migrant women through textile crafts and waste reduction"
 type: project
-layout: project
 blocks:
   - template: hero
     image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798887/tomas-master/img/textile-thumb_oyrnyx.jpg"
