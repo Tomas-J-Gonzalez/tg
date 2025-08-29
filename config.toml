@@ -30,7 +30,7 @@ name = "Tomás González"
 email = "admin@tomasjgonzalez.com"
 github = "https://github.com/Tomas-J-Gonzalez"
 linkedin = "https://www.linkedin.com/in/tomasjgo/"
-photo = "v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
+photo = "https://res.cloudinary.com/tomasgo/image/upload/v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
 
 [taxonomies]
 topic = "topics"

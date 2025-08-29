@@ -6,7 +6,7 @@ type: project
 description: "UX/UI Research project for work program optimization"
 slug: "evolution-work-program"
 topics: ["UX Research", "Work Programs", "Process Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
 image_alt: "Desktop mockup of BH Connect work program interface"
 client: "BH Connect"
 role: "UX Researcher"
