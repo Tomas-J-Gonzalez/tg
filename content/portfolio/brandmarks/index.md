@@ -1,59 +1,69 @@
 ---
 title: "Brandmarks"
-date: 2024-06-01T00:00:00+00:00
+date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "A collection of logos and brands I've worked on"
+type: project
+description: "Identity Logos collection"
 slug: "brandmarks"
-topics: ["Brand Identity", "Logo Design", "Visual Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
+topics: ["Identity", "Logos", "Brand Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/brandmarks_collection.jpg"
 image_alt: "A collection of logos and brands I've worked on"
-client: "Various Clients"
+client: "Various"
 role: "Brand Designer"
 duration: "Ongoing"
-tools: ["Adobe Illustrator", "Adobe Photoshop", "Figma"]
+tools: ["Adobe Creative Suite", "Logo Design", "Brand Identity"]
 live_url: "#"
+blocks:
+  - template: hero
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/brandmarks_collection.jpg"
+    image_alt: "A collection of logos and brands I've worked on"
+    image_ratio: "16-9"
+  - template: body-copy
+    heading: "Project Overview"
+    content: |
+      <p>A comprehensive collection of brand identity and logo design work showcasing various projects across different industries and sectors. This portfolio demonstrates expertise in creating distinctive visual identities that effectively communicate brand values and resonate with target audiences.</p>
+  - template: body-copy
+    heading: "The Challenge"
+    content: |
+      <p>Create unique and memorable brand identities that effectively communicate each client's values, mission, and personality while ensuring visual appeal and market differentiation across diverse industries and target audiences.</p>
+  - template: body-copy
+    heading: "The Solution"
+    content: |
+      <p>Developed a systematic approach to brand identity design that combines creative vision with strategic thinking. Each brandmark is crafted to be distinctive, scalable, and timeless while maintaining strong visual impact and brand recognition.</p>
+  - template: body-copy
+    heading: "Key Features"
+    content: |
+      <ul>
+        <li><strong>Unique Identity:</strong> Distinctive logos that stand out in their respective markets</li>
+        <li><strong>Strategic Design:</strong> Brand identities aligned with business objectives and target audiences</li>
+        <li><strong>Scalable Solutions:</strong> Logos that work effectively across different applications and sizes</li>
+        <li><strong>Timeless Appeal:</strong> Designs that remain relevant and effective over time</li>
+      </ul>
+  - template: body-copy
+    heading: "Process"
+    content: |
+      <h3>Brand Research & Strategy</h3>
+      <p>Conducted comprehensive research into each client's business, industry, competitors, and target audience to inform the brand identity strategy.</p>
+      
+      <h3>Concept Development</h3>
+      <p>Created multiple design concepts exploring different visual directions and approaches to represent the brand's unique characteristics.</p>
+      
+      <h3>Design Refinement</h3>
+      <p>Refined selected concepts through iterative design processes, focusing on visual impact, scalability, and brand alignment.</p>
+      
+      <h3>Brand Guidelines</h3>
+      <p>Developed comprehensive brand guidelines ensuring consistent application across all touchpoints and applications.</p>
+  - template: body-copy
+    heading: "Results"
+    content: |
+      <p>Successfully delivered distinctive brand identities that have helped clients establish strong market presence, improve brand recognition, and connect effectively with their target audiences across various industries.</p>
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      <ul>
+        <li><strong>Design Tools:</strong> Adobe Illustrator, Adobe Photoshop, Adobe Creative Suite</li>
+        <li><strong>Brand Strategy:</strong> Market research, competitor analysis, brand positioning</li>
+        <li><strong>Logo Design:</strong> Vector graphics, typography, color theory</li>
+        <li><strong>Brand Guidelines:</strong> Style guides, usage guidelines, brand standards</li>
+      </ul>
 ---
-
-## Project Overview
-
-A comprehensive collection of brand identity and logo design work, showcasing the development of distinctive visual identities that help brands establish their presence and connect with their target audiences.
-
-## The Challenge
-
-Create unique and memorable brand identities that effectively communicate each client's values, mission, and personality while ensuring visual appeal and market differentiation.
-
-## The Solution
-
-Developed a strategic approach to brand identity design that combines creative vision with market research and client collaboration. Each brandmark is crafted to be distinctive, scalable, and meaningful to the target audience.
-
-## Key Features
-
-- **Strategic Brand Development**: Research-driven approach to brand identity creation
-- **Visual Distinction**: Unique and memorable logo designs that stand out in the market
-- **Scalability**: Designs that work across various applications and sizes
-- **Brand Consistency**: Cohesive visual systems that maintain brand integrity
-
-## Process
-
-### Research & Discovery
-Conducted thorough research on client industries, target audiences, and competitive landscapes to inform design decisions.
-
-### Design & Development
-Created multiple design concepts and refined them through client collaboration and feedback.
-
-### Implementation & Guidelines
-Developed comprehensive brand guidelines to ensure consistent application across all touchpoints.
-
-### Launch & Support
-Provided ongoing support for brand implementation and evolution.
-
-## Results
-
-Successfully delivered distinctive brand identities that help clients establish strong market presence and connect with their audiences effectively.
-
-## Technologies Used
-
-- **Design**: Adobe Illustrator, Adobe Photoshop, Adobe Creative Suite
-- **Strategy**: Brand research, market analysis, competitive positioning
-- **Collaboration**: Client workshops, feedback sessions, brand guidelines
-- **Implementation**: Brand asset development, style guide creation

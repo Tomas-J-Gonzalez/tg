@@ -1,59 +1,69 @@
 ---
 title: "Karü"
-date: 2024-05-01T00:00:00+00:00
+date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "E-commerce platform for sustainable products"
+type: project
+description: "UI E-commerce Identity project"
 slug: "karu"
-topics: ["UI Design", "E-commerce", "UX Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
-image_alt: "Design mockups of Karu E-commerce store interface"
+topics: ["UI", "E-commerce", "Identity"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/karu_ecommerce.jpg"
+image_alt: "Design mockups of Karu E-commerce store"
 client: "Karü"
-role: "UI/UX Designer"
-duration: "6 months"
-tools: ["Figma", "Adobe Creative Suite", "Prototyping"]
+role: "UI Designer"
+duration: "7 months"
+tools: ["Figma", "Adobe Creative Suite", "E-commerce Design"]
 live_url: "#"
+blocks:
+  - template: hero
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/karu_ecommerce.jpg"
+    image_alt: "Design mockups of Karu E-commerce store"
+    image_ratio: "16-9"
+  - template: body-copy
+    heading: "Project Overview"
+    content: |
+      <p>A comprehensive UI design project for Karü, an e-commerce platform focused on creating a unique brand identity and exceptional user experience. This project involved designing the complete visual identity, user interface, and e-commerce experience.</p>
+  - template: body-copy
+    heading: "The Challenge"
+    content: |
+      <p>Create a distinctive brand identity and user interface for an e-commerce platform that stands out in a competitive market while providing an intuitive and engaging shopping experience for users.</p>
+  - template: body-copy
+    heading: "The Solution"
+    content: |
+      <p>Developed a comprehensive design system that combines unique brand identity with modern e-commerce UI patterns. The solution includes a cohesive visual language, intuitive product browsing experience, and optimized checkout flow.</p>
+  - template: body-copy
+    heading: "Key Features"
+    content: |
+      <ul>
+        <li><strong>Brand Identity:</strong> Unique visual language and brand positioning</li>
+        <li><strong>E-commerce UI:</strong> Optimized product browsing and shopping experience</li>
+        <li><strong>User Experience:</strong> Intuitive navigation and seamless checkout process</li>
+        <li><strong>Visual Design:</strong> Modern and appealing interface design</li>
+      </ul>
+  - template: body-copy
+    heading: "Process"
+    content: |
+      <h3>Brand Identity Development</h3>
+      <p>Created a unique brand identity including logo design, color palette, typography, and visual elements that reflect the brand's values and target audience.</p>
+      
+      <h3>UI Design System</h3>
+      <p>Developed a comprehensive design system with consistent components, patterns, and guidelines for the e-commerce platform.</p>
+      
+      <h3>E-commerce Experience Design</h3>
+      <p>Designed intuitive product browsing, search functionality, and checkout processes optimized for conversion and user satisfaction.</p>
+      
+      <h3>Implementation & Testing</h3>
+      <p>Collaborated with development teams to ensure design fidelity and conducted user testing to optimize the shopping experience.</p>
+  - template: body-copy
+    heading: "Results"
+    content: |
+      <p>Successfully delivered a distinctive brand identity and user interface that significantly improved user engagement and conversion rates, with positive feedback from both users and stakeholders.</p>
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      <ul>
+        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
+        <li><strong>Brand Design:</strong> Logo design, visual identity, brand guidelines</li>
+        <li><strong>E-commerce Design:</strong> Product pages, checkout flows, shopping cart design</li>
+        <li><strong>Collaboration:</strong> Design system development and cross-functional team coordination</li>
+      </ul>
 ---
-
-## Project Overview
-
-A comprehensive UI design and e-commerce identity project for the Karü platform, focusing on creating a seamless shopping experience with a strong brand identity that resonates with customers and drives conversions.
-
-## The Challenge
-
-Design an intuitive and visually appealing e-commerce platform that enhances the shopping experience while establishing a strong brand identity that differentiates Karü in the competitive e-commerce market.
-
-## The Solution
-
-Developed a user-centered e-commerce design that emphasizes product presentation, intuitive navigation, and seamless checkout processes. The solution incorporates modern e-commerce design principles while maintaining brand consistency and visual appeal.
-
-## Key Features
-
-- **E-commerce Optimization**: Streamlined shopping experience with clear product presentation
-- **Brand Identity Integration**: Cohesive visual language that reflects the Karü brand
-- **User Experience Design**: Intuitive navigation and checkout processes
-- **Responsive Design**: Optimized experiences across all device sizes
-
-## Process
-
-### Research & Discovery
-Conducted extensive research on e-commerce trends, user behavior, and competitor analysis to understand market positioning.
-
-### Design & Prototyping
-Created wireframes and visual mockups focusing on e-commerce user experience and brand identity integration.
-
-### Development & Implementation
-Collaborated with development teams to ensure design fidelity and technical implementation of e-commerce functionality.
-
-### Testing & Launch
-Conducted usability testing and iterative improvements based on user feedback and conversion metrics.
-
-## Results
-
-Successfully delivered a modern, user-friendly e-commerce platform that enhances the shopping experience while establishing a strong brand identity that drives customer engagement and conversions.
-
-## Technologies Used
-
-- **Design**: Figma, Adobe Creative Suite
-- **E-commerce**: Shopping cart optimization, product catalog design
-- **Prototyping**: Interactive prototypes and e-commerce mockups
-- **Collaboration**: Design system development and brand guidelines

@@ -1,59 +1,69 @@
 ---
 title: "Link-up"
-date: 2024-03-01T00:00:00+00:00
+date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "Networking platform for professionals"
+type: project
+description: "UX/UI Visual Research project"
 slug: "link-up"
-topics: ["UX Research", "Networking", "Platform Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
-image_alt: "Link-up mockups showcasing the platform interface"
+topics: ["UX/UI", "Visual Research", "Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/linkup_mockup.jpg"
+image_alt: "Link-up Mock Ups"
 client: "Link-up"
-role: "UX Researcher"
+role: "UX/UI Designer"
 duration: "5 months"
-tools: ["User Research", "Figma", "Prototyping"]
+tools: ["Figma", "Adobe Creative Suite", "User Research"]
 live_url: "#"
+blocks:
+  - template: hero
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/linkup_mockup.jpg"
+    image_alt: "Link-up Mock Ups"
+    image_ratio: "16-9"
+  - template: body-copy
+    heading: "Project Overview"
+    content: |
+      <p>A comprehensive UX/UI visual research project focused on creating innovative and user-friendly interface designs. This project involved extensive visual research, user testing, and the development of modern design solutions.</p>
+  - template: body-copy
+    heading: "The Challenge"
+    content: |
+      <p>Design and develop a visually compelling interface that enhances user experience while maintaining modern design standards and ensuring excellent usability across different platforms and devices.</p>
+  - template: body-copy
+    heading: "The Solution"
+    content: |
+      <p>Implemented a comprehensive visual research methodology that combines user-centered design principles with cutting-edge visual aesthetics. The solution includes an innovative design system, intuitive user flows, and optimized visual experiences.</p>
+  - template: body-copy
+    heading: "Key Features"
+    content: |
+      <ul>
+        <li><strong>Innovative Design:</strong> Creative and modern interface solutions</li>
+        <li><strong>User-Centered Approach:</strong> Design decisions based on user research and feedback</li>
+        <li><strong>Visual Excellence:</strong> High-quality visual design and aesthetics</li>
+        <li><strong>Cross-Platform Compatibility:</strong> Consistent experience across devices</li>
+      </ul>
+  - template: body-copy
+    heading: "Process"
+    content: |
+      <h3>Visual Research & Strategy</h3>
+      <p>Conducted comprehensive research into design trends, user behavior patterns, and visual preferences to inform the design strategy.</p>
+      
+      <h3>Design Development</h3>
+      <p>Created innovative design solutions with focus on user experience, visual appeal, and technical feasibility.</p>
+      
+      <h3>User Testing & Validation</h3>
+      <p>Developed prototypes and conducted extensive user testing to validate design decisions and optimize user experience.</p>
+      
+      <h3>Implementation & Optimization</h3>
+      <p>Collaborated with development teams to ensure design fidelity and made continuous improvements based on user feedback and performance metrics.</p>
+  - template: body-copy
+    heading: "Results"
+    content: |
+      <p>Successfully delivered an innovative and visually appealing interface that significantly improved user engagement and satisfaction, with measurable improvements in key performance indicators.</p>
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      <ul>
+        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
+        <li><strong>Research Methods:</strong> User interviews, usability testing, visual preference studies</li>
+        <li><strong>Prototyping:</strong> Interactive prototypes and user flow mapping</li>
+        <li><strong>Collaboration:</strong> Design system development and cross-functional team coordination</li>
+      </ul>
 ---
-
-## Project Overview
-
-A comprehensive UX/UI visual research project for the Link-up platform, focusing on creating seamless user experiences and visually appealing interfaces that facilitate connection and collaboration.
-
-## The Challenge
-
-Design an intuitive and visually engaging platform that enables users to connect, collaborate, and share information effectively while maintaining a modern and professional aesthetic.
-
-## The Solution
-
-Developed a user-centered design approach that emphasizes visual clarity, intuitive navigation, and engaging user interactions. The solution incorporates modern design principles while ensuring accessibility and usability across different user segments.
-
-## Key Features
-
-- **Connection-Focused Design**: Interface elements that facilitate user connections
-- **Visual Research Integration**: Data-driven design decisions based on user behavior
-- **Modern UI Patterns**: Contemporary interface elements and interactions
-- **Responsive Design**: Optimized experiences across all device sizes
-
-## Process
-
-### Research & Discovery
-Conducted extensive user research to understand connection and collaboration needs across different user groups.
-
-### Design & Prototyping
-Created wireframes and visual mockups focusing on user experience and interface aesthetics.
-
-### Development & Implementation
-Collaborated with development teams to ensure design fidelity and technical implementation.
-
-### Testing & Launch
-Conducted usability testing and iterative improvements based on user feedback and behavior analysis.
-
-## Results
-
-Successfully delivered a modern, user-friendly platform that enhances user connections and collaboration while maintaining visual appeal and functionality.
-
-## Technologies Used
-
-- **Design**: Figma, Adobe Creative Suite
-- **Research**: User interviews, surveys, usability testing
-- **Prototyping**: Interactive prototypes and user flow mapping
-- **Collaboration**: Design system development and visual guidelines
