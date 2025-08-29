@@ -16,24 +16,23 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710386315/tomas-master/img/karu_business-card-cave-_f7va8g.jpg"
     alt: "Karu business card design"
-  - template: content
+  - template: body-copy
+    heading: "Project Overview"
     content: |
-      ## Project Overview
-
       Karü (previously Eden) is an artisanal crafts business selling products such as sterling silver jewellery and other hand-crafted goods.
 
       I worked on designing their visual brand identity, creating an initial design system on Figma and their E-commerce store which would be on Shopify.
-
-      ## Key Objectives
-
+  - template: body-copy
+    heading: "Key Objectives"
+    content: |
       **Project objectives were defined as:**
 
       1. **Create a respectable visual identity**, suitable for a variety of applications, both online and offline.
       2. **Create a design system**; using Figma to create a simple UI component library and design sections.
       3. **Design a professional E-com website** to present Karu's products, demonstrate credibility, and sell.
-
-      ## Visual Identity
-
+  - template: body-copy
+    heading: "Visual Identity"
+    content: |
       Designing the visual identity consisted of various steps, one of them being creating a colour palette. For the palette I chose colours inspired by nature with a similar likeness to the brand colour (Green).
 
       Using nature and forest inspired colours fit the brand well. This was the initial palette; later on I upgraded the scale and detail of the palette taking UI Components, and accessibility more into consideration.
@@ -41,10 +40,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798735/tomas-master/img/karu_img_1_tlga7h.webp"
     alt: "First color palette"
     caption: "Nº03 First color palette"
-  - template: content
+  - template: body-copy
+    heading: "Logo Design"
     content: |
-      ## Logo Design
-
       **Icon:** Represents unity. I took inspiration from the various native indigenous Mapuche symbols and created my own design that incorporated symbolism of community, unity, and family.
 
       **Font:** JetBrains Mono (Bold).
@@ -62,23 +60,24 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798738/tomas-master/img/karu_logo_5_asuwpm.webp"
     alt: "Logo configurations"
     caption: "Nº05 Logo configurations"
-  - template: content
+  - template: body-copy
+    heading: "Typography"
     content: |
       I settled on Source Sans Pro for the lead typeface. Primarily for it's flexibility in weights and styles, but also for it's familiarity. It was ideal for our needs. Source Code Pro is used sparingly, as the secondary typeface.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/tomas-master/img/karu_logo_ideation_a893bu.jpg"
     alt: "Rough sketches trying to design the Karu logo"
     caption: "Logo ideation sketches"
-  - template: content
+  - template: body-copy
+    heading: "Style Guide"
     content: |
-      ## Style Guide
-
       Here is the simple yet effective type-scale I created for Source Pro Sans. Taking multiple devices into consideration.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709874716/tomas-master/img/karu_logo_typeography_gif_xs7f7s.gif"
     alt: "Type-scale created for Source Pro Sans."
     caption: "Nº06 Type-scale created for Source Pro Sans."
-  - template: content
+  - template: body-copy
+    heading: "Color Library & Iconography"
     content: |
       Below is the upgraded colour library, with each colour being made into a variable in Figma. It includes all the brand colours, gradients, shadows, states, and neutral colours. As for the iconography I ended up using the Material Design icon library primarily for its recognisability. With its extensive collection of universally understood symbols, it ensures clarity and consistency in communication, enhancing user experience across platforms and applications.
   - template: image
@@ -89,7 +88,8 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798734/tomas-master/img/karu_colors_2_txbicy.webp"
     alt: "New color library."
     caption: "Nº08 New color library."
-  - template: content
+  - template: body-copy
+    heading: "UI Component Library"
     content: |
       I was inspired by various well known Design Systems (especially Goldman Sachs) who publicise their UI kits to craft Karü's own UI Component Library (although to a much smaller scale, considering the time constraints). It's a Style Guide with a few UI Components, so it's **not to be considered a Design System**. I created variants for Hover, States, and Status of the buttons.
   - template: image
@@ -100,10 +100,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798876/tomas-master/img/karu_ui_img_2_iy8q9t.webp"
     alt: "UI Kit (Buttons)."
     caption: "Nº10 UI Kit (Buttons)."
-  - template: content
+  - template: body-copy
+    heading: "E-commerce Design"
     content: |
-      ## E-commerce Design
-
       The store is planned to be designed on Shopify (a custom theme developed with Shopify liquid). Wireframes, Mockups were designed on Figma. The design focuses on presenting Karu's products professionally while demonstrating credibility and driving sales.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798740/tomas-master/img/karu_store_concept_1_udkesn.webp"
@@ -113,10 +112,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798739/tomas-master/img/karu_store_concept_2_pzmp3v.webp"
     alt: "Store design concept cont."
     caption: "Nº12 Store design concept cont."
-  - template: content
+  - template: body-copy
+    heading: "Packaging Design"
     content: |
-      ## Packaging Design
-
       Comprehensive packaging design solutions that align with the brand identity and enhance the unboxing experience for customers.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710158057/tomas-master/img/Karu_Packaging_02_irsuba.jpg"
@@ -134,10 +132,9 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712125520/tomas-master/img/karu-poster-mockup-volcanic_rldvdj.jpg"
     alt: "Karü poster mockup"
     caption: "Karü poster mockup"
-  - template: content
+  - template: body-copy
+    heading: "Process"
     content: |
-      ## Process
-
       ## Research & Discovery
       Conducted comprehensive research into the artisanal crafts market, target audience preferences, and competitive landscape.
 
@@ -149,13 +146,13 @@ blocks:
 
       ## E-commerce Design
       Designed user-centered e-commerce experience focusing on product presentation and conversion optimization.
-
-      ## Results
-
+  - template: body-copy
+    heading: "Results"
+    content: |
       Successfully delivered a complete brand identity system and e-commerce design that effectively represents Karü's artisanal crafts business and provides a professional online presence.
-
-      ## Technologies Used
-
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
       - **Design Tools:** Figma, Illustrator
       - **E-commerce:** Shopify, WIX
       - **Marketing:** Meta, Google Suite

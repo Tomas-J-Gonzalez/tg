@@ -16,32 +16,32 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712922368/tomas-master/img/link_up_mobile_dash_col_jcqisp.jpg"
     alt: "Hi-fidelity design of Link-up"
-  - template: content
+  - template: body-copy
+    heading: "Project Overview"
     content: |
-      ## Project Overview
-
       A collaborative journey to connect students within DCT facilities and enable interdisciplinary collaboration.
-
-      ## Objective
-
+  - template: body-copy
+    heading: "Objective"
+    content: |
       To be the number one platform students enjoy using to succeed in their studies, assignments and group tasks.
-
-      ## Problem
-
+  - template: body-copy
+    heading: "Problem"
+    content: |
       Students are feeling an overwhelming pressure in their lives, which is growing due to our demanding societal pressures. One such area of focus for this study is around effective collaboration and group work. This can be seen through:
 
       1. **A)** Forming and working effectively in a group
       2. **B)** Meeting new people in a course or paper
       3. **C)** Finding like minded students or 'subject area expert' students to study with across the university.
-
-      ## Client Summary
+  - template: body-copy
+    heading: "Client Summary"
+    content: |
+      A comprehensive overview of the project scope and client requirements.
   - template: video
     src: "https://drive.google.com/file/d/176AkIr4aqQMRaPo3p-z8FvhwLgGC7YWJ/preview"
     caption: "Client Summary Video"
-  - template: content
+  - template: body-copy
+    heading: "Process"
     content: |
-      ## Process
-
       ## User Research & Analysis
       Conducted extensive research to understand student collaboration needs and pain points within the DCT facilities.
 
@@ -53,13 +53,13 @@ blocks:
 
       ## Implementation & Refinement
       Collaborated with development teams to ensure design fidelity and made iterative improvements based on feedback.
-
-      ## Results
-
+  - template: body-copy
+    heading: "Results"
+    content: |
       Successfully delivered a platform that enables effective student collaboration and interdisciplinary connections within DCT facilities.
-
-      ## Technologies Used
-
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
       - **Design Tools:** Sketch, Plant.app, Atomic.io
       - **Research:** User interviews, surveys, usability testing
       - **Prototyping:** Interactive prototypes and user flow mapping
