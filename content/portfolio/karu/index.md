@@ -15,7 +15,7 @@ tools: ["Figma", "Adobe Creative Suite", "E-commerce Design"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=675&fit=crop&crop=center"
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798880/tomas-master/img/karu-thumb_dxtjox.jpg"
     image_alt: "Design mockups of Karu E-commerce store"
     image_ratio: "16-9"
   - template: body-copy
