@@ -18,6 +18,10 @@ blocks:
     alt: "Hi-fidelity design of Link-up"
   - template: content
     content: |
+      ## Project Overview
+
+      A collaborative journey to connect students within DCT facilities and enable interdisciplinary collaboration.
+
       ## Objective
 
       To be the number one platform students enjoy using to succeed in their studies, assignments and group tasks.
@@ -34,4 +38,30 @@ blocks:
   - template: video
     src: "https://drive.google.com/file/d/176AkIr4aqQMRaPo3p-z8FvhwLgGC7YWJ/preview"
     caption: "Client Summary Video"
+  - template: content
+    content: |
+      ## Process
+
+      ## User Research & Analysis
+      Conducted extensive research to understand student collaboration needs and pain points within the DCT facilities.
+
+      ## Design System Development
+      Created a comprehensive design system with consistent typography, color palettes, and component libraries.
+
+      ## Prototyping & Testing
+      Developed interactive prototypes and conducted user testing to validate design decisions and improve usability.
+
+      ## Implementation & Refinement
+      Collaborated with development teams to ensure design fidelity and made iterative improvements based on feedback.
+
+      ## Results
+
+      Successfully delivered a platform that enables effective student collaboration and interdisciplinary connections within DCT facilities.
+
+      ## Technologies Used
+
+      - **Design Tools:** Sketch, Plant.app, Atomic.io
+      - **Research:** User interviews, surveys, usability testing
+      - **Prototyping:** Interactive prototypes and user flow mapping
+      - **Collaboration:** Team-based design process with Samuel Hunt
 ---
