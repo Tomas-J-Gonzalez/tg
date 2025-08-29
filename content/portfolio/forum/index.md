@@ -1,59 +1,69 @@
 ---
 title: "Forum"
-date: 2024-07-01T00:00:00+00:00
+date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "Networking platform for Charities - coming soon"
+type: project
+description: "Networking Charities Soon"
 slug: "forum"
-topics: ["UX Design", "UI Design", "Networking", "Charity Platform"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
-image_alt: "Forum networking platform for charities interface mockup"
-client: "Charity Network"
+topics: ["Networking", "Charities", "Community"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/forum_networking.jpg"
+image_alt: "Forum Networking project"
+client: "Forum"
 role: "UX/UI Designer"
-duration: "8 months"
-tools: ["Figma", "Adobe Creative Suite", "User Research"]
+duration: "Coming Soon"
+tools: ["Figma", "Adobe Creative Suite", "Community Design"]
 live_url: "#"
+blocks:
+  - template: hero
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/forum_networking.jpg"
+    image_alt: "Forum Networking project"
+    image_ratio: "16-9"
+  - template: body-copy
+    heading: "Project Overview"
+    content: |
+      <p>An upcoming networking platform designed specifically for charities and community organizations. This project aims to create a digital space that facilitates connections, collaboration, and resource sharing among nonprofit organizations and community groups.</p>
+  - template: body-copy
+    heading: "The Challenge"
+    content: |
+      <p>Design a user-friendly networking platform that enables charities and community organizations to connect, collaborate, and share resources effectively while maintaining a professional and trustworthy environment for nonprofit collaboration.</p>
+  - template: body-copy
+    heading: "The Solution"
+    content: |
+      <p>Developing a comprehensive networking platform that combines community-building features with professional networking tools. The solution will include intuitive user interfaces, secure communication channels, and resource sharing capabilities tailored specifically for the nonprofit sector.</p>
+  - template: body-copy
+    heading: "Key Features"
+    content: |
+      <ul>
+        <li><strong>Community Building:</strong> Tools for creating and managing nonprofit communities</li>
+        <li><strong>Resource Sharing:</strong> Platform for sharing knowledge, tools, and best practices</li>
+        <li><strong>Professional Networking:</strong> Connect with other organizations and professionals</li>
+        <li><strong>Collaboration Tools:</strong> Features to facilitate partnerships and joint initiatives</li>
+      </ul>
+  - template: body-copy
+    heading: "Process"
+    content: |
+      <h3>Research & Discovery</h3>
+      <p>Conducting extensive research into the needs of charities and community organizations to understand their networking and collaboration requirements.</p>
+      
+      <h3>Design & Prototyping</h3>
+      <p>Creating user-centered design solutions that address the unique challenges and opportunities in the nonprofit networking space.</p>
+      
+      <h3>Development & Testing</h3>
+      <p>Building and testing the platform with input from nonprofit organizations to ensure it meets their specific needs and requirements.</p>
+      
+      <h3>Launch & Community Building</h3>
+      <p>Launching the platform and supporting the growth of the nonprofit networking community.</p>
+  - template: body-copy
+    heading: "Results"
+    content: |
+      <p>This project is currently in development and will provide a valuable platform for charities and community organizations to connect, collaborate, and share resources effectively.</p>
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      <ul>
+        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
+        <li><strong>Platform Development:</strong> User research, community design, networking features</li>
+        <li><strong>Nonprofit Focus:</strong> Understanding of charity sector needs and requirements</li>
+        <li><strong>Collaboration:</strong> Cross-functional team coordination and stakeholder engagement</li>
+      </ul>
 ---
-
-## Project Overview
-
-A comprehensive UX/UI design project for a networking platform specifically designed for charities and non-profit organizations. This platform aims to facilitate collaboration, resource sharing, and community building within the charitable sector.
-
-## The Challenge
-
-Design an intuitive and engaging networking platform that enables charities to connect, collaborate, and share resources effectively while maintaining a professional and trustworthy environment that reflects the values of the charitable sector.
-
-## The Solution
-
-Developed a user-centered design approach that emphasizes community building, resource sharing, and collaboration. The solution incorporates modern networking platform features while ensuring accessibility and usability for diverse user groups within the charitable sector.
-
-## Key Features
-
-- **Community Building**: Features that facilitate meaningful connections between charitable organizations
-- **Resource Sharing**: Intuitive interfaces for sharing and accessing resources
-- **Collaboration Tools**: Platform features that enable joint initiatives and partnerships
-- **Trust & Security**: Design elements that build trust and ensure platform security
-
-## Process
-
-### Research & Discovery
-Conducted extensive research on charitable sector needs, networking behaviors, and platform requirements.
-
-### Design & Prototyping
-Created wireframes and prototypes focusing on community building and resource sharing functionality.
-
-### Development & Implementation
-Collaborated with development teams to ensure design fidelity and technical implementation of networking features.
-
-### Testing & Launch
-Conducted usability testing with charitable organizations and iterative improvements based on feedback.
-
-## Results
-
-Designed a comprehensive networking platform that enhances collaboration and resource sharing within the charitable sector while maintaining user trust and engagement.
-
-## Technologies Used
-
-- **Design**: Figma, Adobe Creative Suite
-- **Research**: User interviews, sector analysis, platform research
-- **Prototyping**: Interactive prototypes and user flow mapping
-- **Collaboration**: Design system development and platform guidelines

@@ -1,59 +1,69 @@
 ---
 title: "Arion"
-date: 2024-02-01T00:00:00+00:00
+date: 2024-01-15T00:00:00+00:00
 draft: false
-description: "Financial technology platform"
+type: project
+description: "UX/UI Visual Research project"
 slug: "arion"
-topics: ["UX Research", "FinTech", "Platform Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
-image_alt: "Arion mockups showcasing the platform interface"
+topics: ["UX/UI", "Visual Research", "Design"]
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/arion_mockup.jpg"
+image_alt: "Arion Mock Ups"
 client: "Arion"
-role: "UX Researcher"
+role: "UX/UI Designer"
 duration: "6 months"
-tools: ["User Research", "Figma", "Prototyping"]
+tools: ["Figma", "Adobe Creative Suite", "User Research"]
 live_url: "#"
+blocks:
+  - template: hero
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/arion_mockup.jpg"
+    image_alt: "Arion Mock Ups"
+    image_ratio: "16-9"
+  - template: body-copy
+    heading: "Project Overview"
+    content: |
+      <p>A comprehensive UX/UI visual research project focused on creating intuitive and visually appealing user interfaces. This project involved extensive visual research, user testing, and the development of modern design systems.</p>
+  - template: body-copy
+    heading: "The Challenge"
+    content: |
+      <p>Develop a visually compelling and user-friendly interface that meets modern design standards while ensuring excellent usability and accessibility across different devices and platforms.</p>
+  - template: body-copy
+    heading: "The Solution"
+    content: |
+      <p>Created a comprehensive visual research approach that combines user-centered design principles with modern visual aesthetics. The solution includes a cohesive design system, intuitive navigation patterns, and optimized visual hierarchy.</p>
+  - template: body-copy
+    heading: "Key Features"
+    content: |
+      <ul>
+        <li><strong>Visual Research:</strong> Comprehensive analysis of design trends and user preferences</li>
+        <li><strong>Design System:</strong> Consistent visual language and component library</li>
+        <li><strong>User Testing:</strong> Iterative design improvements based on user feedback</li>
+        <li><strong>Modern Aesthetics:</strong> Contemporary visual design that appeals to target users</li>
+      </ul>
+  - template: body-copy
+    heading: "Process"
+    content: |
+      <h3>Visual Research & Analysis</h3>
+      <p>Conducted extensive research into current design trends, competitor analysis, and user visual preferences to inform design decisions.</p>
+      
+      <h3>Design System Development</h3>
+      <p>Created a comprehensive design system with consistent typography, color palettes, and component libraries.</p>
+      
+      <h3>Prototyping & Testing</h3>
+      <p>Developed interactive prototypes and conducted user testing to validate design decisions and improve usability.</p>
+      
+      <h3>Implementation & Refinement</h3>
+      <p>Collaborated with development teams to ensure design fidelity and made iterative improvements based on feedback.</p>
+  - template: body-copy
+    heading: "Results"
+    content: |
+      <p>Successfully delivered a visually appealing and user-friendly interface that received positive feedback from users and stakeholders, with improved engagement metrics and user satisfaction scores.</p>
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      <ul>
+        <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
+        <li><strong>Research:</strong> User interviews, visual preference surveys</li>
+        <li><strong>Prototyping:</strong> Interactive prototypes and user flow mapping</li>
+        <li><strong>Collaboration:</strong> Design system documentation and handoff</li>
+      </ul>
 ---
-
-## Project Overview
-
-A comprehensive UX/UI visual research project for the Arion platform, focusing on creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
-
-## The Challenge
-
-Develop a visually compelling and user-friendly interface for the Arion platform that balances aesthetic appeal with functional usability while maintaining brand consistency.
-
-## The Solution
-
-Created a modern, clean design system that emphasizes visual hierarchy, intuitive navigation, and engaging user interactions. The solution incorporates contemporary design trends while ensuring accessibility and usability.
-
-## Key Features
-
-- **Visual Research Integration**: Data-driven visual design decisions
-- **Modern Interface Design**: Contemporary UI elements and patterns
-- **User Experience Optimization**: Intuitive navigation and interactions
-- **Brand Consistency**: Cohesive visual language throughout the platform
-
-## Process
-
-### Research & Discovery
-Conducted visual research to understand user preferences and industry trends in platform design.
-
-### Design & Prototyping
-Developed wireframes and visual mockups focusing on user experience and interface aesthetics.
-
-### Development & Implementation
-Collaborated with development teams to ensure visual design implementation and technical feasibility.
-
-### Testing & Launch
-Conducted visual testing and user feedback sessions to refine the design approach.
-
-## Results
-
-Delivered a visually stunning and highly functional platform interface that enhances user engagement and satisfaction.
-
-## Technologies Used
-
-- **Design**: Figma, Adobe Creative Suite
-- **Visual Research**: User preference studies, trend analysis
-- **Prototyping**: Visual mockups and interactive prototypes
-- **Collaboration**: Design system development and visual guidelines
