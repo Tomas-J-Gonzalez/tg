@@ -15,7 +15,7 @@ tools: ["Adobe Creative Suite", "Logo Design", "Brand Identity"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=675&fit=crop&crop=center"
+    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798726/tomas-master/img/brandmarks-thumb_xi6ilm.jpg"
     image_alt: "A collection of logos and brands I've worked on"
     image_ratio: "16-9"
   - template: body-copy
