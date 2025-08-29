@@ -13,7 +13,28 @@
   <!-- Right: Visual -->
   <div class="case-study-card__visual">
     <a href="{{ .Permalink }}" class="case-study-card__image-link" aria-describedby="project-{{ .File.UniqueID }}-title">
-      {{ if .Params.image }}
+      {{ $image := "" }}
+      {{ $imageAlt := "" }}
+      {{ if .Params.blocks }}
+        {{ range .Params.blocks }}
+          {{ if eq .template "hero" }}
+            {{ $image = .image }}
+            {{ $imageAlt = .image_alt }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      
+      {{ if $image }}
+      <div class="case-study-card__image">
+        <img 
+          src="{{ $image }}" 
+          alt="{{ $imageAlt | default (printf "Screenshot of %s project" $.Title) }}"
+          loading="lazy"
+          class="case-study-card__img"
+          itemprop="image"
+        >
+      </div>
+      {{ else if .Params.image }}
       <div class="case-study-card__image">
         <img 
           src="{{ .Params.image }}" 
