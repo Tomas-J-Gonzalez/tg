@@ -16,14 +16,13 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1741669230/tomas-master/img/twolabworkersx2_ifdukt.webp"
     alt: "Exact Sciences' lab"
-  - template: content
+  - template: body-copy
+    heading: "Overview"
     content: |
-      ## Overview
-
       Re-designing Exact Sciences website. Daily stand-up meetings with a U.S based design team to look at objectives and working on Figma together to design new product/kit pages.
-
-      ## Key Objectives
-
+  - template: body-copy
+    heading: "Key Objectives"
+    content: |
       **Project objectives were defined as:**
 
       1. Using new design system and updated component library to re-design multiple product pages.
