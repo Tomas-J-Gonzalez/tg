@@ -1,7 +1,7 @@
-<section class="content-section">
-  {{ if .Params.heading }}
+<section class="grid region" data-layout="50-50">
+  <div>
     <h2>{{ .Params.heading | markdownify }}</h2>
-  {{ end }}
+  </div>
   <div class="flow">
     {{ .Params.content | markdownify }}
   </div>

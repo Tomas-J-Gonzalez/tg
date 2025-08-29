@@ -1,12 +1,10 @@
 {{ if .src }}
-<div class="project__media">
-  <div class="media-item">
-    <figure> 
-      <img class="Image" src="{{ .src }}" {{ if .alt }}alt="{{ .alt }}"{{ end }}> 
-      {{ if .caption }}
-        <figcaption>{{ .caption }}</figcaption>
-      {{ end }}
-    </figure>
-  </div>
+<div class="Grid-7-6">
+  <figure> 
+    <img class="Image" src="{{ .src }}" {{ if .alt }}alt="{{ .alt }}"{{ end }}> 
+    {{ if .caption }}
+      <figcaption class="mono"><small>{{ .caption }}</small></figcaption>
+    {{ end }}
+  </figure>
 </div>
 {{ end }}

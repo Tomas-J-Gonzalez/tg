@@ -1,15 +1,13 @@
 {{ if .src }}
-<div class="project__media">
-  <div class="media-item">
-    <figure> 
-      <video controls>
-        <source playsinline preload="auto" class="Video" type="video/mp4" src="{{ .src }}">  
-        <p>Your browser does not support the video tag.</p>
-      </video>
-      {{ if .caption }}
-        <figcaption>{{ .caption }}</figcaption>
-      {{ end }}
-    </figure>
-  </div>
+<div class="Grid-7-6">
+  <figure> 
+    <video controls>
+      <source playsinline preload="auto" class="Video" type="video/mp4" src="{{ .src }}">  
+      <p>Your browser does not support the video tag.</p>
+    </video>
+    {{ if .caption }}
+      <figcaption class="mono"><small>{{ .caption }}</small></figcaption>
+    {{ end }}
+  </figure>
 </div>
 {{ end }}

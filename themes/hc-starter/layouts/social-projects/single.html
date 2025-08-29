@@ -1,21 +1,16 @@
 {{ define "main" }}
 
-  <article class="h-entry project">
+  <article class="h-entry">
   
-      <header class="project__header Hero region flow">
+      <header class="Hero region flow">
         <h1 class="p-name">{{ .Title }}</h1>
-        {{ if .Params.description }}
-          <p class="project-description">{{ .Params.description }}</p>
-        {{ end }}
-        <div class="project-meta cluster">
-          <time class="dt-published meta-item" datetime="{{ .Date }}">
-            <span class="label">Date:</span>
-            {{ .Date.Format "Jan 2 2006" }}
-          </time>
+        <p>{{ .Params.Description | markdownify }}</p>
+        <div class="cluster">
+          <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
           {{ partial "post/topics.html" . }}
         </div>
       </header>
-      <div class="project__content e-content region">
+      <div class="e-content region">
         {{- range .Params.blocks -}}
             {{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url ) }}{{- end -}}
             {{- if eq .template "image-full" -}}{{ partial "blocks/img-full" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url ) }}{{- end -}}
