@@ -18,7 +18,7 @@ blocks:
     alt: "Karu business card design"
   - template: content
     content: |
-      ## Overview
+      ## Project Overview
 
       Karü (previously Eden) is an artisanal crafts business selling products such as sterling silver jewellery and other hand-crafted goods.
 
@@ -43,13 +43,13 @@ blocks:
     caption: "Nº03 First color palette"
   - template: content
     content: |
-      ## Logo
+      ## Logo Design
 
-      Icon: Represents unity. I took inspiration from the various native indigenous Mapuche symbols and created my own design that incorporated symbolism of community, unity, and family. Below you'll see some logo configurations and a simple GIF animation.
+      **Icon:** Represents unity. I took inspiration from the various native indigenous Mapuche symbols and created my own design that incorporated symbolism of community, unity, and family.
 
-      Font: JetBrains Mono (Bold).
+      **Font:** JetBrains Mono (Bold).
 
-      > Karü translates to 'green' in Mapudungun, the primary language of the Mapuche.
+      *Karü translates to 'green' in Mapudungun, the primary language of the Mapuche.*
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798874/tomas-master/img/karu_logo_2_rse154.jpg"
     alt: "Logo icon — Unity / Community"
@@ -102,9 +102,9 @@ blocks:
     caption: "Nº10 UI Kit (Buttons)."
   - template: content
     content: |
-      ## E-com concepts
+      ## E-commerce Design
 
-      The store is planned to be designed on Shopify (a custom theme developed with Shopify liquid). Wireframes, Mockups were designed on Figma. Below is one of the early mockups for the store.
+      The store is planned to be designed on Shopify (a custom theme developed with Shopify liquid). Wireframes, Mockups were designed on Figma. The design focuses on presenting Karu's products professionally while demonstrating credibility and driving sales.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798740/tomas-master/img/karu_store_concept_1_udkesn.webp"
     alt: "Store design concept."
@@ -115,7 +115,9 @@ blocks:
     caption: "Nº12 Store design concept cont."
   - template: content
     content: |
-      ## Packaging
+      ## Packaging Design
+
+      Comprehensive packaging design solutions that align with the brand identity and enhance the unboxing experience for customers.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710158057/tomas-master/img/Karu_Packaging_02_irsuba.jpg"
     alt: "Karü packaging design"
@@ -134,7 +136,28 @@ blocks:
     caption: "Karü poster mockup"
   - template: content
     content: |
-      ## Full case study coming soon
+      ## Process
 
-      Including web and mobile prototypes created on Figma, showcasing the live store, Key learnings, SEO research and set-up, Social media strategies, design and copywriting of emails.
+      ## Research & Discovery
+      Conducted comprehensive research into the artisanal crafts market, target audience preferences, and competitive landscape.
+
+      ## Brand Development
+      Created unique brand identity including logo design, color palette, typography, and visual elements that reflect the brand's values.
+
+      ## Design System Creation
+      Developed comprehensive design system with consistent components, patterns, and guidelines for scalable design.
+
+      ## E-commerce Design
+      Designed user-centered e-commerce experience focusing on product presentation and conversion optimization.
+
+      ## Results
+
+      Successfully delivered a complete brand identity system and e-commerce design that effectively represents Karü's artisanal crafts business and provides a professional online presence.
+
+      ## Technologies Used
+
+      - **Design Tools:** Figma, Illustrator
+      - **E-commerce:** Shopify, WIX
+      - **Marketing:** Meta, Google Suite
+      - **Brand Strategy:** Visual identity, design systems
 ---

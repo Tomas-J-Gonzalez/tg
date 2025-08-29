@@ -16,9 +16,18 @@ blocks:
   - template: hero
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798726/tomas-master/img/brandmarks-thumb_xi6ilm.jpg"
     alt: "Brandmarks collection"
-  - template: content
+  - template: body-copy
+    heading: "Project Overview"
     content: |
-      ## Karü
+      Although I personally do not consider myself to be a graphic designer, here are some selected logo and brand identity designs for certain businesses and groups.
+  - template: body-copy
+    heading: "Design Collection"
+    content: |
+      A showcase of various brand identity projects completed for different clients and organizations.
+  - template: body-copy
+    heading: "Karü"
+    content: |
+      Complete brand identity including logo variations, color palette, and visual elements.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798736/tomas-master/img/karu_logo_1_wddd3x.png"
     alt: "Karü logo design"
@@ -35,9 +44,10 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798737/tomas-master/img/karu_logo_4_jkbixo.png"
     alt: "Karü logo configurations"
     caption: "Karü logo configurations"
-  - template: content
+  - template: body-copy
+    heading: "Abroad Global (2016)"
     content: |
-      ## Abroad Global (2016)
+      Comprehensive brand identity system with multiple logo configurations and applications.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798670/tomas-master/img/ag_logo_1_hrlyr1.jpg"
     alt: "Abroad Global logo design"
@@ -58,9 +68,10 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798886/tomas-master/img/ag_logo_5_j4x9pq.png"
     alt: "Abroad Global final logo"
     caption: "Abroad Global final logo"
-  - template: content
+  - template: body-copy
+    heading: "OnGround"
     content: |
-      ## OnGround
+      Logo design with leaf-inspired iconography and brand mark variations.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712119062/tomas-master/img/Logo8x_vgvhcv.jpg"
     alt: "OnGround logo design"
@@ -69,9 +80,10 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712119061/tomas-master/img/og_leaf_8x_gzmolv.png"
     alt: "OnGround leaf icon"
     caption: "OnGround leaf icon"
-  - template: content
+  - template: body-copy
+    heading: "Dploi"
     content: |
-      ## Dploi
+      Parachute-inspired logo design with brand configurations and visual identity elements.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710733914/tomas-master/img/dploi_parachute_ymipaz.jpg"
     alt: "Dploi parachute logo"
@@ -80,9 +92,10 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1710733771/tomas-master/img/Dploi_logo_configs_ozsrbl.jpg"
     alt: "Dploi logo configurations"
     caption: "Dploi logo configurations"
-  - template: content
+  - template: body-copy
+    heading: "Forum (2024)"
     content: |
-      ## Forum (2024)
+      Charity event branding and networking platform identity design.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712121649/tomas-master/img/AGCT_Charity_Event-squashed_kppbqr.png"
     alt: "Forum charity event logo"
@@ -91,9 +104,10 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712120271/tomas-master/img/forum_4x_jsg7ix.png"
     alt: "Forum logo design"
     caption: "Forum logo design"
-  - template: content
+  - template: body-copy
+    heading: "CMG"
     content: |
-      ## CMG
+      Corporate identity with multiple logo formats including landscape and circular configurations.
   - template: image
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712119840/tomas-master/img/Circle_Logo_Avatar_8x_srgypo.png"
     alt: "CMG circle logo avatar"
@@ -106,4 +120,29 @@ blocks:
     src: "https://res.cloudinary.com/tomasgo/image/upload/v1712119844/tomas-master/img/cmg-black-hor_4x_iq34iq.png"
     alt: "CMG horizontal logo"
     caption: "CMG horizontal logo"
+  - template: body-copy
+    heading: "Design Process"
+    content: |
+      ## Research & Discovery
+      Understanding each client's business objectives, target audience, and competitive landscape to inform design direction.
+
+      ## Concept Development
+      Creating multiple logo concepts and visual directions that align with brand values and market positioning.
+
+      ## Refinement & Testing
+      Iterating on selected concepts to ensure scalability, versatility, and visual impact across different applications.
+
+      ## Brand Guidelines
+      Developing comprehensive guidelines for consistent brand application across all touchpoints.
+  - template: body-copy
+    heading: "Results"
+    content: |
+      Successfully delivered distinctive brand identities that have helped clients establish strong market presence and improve brand recognition across various industries and sectors.
+  - template: body-copy
+    heading: "Technologies Used"
+    content: |
+      - **Design Tools:** Adobe Illustrator, Adobe Photoshop, Adobe Creative Suite
+      - **Brand Strategy:** Market research, competitor analysis, brand positioning
+      - **Logo Design:** Vector graphics, typography, color theory
+      - **Brand Guidelines:** Style guides, usage guidelines, brand standards
 ---

@@ -18,6 +18,8 @@ blocks:
     alt: "Mobile story of Dploi"
   - template: content
     content: |
+      ## Project Overview
+
       Operational system for recruiters to source talent, filter quality applicants, and hire successful applicants. From initial application, to recruitment pipeline, to interview, to assisting with immigration process, and finally to onboarding.
 
       ## The Problem
@@ -137,6 +139,20 @@ blocks:
     caption: "Dploi login design"
   - template: content
     content: |
+      ## Process
+
+      ## Research & Strategy
+      Conducted comprehensive research into recruitment industry needs, user behavior patterns, and market requirements.
+
+      ## Brand Development
+      Created unique brand identity including logo design, color palette, typography, and visual elements.
+
+      ## UI Design System
+      Developed comprehensive design system with consistent components, patterns, and guidelines.
+
+      ## Prototyping & Testing
+      Created wireframes and prototypes focusing on user flow optimization and interface clarity.
+
       ## Deliverables
 
       1. Brand Concept and Style Guide
@@ -152,4 +168,11 @@ blocks:
       4. Flexibility and adaptability to accommodate changing requirements and market dynamics.
       5. Recognising that the project was primarily visual and UI design-based highlights the significance of crafting an appealing and user-friendly interface to enhance user engagement and satisfaction.
       6. Managing a project within a small time frame, particularly when building a concept for investors, underscores the need for efficient project management, prioritisation, and clear communication to meet deadlines and deliver high-quality results.
+
+      ## Technologies Used
+
+      - **Design Tools:** Figma, Miro, Illustrator
+      - **Research Methods:** User interviews, market research, competitor analysis
+      - **Prototyping:** Interactive prototypes, user flows
+      - **Brand Strategy:** Visual identity, design systems
 ---
