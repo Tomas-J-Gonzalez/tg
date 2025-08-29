@@ -15,7 +15,7 @@ tools: ["User Research", "Figma", "Process Mapping"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/tomas_wvj9lh.jpg"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=675&fit=crop&crop=center"
     image_alt: "Desktop mockup of BH Connect work program interface"
     image_ratio: "16-9"
   - template: body-copy

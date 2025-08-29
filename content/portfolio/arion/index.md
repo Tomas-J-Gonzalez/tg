@@ -15,7 +15,7 @@ tools: ["Figma", "Adobe Creative Suite", "User Research"]
 live_url: "#"
 blocks:
   - template: hero
-    image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798879/tomas-master/img/arion_mockup.jpg"
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=675&fit=crop&crop=center"
     image_alt: "Arion Mock Ups"
     image_ratio: "16-9"
   - template: body-copy
