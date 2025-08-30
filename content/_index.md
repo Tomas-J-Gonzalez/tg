@@ -5,7 +5,7 @@ description: "Tomás González is an Experience designer based in Auckland, New 
 draft: false
 ---
 
-{{< pullImage src="v1756520207/tomas-master/img/sunny_zr9gdt.png" alt="Tomás González – Experience designer" caption="" >}}
+{{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" >}}
 
 Born in [San Vicente, Chile](https://www.google.com/maps/place/San+Vicente+de+Tagua+Tagua,+San+Vicente,+O'Higgins,+Chile/@-34.440399,-71.0664003,2338a,35y,273.68h,44.28t/data=!3m1!1e3!4m6!3m5!1s0x9664821410d251fb:0x519dd94a951fefa7!8m2!3d-34.4349435!4d-71.0913748!16s%2Fm%2F04ybm4m?entry=ttu) and raised in New Zealand. My purpose as a UX designer is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
 

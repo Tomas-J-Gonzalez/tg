@@ -2,6 +2,12 @@
 Image
 */
 
+.Image {
+  &[data-layout='pull-right'] {
+    padding-bottom: 16px;
+  }
+}
+
 @include breakpoint(sm) {
 .Image {
     &[data-layout='pull-right'] {
