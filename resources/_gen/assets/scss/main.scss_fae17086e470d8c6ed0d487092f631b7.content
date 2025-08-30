@@ -189,6 +189,33 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
+/* Grain texture overlay - paper-like aesthetic */
+body {
+  position: relative; }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/grain2.png");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay; }
+
+/* Ensure content stays above grain */
+main,
+header,
+footer,
+nav {
+  position: relative;
+  z-index: 2; }
+
 body {
   background-color: var(--color-bg-mod-1);
   color: var(--color-text);
