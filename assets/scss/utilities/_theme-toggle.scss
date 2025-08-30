@@ -119,14 +119,15 @@ nav[data-variant="main"] #theme-toggle {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 1;
+    transform: rotate(0deg); // Make moon face right side (curved edge left, horns right)
   }
   
   &:hover .theme-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(10deg); // -90deg base + 5deg hover
   }
   
   &:active .theme-icon {
-    transform: scale(0.95);
+    transform: scale(0.95) rotate(-80deg); // Keep base rotation
   }
   
   // Toggle button pressed state
@@ -145,7 +146,7 @@ nav[data-variant="main"] #theme-toggle {
     }
     
     .theme-icon {
-      transform: rotate(180deg);
+      transform: rotate(0deg); // -90deg base + 180deg for pressed state
     }
     
     &::before {

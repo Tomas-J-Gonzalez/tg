@@ -3,10 +3,14 @@
   <!-- Left: Project Title and Description -->
   <div class="case-study-card__content">
     <div class="case-study-card__text-container">
-      <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-describedby="project-{{ .File.UniqueID }}-description">
-        <h3 id="project-{{ .File.UniqueID }}-title" class="case-study-card__title" itemprop="name">{{ .Title }}</h3>
-      </a>
-      <p id="project-{{ .File.UniqueID }}-description" class="case-study-card__description" itemprop="description">{{ .Description }}</p>
+      <header class="case-study-card__header">
+        <a href="{{ .Permalink }}" class="case-study-card__title-link" aria-describedby="project-{{ .File.UniqueID }}-description">
+          <h3 id="project-{{ .File.UniqueID }}-title" class="case-study-card__title" itemprop="name">{{ .Title }}</h3>
+        </a>
+      </header>
+      <div class="case-study-card__description-wrapper">
+        <p id="project-{{ .File.UniqueID }}-description" class="case-study-card__description" itemprop="description">{{ .Description }}</p>
+      </div>
     </div>
   </div>
   
