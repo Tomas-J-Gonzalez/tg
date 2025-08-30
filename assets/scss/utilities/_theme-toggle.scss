@@ -111,8 +111,8 @@ nav[data-variant="main"] #theme-toggle {
 // Theme classes for manual theme switching
 .theme-light {
   --color-text: oklch(37.4% .01 67.558);
-  --color-text-mod-1: oklch(55.3% .013 58.071/.5);
-  --color-text-mod-2: oklch(.55 .01 58.07/.3);
+  --color-text-mod-1: oklch(45% .013 58.071);
+  --color-text-mod-2: oklch(35% .01 58.07);
   --color-bg: #f7f2ed;
   --color-bg-mod-1: #f7f2ed;
   --color-bg-mod-2: oklch(97% .001 106.424);
