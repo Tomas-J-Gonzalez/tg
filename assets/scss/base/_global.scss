@@ -39,10 +39,10 @@ html {
   background-image: url('/img/grain2.png');
   background-repeat: repeat;
   background-size: 200px 200px;
-  opacity: 0.15;
+  opacity: 0.4;
   pointer-events: none;
   z-index: 1;
-  mix-blend-mode: soft-light;
+  mix-blend-mode: multiply;
 }
 
 body {
