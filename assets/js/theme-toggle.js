@@ -1,4 +1,4 @@
-// Theme toggle functionality
+// Theme toggle functionality with smooth transitions
 const THEMES = {
   LIGHT: 'light',
   DARK: 'dark'
@@ -52,13 +52,27 @@ function initTheme() {
   };
 
   function updateTheme(theme) {
-    document.documentElement.className = `theme-${theme}`;
+    // Add transition class for smooth animation
+    document.documentElement.classList.add('theme-transitioning');
+    
+    // Update theme class
+    document.documentElement.className = `theme-${theme} theme-transitioning`;
     localStorage.setItem(STORAGE_KEY, theme);
     
+    // Update UI elements with smooth transitions
     themeIcon.className = `theme-icon ${iconMap[theme]}`;
     themeLabel.textContent = labelMap[theme];
     themeToggle.setAttribute('aria-label', `Switch to ${theme === THEMES.DARK ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
+    
+    // Add button press animation
+    themeToggle.classList.add('theme-switching');
+    
+    // Remove transition class after animation completes
+    setTimeout(() => {
+      document.documentElement.classList.remove('theme-transitioning');
+      themeToggle.classList.remove('theme-switching');
+    }, 300);
     
     // Announce theme change to screen readers
     const announcement = document.createElement('div');
@@ -70,7 +84,9 @@ function initTheme() {
     
     // Remove announcement after it's been read
     setTimeout(() => {
-      document.body.removeChild(announcement);
+      if (document.body.contains(announcement)) {
+        document.body.removeChild(announcement);
+      }
     }, 1000);
   }
 
@@ -91,11 +107,24 @@ function initTheme() {
   themeToggle.setAttribute('aria-label', labelMap[savedTheme]);
   themeToggle.setAttribute('aria-pressed', savedTheme === THEMES.DARK ? 'true' : 'false');
 
-  // Handle toggle click
-  themeToggle.addEventListener('click', () => {
+  // Handle toggle click with smooth transition
+  themeToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    // Prevent rapid clicking during transition
+    if (themeToggle.classList.contains('theme-switching')) return;
+    
     const currentTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
     const newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
     updateTheme(newTheme);
+  });
+
+  // Add keyboard support
+  themeToggle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      themeToggle.click();
+    }
   });
 }
 
