@@ -6,6 +6,7 @@ nav[data-variant='main'],
 nav[data-variant='footer'] {
   a {
     font-weight: var(--font-weight-medium);
+    color: var(--color-text) !important; // Override link color for nav only
   }
   
   a[data-state='active'] {
