@@ -16,10 +16,11 @@ This is my slashes page where you can find all of my [slash pages](https://slash
 - [/now](/now/): What I’m choosing to focus my attention on right now.
 - [/privacy](/privacy/): How I’m resepcting the privacy of visitors to my website.
 - [/slashes](/slashes/): A page that lists all my slash pages (how meta).
-- [/support](/support/): Ways in which you can support my work (should you wish to).
 - [/social-programs](/social-programs): A page that showcases all the social programs I've contributed to.
-- [/things](/things/): Projects from the past or that I’m currently working on.
-<!-- [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->
 - [/uses](/uses/): My office setup and the app and services I use day to day.
 
 Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-and-slashes/).
+
+<!-- [/support](/support/): Ways in which you can support my work (should you wish to). -->
+<!-- [/things](/things/): Projects from the past or that I’m currently working on. -->
+<!-- [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->

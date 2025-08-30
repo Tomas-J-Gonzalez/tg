@@ -1,7 +1,7 @@
 ---
 title: "Hi, I'm Tomás, an experience designer solving problems with creative & data-driven solutions."
 date: "2016-10-24T17:23:17+01:00"
-description: "Tomás González is an Experience designer based in Auckland, New Zealand. Read articles and notes on design and the web."
+description: "Tomás González is an Experience designer and Creative technologist based in Auckland, New Zealand. Read articles and notes on design and the web."
 draft: false
 ---
 
@@ -12,7 +12,7 @@ Currently designing at AKQA Tāmaki Makaurau.
 Here on my personal site, I write about [building static websites with Hugo](/topics/hugo/), [improving privacy and security online](/topics/privacy/)  and the [tools I use](/uses/), day to day.
 
 
-## Ethos
+## Philosophy
 
  My purpose as an Experience designer is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
 
