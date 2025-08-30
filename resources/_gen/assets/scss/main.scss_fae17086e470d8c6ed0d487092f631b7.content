@@ -347,17 +347,18 @@ Form styles
 input,
 textarea {
   background: var(--color-bg-mod-2);
-  border: solid 0.2rem var(--color-bg-mod-2);
+  border: solid 0.2rem var(--color-border);
   border-radius: 0;
-  outline: 2px solid var(--color-bg-mod-2);
+  outline: 2px solid var(--color-border);
   outline-offset: 0;
   padding: 4px var(--space-s);
   position: relative;
   width: 100%;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  color: var(--color-text); }
 
 input::placeholder {
-  color: var(--color-text-mod-2); }
+  color: var(--color-text-mod-1); }
 
 textarea {
   min-height: 96px;
@@ -395,6 +396,10 @@ form:not([class]) input {
 /* 
 Nav styles
 */
+nav[data-variant='main'] a,
+nav[data-variant='footer'] a {
+  font-weight: var(--font-weight-medium); }
+
 nav[data-variant='main'] a[data-state='active'],
 nav[data-variant='footer'] a[data-state='active'] {
   text-decoration: underline; }

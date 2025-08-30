@@ -5,18 +5,19 @@ Form styles
 input,
 textarea {
   background: var(--color-bg-mod-2);
-  border: solid .2rem var(--color-bg-mod-2);
+  border: solid .2rem var(--color-border);
   border-radius: 0;
-  outline: 2px solid var(--color-bg-mod-2);
+  outline: 2px solid var(--color-border);
   outline-offset: 0;
   padding: 4px var(--space-s);
   position: relative;
   width: 100%;
   -webkit-appearance: none;
+  color: var(--color-text);
 }
 
 input::placeholder {
-  color: var(--color-text-mod-2);
+  color: var(--color-text-mod-1);
 }
 
 textarea {
