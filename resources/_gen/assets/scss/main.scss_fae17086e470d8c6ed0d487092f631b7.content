@@ -89,14 +89,14 @@ Global theme tokens
   @link https://www.figma.com/community/file/1122903924123950023
   */
   /* Default to dark theme colors (Paul Stamatiou's palette) */
-  --color-text: oklch(85% .012 140/.9);
-  --color-text-mod-1: oklch(70% .025 140);
-  --color-text-mod-2: oklch(55% .025 125);
+  --color-text: oklch(90% .015 140);
+  --color-text-mod-1: oklch(75% .025 140);
+  --color-text-mod-2: oklch(60% .025 125);
   --color-bg: oklch(18.5% .1 120);
   --color-bg-mod-1: oklch(18.5% .1 120);
   --color-bg-mod-2: oklch(25% .015 140/.66);
   --color-border: oklch(35% .035 140);
-  --color-brand: oklch(85% .012 140/.9);
+  --color-brand: oklch(90% .015 140);
   --color-accent: oklch(48% .1 132);
   --color-highlight: oklch(32% .015 150/.4);
   /* Grid */
@@ -1566,26 +1566,26 @@ nav[data-variant="main"] #theme-toggle {
       background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%); }
 
 .theme-light {
-  --color-text: oklch(37.4% .01 67.558);
+  --color-text: oklch(30% .01 67.558);
   --color-text-mod-1: oklch(45% .013 58.071);
   --color-text-mod-2: oklch(35% .01 58.07);
   --color-bg: #f7f2ed;
   --color-bg-mod-1: #f7f2ed;
   --color-bg-mod-2: oklch(97% .001 106.424);
   --color-border: oklch(85% .035 80/.4);
-  --color-brand: oklch(37.4% .01 67.558);
+  --color-brand: oklch(30% .01 67.558);
   --color-accent: oklch(45% .12 125);
   --color-highlight: oklch(85% .02 80/.5); }
 
 .theme-dark {
-  --color-text: oklch(85% .012 140/.9);
-  --color-text-mod-1: oklch(70% .025 140);
-  --color-text-mod-2: oklch(55% .025 125);
+  --color-text: oklch(90% .015 140);
+  --color-text-mod-1: oklch(75% .025 140);
+  --color-text-mod-2: oklch(60% .025 125);
   --color-bg: oklch(18.5% .1 120);
   --color-bg-mod-1: oklch(18.5% .1 120);
   --color-bg-mod-2: oklch(25% .015 140/.66);
   --color-border: oklch(35% .035 140);
-  --color-brand: oklch(85% .012 140/.9);
+  --color-brand: oklch(90% .015 140);
   --color-accent: oklch(48% .1 132);
   --color-highlight: oklch(32% .015 150/.4); }
   .theme-dark .chroma {
