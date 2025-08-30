@@ -1,0 +1,100 @@
+{{ define "main" }}
+<main id="main-content" class="region flow">
+  <article class="flow">
+    <header class="flow">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ if .Params.description }}
+    <div class="project-overview">
+      <p>{{ .Params.description }}</p>
+    </div>
+    {{ end }}
+
+    <div class="accordion-container">
+      {{ range .Params.blocks }}
+        {{ if eq .template "body-copy" }}
+          {{ if and .heading (not (eq .heading "Project Overview")) (not (eq .heading "Design Collection")) (not (eq .heading "Design Process")) (not (eq .heading "Results")) (not (eq .heading "Technologies Used")) }}
+            <div class="accordion-card" data-brand="{{ .heading | urlize }}">
+              <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="content-{{ .heading | urlize }}" onkeydown="if(event.key==='Enter'||event.key===' ') {event.preventDefault(); this.click();}">
+                <div class="accordion-text">
+                  <h3 class="accordion-title">{{ .heading }}</h3>
+                  {{ if .content }}
+                    <span class="accordion-subtitle">{{ .content | plainify }}</span>
+                  {{ end }}
+                </div>
+                <div class="accordion-controls">
+                  <button class="accordion-toggle" aria-label="Toggle {{ .heading }} content">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="accordion-content" id="content-{{ .heading | urlize }}">
+                <div class="accordion-body">
+                  <div class="brand-images">
+                    {{ range $.Params.blocks }}
+                      {{ if and (eq .template "image") (eq .brand .heading) }}
+                        <figure class="brand-image">
+                          <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+                          {{ if .caption }}
+                            <figcaption>{{ .caption }}</figcaption>
+                          {{ end }}
+                        </figure>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </article>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      const card = this.closest('.accordion-card');
+      const content = card.querySelector('.accordion-content');
+      const toggle = this.querySelector('.accordion-toggle');
+      const icon = toggle.querySelector('i');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      // Close all other accordions
+      accordionHeaders.forEach(otherHeader => {
+        if (otherHeader !== this) {
+          const otherCard = otherHeader.closest('.accordion-card');
+          const otherContent = otherCard.querySelector('.accordion-content');
+          const otherToggle = otherHeader.querySelector('.accordion-toggle');
+          const otherIcon = otherToggle.querySelector('i');
+
+          otherHeader.setAttribute('aria-expanded', 'false');
+          otherContent.style.maxHeight = '0';
+          otherIcon.classList.remove('fa-chevron-up');
+          otherIcon.classList.add('fa-chevron-down');
+        }
+      });
+
+      // Toggle current accordion
+      if (isExpanded) {
+        this.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = '0';
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        this.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    });
+  });
+});
+</script>
+{{ end }}

@@ -7,9 +7,24 @@ nav[data-variant='footer'] {
   a {
     font-weight: var(--font-weight-medium);
     color: var(--color-text) !important; // Override link color for nav only
+    
+    &:focus-visible {
+      outline: dotted 2px var(--color-text);
+      outline-offset: 3px;
+    }
   }
   
   a[data-state='active'] {
     text-decoration: underline;
+  }
+}
+
+// Header-specific focus styles
+header {
+  a, button {
+    &:focus-visible {
+      outline: dotted 2px var(--color-text);
+      outline-offset: 3px;
+    }
   }
 }
