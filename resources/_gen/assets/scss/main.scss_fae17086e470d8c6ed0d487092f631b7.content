@@ -963,6 +963,9 @@ Taglist
 /*
 Image
 */
+.Image[data-layout='pull-right'] {
+  padding-bottom: 16px; }
+
 @media (min-width: 37.5em) {
   .Image[data-layout='pull-right'] {
     width: 40%;
