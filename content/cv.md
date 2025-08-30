@@ -1,90 +1,87 @@
 ---
 title: "Tomás González"
-subtitle: "Freelance designer and front-end web developer from London."
 date: 2024-10-24T09:45:40+01:00
 draft: false
 slug: "cv"
-description: ""
+description: "Tomás' CV"
 layout: page
 ---
 
+## Bio
+
+Tomás González is an Experience Designer and Creative Technologist based in Auckland, New Zealand. Tomás began his career supporting small New Zealand non-profits and charities. Since then, he has worked in a variety of roles across small to medium-sized consultancies, labour-hire and healthcare businesses, as well as contracting for U.S-based clients. Now designing at AKQA Tāmaki Makaurau, he has contributed to projects for brands such as Inland Revenue, Fonterra, Partners Life, and Tātaki Auckland Unlimited. 
+
 ## Experience
 
-### Studio HC · Feelance designer, front-end developer
-_Feb 2015 - present_
+### Experience Designer
+**AKQA — Tāmaki Makaurau**
+*April 2025 – Ongoing*
 
-Freelance consulting, design and development contracting and client work. 
+### Experience Design Consultant
+**Provoke Solutions (Contractor)**
+*August 2024 – Ongoing*
 
-### BuxtonThreeTwo · Feelance designer, front-end developer
-_June 2020 - Feb 2022_
+- Design wireframe and high-fidelity designs in Figma as needed
+- Website alignment using client's component library and design system
+- Ensuring the resulting designs are adaptable, accessible, and meet the user's goals
+- Creating site maps, tasks flows, wire-frames, scenarios, and other deliverables to clearly communicate the workflow and organization of the solution
+- Forming relationships with key stakeholders ensuring that requirements are accurately captured and that the subsequent design is consistent with the business strategy
 
-Website design, prototyping, copywriting, front-end development of e-commerce stores using Shopify. Project management.
+### UX / UI Designer
+**Synergy Advisory**
+*2020 – 2024*
 
-### Angel Investment Network · UI designer, front-end developer
-_Oct 2014 - present_
+- Designed and maintained a comprehensive recruitment & onboarding system to successfully attract more than +2,900 overseas applicants
+- Worked with developers to create an ATS (Applicant Tracking System) + Operational system for the company to help streamline recruitment, hiring, and onboarding of candidates
+- Stakeholder management and working within a small multi-disciplinary team
+- Established first design guide and asset library. Designed brand strategy, logo and website
+- Interactive workshop planning and facilitation. 'Design & Business workshops'
 
-Design research, ideation, site mapping, information architecture, sketching, wireframing and front-end prototyping. Usability testing. Building front-end design systems. Building and managing microsites. Visual identity design, icon design.
+### Designer
+**Abroad Global** 
+*2020 – 2024*
 
-### In Detail · Co-Founder, photographer
-_Sep 2011 - June 2019_
+Work primarily consisted of web projects and logo designs: Wireframing, UI design, website creation. Designing print and branding assets (content patterns, video/social media content).
 
-In Detail launched in 2011 as an online publication dedicated to exploring the world of luxury jewellery. Since 2018 the brand has evolved into a jewellery concierge service with a focus on helping clients design bespoke engagement rings.
+## Skills
 
-### Harvey Nichols · Web and editorial designer, photographer
-_Oct 2011 - April 2015_
+#### Software
+- Figma
+- Illustrator 
+- InDesign
+- Sketch
 
-Editorial design and layout for print and web. Photographic retouching and image manipulation. Photography at various fashion weeks around the world.
+#### Process
+- User Interface
+- User Experience
+- Sketching / Illustration
+- Identity design
+- Motion
+- Rapid prototyping
+- User research / testing
+- Accessibility
+- Design system creation / maintanence
+- Agile methodology
 
-### Avenue 32 · Web and editorial designer
-_Feb 2013 - Jul 2013_
-
-Day to day designing of fashion online editorial content. Photographic retouching and image manipulation.
-
-### SampsonMay · Front-end developer
-_Feb 2011 - April 2011_
-
-Website design and development internship. HTML and CSS prototyping.
+#### Front-End Development
+- HTML, CSS, SASS
+- Figma Dev
+- GitHub
+- Cursor
 
 
 ## Education
 
-### University of the Arts London
-_Jan 2008 - Mar 2008_
+#### Auckland University of Technology (AUT)
+*Feb 2015 – Dec 2018*
 
-Design for Visual Communication, Desktop Publishing, Design & Layout
-Skills, Pixel and Vector Based Image Manipulation.
+Bachelor of Creative Technologies (BCT / COLAB)
 
-### University of Leeds
-_Sept 2004 - Sept 2007_
+#### Interaction Design Foundation — IDF
+*Mar 2018 – Mar 2019*
 
-BA(Hons) Fine Art & History of Art.
-
-### St Dunstans College
-_Sept 1996 - July 2007_
-
-9 GCSEs, 3 A Levels.
-
-## Skills
-
-- Figma
-- Affinity
-- Glyphs
-- HTML
-- CSS
-- SASS
-- JavaScript
-- Web standards
-- Accessibility
-- Hugo
-- Eleventy
-- Cloudcannon
-- Shopify / Liquid
-- PHP
-- GraphQL
-- React
+Certificate in Gestalt Psychology and Web Design & Accessibility: "How do Design for All"
 
 ## Social
 
-- [linkedin.com/in/harrycresswell/](https://www.linkedin.com/in/harrycresswell/)
-- [codepen.io/harrycresswell](https://codepen.io/harrycresswell)
-- [github.com/harrycresswell](https://github.com/harrycresswell)
+- **LinkedIn:** [linkedin.com/in/tomasjgo](https://linkedin.com/in/tomasjgo)
