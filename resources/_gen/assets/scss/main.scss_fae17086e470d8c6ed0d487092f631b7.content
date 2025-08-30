@@ -89,16 +89,16 @@ Global theme tokens
   @link https://www.figma.com/community/file/1122903924123950023
   */
   /* Default to dark theme colors */
-  --color-text: #f7fff1;
-  --color-text-mod-1: #c9d5c0;
-  --color-text-mod-2: #aebda3;
-  --color-bg: #061b11;
-  --color-bg-mod-1: #061b11;
-  --color-bg-mod-2: #123c27;
-  --color-border: #b5c88f;
-  --color-brand: #b5c88f;
-  --color-accent: #b5c88f;
-  --color-highlight: #1a4d2e;
+  --color-text: #ffffff;
+  --color-text-mod-1: #cccccc;
+  --color-text-mod-2: #999999;
+  --color-bg: #0a0a0a;
+  --color-bg-mod-1: #0a0a0a;
+  --color-bg-mod-2: #1a1a1a;
+  --color-border: #333333;
+  --color-brand: #ffffff;
+  --color-accent: #4da6ff;
+  --color-highlight: #1a1a1a;
   /* Grid */
   --gutter: var(--space-s-m);
   /* Effects */
@@ -1566,28 +1566,28 @@ nav[data-variant="main"] #theme-toggle {
       background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%); }
 
 .theme-light {
-  --color-text: #061b11;
-  --color-text-mod-1: #4a5a3a;
-  --color-text-mod-2: #7c8f6a;
+  --color-text: #1a1a1a;
+  --color-text-mod-1: #666666;
+  --color-text-mod-2: #999999;
   --color-bg: #ffffff;
   --color-bg-mod-1: #ffffff;
-  --color-bg-mod-2: #dbe8cf;
-  --color-border: #97AB70;
-  --color-brand: #123c27;
-  --color-accent: #97AB70;
-  --color-highlight: #e6f0d6; }
+  --color-bg-mod-2: #f8f8f8;
+  --color-border: #e5e5e5;
+  --color-brand: #1a1a1a;
+  --color-accent: #0066cc;
+  --color-highlight: #f0f8ff; }
 
 .theme-dark {
-  --color-text: #f7fff1;
-  --color-text-mod-1: #c9d5c0;
-  --color-text-mod-2: #aebda3;
-  --color-bg: #061b11;
-  --color-bg-mod-1: #061b11;
-  --color-bg-mod-2: #123c27;
-  --color-border: #b5c88f;
-  --color-brand: #b5c88f;
-  --color-accent: #b5c88f;
-  --color-highlight: #1a4d2e; }
+  --color-text: #ffffff;
+  --color-text-mod-1: #cccccc;
+  --color-text-mod-2: #999999;
+  --color-bg: #0a0a0a;
+  --color-bg-mod-1: #0a0a0a;
+  --color-bg-mod-2: #1a1a1a;
+  --color-border: #333333;
+  --color-brand: #ffffff;
+  --color-accent: #4da6ff;
+  --color-highlight: #1a1a1a; }
   .theme-dark .chroma {
     color: #ef9f76;
     background-color: var(--color-bg-mod-2); }
