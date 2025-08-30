@@ -358,9 +358,13 @@ sup {
   font-size: 75%; }
 
 /* External link icon styling */
-a .fas.fa-external-link-alt {
+.external-link-wrapper {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 0.2em; }
+
+.external-link-wrapper .fas.fa-external-link-alt {
   font-size: 0.6em;
-  margin-left: 0.2em;
   opacity: 0.5;
   transition: opacity 0.2s ease;
   text-decoration: none;
@@ -369,15 +373,15 @@ a .fas.fa-external-link-alt {
   top: -0.05em;
   /* Fine-tune vertical centering */ }
 
-a:hover .fas.fa-external-link-alt {
+a:hover .external-link-wrapper .fas.fa-external-link-alt {
   opacity: 0.8; }
 
 /* Ensure proper spacing and alignment for different link contexts */
-a[data-variant="naked"] .fas.fa-external-link-alt {
+a[data-variant="naked"] .external-link-wrapper .fas.fa-external-link-alt {
   vertical-align: middle;
   top: -0.05em; }
 
-a[data-variant="desaturate"] .fas.fa-external-link-alt {
+a[data-variant="desaturate"] .external-link-wrapper .fas.fa-external-link-alt {
   vertical-align: middle;
   top: -0.05em; }
 
