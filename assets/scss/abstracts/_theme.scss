@@ -21,17 +21,17 @@ Global theme tokens
   Colors created with Utopia Kickstarter project 
   @link https://www.figma.com/community/file/1122903924123950023
   */
-  /* Default to dark theme colors */
-  --color-text: #ffffff;
-  --color-text-mod-1: #cccccc;
-  --color-text-mod-2: #999999;
-  --color-bg: #0a0a0a;
-  --color-bg-mod-1: #0a0a0a;
-  --color-bg-mod-2: #1a1a1a;
-  --color-border: #333333;
-  --color-brand: #ffffff;
-  --color-accent: #4da6ff;
-  --color-highlight: #1a1a1a;
+  /* Default to dark theme colors (Paul Stamatiou's palette) */
+  --color-text: oklch(85% .012 140/.9);
+  --color-text-mod-1: oklch(70% .025 140);
+  --color-text-mod-2: oklch(55% .025 125);
+  --color-bg: oklch(18.5% .1 120);
+  --color-bg-mod-1: oklch(18.5% .1 120);
+  --color-bg-mod-2: oklch(25% .015 140/.66);
+  --color-border: oklch(35% .035 140);
+  --color-brand: oklch(85% .012 140/.9);
+  --color-accent: oklch(48% .1 132);
+  --color-highlight: oklch(32% .015 150/.4);
 
   /* Grid */
   --gutter: var(--space-s-m);
