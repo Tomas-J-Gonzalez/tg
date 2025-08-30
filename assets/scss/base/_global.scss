@@ -28,12 +28,8 @@ html {
   }
 }
 
-/* Grain texture overlay - paper-like aesthetic */
-body {
-  position: relative;
-}
-
-body::before {
+/* Grain texture overlay - paper-like aesthetic (light theme only) */
+.theme-light body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -43,19 +39,10 @@ body::before {
   background-image: url('/img/grain2.png');
   background-repeat: repeat;
   background-size: 200px 200px;
-  opacity: 0.03;
+  opacity: 0.15;
   pointer-events: none;
   z-index: 1;
-  mix-blend-mode: overlay;
-}
-
-/* Ensure content stays above grain */
-main,
-header,
-footer,
-nav {
-  position: relative;
-  z-index: 2;
+  mix-blend-mode: soft-light;
 }
 
 body {
