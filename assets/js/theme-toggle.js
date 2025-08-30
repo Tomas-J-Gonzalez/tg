@@ -65,14 +65,20 @@ function initTheme() {
     themeToggle.setAttribute('aria-label', `Switch to ${theme === THEMES.DARK ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
     
-    // Add button press animation
+    // Add button press animation and spreading effect
     themeToggle.classList.add('theme-switching');
+    themeToggle.classList.add('theme-spreading');
     
     // Remove transition class after animation completes
     setTimeout(() => {
       document.documentElement.classList.remove('theme-transitioning');
       themeToggle.classList.remove('theme-switching');
     }, 300);
+    
+    // Remove spreading effect after it completes
+    setTimeout(() => {
+      themeToggle.classList.remove('theme-spreading');
+    }, 600);
     
     // Announce theme change to screen readers
     const announcement = document.createElement('div');
@@ -111,8 +117,9 @@ function initTheme() {
   themeToggle.addEventListener('click', (e) => {
     e.preventDefault();
     
-    // Prevent rapid clicking during transition
-    if (themeToggle.classList.contains('theme-switching')) return;
+    // Prevent rapid clicking during transition or spreading effect
+    if (themeToggle.classList.contains('theme-switching') || 
+        themeToggle.classList.contains('theme-spreading')) return;
     
     const currentTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
     const newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
