@@ -295,9 +295,13 @@ nav a, footer a {
     border-bottom: none; }
 
 /* Tags/topics need thick underlines by default */
-.topics a, .tags a, [class*="topic"] a, [class*="tag"] a {
+.topics a, .tags a, [class*="topic"] a, [class*="tag"] a,
+.post-topics a, .post-tags a, .topics-list a, .tags-list a,
+.TagList a, .TagListItem a, a[data-variant="desaturate"] {
   border-bottom: 1px solid var(--color-brand); }
-  .topics a:hover, .tags a:hover, [class*="topic"] a:hover, [class*="tag"] a:hover {
+  .topics a:hover, .tags a:hover, [class*="topic"] a:hover, [class*="tag"] a:hover,
+  .post-topics a:hover, .post-tags a:hover, .topics-list a:hover, .tags-list a:hover,
+  .TagList a:hover, .TagListItem a:hover, a[data-variant="desaturate"]:hover {
     border-bottom-color: var(--color-bg); }
 
 /* Use naked variant to style links as text*/

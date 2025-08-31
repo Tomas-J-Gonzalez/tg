@@ -152,7 +152,9 @@ nav a, footer a {
 }
 
 /* Tags/topics need thick underlines by default */
-.topics a, .tags a, [class*="topic"] a, [class*="tag"] a {
+.topics a, .tags a, [class*="topic"] a, [class*="tag"] a,
+.post-topics a, .post-tags a, .topics-list a, .tags-list a,
+.TagList a, .TagListItem a, a[data-variant="desaturate"] {
   border-bottom: 1px solid var(--color-brand);
   
   &:hover {
