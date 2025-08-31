@@ -82,6 +82,11 @@ Bachelor of Creative Technologies (BCT / COLAB)
 
 Certificate in Gestalt Psychology and Web Design & Accessibility: "How do Design for All"
 
+## Philosophy
+
+ My purpose as an Experience designer is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
+
+
 ## Social
 
 - **LinkedIn:** [linkedin.com/in/tomasjgo](https://linkedin.com/in/tomasjgo)
