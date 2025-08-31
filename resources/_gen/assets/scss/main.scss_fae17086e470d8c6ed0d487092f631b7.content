@@ -309,12 +309,12 @@ p a[data-variant="desaturate"],
 p a[href*="/topics/"],
 p a[href*="/tags/"] {
   border-bottom: none;
-  text-decoration: underline; }
+  text-decoration: none; }
   p a[data-variant="desaturate"]:hover,
   p a[href*="/topics/"]:hover,
   p a[href*="/tags/"]:hover {
     border-bottom: none;
-    text-decoration: none; }
+    text-decoration: underline; }
 
 /* Use naked variant to style links as text*/
 a[data-variant="naked"] {
