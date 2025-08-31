@@ -22,16 +22,17 @@
     margin-bottom: 24px;
   }
   
-  // Title link styling - matches writing page headings
+  // Title link styling - Harry Cresswell style
   &__title-link {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
     
     &:hover {
-      text-decoration: underline;
       color: var(--color-brand);
+      border-bottom-color: var(--color-brand);
     }
     
     &:focus-visible {

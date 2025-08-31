@@ -133,13 +133,11 @@ a {
   color: var(--color-brand);
   text-decoration: none;
   border-bottom: 1px solid var(--color-brand);
-  opacity: 0.7; /* Reduce opacity of underlines for body copy */
 
   &:hover {
-    color: var( --color-bg);
+    color: var(--color-bg);
     background-color: var(--color-brand);
     border-bottom-color: var(--color-bg);
-    opacity: 1; /* Full opacity on hover */
   }
 }
 
@@ -148,27 +146,23 @@ a[data-variant="naked"] {
   color: var(--color-text);
   text-decoration: none;
   border-bottom: none;
-  opacity: 1;
 }
 
 a[data-variant="naked"]:hover {
   background-color: unset;
   border-bottom: 1px solid var(--color-text);
-  opacity: 0.7;
 }
 
 /* Use desaturate to remove brand color from links */
 a[data-variant="desaturate"] {
   color: var(--color-text);
   border-bottom: 1px solid var(--color-text);
-  opacity: 0.7;
 }
 
 a[data-variant="desaturate"]:hover {
   background-color: var(--color-text);
   color: var(--color-bg);
   border-bottom-color: var(--color-bg);
-  opacity: 1;
 }
 
 /* Add scroll margin to all target elements 

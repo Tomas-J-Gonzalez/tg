@@ -65,6 +65,14 @@ function initTheme() {
     themeToggle.setAttribute('aria-label', `Switch to ${theme === THEMES.DARK ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
     
+    // Position spread effect from toggle button
+    const rect = themeToggle.getBoundingClientRect();
+    const spreadElement = themeToggle.querySelector('::after');
+    if (spreadElement) {
+      themeToggle.style.setProperty('--spread-x', `${rect.left + rect.width / 2}px`);
+      themeToggle.style.setProperty('--spread-y', `${rect.top + rect.height / 2}px`);
+    }
+    
     // Add button press animation and spreading effect
     themeToggle.classList.add('theme-switching');
     themeToggle.classList.add('theme-spreading');
@@ -78,7 +86,7 @@ function initTheme() {
     // Remove spreading effect after it completes
     setTimeout(() => {
       themeToggle.classList.remove('theme-spreading');
-    }, 600);
+    }, 1200);
     
     // Announce theme change to screen readers
     const announcement = document.createElement('div');

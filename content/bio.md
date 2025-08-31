@@ -1,17 +1,14 @@
 ---
 title: "Bio"
 description: "Learn more about Tomás González - Designer and Creative Technologist in Auckland, New Zealand"
-date: 2024-01-01
 template: "page"
 ---
 
-## Hi, I'm Tomás
-
-Born in San Vicente, Chile and raised in New Zealand. My purpose as a UX designer is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
+Born in San Vicente, Chile and raised in New Zealand. My purpose as a designer and creative technologist is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
 
 I create stuff (design, music, visuals, etc.) I also like working with people, especially within the local community. Since I was a kid, I've been very imaginative and leaned towards the creative side.
 
-## Some of my creative highlights
+## Creative highlights...
 
 * In primary school I had a "Captain Underpants" (Dav Pilkey) phase that inspired me to write my own "toilet humor" comic series. If you insist on knowing more — it was about special agents, who were also beans.
 * English isn't my first language; in school I couldn't barter in the standard way, so I would print and trace pictures of DBZ and Sonic in the library, and trade them for extra lunch.

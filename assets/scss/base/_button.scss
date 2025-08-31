@@ -36,44 +36,7 @@ input[type="button"]:focus {
   transform: translateY(-2px);
 }
 
-/* Expanding dotted line press effect */
-button:active,
-.button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-  position: relative;
-  transform: translateY(0);
-  
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 2px dotted var(--color-text);
-    border-radius: var(--border-radius);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: expandDottedLine 0.3s ease-out forwards;
-    pointer-events: none;
-    z-index: -1;
-  }
-}
 
-@keyframes expandDottedLine {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  100% {
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    opacity: 0;
-  }
-}
 
 button:disabled,
 /* 
@@ -200,23 +163,6 @@ Font Awesome Icons:
   
   &:active {
     transform: translateY(0);
-    position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border: 2px dotted var(--color-text);
-      border-radius: 0.5rem;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      animation: expandDottedLine 0.3s ease-out forwards;
-      pointer-events: none;
-      z-index: -1;
-    }
   }
 }
 
