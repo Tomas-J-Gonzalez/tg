@@ -94,8 +94,8 @@ nav[data-variant="main"] #theme-toggle {
   &::after {
     content: '';
     position: fixed;
-    top: var(--spread-y, 50%);
-    left: var(--spread-x, 50%);
+    top: 50%;
+    left: 50%;
     width: 0;
     height: 0;
     background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);

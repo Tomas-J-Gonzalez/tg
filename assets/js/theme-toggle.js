@@ -31,7 +31,7 @@ if (!document.documentElement.className.includes('theme-')) {
 let themeInitialized = false;
 
 function initTheme() {
-  // Prevent double initialization - only check local flag
+  // Prevent double initialization
   if (themeInitialized) return;
   themeInitialized = true;
 
@@ -65,14 +65,6 @@ function initTheme() {
     themeToggle.setAttribute('aria-label', `Switch to ${theme === THEMES.DARK ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', theme === THEMES.DARK ? 'true' : 'false');
     
-    // Position spread effect from toggle button
-    const rect = themeToggle.getBoundingClientRect();
-    const spreadElement = themeToggle.querySelector('::after');
-    if (spreadElement) {
-      themeToggle.style.setProperty('--spread-x', `${rect.left + rect.width / 2}px`);
-      themeToggle.style.setProperty('--spread-y', `${rect.top + rect.height / 2}px`);
-    }
-    
     // Add button press animation and spreading effect
     themeToggle.classList.add('theme-switching');
     themeToggle.classList.add('theme-spreading');
@@ -104,7 +96,7 @@ function initTheme() {
     }, 1000);
   }
 
-  // Set initial state based on current theme class without triggering updateTheme
+  // Set initial state based on current theme class
   const currentThemeClass = document.documentElement.className;
   let savedTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
   
@@ -118,7 +110,7 @@ function initTheme() {
   // Only update UI elements, don't change the theme class again
   themeIcon.className = `theme-icon ${iconMap[savedTheme]}`;
   themeLabel.textContent = labelMap[savedTheme];
-  themeToggle.setAttribute('aria-label', labelMap[savedTheme]);
+  themeToggle.setAttribute('aria-label', `Switch to ${savedTheme === THEMES.DARK ? 'light' : 'dark'} mode`);
   themeToggle.setAttribute('aria-pressed', savedTheme === THEMES.DARK ? 'true' : 'false');
 
   // Handle toggle click with smooth transition
