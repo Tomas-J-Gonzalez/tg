@@ -23,10 +23,14 @@ h4:hover>.heading-anchor {
 
 .heading-anchor {
   text-decoration: none;
+  color: var(--color-text-mod-1);
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--color-brand);
+    border-bottom-color: var(--color-brand);
     background: none;
   }
 }
