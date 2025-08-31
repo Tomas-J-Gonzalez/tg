@@ -22,15 +22,16 @@
     margin-bottom: 24px;
   }
   
-  // Title link styling - simple underline on hover
+  // Title link styling - matches writing page headings
   &__title-link {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    transition: text-decoration 0.2s ease;
+    transition: all 0.2s ease;
     
     &:hover {
       text-decoration: underline;
+      color: var(--color-brand);
     }
     
     &:focus-visible {

@@ -13,7 +13,7 @@ Here on my personal site, I write about [design and web](/writings/), [my past a
 
 ## Where to go next
 
-Find out [what I'm up to right now](/now/). Check out some of the [social projects](/social-projects/) I've contributed to. Take a look at [my CV](/cv/). You'll find a few more hidden pages over on [my slashes page](/slashes).
+Find out [what I'm up to right now](/now/). Check out some of the [social projects](/social-projects/) I've contributed to. Take a look at [my CV](/cv/). You'll find a few more hidden pages over on [my slashes page](/slashes). Want to know [even more](/bio/) about me?
 
 Elsewhere on the web, you can find me on [LinkedIn](https://www.linkedin.com/in/tomasjgo/), [Are.na](https://www.are.na/tomas-jkctpndhbng/channels). [Get in touch](/contact) if you have any questions or hit the [Reply by email](/writing/reply-by-email/) button at the end of any post.
 
