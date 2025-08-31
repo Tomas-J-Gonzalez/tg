@@ -167,11 +167,11 @@ p a[data-variant="desaturate"],
 p a[href*="/topics/"],
 p a[href*="/tags/"] {
   border-bottom: none;
-  text-decoration: underline;
+  text-decoration: none;
   
   &:hover {
     border-bottom: none;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
