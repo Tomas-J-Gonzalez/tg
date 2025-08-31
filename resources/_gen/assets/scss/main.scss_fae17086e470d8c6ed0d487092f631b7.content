@@ -286,12 +286,12 @@ a {
     background-color: var(--color-brand);
     border-bottom-color: var(--color-bg); }
 
-/* Remove thin underlines from headings, nav, and footer links */
+/* Remove thin underlines from headings, nav, footer, and case study card titles */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-nav a, footer a {
+nav a, footer a, .case-study-card__title-link {
   border-bottom: none; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
-  nav a:hover, footer a:hover {
+  nav a:hover, footer a:hover, .case-study-card__title-link:hover {
     border-bottom: none; }
 
 /* Tags/topics need thick underlines by default */
@@ -303,6 +303,18 @@ nav a, footer a {
   .post-topics a:hover, .post-tags a:hover, .topics-list a:hover, .tags-list a:hover,
   .TagList a:hover, .TagListItem a:hover, a[data-variant="desaturate"]:hover {
     border-bottom-color: var(--color-bg); }
+
+/* Remove thin underlines from normal text tags and replace with bold underlines */
+p a[data-variant="desaturate"],
+p a[href*="/topics/"],
+p a[href*="/tags/"] {
+  border-bottom: none;
+  text-decoration: underline; }
+  p a[data-variant="desaturate"]:hover,
+  p a[href*="/topics/"]:hover,
+  p a[href*="/tags/"]:hover {
+    border-bottom: none;
+    text-decoration: none; }
 
 /* Use naked variant to style links as text*/
 a[data-variant="naked"] {

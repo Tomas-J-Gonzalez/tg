@@ -141,9 +141,9 @@ a {
   }
 }
 
-/* Remove thin underlines from headings, nav, and footer links */
+/* Remove thin underlines from headings, nav, footer, and case study card titles */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-nav a, footer a {
+nav a, footer a, .case-study-card__title-link {
   border-bottom: none;
   
   &:hover {
@@ -159,6 +159,19 @@ nav a, footer a {
   
   &:hover {
     border-bottom-color: var(--color-bg);
+  }
+}
+
+/* Remove thin underlines from normal text tags and replace with bold underlines */
+p a[data-variant="desaturate"], 
+p a[href*="/topics/"],
+p a[href*="/tags/"] {
+  border-bottom: none;
+  text-decoration: underline;
+  
+  &:hover {
+    border-bottom: none;
+    text-decoration: none;
   }
 }
 
