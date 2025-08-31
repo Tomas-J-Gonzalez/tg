@@ -286,6 +286,20 @@ a {
     background-color: var(--color-brand);
     border-bottom-color: var(--color-bg); }
 
+/* Remove thin underlines from headings, nav, and footer links */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+nav a, footer a {
+  border-bottom: none; }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+  nav a:hover, footer a:hover {
+    border-bottom: none; }
+
+/* Tags/topics need thick underlines by default */
+.topics a, .tags a, [class*="topic"] a, [class*="tag"] a {
+  border-bottom: 1px solid var(--color-brand); }
+  .topics a:hover, .tags a:hover, [class*="topic"] a:hover, [class*="tag"] a:hover {
+    border-bottom-color: var(--color-bg); }
+
 /* Use naked variant to style links as text*/
 a[data-variant="naked"] {
   color: var(--color-text);
@@ -1895,24 +1909,6 @@ nav[data-variant="main"] #theme-toggle {
     pointer-events: none; }
   nav[data-variant="main"] #theme-toggle:hover::before {
     opacity: 0.1; }
-  nav[data-variant="main"] #theme-toggle::after {
-    content: '';
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 9998;
-    pointer-events: none;
-    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
-  nav[data-variant="main"] #theme-toggle.theme-spreading::after {
-    width: 300vw;
-    height: 300vh;
-    opacity: 0.05; }
   nav[data-variant="main"] #theme-toggle .theme-icon {
     font-size: 1.125rem;
     line-height: 1;
