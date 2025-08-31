@@ -141,6 +141,25 @@ a {
   }
 }
 
+/* Remove thin underlines from headings, nav, and footer links */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+nav a, footer a {
+  border-bottom: none;
+  
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+/* Tags/topics need thick underlines by default */
+.topics a, .tags a, [class*="topic"] a, [class*="tag"] a {
+  border-bottom: 1px solid var(--color-brand);
+  
+  &:hover {
+    border-bottom-color: var(--color-bg);
+  }
+}
+
 /* Use naked variant to style links as text*/
 a[data-variant="naked"] {
   color: var(--color-text);
