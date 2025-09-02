@@ -243,17 +243,11 @@ a[data-variant="naked"]:hover {
   background: var(--color-bg-mod-1) !important;
 }
 
-/* Fallback styling when script fails to load */
-#wcb.carbonbadge:empty::before {
-  content: "Carbon: Loading...";
-  color: var(--color-text-mod-2);
-  font-style: italic;
-}
-
 /* Ensure the badge is visible even when empty */
 #wcb.carbonbadge:empty {
   min-width: 120px;
   text-align: center;
+  color: var(--color-text-mod-2);
 }
 
 /* Use desaturate to remove brand color from links */
