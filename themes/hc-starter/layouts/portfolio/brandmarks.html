@@ -16,6 +16,7 @@
       {{ range .Params.blocks }}
         {{ if eq .template "body-copy" }}
           {{ if and .heading (not (eq .heading "Project Overview")) (not (eq .heading "Design Collection")) (not (eq .heading "Design Process")) (not (eq .heading "Results")) (not (eq .heading "Technologies Used")) }}
+            {{ $currentHeading := .heading }}
             <div class="accordion-card" data-brand="{{ .heading | urlize }}">
               <div class="accordion-header">
                 <h3 class="accordion-title">{{ .heading }}</h3>
@@ -37,13 +38,15 @@
                   {{ end }}
                   <div class="brand-images">
                     {{ range $.Params.blocks }}
-                      {{ if and (eq .template "image") (eq .brand .heading) }}
-                        <figure class="brand-image">
-                          <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
-                          {{ if .caption }}
-                            <figcaption>{{ .caption }}</figcaption>
-                          {{ end }}
-                        </figure>
+                      {{ if eq .template "image" }}
+                        {{ if eq .brand $currentHeading }}
+                          <figure class="brand-image">
+                            <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+                            {{ if .caption }}
+                              <figcaption>{{ .caption }}</figcaption>
+                            {{ end }}
+                          </figure>
+                        {{ end }}
                       {{ end }}
                     {{ end }}
                   </div>

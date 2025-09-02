@@ -5,13 +5,15 @@
 
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
-      <time class="dt-published" datetime="{{ .Date }}">
-        {{ with .PublishDate.Format "Jan 2, 2006" }}
-          {{ . }}
-        {{ else }}
-          {{ .Date.Format "Jan 2 2006" }}
-        {{ end }}
-      </time>
+      {{ if and .Date (ne .Date.Year 1) }}
+        <time class="dt-published" datetime="{{ .Date }}">
+          {{ with .PublishDate.Format "Jan 2, 2006" }}
+            {{ . }}
+          {{ else }}
+            {{ .Date.Format "Jan 2 2006" }}
+          {{ end }}
+        </time>
+      {{ end }}
       {{ if .Params.topics }}
         {{ partial "post/topics.html" . }} 
       {{ end }}
@@ -19,10 +21,12 @@
 
     {{ if ne .Section "newsletter" }}
     <div> 
-      {{ $published := .Date | time.Format ":date_medium" }}
-      {{ $modified := .Lastmod | time.Format ":date_medium" }}
-      {{ if ne $published $modified }}
-      <span class="Badge"> Updated: {{ $modified }} </span>
+      {{ if and .Date (ne .Date.Year 1) }}
+        {{ $published := .Date | time.Format ":date_medium" }}
+        {{ $modified := .Lastmod | time.Format ":date_medium" }}
+        {{ if ne $published $modified }}
+        <span class="Badge"> Updated: {{ $modified }} </span>
+        {{ end }}
       {{ end }}
     </div>
     {{ end }}

@@ -14,17 +14,10 @@ tools: ["Illustrator", "Figma", "Photoshop"]
 type: project
 layout: brandmarks
 blocks:
-  - template: hero
-    src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798726/tomas-master/img/brandmarks-thumb_xi6ilm.jpg"
-    alt: "Brandmarks collection"
   - template: body-copy
     heading: "Project Overview"
     content: |
       Although I personally do not consider myself to be a graphic designer, here are some selected logo and brand identity designs for certain businesses and groups.
-  - template: body-copy
-    heading: "Design Collection"
-    content: |
-      A showcase of various brand identity projects completed for different clients and organizations.
   - template: body-copy
     heading: "Karü"
     content: |
@@ -139,8 +132,4 @@ blocks:
     alt: "CMG horizontal logo"
     caption: "CMG horizontal logo"
     brand: "CMG"
-  - template: body-copy
-    heading: "Design Process"
-    content: |
-     
 ---

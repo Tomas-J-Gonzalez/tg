@@ -7,10 +7,12 @@
         <p class="font-step-1">{{ . }}</p>
       {{ end }}
       <div> 
-        {{ $published := .PublishDate | time.Format ":date_medium" }}
-        {{ $modified := .Lastmod | time.Format ":date_medium" }}
-        {{ if ne $published $modified }}
-        <span class="Badge"> Updated: {{ .Lastmod.Format "Jan 2 2006" }} </span>
+        {{ if and .PublishDate (ne .PublishDate.Year 1) }}
+          {{ $published := .PublishDate | time.Format ":date_medium" }}
+          {{ $modified := .Lastmod | time.Format ":date_medium" }}
+          {{ if ne $published $modified }}
+          <span class="Badge"> Updated: {{ .Lastmod.Format "Jan 2 2006" }} </span>
+          {{ end }}
         {{ end }}
       </div>
     </header>
@@ -47,7 +49,11 @@
       <!-- render if topic returns true -->
       {{ if in .Params.topics "Hugo course" }}
         <li>
-          <a href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }} – {{ .Title }}</a>
+          {{ if and .Date (ne .Date.Year 1) }}
+            <a href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }} – {{ .Title }}</a>
+          {{ else }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ end }}
         </li>   
       {{ end }}
     {{ end }}

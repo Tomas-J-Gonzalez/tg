@@ -16,6 +16,7 @@
       {{ range .Params.blocks }}
         {{ if eq .template "body-copy" }}
           {{ if and .heading (not (eq .heading "Project Overview")) (not (eq .heading "Design Collection")) (not (eq .heading "Design Process")) (not (eq .heading "Results")) (not (eq .heading "Technologies Used")) }}
+            {{ $currentHeading := .heading }}
             <div class="accordion-card" data-brand="{{ .heading | urlize }}">
               <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="content-{{ .heading | urlize }}" onkeydown="if(event.key==='Enter'||event.key===' ') {event.preventDefault(); this.click();}">
                 <div class="accordion-text">
@@ -34,7 +35,7 @@
                 <div class="accordion-body">
                   <div class="brand-images">
                     {{ range $.Params.blocks }}
-                      {{ if and (eq .template "image") (eq .brand .heading) }}
+                      {{ if and (eq .template "image") (eq .brand $currentHeading) }}
                         <figure class="brand-image">
                           <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
                           {{ if .caption }}
