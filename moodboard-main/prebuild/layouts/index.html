@@ -1,0 +1,8 @@
+
+  {{ $posts := .Site.Data.posts }}
+  {{ range $posts }}
+    {{/* 1. */}} {{ $string := jsonify . }} 
+    {{/* 2. */}} {{ $filename := printf "post/2020-05-26-%s.md" (urlize .title) }} 
+    {{/* 3. */}} {{ $resource := resources.FromString $filename $string }} 
+    {{/* 4. */}} {{ $file := $resource.RelPermalink }} 
+  {{ end }}
