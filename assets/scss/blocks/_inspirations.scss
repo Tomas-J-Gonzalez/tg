@@ -1,200 +1,47 @@
 // Inspirations Page - Moodboard Style Layout
+// This file now works with the moodboard.html template
+
+// Additional custom styles for the inspirations page that complement the moodboard template
 .inspirations-page {
-  // Main container styling
-  max-width: 100%;
-  margin: 0 auto;
+  // Ensure the moodboard template styles take precedence
+  .moodboard-container {
+    // Any additional container styling can go here
+  }
   
-  // Intro section
-  .intro {
-    margin-bottom: var(--space-xl);
-    text-align: center;
-    
-    p {
-      font-size: var(--step-1);
-      color: var(--color-text-mod-1);
-      max-width: 60ch;
-      margin: 0 auto;
+  // Custom styling for inspiration items if needed
+  .moodboard-item {
+    // These styles will enhance the base moodboard template styles
+    &:hover {
+      // Enhanced hover effect
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
   }
   
-  // Section styling
-  section {
-    margin-bottom: var(--space-2xl);
-    
-    h2 {
-      font-size: var(--step-3);
-      margin-bottom: var(--space-l);
-      color: var(--color-text);
-      border-bottom: 2px solid var(--color-brand);
-      padding-bottom: var(--space-xs);
-      display: inline-block;
-    }
-    
-    h3 {
-      font-size: var(--step-2);
-      margin: var(--space-l) 0 var(--space-m) 0;
-      color: var(--color-text-mod-1);
-      font-weight: 600;
-    }
-  }
-  
-  // List styling for moodboard aesthetic
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--space-m);
-    
-    li {
-      background: var(--color-bg-mod-2);
-      border: 1px solid var(--color-border);
-      border-radius: 8px;
-      padding: var(--space-m);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-      
-      // Hover effects
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        border-color: var(--color-brand);
-        
-        &::before {
-          opacity: 1;
-        }
-      }
-      
-      // Subtle accent line
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--color-brand);
-        opacity: 0.3;
-        transition: opacity 0.3s ease;
-      }
-      
-      // Text styling
-      strong {
-        color: var(--color-text);
-        font-weight: 600;
-        display: block;
-        margin-bottom: var(--space-2xs);
-        font-size: var(--step-0);
-      }
-      
-      // Description text
-      &:not(:has(strong)) {
-        strong {
-          display: none;
-        }
-      }
-      
-      // Remove strong tag display for items without descriptions
-      &:not(:has(strong)) {
-        font-weight: 600;
-        color: var(--color-text);
-      }
-    }
-  }
-  
-  // Special styling for people section
-  section:first-of-type ul li {
-    background: linear-gradient(135deg, var(--color-bg-mod-2) 0%, var(--color-bg-mod-1) 100%);
-    
-    &::before {
-      background: linear-gradient(90deg, var(--color-brand) 0%, var(--color-accent) 100%);
-    }
-  }
-  
-  // Films section styling
-  section:nth-of-type(2) ul li {
-    background: linear-gradient(135deg, var(--color-bg-mod-1) 0%, var(--color-bg-mod-2) 100%);
-    
-    &::before {
-      background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-highlight) 100%);
-    }
-  }
-  
-  // Games section styling
-  section:nth-of-type(3) ul li {
-    background: linear-gradient(135deg, var(--color-bg-mod-2) 0%, var(--color-bg) 100%);
-    
-    &::before {
-      background: linear-gradient(90deg, var(--color-highlight) 0%, var(--color-brand) 100%);
-    }
-  }
-  
-  // Books section styling
-  section:nth-of-type(4) ul li {
-    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-mod-1) 100%);
-    
-    &::before {
-      background: linear-gradient(90deg, var(--color-brand) 0%, var(--color-accent) 100%);
-    }
-  }
-  
-  // Footer note styling
-  .footnote {
-    margin-top: var(--space-2xl);
-    padding-top: var(--space-l);
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-    color: var(--color-text-mod-2);
-    font-style: italic;
-    
-    a {
-      color: var(--color-brand);
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  // Section headers styling
+  h2 {
+    // Ensure section headers are properly styled
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 }
 
-// Responsive design
+// Responsive adjustments for the moodboard layout
 @media (max-width: 768px) {
   .inspirations-page {
-    ul {
+    .moodboard-container {
+      padding: 1rem;
+    }
+    
+    .moodboard-grid {
       grid-template-columns: 1fr;
-      gap: var(--space-s);
+      gap: 0.75rem;
     }
     
-    section h2 {
-      font-size: var(--step-2);
+    .moodboard-item {
+      padding: 0.75rem;
     }
-    
-    section h3 {
-      font-size: var(--step-1);
-    }
-    
-    .intro p {
-      font-size: var(--step-0);
-    }
-  }
-}
-
-// Dark theme adjustments
-.theme-dark .inspirations-page {
-  ul li {
-    background: var(--color-bg-mod-1);
-    border-color: var(--color-border-dark);
-    
-    &:hover {
-      background: var(--color-bg-mod-2);
-      border-color: var(--color-brand);
-    }
-  }
-  
-  section h2 {
-    border-bottom-color: var(--color-brand);
   }
 }

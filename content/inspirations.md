@@ -305,5 +305,5 @@ layout: "moodboard"
 
 <div class="moodboard-footer">
     <p>This moodboard is constantly evolving. I add new sources of inspiration as I discover them and remove ones that no longer resonate with my current thinking.</p>
-    <p>Page concept inspired by <a href="https://www.zetto.plus/inspirations">Zetto Plus</a>, layout design inspired by <a href="https://mood.harrycresswell.com/">Harry Cresswell's moodboard</a>.</p>
+    <p>Page concept inspired by <a href="https://www.zetto.plus/inspirations">Zetto Plus</a>.</p>
 </div>
