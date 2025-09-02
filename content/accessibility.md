@@ -47,13 +47,12 @@ Beyond WCAG 2.2 Level AA, we have also applied some Level AAA Success Criteria w
 
 ## Feedback options
 
-We welcome your feedback on the accessibility of this website. If you encounter accessibility barriers, please contact us through:
+I welcome your feedback on the accessibility of this website. If you encounter accessibility barriers, please contact me through:
 
-- **Email**: [admin@tomasjgonzalez.com](mailto:admin@tomasjgonzalez.com)
 - **Contact Form**: [Contact page](/contact/)
-- **GitHub Issues**: [Report accessibility issues](https://github.com/Tomas-J-Gonzalez/tg/issues)
+- **General Feedback**: Use the contact form for accessibility issues
 
-**Response time**: We aim to respond to accessibility feedback within 2 business days and propose solutions within 10 business days.
+**Response time**: I aim to respond to accessibility feedback within 2 business days and propose solutions within 10 business days.
 
 ## Compatibility with browsers and assistive technology
 
@@ -146,8 +145,7 @@ We aim to resolve all accessibility issues promptly and professionally.
 This Accessibility Statement is approved by:
 
 **Tomás González**  
-Experience Designer & Site Owner  
-[admin@tomasjgonzalez.com](mailto:admin@tomasjgonzalez.com)
+Experience Designer & Site Owner
 
 ---
 

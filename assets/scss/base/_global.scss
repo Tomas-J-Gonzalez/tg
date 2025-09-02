@@ -183,7 +183,7 @@ a[data-variant="naked"] {
 
 a[data-variant="naked"]:hover {
   background-color: unset;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Special case for scroll-to-top to prevent any underline */
@@ -214,6 +214,10 @@ a[data-variant="naked"]:hover {
   color: var(--color-text-mod-2) !important;
   text-decoration: none !important;
   transition: all 0.2s ease !important;
+  min-height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 #wcb.carbonbadge:hover {
@@ -237,6 +241,19 @@ a[data-variant="naked"]:hover {
   border-color: var(--color-text) !important;
   color: var(--color-text) !important;
   background: var(--color-bg-mod-1) !important;
+}
+
+/* Fallback styling when script fails to load */
+#wcb.carbonbadge:empty::before {
+  content: "Carbon: Loading...";
+  color: var(--color-text-mod-2);
+  font-style: italic;
+}
+
+/* Ensure the badge is visible even when empty */
+#wcb.carbonbadge:empty {
+  min-width: 120px;
+  text-align: center;
 }
 
 /* Use desaturate to remove brand color from links */

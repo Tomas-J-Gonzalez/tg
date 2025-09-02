@@ -90,3 +90,4 @@ Certificate in Gestalt Psychology and Web Design & Accessibility: "How do Design
 ## Social
 
 - **LinkedIn:** [linkedin.com/in/tomasjgo](https://linkedin.com/in/tomasjgo)
+

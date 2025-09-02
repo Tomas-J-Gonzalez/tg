@@ -3,7 +3,6 @@
 Creator: Tomás González
 Site: Tomás González
 Url: https://tomasjgonzalez.com/
-Contact: admin@tomasjgonzalez.com
 Location: Auckland, New Zealand
 
 /* THANKS */
