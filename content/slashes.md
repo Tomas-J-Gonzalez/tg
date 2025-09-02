@@ -27,7 +27,3 @@ Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-
 <!-- [/things](/things/): Projects from the past or that I'm currently working on. -->
 <!-- [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->
 
----
-
-**Site Features:**
-- **Carbon Badge**: A [Website Carbon](https://www.websitecarbon.com/) badge in the footer showing this site's environmental impact
