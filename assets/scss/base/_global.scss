@@ -143,7 +143,7 @@ a {
 
 /* Remove thin underlines from headings, nav, footer, and case study card titles */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-nav a, footer a, .case-study-card__title-link {
+nav a, footer a, .case-study-card__title-link, .case-study-card__image-link {
   border-bottom: none;
   
   &:hover {
@@ -183,7 +183,60 @@ a[data-variant="naked"] {
 
 a[data-variant="naked"]:hover {
   background-color: unset;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+/* Special case for scroll-to-top to prevent any underline */
+.scroll-to-top[data-variant="naked"]:hover {
+  text-decoration: none;
+}
+
+/* Website Carbon Badge Styling */
+.carbon-badge-container {
+  margin-top: var(--space-xs);
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.carbon-badge-container:hover {
+  opacity: 1;
+}
+
+/* Custom styling for the carbon badge to match site theme */
+#wcb.carbonbadge {
+  background: transparent !important;
+  border: 1px solid var(--color-text-mod-2) !important;
+  border-radius: 4px !important;
+  padding: 8px 12px !important;
+  font-size: 0.8em !important;
+  color: var(--color-text-mod-2) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+#wcb.carbonbadge:hover {
+  border-color: var(--color-text) !important;
+  color: var(--color-text) !important;
+  background: var(--color-bg-mod-2) !important;
+}
+
+/* Ensure the badge text is readable */
+#wcb.carbonbadge span {
+  color: inherit !important;
+}
+
+/* Dark theme adjustments */
+.theme-dark #wcb.carbonbadge {
+  border-color: var(--color-text-mod-1) !important;
+  color: var(--color-text-mod-1) !important;
+}
+
+.theme-dark #wcb.carbonbadge:hover {
+  border-color: var(--color-text) !important;
+  color: var(--color-text) !important;
+  background: var(--color-bg-mod-1) !important;
 }
 
 /* Use desaturate to remove brand color from links */

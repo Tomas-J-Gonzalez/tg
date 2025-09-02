@@ -9,12 +9,12 @@ layout: "page"
 description: ""
 ---
 
-If you have found my work helpful in any way, then please consider supporting me to ensure it continues. Below you’ll find a few different ways to do that.
+If you have found my work helpful in any way, then please consider supporting me to ensure it continues. Below you'll find a few different ways to do that.
 
 ## Donate
 
-- [Buy me a coffee](https://www.buymeacoffee.com/harrycresswell) 
-- [Paypal.me](https://www.paypal.me/harrycresswell)
+- [Buy me a coffee](https://www.buymeacoffee.com/) 
+- [Paypal.me](https://www.paypal.me/)
 
 ## Other ways to support
 

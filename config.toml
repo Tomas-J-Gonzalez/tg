@@ -72,7 +72,7 @@ enable = false
 [markup.goldmark.extensions.passthrough]
 enable = false
 [markup.goldmark.parser]
-wrapStandAloneImageWithinParagraph = false # remove paragraphs that wrap stand-alone images https://discourse.gohugo.io/t/remove-empty-p-s-from-content/42462/7?u=harrycresswell
+wrapStandAloneImageWithinParagraph = false # remove paragraphs that wrap stand-alone images
 
 [[menu.main]]
 name = "Index"
@@ -80,9 +80,19 @@ url = "/"
 weight = 5
 
 [[menu.main]]
+name = "Accessibility"
+url = "/accessibility/"
+weight = 8
+
+[[menu.main]]
 name = "Writing"
 url = "/writing/"
 weight = 10
+
+[[menu.main]]
+name = "Inspirations"
+url = "/inspirations/"
+weight = 12
 
 [[menu.main]]
 name = "Portfolio"
@@ -95,9 +105,19 @@ url = "/"
 weight = 5
 
 [[menu.footer]]
+name = "Accessibility"
+url = "/accessibility/"
+weight = 8
+
+[[menu.footer]]
 name = "Writing"
 url = "/writing/"
 weight = 10
+
+[[menu.footer]]
+name = "Inspirations"
+url = "/inspirations/"
+weight = 12
 
 [[menu.footer]]
 name = "Portfolio"
