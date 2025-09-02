@@ -5,7 +5,7 @@ draft: false
 description: "A collaborative journey of re-imagining the user experience of Arion (The AUT Student Hub)."
 slug: "arion"
 topics: ["UX Design", "UI Design", "Research"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1712914684/tomas-master/img/Desktop_-_Login_Pane_Remember_Me_Copy_10_o6ryph.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1712914839/tomas-master/img/arion_login_screens_mobile_bozdxu.jpg"
 image_alt: "Mock up of Arion"
 client: "AUT University"
 role: "UX/UI Designer, Researcher"

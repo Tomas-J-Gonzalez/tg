@@ -5,7 +5,7 @@ draft: false
 description: "A collaborative journey to connect students within DCT facilities and enable interdisciplinary collaboration."
 slug: "link-up"
 topics: ["UX Design", "UI Design", "Research", "Student Platform"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1712922368/tomas-master/img/link_up_mobile_dash_col_jcqisp.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1712922156/tomas-master/img/link_up_mobile_dash_z7s4ys.jpg"
 image_alt: "Hi-fidelity design of Link-up"
 client: "DCT"
 role: "UX/UI Designer, Researcher"

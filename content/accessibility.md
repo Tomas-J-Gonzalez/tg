@@ -88,7 +88,7 @@ Despite my best efforts to ensure accessibility, there may be some limitations. 
 - **What to do in the meantime**: Contact me for detailed descriptions of any visual content
 
 ### **Third-party integrations**
-- **Content part**: External services like the Website Carbon badge
+- **Content part**: External services and integrations
 - **Description of the issue**: Some third-party content may not meet my accessibility standards
 - **Why the issue occurs**: Limited control over external service accessibility
 - **What I am doing about it**: I carefully select third-party services and advocate for accessibility improvements

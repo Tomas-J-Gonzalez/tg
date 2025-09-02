@@ -191,64 +191,7 @@ a[data-variant="naked"]:hover {
   text-decoration: none;
 }
 
-/* Website Carbon Badge Styling */
-.carbon-badge-container {
-  margin-top: var(--space-xs);
-  display: flex;
-  justify-content: center;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
 
-.carbon-badge-container:hover {
-  opacity: 1;
-}
-
-/* Custom styling for the carbon badge to match site theme */
-#wcb.carbonbadge {
-  background: transparent !important;
-  border: 1px solid var(--color-text-mod-2) !important;
-  border-radius: 4px !important;
-  padding: 8px 12px !important;
-  font-size: 0.8em !important;
-  color: var(--color-text-mod-2) !important;
-  text-decoration: none !important;
-  transition: all 0.2s ease !important;
-  min-height: 20px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-#wcb.carbonbadge:hover {
-  border-color: var(--color-text) !important;
-  color: var(--color-text) !important;
-  background: var(--color-bg-mod-2) !important;
-}
-
-/* Ensure the badge text is readable */
-#wcb.carbonbadge span {
-  color: inherit !important;
-}
-
-/* Dark theme adjustments */
-.theme-dark #wcb.carbonbadge {
-  border-color: var(--color-text-mod-1) !important;
-  color: var(--color-text-mod-1) !important;
-}
-
-.theme-dark #wcb.carbonbadge:hover {
-  border-color: var(--color-text) !important;
-  color: var(--color-text) !important;
-  background: var(--color-bg-mod-1) !important;
-}
-
-/* Ensure the badge is visible even when empty */
-#wcb.carbonbadge:empty {
-  min-width: 120px;
-  text-align: center;
-  color: var(--color-text-mod-2);
-}
 
 /* Use desaturate to remove brand color from links */
 a[data-variant="desaturate"] {

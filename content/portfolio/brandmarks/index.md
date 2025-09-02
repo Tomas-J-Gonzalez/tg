@@ -5,7 +5,7 @@ draft: false
 description: "Selected logo and brand identity designs for certain businesses and groups."
 slug: "brandmarks"
 topics: ["Logo Design", "Brand Identity", "Graphic Design"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798726/tomas-master/img/brandmarks-thumb_xi6ilm.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1756801693/tomas-master/img/brandmark-grey_xmsidt.png"
 image_alt: "Brandmarks collection"
 client: "Various"
 role: "Logo and Identity Designer"
