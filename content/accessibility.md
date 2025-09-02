@@ -7,15 +7,15 @@ description: "Our commitment to making this website accessible to all users, inc
 layout: "page"
 ---
 
-{{< intro >}}This accessibility statement explains how accessible this website is, what we're doing to improve it, and how you can get help if you have difficulty using the site.{{</ intro >}}
+{{< intro >}}This accessibility statement explains how accessible this website is, what I'm doing to improve it, and how you can get help if you have difficulty using the site.{{</ intro >}}
 
 ## About this website
 
-This website is the personal portfolio and blog of Tomás González, an Experience Designer based in Auckland, New Zealand. The site showcases design work, shares insights on design and development, and provides resources for the design community.
+This website is my personal portfolio and blog as an Experience Designer based in Auckland, New Zealand. The site showcases my design work, shares insights on design and development, and provides resources for the design community. As a designer, I believe that digital experiences should be accessible to everyone.
 
-## Our commitment to accessibility
+## My commitment to accessibility
 
-We believe that digital experiences should be accessible to everyone, regardless of their abilities or the technologies they use. This commitment aligns with our core values as experience designers and reflects our dedication to inclusive design principles.
+I believe that digital experiences should be accessible to everyone, regardless of their abilities or the technologies they use. This commitment aligns with my core values as an experience designer and reflects my dedication to inclusive design principles. Accessibility isn't just a technical requirement—it's fundamental to creating good user experiences.
 
 ## Accessibility standards applied
 
@@ -23,22 +23,22 @@ This website aims to conform to the **Web Content Accessibility Guidelines (WCAG
 
 ## Conformance status
 
-**Partially conformant**: Some parts of the content do not fully conform to the WCAG 2.2 Level AA accessibility standard. We are actively working to improve accessibility and address any identified issues.
+**Partially conformant**: Some parts of the content do not fully conform to the WCAG 2.2 Level AA accessibility standard. I am actively working to improve accessibility and address any identified issues.
 
-## Measures to support accessibility
+## Measures I take to support accessibility
 
-We take the following measures to ensure accessibility of this website:
+I take the following measures to ensure accessibility of this website:
 
-- **Include accessibility as part of our mission statement** - Accessibility is fundamental to our design philosophy
-- **Integrate accessibility into our development practices** - Using semantic HTML, proper ARIA labels, and accessible design patterns
-- **Provide continual accessibility training** - Staying updated with latest accessibility standards and best practices
-- **Employ formal accessibility quality assurance methods** - Regular testing with screen readers and keyboard navigation
-- **Include people with disabilities in our design personas** - Considering diverse user needs throughout the design process
+- **Include accessibility as part of my design philosophy** - Accessibility is fundamental to how I approach design
+- **Integrate accessibility into my development practices** - Using semantic HTML, proper ARIA labels, and accessible design patterns
+- **Stay updated with accessibility standards** - Continuously learning about latest accessibility guidelines and best practices
+- **Test with accessibility tools** - Regular testing with screen readers and keyboard navigation
+- **Consider diverse user needs** - Including people with disabilities in my design thinking
 - **Regular accessibility audits** - Periodic evaluation of the site's accessibility compliance
 
 ## Additional accessibility considerations
 
-Beyond WCAG 2.2 Level AA, we have also applied some Level AAA Success Criteria where possible:
+Beyond WCAG 2.2 Level AA, I have also applied some Level AAA Success Criteria where possible:
 
 - **Images of text are only used for decorative purposes**
 - **Re-authentication after a session expires does not cause loss of data**
@@ -78,34 +78,34 @@ These technologies are relied upon for conformance with the accessibility standa
 
 ## Known limitations and alternatives
 
-Despite our best efforts to ensure accessibility, there may be some limitations. Below is a description of known limitations and potential solutions:
+Despite my best efforts to ensure accessibility, there may be some limitations. Below is a description of known limitations and potential solutions:
 
 ### **User-generated content**
-- **Content part**: Comments and user contributions
-- **Description of the issue**: Some user-generated content may not have proper accessibility markup
-- **Why the issue occurs**: We cannot ensure the quality of all user contributions
-- **What we are doing about it**: We monitor and review user content for accessibility issues
-- **What to do in the meantime**: Please report any accessibility issues you encounter
-
-### **Third-party integrations**
-- **Content part**: External services and embeds
-- **Description of the issue**: Some third-party content may not meet our accessibility standards
-- **Why the issue occurs**: Limited control over external service accessibility
-- **What we are doing about it**: We carefully select third-party services and advocate for accessibility improvements
-- **What to do in the meantime**: Contact us for alternative ways to access the information
-
-### **Complex visual content**
 - **Content part**: Portfolio case studies and design work
 - **Description of the issue**: Some visual design work may be complex to describe
-- **Why the issue occurs**: Design work often relies on visual elements
-- **What we are doing about it**: Providing detailed alt text and descriptions for all visual content
-- **What to do in the meantime**: Contact us for detailed descriptions of any visual content
+- **Why the issue occurs**: Design work often relies on visual elements and layouts
+- **What I am doing about it**: Providing detailed alt text and descriptions for all visual content
+- **What to do in the meantime**: Contact me for detailed descriptions of any visual content
+
+### **Third-party integrations**
+- **Content part**: External services like the Website Carbon badge
+- **Description of the issue**: Some third-party content may not meet my accessibility standards
+- **Why the issue occurs**: Limited control over external service accessibility
+- **What I am doing about it**: I carefully select third-party services and advocate for accessibility improvements
+- **What to do in the meantime**: Contact me for alternative ways to access the information
+
+### **Complex visual content**
+- **Content part**: Portfolio grid layouts and visual arrangements
+- **Description of the issue**: Some layout structures may be complex to navigate
+- **Why the issue occurs**: Design portfolios often use creative layouts for visual impact
+- **What I am doing about it**: Ensuring logical tab order and clear navigation landmarks
+- **What to do in the meantime**: Use the skip links and navigation menus for easier access
 
 ## Assessment approach
 
-We assessed the accessibility of this website using the following approaches:
+I assessed the accessibility of this website using the following approaches:
 
-- **Self-evaluation**: Regular accessibility audits conducted by our development team
+- **Self-evaluation**: Regular accessibility audits conducted by me as the developer
 - **External evaluation**: Periodic testing with accessibility experts and users with disabilities
 - **Automated testing**: Using tools like axe-core and Lighthouse for continuous monitoring
 - **User testing**: Gathering feedback from users with diverse abilities and needs
@@ -122,7 +122,7 @@ This website is built using:
 
 ## Continuous improvement
 
-We are committed to continuously improving the accessibility of this website. Our improvement process includes:
+I am committed to continuously improving the accessibility of this website. My improvement process includes:
 
 1. **Regular accessibility audits** - Quarterly reviews of accessibility compliance
 2. **User feedback integration** - Incorporating accessibility feedback into development cycles
@@ -132,13 +132,13 @@ We are committed to continuously improving the accessibility of this website. Ou
 
 ## Formal complaints procedure
 
-If you are dissatisfied with our response to accessibility feedback, you may:
+If you are dissatisfied with my response to accessibility feedback, you may:
 
-1. **Escalate within our organization** - Request review by senior team members
+1. **Escalate within my organization** - Request review by contacting me directly
 2. **Seek external mediation** - Contact relevant accessibility advocacy organizations
 3. **Legal recourse** - Pursue options available under applicable accessibility laws
 
-We aim to resolve all accessibility issues promptly and professionally.
+I aim to resolve all accessibility issues promptly and professionally.
 
 ## Formal approval
 
@@ -155,4 +155,4 @@ This statement was created on 19 December 2024 and will be reviewed annually. Th
 
 ---
 
-*This accessibility statement demonstrates our commitment to inclusive design and our belief that digital experiences should be accessible to everyone. We welcome your feedback and suggestions for improvement.*
+*This accessibility statement demonstrates my commitment to inclusive design and my belief that digital experiences should be accessible to everyone. As a designer, I see accessibility as fundamental to creating good user experiences. I welcome your feedback and suggestions for improvement.*

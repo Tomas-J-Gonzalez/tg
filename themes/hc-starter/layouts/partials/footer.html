@@ -22,23 +22,6 @@
   <div class="carbon-badge-container">
     <div id="wcb" class="carbonbadge wcb-d" aria-label="Website carbon footprint"></div>
   </div>
-  
-  <!-- Website Carbon Badge Script -->
-  <script>
-    // Load Website Carbon Badge
-    (function() {
-      var script = document.createElement('script');
-      script.src = 'https://unpkg.com/[email protected]/b.min.js';
-      script.defer = true;
-      script.onload = function() {
-        console.log('Website Carbon Badge loaded successfully');
-      };
-      script.onerror = function() {
-        console.error('Failed to load Website Carbon Badge');
-        // Fallback: show a simple text version
-        document.getElementById('wcb').innerHTML = '<span>Carbon: Calculating...</span>';
-      };
-      document.head.appendChild(script);
-    })();
-  </script>
 </footer>
+
+<script src="https://unpkg.com/[email protected]/b.min.js" defer></script>

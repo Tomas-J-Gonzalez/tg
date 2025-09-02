@@ -9,7 +9,6 @@ layout: "moodboard"
 
 ## People
 
-### Design & Creative Thinkers
 <div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Andy Bell</h3>
@@ -43,10 +42,6 @@ layout: "moodboard"
         <h3>Steve Schoger</h3>
         <p>Visual design and interface patterns</p>
     </div>
-</div>
-
-### Artists & Creators
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Sol LeWitt</h3>
         <p>Conceptual art and systematic approaches</p>
@@ -71,10 +66,6 @@ layout: "moodboard"
         <h3>Donald Judd</h3>
         <p>Sculpture and architectural thinking</p>
     </div>
-</div>
-
-### Writers & Thinkers
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Austin Kleon</h3>
         <p>Creativity and artistic process</p>
@@ -99,7 +90,6 @@ layout: "moodboard"
 
 ## Films
 
-### Visual Storytelling
 <div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Blade Runner</h3>
@@ -133,10 +123,6 @@ layout: "moodboard"
         <h3>Mad Max: Fury Road</h3>
         <p>Action choreography and visual storytelling</p>
     </div>
-</div>
-
-### Animation & Art
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Spider-Man: Into the Spider-Verse</h3>
         <p>Visual innovation and comic book aesthetics</p>
@@ -165,7 +151,6 @@ layout: "moodboard"
 
 ## Games
 
-### Interactive Design
 <div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Journey</h3>
@@ -199,10 +184,6 @@ layout: "moodboard"
         <h3>Disco Elysium</h3>
         <p>Narrative design and character development</p>
     </div>
-</div>
-
-### Visual Aesthetics
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>Cuphead</h3>
         <p>1930s animation style and hand-drawn art</p>
@@ -231,7 +212,6 @@ layout: "moodboard"
 
 ## Books
 
-### Design & Creativity
 <div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>"Designing for the Web" by Mark Boulton</h3>
@@ -265,10 +245,6 @@ layout: "moodboard"
         <h3>"The Shape of Design" by Frank Chimero</h3>
         <p>Design philosophy and process</p>
     </div>
-</div>
-
-### Philosophy & Thinking
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>"Sapiens" by Yuval Noah Harari</h3>
         <p>Big picture thinking and history</p>
@@ -297,10 +273,6 @@ layout: "moodboard"
         <h3>"Keep Going" by Austin Kleon</h3>
         <p>Creative persistence and motivation</p>
     </div>
-</div>
-
-### Fiction & Storytelling
-<div class="moodboard-grid">
     <div class="moodboard-item">
         <h3>"Neuromancer" by William Gibson</h3>
         <p>Cyberpunk fiction and technology</p>
