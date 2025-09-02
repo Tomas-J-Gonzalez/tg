@@ -77,19 +77,9 @@ url = "/"
 weight = 5
 
 [[menu.main]]
-name = "Accessibility"
-url = "/accessibility/"
-weight = 8
-
-[[menu.main]]
 name = "Writing"
 url = "/writing/"
 weight = 10
-
-[[menu.main]]
-name = "Inspirations"
-url = "/inspirations/"
-weight = 12
 
 [[menu.main]]
 name = "Portfolio"
@@ -102,19 +92,9 @@ url = "/"
 weight = 5
 
 [[menu.footer]]
-name = "Accessibility"
-url = "/accessibility/"
-weight = 8
-
-[[menu.footer]]
 name = "Writing"
 url = "/writing/"
 weight = 10
-
-[[menu.footer]]
-name = "Inspirations"
-url = "/inspirations/"
-weight = 12
 
 [[menu.footer]]
 name = "Portfolio"

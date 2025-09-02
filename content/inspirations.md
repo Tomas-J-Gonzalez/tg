@@ -9,7 +9,7 @@ layout: "page"
 
 <div class="inspirations-page">
 
-{{< intro >}}A moodboard of people and media that inspire my creative work and thinking. This page is inspired by [Harry Cresswell's moodboard](https://mood.harrycresswell.com/) and serves as my digital inspiration collection.{{</ intro >}}
+{{< intro >}}A moodboard of people and media that inspire my creative work and thinking. This page is inspired by [Zetto Plus](https://www.zetto.plus/inspirations) and uses a moodboard layout design from [Harry Cresswell's moodboard](https://mood.harrycresswell.com/).{{</ intro >}}
 
 ## People
 
@@ -113,7 +113,7 @@ layout: "page"
 <div class="footnote">
 *This moodboard is constantly evolving. I add new sources of inspiration as I discover them and remove ones that no longer resonate with my current thinking.*
 
-*Inspired by [Harry Cresswell's moodboard](https://mood.harrycresswell.com/) - thank you for the inspiration to create this page.*
+*Page concept inspired by [Zetto Plus](https://www.zetto.plus/inspirations), layout design inspired by [Harry Cresswell's moodboard](https://mood.harrycresswell.com/).*
 </div>
 
 </div>
