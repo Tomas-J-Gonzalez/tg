@@ -5,7 +5,7 @@ draft: false
 description: "Designing and creating a recruitment pipeline, ATS (applicant tracking system), and employee directory, for a labour hire & construction company based in the Auckland. Due to the involvement of multiple businesses and international partnerships some of the work has been omitted."
 slug: "evolution-work-program"
 topics: ["UX Design", "UI Design", "Brand Strategy", "Research", "Web App", "ATS"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1711938887/tomas-master/img/bh_full_img_hkyp7i.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1712889408/tomas-master/img/BH_THUMB_dhdfkf.jpg"
 image_alt: "Desktop Mock up"
 client: "BH"
 role: "UX/UI Designer, Brand Strategist, Researcher"

@@ -5,7 +5,7 @@ draft: false
 description: "Hi-fidelity website re-design. Website alignment using client's component library and design system. Ensuring the resulting designs are adaptable, accessible, and meet the user's goals."
 slug: "exact-science"
 topics: ["UI Design", "Website Redesign", "Design Systems", "Component Libraries"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1741669230/tomas-master/img/twolabworkersx2_ifdukt.webp"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1742031727/tomas-master/img/product-overview-desktop_vupojd.jpg"
 image_alt: "Exact Sciences' lab"
 client: "Exact Sciences"
 role: "UI Designer"
