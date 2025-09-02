@@ -5,7 +5,7 @@ draft: false
 description: "Effortless Recruitment — From Source to Hire. As the sole UX designer on the team I was charged with researching and designing the brand concept and UI for Dploi Platform (AUS/NZ)."
 slug: "dploi"
 topics: ["UX Design", "UI Design", "Brand Strategy", "Research", "Recruitment Platform"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1710301624/tomas-master/img/dploi-thumb_pfiund.jpg"
+image: "https://res.cloudinary.com/tomasgo/image/upload/v1756804431/tomas-master/img/dploi_w08ayi.png"
 image_alt: "Mobile story of Dploi"
 client: "Dploi"
 role: "UX/UI Designer, Brand Strategist & Researcher"

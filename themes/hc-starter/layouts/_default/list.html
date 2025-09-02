@@ -19,7 +19,9 @@
         <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Tomás González</a>
       </div>
       <div class="cluster">
-          <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
+          {{ if and .Date (ne .Date.Year 1) }}
+            <time class="dt-published" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
+          {{ end }}
           {{ partial "post/topics.html" . }}
       </div>
       <p>{{ .Description | markdownify }}</p>
