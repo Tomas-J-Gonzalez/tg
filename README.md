@@ -212,6 +212,4 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-Sh
 ## 🔗 Links
 
 - **Live Site**: [tomasjgonzalez.com](https://tomasjgonzalez.com/)
-- **GitHub**: [Tomas-J-Gonzalez/tg](https://github.com/Tomas-J-Gonzalez/tg)
-- **Contact**: admin@tomasjgonzalez.com
 

@@ -41,4 +41,3 @@ This is more important than ever as we were living in a time characterized by fr
 
 * [LinkedIn](https://linkedin.com/in/tomasjgo)
 * [Are.na](https://are.na/tomas-gonzalez)
-* [Goodreads](https://goodreads.com/tomasjgo)
