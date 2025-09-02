@@ -32,4 +32,4 @@ _⚠️ While I take the security of your personal data extremely seriously, no 
 
 ## If you have any concerns
 
-Please [contact me](https://harrycresswell.com/contact), as soon as possible, if you have any concerns about how your data is being handled or would like me to destroy it.
+Please [contact me](/contact), as soon as possible, if you have any concerns about how your data is being handled or would like me to destroy it.

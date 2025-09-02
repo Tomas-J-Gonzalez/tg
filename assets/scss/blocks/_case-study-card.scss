@@ -75,15 +75,17 @@
     color: inherit;
     transition: transform 0.3s ease;
     overflow: hidden; // Contains the image
+    border-bottom: none; // Remove any underline
     
     &:hover {
       transform: translateY(-4px);
+      text-decoration: none; // Ensure no underline on hover
+      border-bottom: none; // Ensure no border on hover
     }
     
     &:focus-visible {
       outline: dotted 2px var(--color-text);
       outline-offset: 3px;
-
     }
   }
   

@@ -137,7 +137,7 @@ My business is insured by [With Jack](https://withjack.co.uk/), who protect free
 
 I use [Starling](https://www.starlingbank.com/referral?code=rkNWmT)* as my UK business bank account.
 
-I use [Wise](https://wise.com/invite/u/harryc454)* to collect payments in foreign currencies from international clients. With Wise you can set up a local bank account and receive payments much faster than with a domestic bank account.
+I use [Wise](https://wise.com/)* to collect payments in foreign currencies from international clients. With Wise you can set up a local bank account and receive payments much faster than with a domestic bank account.
 
 [Gumroad](https://gumroad.com/) is the tool I use to handle online payments for things like fonts or themes. 
 
