@@ -14,20 +14,21 @@
 {{ define "head" }}
 <style>
     .moodboard-container {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 2rem;
     }
     
     .moodboard-intro {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     
     .moodboard-intro h1 {
         font-size: var(--step-4);
         margin-bottom: 1rem;
         color: var(--color-text);
+        font-weight: 300;
     }
     
     .moodboard-intro p {
@@ -40,75 +41,53 @@
     
     .moodboard-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.5rem;
-        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-bottom: 4rem;
     }
     
     .moodboard-item {
-        background: var(--color-bg-mod-2);
+        background: var(--color-bg);
         border: 1px solid var(--color-border);
-        border-radius: 8px;
-        padding: 1.5rem;
-        transition: all 0.3s ease;
+        border-radius: 4px;
+        padding: 1rem;
+        transition: all 0.2s ease;
         position: relative;
-        overflow: hidden;
+        cursor: pointer;
     }
     
     .moodboard-item:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        background: var(--color-bg-mod-1);
         border-color: var(--color-brand);
-    }
-    
-    .moodboard-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--color-brand);
-        opacity: 0.3;
-        transition: opacity 0.3s ease;
-    }
-    
-    .moodboard-item:hover::before {
-        opacity: 1;
+        transform: translateY(-1px);
     }
     
     .moodboard-item h3 {
         margin: 0 0 0.5rem 0;
         font-size: var(--step-0);
         color: var(--color-text);
-        font-weight: 600;
+        font-weight: 500;
+        line-height: 1.3;
     }
     
     .moodboard-item p {
         margin: 0;
         color: var(--color-text-mod-1);
         font-size: var(--step--1);
-        line-height: 1.5;
+        line-height: 1.4;
     }
     
     .moodboard-section {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     
     .moodboard-section h2 {
-        font-size: var(--step-3);
-        margin-bottom: 1.5rem;
-        color: var(--color-text);
-        border-bottom: 2px solid var(--color-brand);
-        padding-bottom: 0.5rem;
-        display: inline-block;
-    }
-    
-    .moodboard-section h3 {
         font-size: var(--step-2);
-        margin: 2rem 0 1rem 0;
-        color: var(--color-text-mod-1);
-        font-weight: 600;
+        margin-bottom: 2rem;
+        color: var(--color-text);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
     
     .moodboard-footer {
@@ -118,6 +97,7 @@
         border-top: 1px solid var(--color-border);
         color: var(--color-text-mod-2);
         font-style: italic;
+        font-size: var(--step--1);
     }
     
     .moodboard-footer a {
@@ -136,7 +116,7 @@
         
         .moodboard-grid {
             grid-template-columns: 1fr;
-            gap: 1rem;
+            gap: 0.75rem;
         }
         
         .moodboard-intro h1 {
@@ -144,7 +124,11 @@
         }
         
         .moodboard-section h2 {
-            font-size: var(--step-2);
+            font-size: var(--step-1);
+        }
+        
+        .moodboard-item {
+            padding: 0.75rem;
         }
     }
 </style>
