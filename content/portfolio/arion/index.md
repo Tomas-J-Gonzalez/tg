@@ -1,7 +1,7 @@
 ---
 title: "Arion"
 date: 2018-01-01
-draft: false
+draft: true
 description: "A collaborative journey of re-imagining the user experience of Arion (The AUT Student Hub)."
 slug: "arion"
 topics: ["UX Design", "UI Design", "Research"]
