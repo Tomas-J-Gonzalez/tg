@@ -165,26 +165,34 @@
   transition: all 0.2s ease;
 }
 
+/* Uniform square canvas for all brand images */
+.brand-image__inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* 1:1 square */
+  background: var(--color-bg-mod-2);
+}
+
+.brand-image__inner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* preserve aspect, no cropping */
+}
+
 .brand-image:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.brand-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
+/* Hide visible captions; use title tooltip instead */
 .brand-image figcaption {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.75rem;
-  color: var(--color-text-mod-1, #a0a0a0);
-  text-align: center;
-  background: transparent;
-  border-top: 1px solid var(--color-container-border, #404040);
-  font-weight: 400;
+  display: none;
 }
 
 /* Responsive design */
