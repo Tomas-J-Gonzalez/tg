@@ -4,9 +4,10 @@
     <div class="footer-nav-container">
       <ul class="cluster" role="menubar">
       {{ range .Site.Menus.footer }}
+        {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
         <li role="none">
           <a data-variant="naked" {{ if eq $currentPage.RelPermalink .URL }}data-state="active" aria-current="page"{{ end }}
-          href="{{.URL}}" role="menuitem">{{ .Name }}</a>
+          href="{{.URL}}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }} role="menuitem">{{ .Name }}</a>
         </li>
       {{ end }}
       </ul>

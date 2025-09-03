@@ -88,7 +88,7 @@ weight = 15
 
 [[menu.main]]
 name = "Inspo"
-url = "https://main--visual-garden.netlify.app/tags/inspirations/"
+url = "https://main--visual-garden.netlify.app/tags/inspiration/"
 weight = 20
 
 [[menu.footer]]
@@ -118,6 +118,6 @@ weight = 25
 
 [[menu.footer]]
 name = "Inspo"
-url = "https://main--visual-garden.netlify.app/tags/inspirations/"
+url = "https://main--visual-garden.netlify.app/tags/inspiration/"
 weight = 30
 
