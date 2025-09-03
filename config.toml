@@ -86,6 +86,11 @@ name = "Portfolio"
 url = "/portfolio/"
 weight = 15
 
+[[menu.main]]
+name = "Inspo"
+url = "https://main--visual-garden.netlify.app/tags/inspirations/"
+weight = 20
+
 [[menu.footer]]
 name = "Index"
 url = "/"
@@ -110,4 +115,9 @@ weight = 20
 name = "Slashes"
 url = "/slashes/"
 weight = 25
+
+[[menu.footer]]
+name = "Inspo"
+url = "https://main--visual-garden.netlify.app/tags/inspirations/"
+weight = 30
 
