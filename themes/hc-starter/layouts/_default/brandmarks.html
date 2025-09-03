@@ -37,10 +37,9 @@
                     {{ range $.Params.blocks }}
                       {{ if and (eq .template "image") (eq .brand $currentHeading) }}
                         <figure class="brand-image">
-                          <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
-                          {{ if .caption }}
-                            <figcaption>{{ .caption }}</figcaption>
-                          {{ end }}
+                          <div class="aspect-ratio-square brand-image__inner">
+                            <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" title="{{ with .caption }}{{ . | plainify }}{{ else }}{{ .alt }}{{ end }}">
+                          </div>
                         </figure>
                       {{ end }}
                     {{ end }}
