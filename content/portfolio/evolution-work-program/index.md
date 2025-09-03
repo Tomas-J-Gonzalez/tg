@@ -40,6 +40,8 @@ blocks:
   - template: body-copy
     heading: "Conceptualising"
     content: |
+      Sep 2022: Together with one other teammate we set off to create the proposed web-app.
+      
       Sep 2022: Together with one other developer we set off to create the proposed web-app.
 
       We began by digging into user needs for applicants, on-site workers and internal employees. From there, I sketched out rough ideas and turned them into detailed wireframes for both mobile and web.
@@ -166,7 +168,7 @@ blocks:
   - template: body-copy
     heading: "Key learnings"
     content: |
-      - ​This project needed a larger team designers and developers. At some times I was both a UX/UI designer and product manager.
+      - ​This project needed a larger team designers and technologists. At some times I was both a UX/UI designer and product manager.
       - Working on a time crunch, pressure was constant and therefore prioritisation was key.
       - Writing UX Copy for both English & Spanish users.
       - No documentation throughout the project, and therefore a lack of images and videos showcasing design related tasks or processes.

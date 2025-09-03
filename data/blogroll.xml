@@ -28,7 +28,7 @@
 		<outline text="Paul Stamatiou" title="Paul Stamatiou" description="" type="rss" version="RSS" htmlUrl="https://paulstamatiou.com/" xmlUrl="https://paulstamatiou.com/posts.xml"/>
 		<outline text="Robin Rendle" title="Robin Rendle" description="" type="rss" version="RSS" htmlUrl="https://robinrendle.com/" xmlUrl="https://robinrendle.com/feed.xml"/>
 	</outline>
-	<outline text="Developers" title="Developers">
+	<outline text="Web" title="Web">
 		<outline text="Baldur Bjarnason" title="Baldur Bjarnason" description="" type="rss" version="RSS" htmlUrl="https://www.baldurbjarnason.com/" xmlUrl="https://feedpress.me/baldurbjarnason"/>
 		<outline text="Ben Robertson" title="Ben Robertson" description="" type="rss" version="RSS" htmlUrl="https://benrobertson.io/" xmlUrl="https://benrobertson.io/feed.xml"/>
 		<outline text="Bradley Taunt" title="Bradley Taunt" description="" type="rss" version="RSS" htmlUrl="http://btxx.org/" xmlUrl="https://btxx.org/index.rss"/>

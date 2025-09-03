@@ -189,9 +189,9 @@ topics: ["UX Design", "Web Development"]
 image: "project-thumbnail.jpg"
 image_alt: "Project screenshot"
 client: "Client Name"
-role: "UX Designer & Developer"
+role: "Experience Designer"
 duration: "3 months"
-tools: ["Figma", "React", "Node.js"]
+tools: ["Figma", "Miro", "Illustrator"]
 live_url: "https://project-url.com"
 github_url: "https://github.com/username/project"
 ---
