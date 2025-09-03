@@ -32,7 +32,7 @@ Tomás González is an Experience Designer and Creative Technologist based in Au
 *2020 – 2024*
 
 - Designed and maintained a comprehensive recruitment & onboarding system to successfully attract more than +2,900 overseas applicants
-- Worked with developers to create an ATS (Applicant Tracking System) + Operational system for the company to help streamline recruitment, hiring, and onboarding of candidates
+- Worked with a small cross-functional team to create an ATS (Applicant Tracking System) + Operational system for the company to help streamline recruitment, hiring, and onboarding of candidates
 - Stakeholder management and working within a small multi-disciplinary team
 - Established first design guide and asset library. Designed brand strategy, logo and website
 - Interactive workshop planning and facilitation. 'Design & Business workshops'
@@ -63,9 +63,8 @@ Work primarily consisted of web projects and logo designs: Wireframing, UI desig
 - Design system creation / maintanence
 - Agile methodology
 
-#### Front-End Development
-- HTML, CSS, SASS
-- Figma Dev
+#### Technical Skills
+- HTML, CSS, Sass
 - GitHub
 - Cursor
 
