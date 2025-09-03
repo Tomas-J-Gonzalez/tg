@@ -93,7 +93,8 @@
   &__image {
     position: relative;
     width: 100%;
-    height: 400px;
+    /* Use intrinsic height via content to preserve aspect ratio */
+    height: auto;
     border-radius: 0; // Removed border radius
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -107,8 +108,9 @@
     // Image styling
     img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto; /* Preserve natural aspect ratio */
+      /* Remove cropping */
+      object-fit: contain;
       object-position: center;
       display: block; // Removes inline spacing
     }
@@ -117,7 +119,8 @@
   // Placeholder styling
   &__placeholder {
     width: 100%;
-    height: 400px;
+    /* Match image behavior: auto height driven by content; give a reasonable min-height */
+    min-height: 240px;
     background: var(--color-bg-mod-2);
     display: flex;
     align-items: center;
@@ -189,7 +192,8 @@
     
     &__image,
     &__placeholder {
-      height: 400px;
+      /* Remove forced fixed height to avoid cropping */
+      height: auto;
     }
   }
   
@@ -214,7 +218,8 @@
     
     &__image,
     &__placeholder {
-      height: 400px;
+      /* Remove forced fixed height to avoid cropping */
+      height: auto;
     }
     
     &__image-link {
