@@ -1,7 +1,7 @@
 ---
 title: "Link-up"
 date: 2018-01-01
-draft: false
+draft: true
 description: "A collaborative journey to connect students within DCT facilities and enable interdisciplinary collaboration."
 slug: "link-up"
 topics: ["UX Design", "UI Design", "Research", "Student Platform"]
