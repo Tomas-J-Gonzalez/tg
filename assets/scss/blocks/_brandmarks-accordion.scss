@@ -151,8 +151,8 @@
 
 .brand-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -231,10 +231,7 @@
     padding: 1rem;
   }
   
-  .brand-images {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+  .brand-images { grid-template-columns: 1fr; gap: 0.75rem; }
 }
 
 /* Light theme specific adjustments */
