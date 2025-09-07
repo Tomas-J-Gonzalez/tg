@@ -22,12 +22,14 @@ prepare_fallback() {
   if [ -f static/vendor/fa7/FA7-BRANDS/stylesheet.css ]; then
     cp -f static/vendor/fa7/FA7-BRANDS/stylesheet.css static/fa7/css/brands.css
   fi
-  # Rewrite font URLs to ../webfonts/
+  # Rewrite font URLs to ../webfonts/ (portable across macOS/Linux)
   if [ -f static/fa7/css/sharp.css ]; then
-    sed -E -i "" "s|url\(['\"]?([^'\"/]+\\.(woff2|woff))['\"]?\)|url('../webfonts/\1')|g" static/fa7/css/sharp.css || true
+    perl -0777 -pe "s|url\((?:'|")?([^/'\"]+\.(?:woff2|woff))(?:'|")?\)|url('../webfonts/$1')|g" \
+      -i static/fa7/css/sharp.css || true
   fi
   if [ -f static/fa7/css/brands.css ]; then
-    sed -E -i "" "s|url\(['\"]?([^'\"/]+\\.(woff2|woff))['\"]?\)|url('../webfonts/\1')|g" static/fa7/css/brands.css || true
+    perl -0777 -pe "s|url\((?:'|")?([^/'\"]+\.(?:woff2|woff))(?:'|")?\)|url('../webfonts/$1')|g" \
+      -i static/fa7/css/brands.css || true
   fi
   echo "🔎 Fallback contents:"; ls -la static/fa7; ls -la static/fa7/css; ls -la static/fa7/webfonts
 }
