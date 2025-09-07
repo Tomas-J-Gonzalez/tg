@@ -19,14 +19,13 @@
 
   {{ partialCached "footer.html" . .Type }}
   <!-- Store JS files independently -->
-  {{ $lazysizes := resources.Get "js/lazysizes.js" }}
   {{ $emailmask := resources.Get "js/email-mask.js" }}
   {{ $themeToggle := resources.Get "js/theme-toggle.js" }}
 
   <!-- Concat JS, generate default app.js and app-likes -->
-  {{ $defaultJS := slice $lazysizes $themeToggle | resources.Concat "app.js" }}
+  {{ $defaultJS := slice $themeToggle | resources.Concat "app.js" }}
   <!-- Concat JS, generate default app.js and app-likes -->
-  {{ $customJS := slice $lazysizes $emailmask $themeToggle | resources.Concat "app-custom.js" }}
+  {{ $customJS := slice $emailmask $themeToggle | resources.Concat "app-custom.js" }}
   <!-- Set default -->
   {{ $script := $defaultJS }}
   <!-- If content is writing or subscribed oage, change script to custom to include email mask script -->

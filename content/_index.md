@@ -5,7 +5,7 @@ description: "Tomás González is an Experience designer and Creative technologi
 draft: false
 ---
 
-{{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" >}}
+{{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" priority=true >}}
 
 Currently designing at AKQA Tāmaki Makaurau.
 

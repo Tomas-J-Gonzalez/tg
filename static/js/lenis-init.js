@@ -1,15 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  const ENABLE_LENIS = false;
+  if (!ENABLE_LENIS) return;
+
   function init() {
     if (typeof window.Lenis !== 'function') return;
     const lenis = new Lenis({
-      duration: 1.0,
-      easing: (t) => 1 - Math.pow(1 - t, 2), // easeOutQuad
+      // Subtle smoothing via lerp; higher is snappier/closer to native
+      lerp: 0.2,
       smoothWheel: true,
-      smoothTouch: false,
-      wheelMultiplier: 1.0,
-      touchMultiplier: 1.5
+      normalizeWheel: true,
+      gestureDirection: 'vertical',
+      // Smooth, non-inertial touch scrolling
+      syncTouch: true,
+      syncTouchLerp: 0.2,
+      touchInertiaMultiplier: 0,
+      wheelMultiplier: 1,
+      touchMultiplier: 1
     });
     if (console && console.info) console.info('[lenis] initialized');
     if (typeof lenis.start === 'function') lenis.start();
