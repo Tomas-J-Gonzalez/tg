@@ -32,22 +32,16 @@
 
   <!-- Font Awesome (self-hosted, non-blocking). Uses configurable path, falls back to FA5 Free. -->
   {{ $faPath := or .Site.Params.fa_css_path "fa7/css/sharp.css" }}
-  <link rel="preload" as="style" href="{{ $faPath | relURL }}">
-  <link rel="stylesheet" href="{{ $faPath | relURL }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ $faPath | relURL }}"></noscript>
+  <link rel="stylesheet" href="{{ $faPath | relURL }}">
 
   <!-- Temporary shim mapping until full FA7 CSS is provided -->
-  <link rel="preload" as="style" href="{{ "fa7/css/shim.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "fa7/css/shim.css" | relURL }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ "fa7/css/shim.css" | relURL }}"></noscript>
+  <link rel="stylesheet" href="{{ "fa7/css/shim.css" | relURL }}">
 
   {{ with .Site.Params.fa_brands_css_path }}
     {{ $brandsPath := . }}
     {{ $brandsFile := printf "static/%s" $brandsPath }}
     {{ if fileExists $brandsFile }}
-      <link rel="preload" as="style" href="{{ $brandsPath | relURL }}">
-      <link rel="stylesheet" href="{{ $brandsPath | relURL }}" media="print" onload="this.media='all'">
-      <noscript><link rel="stylesheet" href="{{ $brandsPath | relURL }}"></noscript>
+      <link rel="stylesheet" href="{{ $brandsPath | relURL }}">
     {{ end }}
   {{ end }}
 
