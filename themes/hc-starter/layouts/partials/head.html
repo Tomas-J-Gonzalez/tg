@@ -29,13 +29,22 @@
   <!-- Resource Hints -->
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <link rel="dns-prefetch" href="//res.cloudinary.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-  
-  <!-- Font Awesome 5 Free (non-blocking) -->
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+
+  <!-- Font Awesome (self-hosted, non-blocking). Uses configurable path, falls back to FA5 Free. -->
+  {{ $faPath := or .Site.Params.fa_css_path "fa7/css/sharp.min.css" }}
+  <link rel="preload" as="style" href="{{ .Site.BaseURL }}{{ $faPath }}">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ $faPath }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ .Site.BaseURL }}{{ $faPath }}"></noscript>
+
+  {{ with .Site.Params.fa_brands_css_path }}
+    {{ $brandsPath := . }}
+    {{ $brandsFile := printf "static/%s" $brandsPath }}
+    {{ if fileExists $brandsFile }}
+      <link rel="preload" as="style" href="{{ $.Site.BaseURL }}{{ $brandsPath }}">
+      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ $brandsPath }}" media="print" onload="this.media='all'">
+      <noscript><link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ $brandsPath }}"></noscript>
+    {{ end }}
+  {{ end }}
 
   <!-- Preload LCP image on homepage -->
   {{ if .IsHome }}

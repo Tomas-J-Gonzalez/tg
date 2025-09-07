@@ -115,7 +115,7 @@ Reusable circle icon button styles for theme toggles and other icon buttons
 
 Usage:
 <button class="btn btn-circle btn-ghost" type="button" aria-label="Button description">
-  <i class="fas fa-search"></i>
+  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
   <span class="sr-only">Button description</span>
 </button>
 
@@ -125,15 +125,15 @@ Available classes:
 - .btn-ghost: Transparent background with hover effects
 - .sr-only: Screen reader only text for accessibility
 
-Font Awesome Icons:
-- Theme toggle: fas fa-sun / fas fa-moon
-- Search: fas fa-search
-- Settings: fas fa-cog
-- Notifications: fas fa-bell
-- Menu: fas fa-bars
-- Close: fas fa-times
-- Plus: fas fa-plus
-- Minus: fas fa-minus
+Font Awesome Icons (Sharp):
+- Theme toggle: fa-sharp fa-solid fa-sun / fa-sharp fa-solid fa-moon
+- Search: fa-sharp fa-solid fa-magnifying-glass
+- Settings: fa-sharp fa-solid fa-gear
+- Notifications: fa-sharp fa-solid fa-bell
+- Menu: fa-sharp fa-solid fa-bars
+- Close: fa-sharp fa-solid fa-xmark
+- Plus: fa-sharp fa-solid fa-plus
+- Minus: fa-sharp fa-solid fa-minus
 */
 .btn {
   display: inline-flex !important;

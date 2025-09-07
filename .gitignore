@@ -2,3 +2,5 @@ node_modules/
 public/
 site/public
 .vscode/*
+static/fa7/
+static/vendor/fa7/

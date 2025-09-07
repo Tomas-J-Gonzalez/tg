@@ -1,10 +1,13 @@
 [build]
-command = "hugo --minify"
+command = "bash scripts/build.sh"
 publish = "public"
 
 [context.production.environment]
-HUGO_VERSION = "0.126.1"
+HUGO_VERSION = "0.148.2"
 HUGO_ENV = "production"
+# Optional: set these in Netlify UI as environment variables
+# FA7_ASSETS_URL = "https://example.com/private/fa7.zip"
+# FA7_ASSETS_TOKEN = "netlify_env_secret"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.126.1"
+HUGO_VERSION = "0.148.2"
