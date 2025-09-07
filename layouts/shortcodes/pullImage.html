@@ -1,5 +1,20 @@
+{{ $priority := .Get "priority" }}
 <figure class="Image" data-layout="pull-right">
   <div class="aspect-ratio-headshot">
+    {{ if $priority }}
+      <img
+        sizes="(min-width: 37.5em) 55vw, 100vw"
+        srcset="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_256/{{ .Get "src" }} 256w,
+                {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/{{ .Get "src" }} 512w,
+                {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_768/{{ .Get "src" }} 768w,
+                {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_1024/{{ .Get "src" }} 1024w,
+                {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_1280/{{ .Get "src" }} 1280w"
+        src="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/{{ .Get "src" }}"
+        alt="{{ .Get "alt" }}"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async" />
+    {{ else }}
       <img
         data-sizes="(min-width: 37.5em) 55vw, 100vw"
         data-srcset="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_256/{{ .Get "src" }} 256w,
@@ -10,6 +25,7 @@
         data-src="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/{{ .Get "src" }}"
         alt="{{ .Get "alt" }}"
         class="lazyload" />
+    {{ end }}
     </div>
   {{ if .Get "caption"}}
     <figcaption>{{ .Get "caption" }}</figcaption>

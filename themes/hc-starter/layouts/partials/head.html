@@ -26,8 +26,29 @@
     })();
   </script>
   
-  <!-- Font Awesome 5 Free -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="dns-prefetch" href="//res.cloudinary.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  
+  <!-- Font Awesome 5 Free (non-blocking) -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+
+  <!-- Preload LCP image on homepage -->
+  {{ if .IsHome }}
+  <link
+    rel="preload"
+    as="image"
+    imagesrcset="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_256/v1756520916/tomas-master/img/sunny-me_c7izsz.png 256w,
+                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/v1756520916/tomas-master/img/sunny-me_c7izsz.png 512w,
+                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_768/v1756520916/tomas-master/img/sunny-me_c7izsz.png 768w,
+                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_1024/v1756520916/tomas-master/img/sunny-me_c7izsz.png 1024w,
+                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_1280/v1756520916/tomas-master/img/sunny-me_c7izsz.png 1280w"
+    imagesizes="(min-width: 37.5em) 55vw, 100vw">
+  {{ end }}
   
   <!-- Titles -->
   <title>
