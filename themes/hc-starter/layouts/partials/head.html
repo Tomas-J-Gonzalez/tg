@@ -36,6 +36,11 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ $faPath }}" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="{{ .Site.BaseURL }}{{ $faPath }}"></noscript>
 
+  <!-- Temporary shim mapping until full FA7 CSS is provided -->
+  <link rel="preload" as="style" href="{{ .Site.BaseURL }}fa7/css/shim.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}fa7/css/shim.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ .Site.BaseURL }}fa7/css/shim.css"></noscript>
+
   {{ with .Site.Params.fa_brands_css_path }}
     {{ $brandsPath := . }}
     {{ $brandsFile := printf "static/%s" $brandsPath }}
