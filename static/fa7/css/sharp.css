@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'font_awesome_7_sharplight';
-    src: url('../webfonts/font_awesome_7_sharp-light-300-webfont.woff2') format('woff2'),
-         url('../webfonts/font_awesome_7_sharp-light-300-webfont.woff') format('woff');
+    src: url('font_awesome_7_sharp-light-300-webfont.woff2') format('woff2'),
+         url('font_awesome_7_sharp-light-300-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'font_awesome_7_sharpregular';
-    src: url('../webfonts/font_awesome_7_sharp-regular-400-webfont.woff2') format('woff2'),
-         url('../webfonts/font_awesome_7_sharp-regular-400-webfont.woff') format('woff');
+    src: url('font_awesome_7_sharp-regular-400-webfont.woff2') format('woff2'),
+         url('font_awesome_7_sharp-regular-400-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'font_awesome_7_sharpsolid';
-    src: url('../webfonts/font_awesome_7_sharp-solid-900-webfont.woff2') format('woff2'),
-         url('../webfonts/font_awesome_7_sharp-solid-900-webfont.woff') format('woff');
+    src: url('font_awesome_7_sharp-solid-900-webfont.woff2') format('woff2'),
+         url('font_awesome_7_sharp-solid-900-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
