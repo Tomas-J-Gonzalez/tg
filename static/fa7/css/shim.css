@@ -36,7 +36,7 @@
 
 /* Icon content mappings (codepoints follow FA conventions) */
 .fa-moon::before { content: "☾"; }
-.fa-sun::before { content: "☀"; }
+.fa-sun::before { content: "☼"; }
 .fa-chevron-down::before { content: "▾"; }
 .fa-chevron-up::before { content: "▴"; }
 .fa-chevron-left::before { content: "◂"; }
