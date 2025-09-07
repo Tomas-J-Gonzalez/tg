@@ -1,5 +1,5 @@
 [build]
-command = "bash scripts/build.sh"
+command = "hugo --minify"
 publish = "public"
 
 [context.production.environment]
