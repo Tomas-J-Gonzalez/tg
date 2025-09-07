@@ -22,6 +22,20 @@ EXCEPTIONS
   --grid-min-item-size: clamp(16rem, 50vw, 26rem);
 }
 
+/* Limit media to single column within 50-50 grid */
+.grid[data-layout='50-50'] figure,
+.grid[data-layout='50-50'] .Image,
+.grid[data-layout='50-50'] img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Center figures/items within the grid cells */
+.grid[data-layout='50-50'] > * {
+  justify-self: center;
+  align-self: start;
+}
+
 /* Four column when space permits */
 .grid[data-layout='25x4'] {
   --grid-placement: auto-fit;
