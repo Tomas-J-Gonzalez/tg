@@ -25,6 +25,12 @@ card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
 cloudinary_url = "https://res.cloudinary.com/tomasgo/image/upload"
 
+# Font Awesome configuration
+# Point to your self-hosted FA7 Sharp CSS (place files in static/fa7/...)
+fa_css_path = "fa7/css/sharp.css"
+# Optional: FA7 Brands CSS (place file and webfonts accordingly)
+fa_brands_css_path = "fa7/css/brands.css"
+
 [params.author]
 name = "Tomás González"
 photo = "https://res.cloudinary.com/tomasgo/image/upload/v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
