@@ -1,0 +1,150 @@
+/* Minimal FA7 shim: provides class → glyph mapping for icons we use */
+/* Extended utilities for broader compatibility */
+
+.fa,
+.fa-sharp,
+.fa-brands {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Map style classes to the generated font-family names */
+.fa-sharp.fa-solid { font-family: 'font_awesome_7_sharpsolid'; font-weight: 900; }
+.fa-sharp.fa-regular { font-family: 'font_awesome_7_sharpregular'; font-weight: 400; }
+.fa-sharp.fa-light { font-family: 'font_awesome_7_sharplight'; font-weight: 300; }
+.fa-brands { font-family: 'font_awesome_7_brandsregular'; font-weight: 400; }
+
+/* Also support usage without explicit fa-sharp prefix */
+.fa-solid { font-family: 'font_awesome_7_sharpsolid'; font-weight: 900; }
+.fa-regular { font-family: 'font_awesome_7_sharpregular'; font-weight: 400; }
+.fa-light { font-family: 'font_awesome_7_sharplight'; font-weight: 300; }
+
+/* Icon content mappings (codepoints follow FA conventions) */
+.fa-moon::before { content: "\f186"; }
+.fa-sun::before { content: "\f185"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-chevron-up::before { content: "\f077"; }
+.fa-chevron-left::before { content: "\f053"; }
+.fa-chevron-right::before { content: "\f054"; }
+.fa-share-from-square::before { content: "\f14d"; }
+.fa-share::before { content: "\f064"; }
+.fa-share-alt::before { content: "\f1e0"; }
+.fa-image::before { content: "\f03e"; }
+.fa-arrow-up-right-from-square::before { content: "\f08e"; }
+.fa-external-link::before, .fa-external-link-alt::before { content: "\f08e"; }
+.fa-arrow-up::before { content: "\f062"; }
+.fa-arrow-right::before { content: "\f061"; }
+.fa-arrow-left::before { content: "\f060"; }
+.fa-arrow-down::before { content: "\f063"; }
+
+/* UI controls */
+.fa-magnifying-glass::before, .fa-search::before { content: "\f002"; }
+.fa-magnifying-glass-plus::before, .fa-search-plus::before { content: "\f00e"; }
+.fa-magnifying-glass-minus::before, .fa-search-minus::before { content: "\f010"; }
+.fa-gear::before, .fa-cog::before { content: "\f013"; }
+.fa-bell::before { content: "\f0f3"; }
+.fa-bars::before { content: "\f0c9"; }
+.fa-xmark::before, .fa-times::before { content: "\f00d"; }
+.fa-plus::before { content: "\f067"; }
+.fa-minus::before { content: "\f068"; }
+.fa-link::before { content: "\f0c1"; }
+.fa-check::before { content: "\f00c"; }
+.fa-circle-check::before, .fa-check-circle::before { content: "\f058"; }
+.fa-circle-info::before, .fa-info-circle::before { content: "\f05a"; }
+.fa-triangle-exclamation::before, .fa-exclamation-triangle::before { content: "\f071"; }
+.fa-circle-exclamation::before, .fa-exclamation-circle::before { content: "\f06a"; }
+.fa-download::before { content: "\f019"; }
+.fa-upload::before { content: "\f093"; }
+.fa-play::before { content: "\f04b"; }
+.fa-pause::before { content: "\f04c"; }
+.fa-stop::before { content: "\f04d"; }
+.fa-play-circle::before { content: "\f144"; }
+.fa-pause-circle::before { content: "\f28b"; }
+.fa-stop-circle::before { content: "\f28d"; }
+.fa-calendar::before { content: "\f133"; }
+.fa-clock::before { content: "\f017"; }
+.fa-location-dot::before, .fa-map-marker-alt::before { content: "\f3c5"; }
+.fa-map-marker::before { content: "\f041"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-envelope-open::before { content: "\f2b6"; }
+.fa-paper-plane::before { content: "\f1d8"; }
+.fa-phone::before { content: "\f095"; }
+.fa-user::before { content: "\f007"; }
+.fa-users::before { content: "\f0c0"; }
+.fa-heart::before { content: "\f004"; }
+.fa-star::before { content: "\f005"; }
+.fa-home::before, .fa-house::before { content: "\f015"; }
+.fa-camera::before { content: "\f030"; }
+.fa-video::before { content: "\f03d"; }
+.fa-comment::before { content: "\f075"; }
+.fa-comments::before { content: "\f086"; }
+.fa-trash::before { content: "\f1f8"; }
+.fa-pen::before { content: "\f304"; }
+.fa-pencil-alt::before { content: "\f303"; }
+.fa-edit::before { content: "\f044"; }
+.fa-folder::before { content: "\f07b"; }
+.fa-folder-open::before { content: "\f07c"; }
+.fa-file::before { content: "\f15b"; }
+.fa-file-alt::before { content: "\f15c"; }
+.fa-cloud::before { content: "\f0c2"; }
+.fa-cloud-download-alt::before { content: "\f381"; }
+.fa-cloud-upload-alt::before { content: "\f382"; }
+.fa-shopping-cart::before { content: "\f07a"; }
+.fa-shopping-bag::before { content: "\f290"; }
+.fa-lock::before { content: "\f023"; }
+.fa-unlock::before { content: "\f09c"; }
+.fa-lock-open::before { content: "\f3c1"; }
+.fa-key::before { content: "\f084"; }
+.fa-eye::before { content: "\f06e"; }
+.fa-eye-slash::before { content: "\f070"; }
+.fa-print::before { content: "\f02f"; }
+.fa-map::before { content: "\f279"; }
+.fa-globe::before { content: "\f0ac"; }
+
+/* Brand icons */
+.fa-brands.fa-github::before { content: "\f09b"; }
+.fa-brands.fa-twitter::before { content: "\f099"; }
+.fa-brands.fa-x-twitter::before { content: "\e61b"; }
+.fa-brands.fa-linkedin::before { content: "\f08c"; }
+.fa-brands.fa-linkedin-in::before { content: "\f0e1"; }
+.fa-brands.fa-instagram::before { content: "\f16d"; }
+.fa-brands.fa-youtube::before { content: "\f167"; }
+.fa-brands.fa-facebook::before { content: "\f09a"; }
+.fa-brands.fa-facebook-f::before { content: "\f39e"; }
+
+/* Size utilities commonly expected */
+.fa-1x { font-size: 1em; }
+.fa-2x { font-size: 2em; }
+.fa-3x { font-size: 3em; }
+.fa-xs { font-size: .75em; }
+.fa-sm { font-size: .875em; }
+.fa-lg { font-size: 1.33333em; line-height: .75em; vertical-align: -.0667em; }
+
+/* Extra utilities: spin/rotate/stack/border/pull */
+@keyframes fa-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(1turn); } }
+.fa-spin { animation: fa-spin 2s linear infinite; }
+.fa-pulse { animation: fa-spin 1s steps(8) infinite; }
+.fa-rotate-90 { transform: rotate(90deg); }
+.fa-rotate-180 { transform: rotate(180deg); }
+.fa-rotate-270 { transform: rotate(270deg); }
+.fa-flip-horizontal { transform: scaleX(-1); }
+.fa-flip-vertical { transform: scaleY(-1); }
+.fa-stack { position: relative; display: inline-block; width: 2em; height: 2em; line-height: 2em; }
+.fa-stack-1x, .fa-stack-2x { position: absolute; left: 0; width: 100%; text-align: center; }
+.fa-stack-1x { line-height: inherit; }
+.fa-stack-2x { font-size: 2em; }
+.fa-inverse { color: #fff; }
+.fa-fw { text-align: center; width: 1.25em; }
+.fa-ul { list-style-type: none; margin-left: 2.5em; padding-left: 0; }
+.fa-ul > li { position: relative; }
+.fa-li { position: absolute; left: -2em; width: 2em; top: 0.2em; text-align: center; }
+.fa-border { border: .08em solid currentColor; border-radius: .1em; padding: .2em .25em .15em; }
+.fa-pull-left { float: left; margin-right: .3em; }
+.fa-pull-right { float: right; margin-left: .3em; }
+
+

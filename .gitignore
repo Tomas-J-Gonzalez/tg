@@ -2,5 +2,7 @@ node_modules/
 public/
 site/public
 .vscode/*
-static/fa7/
+static/fa7/*
+!static/fa7/css/
+!static/fa7/css/shim.css
 static/vendor/fa7/
