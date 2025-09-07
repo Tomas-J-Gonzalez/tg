@@ -6,3 +6,6 @@ static/fa7/*
 !static/fa7/css/
 !static/fa7/css/shim.css
 static/vendor/fa7/
+
+# Local Netlify folder
+.netlify
