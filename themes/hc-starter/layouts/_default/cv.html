@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+  <article class="cv">
+    <header class="Hero region flow">
+      <h1>{{ .Title }}</h1>
+      <div>
+        {{ if and .PublishDate (ne .PublishDate.Year 1) }}
+          {{ $published := .PublishDate | time.Format ":date_medium" }}
+          {{ $modified := .Lastmod | time.Format ":date_medium" }}
+          {{ if ne $published $modified }}
+          <span class="Badge"> Updated: {{ .Lastmod.Format "Jan 2 2006" }} </span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </header>
+
+    <section class="e-content flow">
+      {{ partial "heading-anchor.html" .Content }}
+    </section>
+  </article>
+
+{{ end }}
+
+
