@@ -14,32 +14,29 @@ Tomás González is an Experience Designer and Creative Technologist based in Au
 ## Experience
 
 ### Experience Designer
-**AKQA — Tāmaki Makaurau**
-*April 2025 – Ongoing*
+**AKQA — Tāmaki Makaurau** *April 2025 – Ongoing*
 
 ---
 
 ### Experience Design Consultant
-**Provoke Solutions (Contractor)**
-*August 2024 – Ongoing*
+**Provoke Solutions (Contractor)** *August 2024 – Ongoing*
 
-- Design wireframe and high-fidelity designs in Figma as needed
-- Website alignment using client's component library and design system
-- Ensuring the resulting designs are adaptable, accessible, and meet the user's goals
-- Creating site maps, tasks flows, wire-frames, scenarios, and other deliverables to clearly communicate the workflow and organization of the solution
-- Forming relationships with key stakeholders ensuring that requirements are accurately captured and that the subsequent design is consistent with the business strategy
+- Design wireframe and high-fidelity designs in Figma as needed.
+- Website alignment using client's component library and design system.
+- Ensuring the resulting designs are adaptable, accessible, and meet the user's goals.
+- Creating site maps, tasks flows, wire-frames, scenarios, and other deliverables to clearly communicate the workflow and organization of the solution.
+- Forming relationships with key stakeholders ensuring that requirements are accurately captured and that the subsequent design is consistent with the business strategy.
 
 ---
 
 ### UX / UI Designer
-**Synergy Advisory**
-*2020 – 2024*
+**Synergy Advisory** *2020 – 2024*
 
-- Designed and maintained a comprehensive recruitment & onboarding system to successfully attract more than +2,900 overseas applicants
-- Worked with a small cross-functional team to create an ATS (Applicant Tracking System) + Operational system for the company to help streamline recruitment, hiring, and onboarding of candidates
-- Stakeholder management and working within a small multi-disciplinary team
-- Established first design guide and asset library. Designed brand strategy, logo and website
-- Interactive workshop planning and facilitation. 'Design & Business workshops'
+- Designed and maintained a comprehensive recruitment & onboarding system to successfully attract more than +2,900 overseas applicants.
+- Worked with a small cross-functional team to create an ATS (Applicant Tracking System) + Operational system for the company to help streamline recruitment, hiring, and onboarding of candidates.
+- Stakeholder management and working within a small multi-disciplinary team.
+- Established first design guide and asset library. Designed brand strategy, logo and website.
+- Interactive workshop planning and facilitation. 'Design & Business workshops'.
 
 ---
 
@@ -55,46 +52,27 @@ Work primarily consisted of web projects and logo designs: Wireframing, UI desig
 
 #### Software
 - Figma
-- Illustrator 
-- InDesign
-- Sketch
+- Illustrator / InDesign
+- Miro
+- Cusor
+- Jitter
 
 #### Process
-- User Interface
-- User Experience
 - Sketching / Illustration
 - Identity design
-- Motion
 - Rapid prototyping
 - User research / testing
 - Accessibility
 - Design system creation / maintanence
-- Agile methodology
-
-#### Technical Skills
-- HTML, CSS, Sass
-- GitHub
-- Cursor
-
+  
+---
 
 ## Education
 
-#### Auckland University of Technology (AUT)
-*Feb 2015 – Dec 2018*
-
+#### Auckland University of Technology (AUT) *Feb 2015 – Dec 2018*
 Bachelor of Creative Technologies (BCT / COLAB)
 
-#### Interaction Design Foundation — IDF
-*Mar 2018 – Mar 2019*
-
+#### Interaction Design Foundation — IDF *Mar 2018 – Mar 2019*
 Certificate in Gestalt Psychology and Web Design & Accessibility: "How do Design for All"
 
-## Philosophy
-
- My purpose as an Experience designer is about using design as a positive force, creating a more inclusive, efficient, and ethical digital world.
-
-
-## Social
-
-- **LinkedIn:** [linkedin.com/in/tomasjgo](https://linkedin.com/in/tomasjgo)
-
+***
