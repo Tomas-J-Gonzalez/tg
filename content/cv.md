@@ -4,7 +4,7 @@ date: 2024-10-24T09:45:40+01:00
 draft: false
 slug: "cv"
 description: "Tomás' CV"
-layout: page
+layout: cv
 ---
 
 ## Bio
@@ -17,6 +17,8 @@ Tomás González is an Experience Designer and Creative Technologist based in Au
 **AKQA — Tāmaki Makaurau**
 *April 2025 – Ongoing*
 
+---
+
 ### Experience Design Consultant
 **Provoke Solutions (Contractor)**
 *August 2024 – Ongoing*
@@ -26,6 +28,8 @@ Tomás González is an Experience Designer and Creative Technologist based in Au
 - Ensuring the resulting designs are adaptable, accessible, and meet the user's goals
 - Creating site maps, tasks flows, wire-frames, scenarios, and other deliverables to clearly communicate the workflow and organization of the solution
 - Forming relationships with key stakeholders ensuring that requirements are accurately captured and that the subsequent design is consistent with the business strategy
+
+---
 
 ### UX / UI Designer
 **Synergy Advisory**
@@ -37,11 +41,15 @@ Tomás González is an Experience Designer and Creative Technologist based in Au
 - Established first design guide and asset library. Designed brand strategy, logo and website
 - Interactive workshop planning and facilitation. 'Design & Business workshops'
 
+---
+
 ### Designer
 **Abroad Global** 
 *2020 – 2024*
 
 Work primarily consisted of web projects and logo designs: Wireframing, UI design, website creation. Designing print and branding assets (content patterns, video/social media content).
+
+---
 
 ## Skills
 

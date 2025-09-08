@@ -13,3 +13,32 @@ Font
 .font-step-1 {
   font-size: var(--step-1);
 }
+
+/* CV-specific helpers */
+.cv .job-company {
+  color: var(--color-text-mod-1);
+}
+
+.cv .job-dates {
+  font-size: var(--step--1);
+  color: var(--color-text-mod-2);
+}
+
+/* Target company (strong) and dates (em) following each job heading */
+.cv h3 + p > strong {
+  color: var(--color-text-mod-1);
+}
+
+.cv h3 + p > em,
+.cv h3 + p + p > em {
+  font-size: var(--step--1);
+  color: var(--color-text-mod-2);
+}
+
+.cv hr {
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  opacity: 0.5; /* subtle but visible */
+  max-width: var(--width-longform);
+  margin: var(--space-l) 0;
+}
