@@ -5,18 +5,8 @@
 
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
-      {{ if and .Date (ne .Date.Year 1) }}
-        <time class="dt-published" datetime="{{ .Date }}">
-          {{ with .PublishDate.Format "Jan 2, 2006" }}
-            {{ . }}
-          {{ else }}
-            {{ .Date.Format "Jan 2 2006" }}
-          {{ end }}
-        </time>
-      {{ end }}
-      {{ if .Params.topics }}
-        {{ partial "post/topics.html" . }} 
-      {{ end }}
+      <span>Sep 13, 2024</span>
+      <span>Design, UX</span>
     </div>
 
     {{ if ne .Section "newsletter" }}

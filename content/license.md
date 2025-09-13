@@ -23,4 +23,8 @@ All of the content on this site is produced under the **Creative Commons Attribu
 
 Please note, the above is just a summary of (and not a substitute for) the full [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en) license legal code.
 
+## Website Theme
+
+This website uses a theme provided by [Harry Cresswell](https://harrycresswell.com/), a freelance web designer specializing in static sites, privacy, and web performance. The theme is built with Hugo and follows modern web development practices for accessibility and performance.
+
 

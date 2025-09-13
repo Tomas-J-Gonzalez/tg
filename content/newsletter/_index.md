@@ -7,7 +7,7 @@ description: "Newsletter archive"
 
 # Newsletter Archive
 
-Welcome to my newsletter archive. Here you'll find my thoughts on design, development, and the web.
+Welcome to my newsletter archive. Here you'll find my thoughts on design, technology and the web.
 
 ## Latest Issues
 
