@@ -19,11 +19,10 @@
 
   {{ partialCached "footer.html" . .Type }}
   <!-- Store JS files independently -->
-  {{ $emailmask := resources.Get "js/email-mask.js" }}
   {{ $themeToggle := resources.Get "js/theme-toggle.js" }}
 
-  <!-- Concat JS, generate default app.js with email mask and theme toggle -->
-  {{ $defaultJS := slice $emailmask $themeToggle | resources.Concat "app.js" }}
+  <!-- Generate default app.js with theme toggle only -->
+  {{ $defaultJS := slice $themeToggle | resources.Concat "app.js" }}
   <!-- Assign script to global, minify and fingerprint -->
   {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint  }}
   <!-- Load script and authenticate hashed file -->
