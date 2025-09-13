@@ -2,10 +2,9 @@
   {{ $email := site.Params.author.email }}
   {{ $button_text := .button_text }}
   <a 
-    data-decode="email" 
     class="button button--theme-aware"
     data-variant="secondary"
     role="button"
     draggable="false"
-    href="mailto:{{ $email | base64Encode }}">{{ with $button_text }}{{ . }}{{ else }}Reply by email{{ end }}</a>
+    href="mailto:{{ $email }}">{{ with $button_text }}{{ . }}{{ else }}Reply by email{{ end }}</a>
 </section>

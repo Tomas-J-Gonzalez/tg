@@ -22,18 +22,10 @@
   {{ $emailmask := resources.Get "js/email-mask.js" }}
   {{ $themeToggle := resources.Get "js/theme-toggle.js" }}
 
-  <!-- Concat JS, generate default app.js and app-likes -->
-  {{ $defaultJS := slice $themeToggle | resources.Concat "app.js" }}
-  <!-- Concat JS, generate default app.js and app-likes -->
-  {{ $customJS := slice $emailmask $themeToggle | resources.Concat "app-custom.js" }}
-  <!-- Set default -->
-  {{ $script := $defaultJS }}
-  <!-- If content is writing or subscribed oage, change script to custom to include email mask script -->
-  {{ if or (eq .Type "writing") (eq .Path "/subscribed") }}
-    {{ $script = $customJS }}
-  {{ end }}
+  <!-- Concat JS, generate default app.js with email mask and theme toggle -->
+  {{ $defaultJS := slice $emailmask $themeToggle | resources.Concat "app.js" }}
   <!-- Assign script to global, minify and fingerprint -->
-  {{ $globalJS := $script | resources.Minify | resources.Fingerprint  }}
+  {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint  }}
   <!-- Load script and authenticate hashed file -->
   <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}"></script>
 
