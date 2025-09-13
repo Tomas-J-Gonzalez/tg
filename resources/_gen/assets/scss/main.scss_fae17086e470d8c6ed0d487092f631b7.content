@@ -398,7 +398,7 @@ sup {
   text-decoration: none;
   margin-left: 0.2em; }
 
-.external-link-wrapper .fas.fa-external-link-alt {
+.external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
   font-size: 0.6em;
   opacity: 0.5;
   transition: opacity 0.2s ease;
@@ -408,15 +408,15 @@ sup {
   top: -0.05em;
   /* Fine-tune vertical centering */ }
 
-a:hover .external-link-wrapper .fas.fa-external-link-alt {
+a:hover .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
   opacity: 0.8; }
 
 /* Ensure proper spacing and alignment for different link contexts */
-a[data-variant="naked"] .external-link-wrapper .fas.fa-external-link-alt {
+a[data-variant="naked"] .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
   vertical-align: middle;
   top: -0.05em; }
 
-a[data-variant="desaturate"] .external-link-wrapper .fas.fa-external-link-alt {
+a[data-variant="desaturate"] .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
   vertical-align: middle;
   top: -0.05em; }
 
@@ -438,7 +438,7 @@ a[data-variant="desaturate"] .external-link-wrapper .fas.fa-external-link-alt {
 .scroll-to-top:hover {
   opacity: 1; }
 
-.scroll-to-top .fas.fa-arrow-up {
+.scroll-to-top .fa-sharp.fa-solid.fa-arrow-up {
   font-size: 0.8em; }
 
 /* Mobile and tablet breakpoints - stack scroll to top above footer items */
@@ -656,7 +656,7 @@ Reusable circle icon button styles for theme toggles and other icon buttons
 
 Usage:
 <button class="btn btn-circle btn-ghost" type="button" aria-label="Button description">
-  <i class="fas fa-search"></i>
+  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
   <span class="sr-only">Button description</span>
 </button>
 
@@ -666,15 +666,15 @@ Available classes:
 - .btn-ghost: Transparent background with hover effects
 - .sr-only: Screen reader only text for accessibility
 
-Font Awesome Icons:
-- Theme toggle: fas fa-sun / fas fa-moon
-- Search: fas fa-search
-- Settings: fas fa-cog
-- Notifications: fas fa-bell
-- Menu: fas fa-bars
-- Close: fas fa-times
-- Plus: fas fa-plus
-- Minus: fas fa-minus
+Font Awesome Icons (Sharp):
+- Theme toggle: fa-sharp fa-solid fa-sun / fa-sharp fa-solid fa-moon
+- Search: fa-sharp fa-solid fa-magnifying-glass
+- Settings: fa-sharp fa-solid fa-gear
+- Notifications: fa-sharp fa-solid fa-bell
+- Menu: fa-sharp fa-solid fa-bars
+- Close: fa-sharp fa-solid fa-xmark
+- Plus: fa-sharp fa-solid fa-plus
+- Minus: fa-sharp fa-solid fa-minus
 */
 .btn {
   display: inline-flex !important;
@@ -1433,8 +1433,8 @@ Hero
 
 .brand-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   margin-top: 1rem; }
 
 .brand-image {
@@ -1497,7 +1497,7 @@ Hero
     padding: 1rem; }
   .brand-images {
     grid-template-columns: 1fr;
-    gap: 0.5rem; } }
+    gap: 0.75rem; } }
 
 /* Light theme specific adjustments */
 .theme-light .accordion-card {
@@ -1881,6 +1881,31 @@ Font
 
 .font-step-1 {
   font-size: var(--step-1); }
+
+/* CV-specific helpers */
+.cv .job-company {
+  color: var(--color-text-mod-1); }
+
+.cv .job-dates {
+  font-size: var(--step--1);
+  color: var(--color-text-mod-2); }
+
+/* Target company (strong) and dates (em) following each job heading */
+.cv h3 + p > strong {
+  color: var(--color-text-mod-1); }
+
+.cv h3 + p > em,
+.cv h3 + p + p > em {
+  font-size: var(--step--1);
+  color: var(--color-text-mod-2); }
+
+.cv hr {
+  border: 0;
+  border-bottom: 2px dotted;
+  opacity: 0.5;
+  /* subtle but visible */
+  max-width: var(--width-longform);
+  margin: var(--space-l) 0; }
 
 .bb {
   border-top: 0;
