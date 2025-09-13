@@ -1,6 +1,6 @@
 ---
 title: "Holistic Design and Interconnectedness"
-date: 2025-09-13
+date: 2024-09-13T12:00:00+01:00
 draft: false
 description: "Exploring how design decisions ripple through systems and the importance of considering interconnectedness in our work."
 slug: "holistic-design-interconnectedness"
