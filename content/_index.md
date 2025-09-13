@@ -17,8 +17,4 @@ Find out [what I'm up to right now](/now/). Check out some of the [social projec
 
 Elsewhere on the web, you can find me on [LinkedIn](https://www.linkedin.com/in/tomasjgo/), [Are.na](https://www.are.na/tomas-jkctpndhbng/channels). [Get in touch](/contact) if you have any questions or use the reply by email button at the end of any post.
 
-{{< rawhtml >}}
-<a href="mailto:admin@tomasjgonzalez.com" class="button button--theme-aware" data-variant="secondary">Reply by email</a>
-{{< /rawhtml >}}
-
 Head over to my [Writings](/writings/) page to subscribe to the content I publish on this site. Or sign up to my newsletter below, if that's more your thing.
