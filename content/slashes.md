@@ -13,16 +13,17 @@ This is my slashes page where you can find all of my [slash pages](https://slash
 - [/social-projects](/social-projects): A page that showcases all the social programs I've contributed to.
 - [/uses](/uses/): My office setup and the app and services I use day to day.
 - [/accessibility](/accessibility/): My commitment to making this website accessible.
-- [/blogroll](/blogroll/): A list of other sites I currently follow and recommend. 
+
 - [/contact](/contact/): A page with a contact form which you can use to reach me.
-- [/feeds](/feeds/): The availabe RSS feeds you can subscribe to to follow my work.
 - [/license](/license/): A page which clarifies how the content on this site is licenced.
 - [/privacy](/privacy/): How I'm resepcting the privacy of visitors to my website.
 - [/slashes](/slashes/): A page that lists all my slash pages (how meta).
 
 Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-and-slashes/).
 
-<!-- [/support](/support/): Ways in which you can support my work (should you wish to). -->
-<!-- [/things](/things/): Projects from the past or that I'm currently working on. -->
-<!-- [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->
+<!-- - [/support](/support/): Ways in which you can support my work (should you wish to). -->
+<!-- - [/things](/things/): Projects from the past or that I'm currently working on. -->
+<!-- - [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->
+<!-- - [/blogroll](/blogroll/): A list of other sites I currently follow and recommend. -->
+<!-- - [/feeds](/feeds/): The availabe RSS feeds you can subscribe to to follow my work. -->
 
