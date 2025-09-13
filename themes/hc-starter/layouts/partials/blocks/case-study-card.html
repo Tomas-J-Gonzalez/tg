@@ -9,7 +9,7 @@
         </a>
       </header>
       <div class="case-study-card__description-wrapper">
-        <p id="project-{{ .File.UniqueID }}-description" class="case-study-card__description" itemprop="description">{{ .Description }}</p>
+        <p id="project-{{ .File.UniqueID }}-description" class="case-study-card__description" itemprop="description">{{ .Description | truncate 150 "..." }}</p>
       </div>
     </div>
   </div>

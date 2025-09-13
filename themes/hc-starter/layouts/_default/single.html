@@ -5,8 +5,8 @@
 
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
-      <span>Sep 13, 2024</span>
-      <span>Design, UX</span>
+      <span>{{ .Date | time.Format "Jan 2, 2006" }}</span>
+      <span>{{ delimit .Params.topics ", " }}</span>
     </div>
 
     {{ if ne .Section "newsletter" }}
