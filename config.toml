@@ -33,6 +33,7 @@ fa_brands_css_path = "fa7/css/brands.css"
 
 [params.author]
 name = "Tomás González"
+email = "admin@tomasjgonzalez.com"
 photo = "https://res.cloudinary.com/tomasgo/image/upload/v1739249919/tomas-master/img/Tomas-Gonzalez_j5g2cy.jpg"
 
 [taxonomies]
