@@ -95,7 +95,7 @@ weight = 15
 
 [[menu.main]]
 name = "Inspo"
-url = "https://garden.tomasjgonzalez.com/"
+url = "https://garden.tomasjgonzalez.com/tags/inspiration/"
 weight = 20
 
 [[menu.footer]]
