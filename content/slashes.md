@@ -14,8 +14,8 @@ This is my slashes page where you can find all of my [slash pages](https://slash
 - [/accessibility](/accessibility/): My commitment to making this website accessible.
 
 - [/contact](/contact/): A page with a contact form which you can use to reach me.
-- [/license](/license/): A page which clarifies how the content on this site is licenced.
-- [/privacy](/privacy/): How I'm resepcting the privacy of visitors to my website.
+- [/license](/license/): A page which clarifies how the content on this site is licensed.
+- [/privacy](/privacy/): How I'm respecting the privacy of visitors to my website.
 - [/slashes](/slashes/): A page that lists all my slash pages (how meta).
 
 Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-and-slashes/).
