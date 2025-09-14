@@ -9,7 +9,7 @@ draft: false
 
 Currently designing at AKQA Tāmaki Makaurau.
 
-Here on my personal site, I write about [design and web](/writings/), [my past and current work](/portfolio/), and the [tools I use](/uses/), day to day.
+Here on my personal site, I write about [design and web](/writings/) and [my past and current work](/portfolio/).
 
 ## Where to go next
 

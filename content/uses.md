@@ -3,13 +3,14 @@ title = "Uses"
 date = "2019-01-18T11:27:43+01:00"
 description = "My office setup, the software and tools I use day to day."
 slug = "uses"
-draft = "false"
+draft = "true"
 layout= "page"
 +++
 
 My office setup and the app and services I use day to day, inspired by the great [Wes Bos](https://wesbos.com/uses/).
 
 ## Home office
+
 
 In 2022 I switched to the [MacBookPro M1 14”](https://www.apple.com/uk/macbook-pro-14-and-16/), after my 15” MacBook Pro (Mid 2015) finally gave out. The M1 is a beast. I haven’t heard the fans spin once since making the switch. I went for the base model which is more than enough for my needs.
 
@@ -141,24 +142,6 @@ I use [Wise](https://wise.com/)* to collect payments in foreign currencies from 
 
 [Gumroad](https://gumroad.com/) is the tool I use to handle online payments for things like fonts or themes. 
 
-I use [Buymeacoffee](https://www.buymeacoffee.com/) for donations.
-
-## Automation
-
-I use [IFTTT](https://ifttt.com/) to send emails to myself, reminding me to do things that happen periodically. Things like updating the masked email address I use on this site. Or sending out my newsletter. Both of these things I only do once a month, so they’re easy to forget without IFTTT. 
-
-I also use [Zapier](https://zapier.com/) (similar to IFTTT), mostly to pass form submissions to spreadsheets.
-
-
-## Health
-
-I use [Strava](https://www.strava.com/) to track running and the Apple Watch Activity app for tracking yoga sessions and workouts.
-
-I recently switched from [Notion](https://www.notion.so/)† to Obsidian for habit tracking.
-
-Having tried many of the meditation apps out there, my current favourite for guided meditation is [Balance](https://balanceapp.com/). For unguided meditation I use [Insight Timer](https://insighttimer.com/).
-
-~~I use the [Zoe](https://zoe.com/) app for logging and scoring recipes and meals.~~
 
 ## Misc
 

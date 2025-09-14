@@ -11,7 +11,6 @@ This is my slashes page where you can find all of my [slash pages](https://slash
 
 - [/now](/now/): What I'm choosing to focus my attention on right now.
 - [/social-projects](/social-projects): A page that showcases all the social programs I've contributed to.
-- [/uses](/uses/): My office setup and the app and services I use day to day.
 - [/accessibility](/accessibility/): My commitment to making this website accessible.
 
 - [/contact](/contact/): A page with a contact form which you can use to reach me.
