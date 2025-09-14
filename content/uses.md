@@ -111,7 +111,7 @@ I use [Grammarly](https://www.grammarly.com) with caution. It’s helpful for pi
 
 [Hemmingway](https://hemingwayapp.com) I find helpful for cleaning up lengthy sentances and spotting passive voice.
 
-I’ve been using [Mailchimp](https://mailchimp.com/) for my mailing list for years, however these days it often feels overkill for my needs. With that said, I decided to give [Buttondown](https://buttondown.email/) a go for the [Practical Hugo](https://practicalhugo.com/) mailing list – only positive things to say so far.
+I've been using [Email Octopus](https://emailoctopus.com/) for my mailing list. It's a great alternative to Mailchimp that's more affordable and has a cleaner interface. I also use [Buttondown](https://buttondown.email/) for the [Practical Hugo](https://practicalhugo.com/) mailing list – only positive things to say so far.
 
 I find myself using [Apple Notes](https://www.icloud.com/notes/) for fleeting notes written when I’m on the go. These aren’t usually notes I want to keep long-term, so from time to time I’ll have a big clearout and delete them all.
 

@@ -1,7 +1,6 @@
 ---
 title: "Ask me anything"
 description: "Ask me a question about coding website, static sites, building design systems or pretty much anything you think I might be able to help with."
-date: 2018-03-04T14:25:28+01:00
 slug: "contact"
 layout: "page"
 ---
@@ -9,7 +8,7 @@ layout: "page"
 If you have a question please leave a message, I'm always happy to hear from interesting people doing interesting things.
 
 {{< rawhtml >}}
-<form name="contact" id="ContactForm" method="POST" netlify-honeypot="bot-field" action="/success/" netlify>
+<form name="contact" id="ContactForm" method="POST" action="/success/" netlify>
   <p style="display: none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
   <label for="full-name">Full Name</label>
   <input name="full-name" id="full-name" type="text" placeholder="Your full name" required>
