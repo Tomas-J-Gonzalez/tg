@@ -43,10 +43,6 @@ By contrast, consider Airbnb adding accessibility filters to its platform. While
 
 ## The responsibility of clarity
 
-Paul Rand once said:
-
-> "How to present a new idea is, perhaps, one of the designer's most difficult tasks."
-
 If you can't explain your choices clearly, they're not grounded enough.
 
 Henry Dreyfuss put it bluntly in Designing for People (1955):
