@@ -1,8 +1,7 @@
 ---
-title: "You’re almost there"
-date: 2022-07-21T14:58:32+01:00
+title: "You're almost there"
 draft: false
-description: "It’s great to have you on board!"
+description: "It's great to have you on board!"
 slug: "thanks"
 layout: "page"
 ---

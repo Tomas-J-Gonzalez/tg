@@ -31,6 +31,8 @@
       <input class="visually-hidden" name="field_2" value="{{ .Title }}" type="hidden" id="location">
       <!-- Email Octopus API Key -->
       <input type="hidden" name="api_key" value="{{ .Site.Data.settings.signup.api_key }}">
+      <!-- Redirect to thanks page after successful subscription -->
+      <input type="hidden" name="success_redirect_url" value="{{ .Site.BaseURL }}thanks/">
   
       <div id="emailoctopus-responses" class="clear">
         <div class="response" id="emailoctopus-error-response" style="display:none"></div>
