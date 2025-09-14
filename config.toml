@@ -1,7 +1,7 @@
 # Environment-based configuration
 # For local development: HUGO_ENV=development
 # For production: HUGO_ENV=production
-baseurl = "https://tomasjgonzalez-site.netlify.app/"
+baseurl = "https://tomasjgonzalez.com/"
 theme = "hc-starter"
 languageCode = "en-gb"
 title = "Tomás González"
@@ -95,7 +95,7 @@ weight = 15
 
 [[menu.main]]
 name = "Inspo"
-url = "https://main--visual-garden.netlify.app/tags/inspiration/"
+url = "https://garden.tomasjgonzalez.com/"
 weight = 20
 
 [[menu.footer]]
@@ -125,6 +125,6 @@ weight = 25
 
 [[menu.footer]]
 name = "Inspo"
-url = "https://main--visual-garden.netlify.app/tags/inspiration/"
+url = "https://garden.tomasjgonzalez.com/"
 weight = 30
 

@@ -3,7 +3,7 @@ title = "Uses"
 date = "2019-01-18T11:27:43+01:00"
 description = "My office setup, the software and tools I use day to day."
 slug = "uses"
-draft = "false"
+draft = "true"
 layout= "page"
 +++
 
@@ -11,13 +11,14 @@ My office setup and the app and services I use day to day, inspired by the great
 
 ## Home office
 
+
 In 2022 I switched to the [MacBookPro M1 14”](https://www.apple.com/uk/macbook-pro-14-and-16/), after my 15” MacBook Pro (Mid 2015) finally gave out. The M1 is a beast. I haven’t heard the fans spin once since making the switch. I went for the base model which is more than enough for my needs.
 
 My laptop sits on a [Roost Laptop Stand](https://www.therooststand.com/), which I cannot recommend highly enough. I picked mine up during the Kickstarter, so it’s an early model, but it doesn’t seem like they’ve changed much since then. It’s strong, collapsible and super light, so you can take it everywhere.
 
 I’ve been using an [Apple Magic Keyboard](https://www.apple.com/uk/shop/product/MLA22B/A/magic-keyboard-british-english) and [Apple Magic Trackpad 2](https://www.apple.com/uk/shop/product/MJ2R2Z/A/magic-trackpad-2-silver) combo for years now, and I’m happy with both. 
 
-My [Dell P2415Q Monitor](https://www.amazon.co.uk/inch-Dell-P2415Q-IPS-Monitor/dp/B00QAJ2MOM/ref=sr_1_1?dchild=1&keywords=Dell+P2415Q&qid=1584572080&sr=8-1) I don’t have much of an opinion about. It’s certainy not the best out there, but it gets the job done.
+My [Dell P2415Q Monitor](https://www.amazon.co.uk/inch-Dell-P2415Q-IPS-Monitor/dp/B00QAJ2MOM/ref=sr_1_1?dchild=1&keywords=Dell+P2415Q&qid=1584572080&sr=8-1) I don't have much of an opinion about. It's certainly not the best out there, but it gets the job done.
 
 I’ve had [Logitech x-230 speakers](https://www.ebay.co.uk/i/333518493626?chn=ps) since what feels like the beginning of time. I remember using them when I made music at university back in 2006. They’re still going strong and kick out a good bit of bass, so I’ve stuck with them.
 
@@ -25,7 +26,7 @@ After 7 years of service, including a screen and battery replacement, I finally 
 
 My [Apple AirPods Pro](https://www.apple.com/airpods-pro/) were a more recent purchase, and I only have good things to say–one of the best Apple product releases in a good while.
 
-I work at a [606 Universal Shelving System Desk Shelf](https://www.vitsoe.com/gb/606/components#desk-shelf). Combined with the rest of the shelving, this the most expensive piece of furniture I own. But I use it everyday, and it’s home to many of my favourite books, so it was well worth the price. 
+I work at a [606 Universal Shelving System Desk Shelf](https://www.vitsoe.com/gb/606/components#desk-shelf). Combined with the rest of the shelving, this is the most expensive piece of furniture I own. But I use it every day, and it's home to many of my favourite books, so it was well worth the price. 
 
 I sit on a [Herman Miller Aeron Chair](https://www.hermanmiller.com/en_gb/products/seating/office-chairs/aeron-chairs/) which I found on eBay for a decent price.
 
@@ -44,9 +45,9 @@ I sit on a [Herman Miller Aeron Chair](https://www.hermanmiller.com/en_gb/produc
 
 ## Web development
 
-[Hyper](https://hyper.is/) is my go-to terminal. I use it with a couple of plugins installed–[hyper-night-owl](https://hyper.is/store/hyper-night-owl) theme and [hyperborder](https://github.com/webmatze/hyperborder)–to improve the visual apperence.
+[Hyper](https://hyper.is/) is my go-to terminal. I use it with a couple of plugins installed–[hyper-night-owl](https://hyper.is/store/hyper-night-owl) theme and [hyperborder](https://github.com/webmatze/hyperborder)–to improve the visual appearance.
 
-[VSCode](https://code.visualstudio.com/) is my text editor of choice. However, I also use [Typora](https://typora.io/) when writing markdown for its seemless preview. 
+[VSCode](https://code.visualstudio.com/) is my text editor of choice. However, I also use [Typora](https://typora.io/) when writing markdown for its seamless preview. 
 
 [Git](https://git-scm.com/) is a key part of my workflow. Working with static site generators and [CI/CD](https://en.wikipedia.org/wiki/CI/CD) it’s hard to avoid. I use [Github](https://github.com/) to host all my code remotely.
 
@@ -102,7 +103,7 @@ Previously I used Notion for bookmarking – saving web pages using the Notion W
 
 ## Writing
 
-[Typora](https://typora.io) allows you to write markdown in preview, so it feels more like working in Google Docs and less like a code editor. Typora has a great outline panel which helps you structure your articles. These days I’ll create a markdown post with Hugo, then open it in Typora and work on the content from there. Before now I would have composes drafts elsewhere, then copy them across to Hugo. This new approach is seamless and allows you to version control your work.
+[Typora](https://typora.io) allows you to write markdown in preview, so it feels more like working in Google Docs and less like a code editor. Typora has a great outline panel which helps you structure your articles. These days I’ll create a markdown post with Hugo, then open it in Typora and work on the content from there. Before now I would have composed drafts elsewhere, then copy them across to Hugo. This new approach is seamless and allows you to version control your work.
 
 [Obsidian](https://obsidian.md/)** is my note taking tool of choice. I’m not yet using it to it’s full potential as a second brain, but this is something I plan on working on in the future. I’ve also started using it for journaling and planning OKR with Quarterly, Weekly and Daily notes.
 
@@ -110,7 +111,7 @@ I use [Grammarly](https://www.grammarly.com) with caution. It’s helpful for pi
 
 [Hemmingway](https://hemingwayapp.com) I find helpful for cleaning up lengthy sentances and spotting passive voice.
 
-I’ve been using [Mailchimp](https://mailchimp.com/) for my mailing list for years, however these days it often feels overkill for my needs. With that said, I decided to give [Buttondown](https://buttondown.email/) a go for the [Practical Hugo](https://practicalhugo.com/) mailing list – only positive things to say so far.
+I've been using [Email Octopus](https://emailoctopus.com/) for my mailing list. It's a great alternative to Mailchimp that's more affordable and has a cleaner interface. I also use [Buttondown](https://buttondown.email/) for the [Practical Hugo](https://practicalhugo.com/) mailing list – only positive things to say so far.
 
 I find myself using [Apple Notes](https://www.icloud.com/notes/) for fleeting notes written when I’m on the go. These aren’t usually notes I want to keep long-term, so from time to time I’ll have a big clearout and delete them all.
 
@@ -141,24 +142,6 @@ I use [Wise](https://wise.com/)* to collect payments in foreign currencies from 
 
 [Gumroad](https://gumroad.com/) is the tool I use to handle online payments for things like fonts or themes. 
 
-I use [Buymeacoffee](https://www.buymeacoffee.com/) for donations.
-
-## Automation
-
-I use [IFTTT](https://ifttt.com/) to send emails to myself, reminding me to do things that happen periodically. Things like updating the masked email address I use on this site. Or sending out my newsletter. Both of these things I only do once a month, so they’re easy to forget without IFTTT. 
-
-I also use [Zapier](https://zapier.com/) (similar to IFTTT), mostly to pass form submissions to spreadsheets.
-
-
-## Health
-
-I use [Strava](https://www.strava.com/) to track running and the Apple Watch Activity app for tracking yoga sessions and workouts.
-
-I recently switched from [Notion](https://www.notion.so/)† to Obsidian for habit tracking.
-
-Having tried many of the meditation apps out there, my current favourite for guided meditation is [Balance](https://balanceapp.com/). For unguided meditation I use [Insight Timer](https://insighttimer.com/).
-
-~~I use the [Zoe](https://zoe.com/) app for logging and scoring recipes and meals.~~
 
 ## Misc
 

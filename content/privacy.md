@@ -18,7 +18,7 @@ This website does not use cookies, tracking, or analytics. I use [Google Search 
 
 ## Data use and storage
 
-- **Newsletter data** is stored in [Mailchimp](https://mailchimp.com/) and used solely for sending newsletters
+- **Newsletter data** is stored in [Email Octopus](https://emailoctopus.com/) and used solely for sending newsletters
 - **Contact data** is stored by [Netlify](https://www.netlify.com/) and used for correspondence
 - Data is never sold to third parties
 
