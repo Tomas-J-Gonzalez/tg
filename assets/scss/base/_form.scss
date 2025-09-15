@@ -14,6 +14,16 @@ textarea {
   width: 100%;
   -webkit-appearance: none;
   color: var(--color-text);
+  
+  /* Disable browser extensions and password managers */
+  &[data-form-type="other"] {
+    -webkit-text-security: none !important;
+    -webkit-autofill: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-background-clip: text !important;
+    background-color: var(--color-bg-mod-2) !important;
+    background-image: none !important;
+  }
 }
 
 input::placeholder {
