@@ -6,7 +6,9 @@
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
       <span>{{ .Date | time.Format "Jan 2, 2006" }}</span>
+      {{ if .Params.topics }}
       <span>{{ delimit .Params.topics ", " }}</span>
+      {{ end }}
     </div>
 
     {{ if ne .Section "newsletter" }}
@@ -53,7 +55,7 @@
       {{ end }}
     {{ end }}
 
-    {{ if in .Params.topics "Hugo" }}
+    {{ if and .Params.topics (in .Params.topics "Hugo") }}
       <aside>
         <hr>
         <strong>Interested in learning Hugo?</strong> I'm working on a free course

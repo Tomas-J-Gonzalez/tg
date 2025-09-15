@@ -18,15 +18,8 @@
   {{ partial "newsletter.html" . }}
 
   {{ partialCached "footer.html" . .Type }}
-  <!-- Store JS files independently -->
-  {{ $themeToggle := resources.Get "js/theme-toggle.js" }}
-
-  <!-- Generate default app.js with theme toggle only -->
-  {{ $defaultJS := slice $themeToggle | resources.Concat "app.js" }}
-  <!-- Assign script to global, minify and fingerprint -->
-  {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint  }}
-  <!-- Load script and authenticate hashed file -->
-  <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}"></script>
+  {{ $defaultJS := resources.Get "js/theme-toggle.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $defaultJS.RelPermalink }}" integrity="{{ $defaultJS.Data.Integrity }}"></script>
 
 </body>
 </html>
