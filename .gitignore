@@ -9,3 +9,6 @@ static/vendor/fa7/
 
 # Local Netlify folder
 .netlify
+
+# Hugo binary (too large for GitHub)
+hugo
