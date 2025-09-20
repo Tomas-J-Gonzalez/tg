@@ -30,8 +30,7 @@
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <link rel="dns-prefetch" href="//res.cloudinary.com">
 
-  <!-- Iconoir (self-hosted, non-blocking) -->
-  <link rel="stylesheet" href="{{ "iconoir/css/iconoir.css" | relURL }}">
+  <!-- Heroicons (embedded in CSS) -->
 
   {{ with .Site.Params.fa_brands_css_path }}
     {{ $brandsPath := . }}

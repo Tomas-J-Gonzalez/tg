@@ -42,8 +42,8 @@ function initTheme() {
   if (!themeToggle || !themeIcon || !themeLabel) return;
 
   const iconMap = {
-    [THEMES.LIGHT]: 'iconoir-sun-light',
-    [THEMES.DARK]: 'iconoir-half-moon'
+    [THEMES.LIGHT]: 'heroicons-sun',
+    [THEMES.DARK]: 'heroicons-moon'
   };
 
   const labelMap = {
