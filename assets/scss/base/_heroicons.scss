@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   vertical-align: middle;
+  color: inherit; /* Ensure icons inherit text color for theme adaptation */
 }
 
 /* Individual icon definitions using SVG data URLs - Medium Weight */
