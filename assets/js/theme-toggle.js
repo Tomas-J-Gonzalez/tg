@@ -42,8 +42,8 @@ function initTheme() {
   if (!themeToggle || !themeIcon || !themeLabel) return;
 
   const iconMap = {
-    [THEMES.LIGHT]: 'heroicons-sun',
-    [THEMES.DARK]: 'heroicons-moon'
+    [THEMES.LIGHT]: 'fas fa-sun',
+    [THEMES.DARK]: 'fas fa-moon'
   };
 
   const labelMap = {
