@@ -30,12 +30,8 @@
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <link rel="dns-prefetch" href="//res.cloudinary.com">
 
-  <!-- Font Awesome (self-hosted, non-blocking). Uses configurable path, falls back to FA5 Free. -->
-  {{ $faPath := or .Site.Params.fa_css_path "fa7/css/sharp.css" }}
-  <link rel="stylesheet" href="{{ $faPath | relURL }}">
-
-  <!-- Temporary shim mapping until full FA7 CSS is provided -->
-  <link rel="stylesheet" href="{{ "fa7/css/shim.css" | relURL }}">
+  <!-- Iconoir (self-hosted, non-blocking) -->
+  <link rel="stylesheet" href="{{ "iconoir/css/iconoir.css" | relURL }}">
 
   {{ with .Site.Params.fa_brands_css_path }}
     {{ $brandsPath := . }}
