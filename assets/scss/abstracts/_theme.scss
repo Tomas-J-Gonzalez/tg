@@ -3,8 +3,8 @@ Global theme tokens
 */
 
 :root {
-  /* Typography */
-  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* Typography - Prioritize Apple system fonts for cross-platform consistency */
+  --font-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-display: var(--font-base);
   --font-accent: "SF Mono", "Menlo", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
   --font-weight-regular: 400;

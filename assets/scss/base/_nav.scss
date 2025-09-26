@@ -5,7 +5,7 @@ Nav styles
 nav[data-variant='main'],
 nav[data-variant='footer'] {
   a {
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-regular);
     color: var(--color-text) !important; // Override link color for nav only
     
     &:focus-visible {

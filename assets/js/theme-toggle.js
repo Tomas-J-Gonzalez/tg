@@ -42,8 +42,8 @@ function initTheme() {
   if (!themeToggle || !themeIcon || !themeLabel) return;
 
   const iconMap = {
-    [THEMES.LIGHT]: 'fa-sharp fa-solid fa-sun',
-    [THEMES.DARK]: 'fa-sharp fa-solid fa-moon'
+    [THEMES.LIGHT]: 'fas fa-sun',
+    [THEMES.DARK]: 'fas fa-moon'
   };
 
   const labelMap = {

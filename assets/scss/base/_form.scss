@@ -13,7 +13,15 @@ textarea {
   position: relative;
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: var(--color-text);
+  
+  /* Cross-platform form normalization - prevent Windows from overriding styles */
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   
   /* Disable browser extensions and password managers */
   &[data-form-type="other"] {
@@ -42,8 +50,15 @@ select {
   font-size: 0.8rem;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   outline-style: none;
   width: 100%;
+  
+  /* Cross-platform select normalization */
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: inherit;
+  color: var(--color-text);
 
   &:after {
     color: var(--color-text);
