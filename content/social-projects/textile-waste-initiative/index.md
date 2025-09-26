@@ -4,13 +4,13 @@ date: 2021-11-18
 draft: false
 description: "A community program to address textile waste and promote sustainable fashion practices."
 slug: "textile-waste-initiative"
-topics: ["Community Program", "Sustainability", "Fashion", "Education"]
+topics: ["Community Program", "Sustainability"]
 image: ""
 image_alt: "Textile waste initiative workshop"
 client: "Community"
 role: "Community Program"
 duration: "2021"
-tools: ["Workshop Design", "Community Engagement", "Education"]
+tools: ["Workshop Design", "Community Engagement"]
 type: project
 blocks:
   - template: hero

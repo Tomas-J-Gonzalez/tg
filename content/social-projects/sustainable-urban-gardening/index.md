@@ -4,13 +4,13 @@ date: 2021-11-18
 draft: false
 description: "Empowering and training the migrant community with the intention of creating vocational opportunities, new skills, and financial independence."
 slug: "sustainable-urban-gardening"
-topics: ["Community Program", "Education", "Sustainability", "Urban Gardening"]
+topics: ["Community Program", "Sustainability", "Gardening"]
 image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798882/tomas-master/img/group-sug_dhvobc.jpg"
 image_alt: "Latin American group completing project in Hamilton"
 client: "Community"
 role: "Community Program"
 duration: "2021"
-tools: ["Workshop Design", "Community Engagement", "Education"]
+tools: ["Workshop Design", "Community Engagement"]
 type: project
 blocks:
   - template: hero
