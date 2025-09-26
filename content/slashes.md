@@ -17,6 +17,7 @@ This is my slashes page where you can find all of my [slash pages](https://slash
 - [/license](/license/): A page which clarifies how the content on this site is licensed.
 - [/privacy](/privacy/): How I'm respecting the privacy of visitors to my website.
 - [/slashes](/slashes/): A page that lists all my slash pages (how meta).
+- [/feeds](/feeds/): The available RSS feeds you can subscribe to to follow my work.
 
 Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-and-slashes/).
 
@@ -24,5 +25,4 @@ Learn more about my thoughts [on slash pages and /slashes](/writing/slash-pages-
 <!-- - [/things](/things/): Projects from the past or that I'm currently working on. -->
 <!-- - [/testimonials](/testimonials/): The kind words my clients have said about working with me. -->
 <!-- - [/blogroll](/blogroll/): A list of other sites I currently follow and recommend. -->
-<!-- - [/feeds](/feeds/): The availabe RSS feeds you can subscribe to to follow my work. -->
 
