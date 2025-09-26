@@ -4,7 +4,7 @@ date: 2024-01-15T00:00:00+00:00
 draft: false
 description: "Collaborative and engaging classes and workshops designed specifically with the student in mind."
 slug: "holistic-english"
-topics: ["Education", "Development", "Language Learning", "Community"]
+topics: ["Development", "Language Learning", "Community"]
 image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798885/tomas-master/img/hol_eng-thumb_ftgtp7.jpg"
 image_alt: "Tomas and his English students"
 client: "Community"
