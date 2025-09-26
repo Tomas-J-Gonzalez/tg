@@ -21,7 +21,6 @@ For a detailed explaination of how to get started using web feeds, visit [About 
 - [Writing](/writing/feed.xml): Posts from my site.
 - [Newsletters](/newsletter/feed.xml): Newsletters I publish.
 - [Portfolio](/portfolio/feed.xml): My design and development work.
-- [Now](/now/feed.xml): What I'm up to right now.
 
 ## Topic feeds
 

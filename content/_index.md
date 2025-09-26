@@ -17,4 +17,4 @@ Find out [what I'm up to right now](/now/). Check out some of the [social projec
 
 Elsewhere on the web, you can find me on [LinkedIn](https://www.linkedin.com/in/tomasjgo/), [Are.na](https://www.are.na/tomas-jkctpndhbng/channels). [Get in touch](/contact) if you have any questions or use the reply by email button at the end of any post.
 
-Head over to my [Writings](/writing/) page to subscribe to the content I publish on this site. Or sign up to my newsletter below, if that's more your thing.
+Head over to my [RSS](/feeds/) page to subscribe to the content I publish on this site. Or sign up to my newsletter below, if that's more your thing.
