@@ -43,6 +43,9 @@ blocks:
       - Techniques for repairing and maintaining clothing
       - Creative upcycling and repurposing methods
       - Sustainable shopping practices and ethical fashion choices
+  - template: video
+    src: "https://res.cloudinary.com/tomasgo/video/upload/v1709374414/tomas-master/videos/Profile_Textile_Waste_Initiative_Video_abksba.mp4"
+    caption: "Program overview video"
   - template: body-copy
     heading: "Community Impact"
     content: |

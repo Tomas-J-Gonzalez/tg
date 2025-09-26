@@ -70,8 +70,8 @@ Utopia fluid type
 Global theme tokens
 */
 :root {
-  /* Typography */
-  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* Typography - Prioritize Apple system fonts for cross-platform consistency */
+  --font-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-display: var(--font-base);
   --font-accent: "SF Mono", "Menlo", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
   --font-weight-regular: 400;
@@ -173,7 +173,30 @@ project: https://cube.fyi/css.html
 
 */
 html {
-  background-color: var(--color-brand); }
+  background-color: var(--color-brand);
+  /* Cross-platform scrollbar styling - make Windows scrollbars slimmer and overlay-style like macOS */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent; }
+
+/* Webkit scrollbar styling for macOS-like appearance on Windows */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text-mod-2); }
+
+::-webkit-scrollbar-corner {
+  background: transparent; }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -214,7 +237,10 @@ body {
   line-height: var(--line-height-base);
   letter-spacing: var(--tracking);
   min-height: 100vh;
-  text-rendering: optimizeSpeed; }
+  text-rendering: optimizeSpeed;
+  /* Cross-platform font smoothing for consistent rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1,
 h2,
@@ -398,7 +424,7 @@ sup {
   text-decoration: none;
   margin-left: 0.2em; }
 
-.external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
+.external-link-wrapper .fa-external-link-alt {
   font-size: 0.6em;
   opacity: 0.5;
   transition: opacity 0.2s ease;
@@ -408,15 +434,15 @@ sup {
   top: -0.05em;
   /* Fine-tune vertical centering */ }
 
-a:hover .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
+a:hover .external-link-wrapper .fa-external-link-alt {
   opacity: 0.8; }
 
 /* Ensure proper spacing and alignment for different link contexts */
-a[data-variant="naked"] .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
+a[data-variant="naked"] .external-link-wrapper .fa-external-link-alt {
   vertical-align: middle;
   top: -0.05em; }
 
-a[data-variant="desaturate"] .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-up-right-from-square {
+a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
   vertical-align: middle;
   top: -0.05em; }
 
@@ -438,7 +464,7 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-sharp.fa-solid.fa-arrow-
 .scroll-to-top:hover {
   opacity: 1; }
 
-.scroll-to-top .fa-sharp.fa-solid.fa-arrow-up {
+.scroll-to-top .fa-arrow-up {
   font-size: 0.8em; }
 
 /* Mobile and tablet breakpoints - stack scroll to top above footer items */
@@ -467,7 +493,14 @@ textarea {
   position: relative;
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: var(--color-text);
+  /* Cross-platform form normalization - prevent Windows from overriding styles */
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   /* Disable browser extensions and password managers */ }
   input[data-form-type="other"],
   textarea[data-form-type="other"] {
@@ -492,8 +525,14 @@ select {
   font-size: 0.8rem;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   outline-style: none;
-  width: 100%; }
+  width: 100%;
+  /* Cross-platform select normalization */
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: inherit;
+  color: var(--color-text); }
   select:after {
     color: var(--color-text);
     content: '▾';
@@ -519,7 +558,7 @@ Nav styles
 */
 nav[data-variant='main'] a,
 nav[data-variant='footer'] a {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-regular);
   color: var(--color-text) !important; }
   nav[data-variant='main'] a:focus-visible,
   nav[data-variant='footer'] a:focus-visible {
@@ -665,7 +704,7 @@ Reusable circle icon button styles for theme toggles and other icon buttons
 
 Usage:
 <button class="btn btn-circle btn-ghost" type="button" aria-label="Button description">
-  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+  <i class="iconoir-search"></i>
   <span class="sr-only">Button description</span>
 </button>
 
@@ -675,15 +714,15 @@ Available classes:
 - .btn-ghost: Transparent background with hover effects
 - .sr-only: Screen reader only text for accessibility
 
-Font Awesome Icons (Sharp):
-- Theme toggle: fa-sharp fa-solid fa-sun / fa-sharp fa-solid fa-moon
-- Search: fa-sharp fa-solid fa-magnifying-glass
-- Settings: fa-sharp fa-solid fa-gear
-- Notifications: fa-sharp fa-solid fa-bell
-- Menu: fa-sharp fa-solid fa-bars
-- Close: fa-sharp fa-solid fa-xmark
-- Plus: fa-sharp fa-solid fa-plus
-- Minus: fa-sharp fa-solid fa-minus
+Iconoir Icons:
+- Theme toggle: iconoir-sun-light / iconoir-half-moon
+- Search: iconoir-search
+- Settings: iconoir-settings (if available)
+- Notifications: iconoir-bell
+- Menu: iconoir-menu (if available)
+- Close: iconoir-xmark
+- Plus: iconoir-plus
+- Minus: iconoir-minus
 */
 .btn {
   display: inline-flex !important;

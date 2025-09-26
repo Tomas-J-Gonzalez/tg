@@ -123,8 +123,4 @@ name = "Slashes"
 url = "/slashes/"
 weight = 25
 
-[[menu.footer]]
-name = "Inspo"
-url = "https://garden.tomasjgonzalez.com/"
-weight = 30
 
