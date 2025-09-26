@@ -12,3 +12,12 @@ static/vendor/fa7/
 
 # Hugo binary (too large for GitHub)
 hugo
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

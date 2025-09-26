@@ -5,7 +5,7 @@ draft: false
 description: "A community program to address textile waste and promote sustainable fashion practices."
 slug: "textile-waste-initiative"
 topics: ["Community Program", "Sustainability", "Fashion", "Education"]
-image: "https://res.cloudinary.com/tomasgo/image/upload/v1709798881/tomas-master/img/textile-thumb_kgqj8f.jpg"
+image: ""
 image_alt: "Textile waste initiative workshop"
 client: "Community"
 role: "Community Program"
@@ -14,7 +14,7 @@ tools: ["Workshop Design", "Community Engagement", "Education"]
 type: project
 blocks:
   - template: hero
-    src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798881/tomas-master/img/textile-thumb_kgqj8f.jpg"
+    src: ""
     alt: "Textile waste initiative workshop"
   - template: body-copy
     heading: "Project Overview"
@@ -43,9 +43,6 @@ blocks:
       - Techniques for repairing and maintaining clothing
       - Creative upcycling and repurposing methods
       - Sustainable shopping practices and ethical fashion choices
-  - template: video
-    src: "https://res.cloudinary.com/tomasgo/video/upload/v1709374363/tomas-master/videos/Textile_Waste_Initiative_Program_czwuc0.mp4"
-    caption: "Program recap"
   - template: body-copy
     heading: "Community Impact"
     content: |
@@ -64,12 +61,4 @@ blocks:
       - Partner with local businesses and organizations
       - Create ongoing community support networks
       - Measure and track the environmental impact of the program
-  - template: image
-    src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798884/tomas-master/img/textile-workshop-1.jpg"
-    alt: "Textile workshop participants"
-    caption: "Community workshop participants learning repair techniques"
-  - template: image
-    src: "https://res.cloudinary.com/tomasgo/image/upload/v1709798884/tomas-master/img/textile-workshop-2.jpg"
-    alt: "Upcycling demonstration"
-    caption: "Demonstration of upcycling techniques"
 ---
