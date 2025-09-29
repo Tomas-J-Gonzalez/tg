@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Test</title>
+    <link rel="icon" href="/img/favicon-16x16.png" type="image/png">
+    <link rel="apple-touch-icon" href="/img/favicon.png" sizes="180x180">
+</head>
+<body>
+    <h1>Favicon Test Page</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+    <p>Current theme: <span id="current-theme">dark</span></p>
+    
+    <script>
+        const THEMES = {
+            LIGHT: 'light',
+            DARK: 'dark'
+        };
+
+        function updateFavicon(theme) {
+            const favicon16 = document.querySelector('link[rel="icon"]');
+            const appleTouch = document.querySelector('link[rel="apple-touch-icon"]');
+            
+            if (theme === THEMES.LIGHT) {
+                if (favicon16) favicon16.href = '/img/favicon-light-16x16.png';
+                if (appleTouch) appleTouch.href = '/img/favicon-light.png';
+            } else {
+                if (favicon16) favicon16.href = '/img/favicon-16x16.png';
+                if (appleTouch) appleTouch.href = '/img/favicon.png';
+            }
+        }
+
+        let currentTheme = THEMES.DARK;
+        
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            currentTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
+            document.getElementById('current-theme').textContent = currentTheme;
+            updateFavicon(currentTheme);
+        });
+    </script>
+</body>
+</html>

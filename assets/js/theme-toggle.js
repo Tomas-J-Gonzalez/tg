@@ -51,24 +51,6 @@ function initTheme() {
     [THEMES.DARK]: 'Dark mode'
   };
 
-  function updateFavicon(theme) {
-    // Update favicon based on theme
-    const favicon16 = document.querySelector('link[rel="icon"][sizes="16x16"]') || 
-                     document.querySelector('link[rel="icon"]');
-    const favicon32 = document.querySelector('link[rel="icon"][sizes="32x32"]');
-    const appleTouch = document.querySelector('link[rel="apple-touch-icon"]');
-    
-    if (theme === THEMES.LIGHT) {
-      if (favicon16) favicon16.href = '/img/favicon-light-16x16.png';
-      if (favicon32) favicon32.href = '/img/favicon-light-32x32.png';
-      if (appleTouch) appleTouch.href = '/img/favicon-light.png';
-    } else {
-      if (favicon16) favicon16.href = '/img/favicon-16x16.png';
-      if (favicon32) favicon32.href = '/img/favicon-32x32.png';
-      if (appleTouch) appleTouch.href = '/img/favicon.png';
-    }
-  }
-
   function updateTheme(theme) {
     // Add transition class for smooth animation
     document.documentElement.classList.add('theme-transitioning');
@@ -76,9 +58,6 @@ function initTheme() {
     // Update theme class
     document.documentElement.className = `theme-${theme} theme-transitioning`;
     localStorage.setItem(STORAGE_KEY, theme);
-    
-    // Update favicon
-    updateFavicon(theme);
     
     // Update UI elements with smooth transitions
     themeIcon.className = `theme-icon ${iconMap[theme]}`;
@@ -127,9 +106,6 @@ function initTheme() {
   themeLabel.textContent = labelMap[savedTheme];
   themeToggle.setAttribute('aria-label', `Switch to ${savedTheme === THEMES.DARK ? 'light' : 'dark'} mode`);
   themeToggle.setAttribute('aria-pressed', savedTheme === THEMES.DARK ? 'true' : 'false');
-  
-  // Set initial favicon
-  updateFavicon(savedTheme);
 
   // Handle toggle click with smooth transition
   themeToggle.addEventListener('click', (e) => {

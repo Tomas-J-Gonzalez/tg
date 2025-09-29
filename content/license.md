@@ -25,6 +25,6 @@ Please note, the above is just a summary of (and not a substitute for) the full 
 
 ## Website Theme
 
-This website uses a theme provided by Harry Cresswell, a freelance web designer specializing in static sites, privacy, and web performance. The theme is built with Hugo and follows modern web development practices for accessibility and performance.
+This website uses a theme provided by [Harry Cresswell](https://harrycresswell.com/), a freelance web designer specializing in static sites, privacy, and web performance. The theme is built with Hugo and follows modern web development practices for accessibility and performance.
 
 
