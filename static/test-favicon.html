@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favicon Test</title>
-    <link rel="icon" href="/img/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/img/favicon.png" sizes="180x180">
 </head>
 <body>
@@ -23,10 +23,10 @@
             const appleTouch = document.querySelector('link[rel="apple-touch-icon"]');
             
             if (theme === THEMES.LIGHT) {
-                if (favicon16) favicon16.href = '/img/favicon-light-16x16.png';
-                if (appleTouch) appleTouch.href = '/img/favicon-light.png';
+                if (favicon16) favicon16.href = '/img/favicon.png';
+                if (appleTouch) appleTouch.href = '/img/favicon.png';
             } else {
-                if (favicon16) favicon16.href = '/img/favicon-16x16.png';
+                if (favicon16) favicon16.href = '/img/favicon.png';
                 if (appleTouch) appleTouch.href = '/img/favicon.png';
             }
         }
