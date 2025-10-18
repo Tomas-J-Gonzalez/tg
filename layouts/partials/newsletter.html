@@ -14,7 +14,7 @@
     {{ end }}
   </p>
 
-  <form class="Subscribe switcher validate" data-layout="33x3" action="https://dashboard.emailoctopus.com/lists/{{ .Site.Data.settings.signup.list_id }}/embedded/1.1/add" method="post" name="emailoctopus-embedded-subscribe-form" target="_blank" novalidate aria-labelledby="newsletter-heading">
+  <form class="Subscribe switcher validate" data-layout="33x3" id="emailoctopus-form-54470b64-ac74-11f0-83c2-85c01e4c72d7" novalidate aria-labelledby="newsletter-heading">
       
     <div>
       <label for="name">First Name <span aria-label="required" class="sr-only">(required)</span></label>
@@ -29,10 +29,6 @@
     
       <!-- Add merge tag to show what page folks sign up on -->
       <input class="visually-hidden" name="field_2" value="{{ .Title }}" type="hidden" id="location">
-      <!-- Email Octopus API Key -->
-      <input type="hidden" name="api_key" value="{{ .Site.Data.settings.signup.api_key }}">
-      <!-- Redirect to thanks page after successful subscription -->
-      <input type="hidden" name="success_redirect_url" value="{{ .Site.BaseURL }}thanks/">
   
       <div id="emailoctopus-responses" class="clear">
         <div class="response" id="emailoctopus-error-response" style="display:none"></div>
