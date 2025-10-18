@@ -6,3 +6,116 @@ Subscribe
 .Subscribe {
   --switcher-vertical-alignment: flex-end;
 }
+
+/*
+EmailOctopus Form Custom Styling
+Override the default EmailOctopus styles to match site design
+*/
+
+/* Target the EmailOctopus form container */
+.emailoctopus-form-wrapper,
+.emailoctopus-form {
+  /* Use switcher layout for form fields */
+  .main-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s-m);
+    align-items: flex-end;
+  }
+
+  /* Style form rows to match switcher layout */
+  .emailoctopus-form-row {
+    flex: 1 1 200px; /* Flexible but minimum 200px */
+    min-width: 0;
+  }
+
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: var(--space-2xs);
+    color: var(--color-text);
+    font-size: inherit;
+  }
+
+  /* Style input fields to match site forms */
+  input[type="text"],
+  input[type="email"] {
+    background: var(--color-bg-mod-2) !important;
+    border: solid .2rem var(--color-border) !important;
+    border-radius: 0 !important;
+    outline: 2px solid var(--color-border) !important;
+    outline-offset: 0 !important;
+    padding: 4px var(--space-s) !important;
+    width: 100% !important;
+    color: var(--color-text) !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    box-sizing: border-box !important;
+  }
+
+  input::placeholder {
+    color: var(--color-text-mod-1) !important;
+  }
+
+  /* Style submit button to match site buttons */
+  button[type="submit"],
+  input[type="submit"] {
+    background-color: var(--color-text) !important;
+    border: solid .2rem var(--color-text) !important;
+    border-radius: var(--border-radius) !important;
+    color: var(--color-bg) !important;
+    cursor: pointer !important;
+    padding: var(--space-3xs) var(--space-s) !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    
+    &:hover,
+    &:focus {
+      filter: brightness(1.2) !important;
+      transform: translateY(-2px) !important;
+    }
+  }
+
+  /* Hide EmailOctopus branding/messages by default */
+  .emailoctopus-success-message,
+  .emailoctopus-error-message {
+    margin-top: var(--space-xs);
+    padding: var(--space-2xs);
+    border-radius: var(--border-radius);
+  }
+
+  .emailoctopus-success-message {
+    background-color: var(--color-success, #10b981);
+    color: white;
+  }
+
+  .emailoctopus-error-message {
+    background-color: var(--color-error, #ef4444);
+    color: white;
+  }
+
+  /* Hide the "Powered by EmailOctopus" text */
+  .emailoctopus-form-footer {
+    display: none;
+  }
+
+  /* Style the required asterisk */
+  .required-asterisk {
+    color: var(--color-error, #ef4444);
+  }
+
+  /* reCAPTCHA styling adjustments */
+  .emailoctopus-form-recaptcha {
+    margin-top: var(--space-xs);
+  }
+}
