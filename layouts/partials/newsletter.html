@@ -14,7 +14,7 @@
     {{ end }}
   </p>
 
-  <form class="Subscribe switcher validate" data-layout="33x3" id="custom-newsletter-form" novalidate aria-labelledby="newsletter-heading">
+  <form class="Subscribe switcher validate" data-layout="33x3" id="custom-newsletter-form" action="https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7" method="post" target="emailoctopus-iframe" novalidate aria-labelledby="newsletter-heading">
     <div>
       <label for="name">First Name <span aria-label="required" class="sr-only">(required)</span></label>
       <input id="name" name="field_0" placeholder="e.g. Tomás" type="text" aria-required="true" autocomplete="off" spellcheck="false" data-form-type="other" required>
@@ -29,9 +29,6 @@
       <!-- Add merge tag to show what page folks sign up on -->
       <input class="visually-hidden" name="field_2" value="{{ .Title }}" type="hidden" id="location">
       
-      <!-- EmailOctopus API Key -->
-      <input type="hidden" name="api_key" value="{{ .Site.Data.settings.signup.api_key }}">
-      
       <div id="form-messages">
         <div id="success-message" style="display:none; color: green; margin-top: 1rem;">
           Thanks for subscribing! Check your email to confirm.
@@ -45,11 +42,27 @@
     </div>
   </form>
 
+  <!-- Hidden iframe to handle form submission -->
+  <iframe id="emailoctopus-iframe" name="emailoctopus-iframe" style="display: none;" onload="handleFormResponse()"></iframe>
+
   <script>
-    document.getElementById('custom-newsletter-form').addEventListener('submit', async function(e) {
-      e.preventDefault();
+    function handleFormResponse() {
+      // This function runs when the iframe loads (form submission complete)
+      const successMessage = document.getElementById('success-message');
+      const errorMessage = document.getElementById('error-message');
+      const submitButton = document.getElementById('subscribe');
       
-      const formData = new FormData(this);
+      // Since we can't read iframe content due to cross-origin restrictions,
+      // we'll assume success after a short delay
+      setTimeout(() => {
+        successMessage.style.display = 'block';
+        document.getElementById('custom-newsletter-form').reset();
+        submitButton.disabled = false;
+        submitButton.textContent = 'Subscribe';
+      }, 2000);
+    }
+
+    document.getElementById('custom-newsletter-form').addEventListener('submit', function(e) {
       const submitButton = document.getElementById('subscribe');
       const successMessage = document.getElementById('success-message');
       const errorMessage = document.getElementById('error-message');
@@ -62,37 +75,7 @@
       submitButton.disabled = true;
       submitButton.textContent = 'Subscribing...';
       
-      try {
-        // Submit to EmailOctopus embedded form endpoint (avoids CORS issues)
-        const response = await fetch('https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: new URLSearchParams({
-            field_0: formData.get('field_0'),
-            field_1: formData.get('field_1'),
-            field_2: formData.get('field_2'),
-            api_key: formData.get('api_key')
-          })
-        });
-        
-        if (response.ok) {
-          successMessage.style.display = 'block';
-          this.reset();
-        } else {
-          const errorData = await response.text();
-          console.error('Subscription failed:', response.status, errorData);
-          throw new Error('Subscription failed');
-        }
-      } catch (error) {
-        errorMessage.style.display = 'block';
-        console.error('Subscription error:', error);
-      } finally {
-        // Re-enable submit button
-        submitButton.disabled = false;
-        submitButton.textContent = 'Subscribe';
-      }
+      // The form will submit to the iframe, and handleFormResponse() will be called
     });
   </script>
 </section>
