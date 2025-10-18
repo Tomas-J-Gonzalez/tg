@@ -20,11 +20,18 @@ Override the default EmailOctopus styles to match site design
   max-width: 100% !important;
   width: 100% !important;
 
-  /* Remove any container padding */
+  /* Remove any container padding and spacing from ALL elements */
+  *,
+  > *,
   > div,
-  > form {
-    padding: 0 !important;
-    margin: 0 !important;
+  > form,
+  div,
+  form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
   }
 
   /* Use switcher layout for form fields */
@@ -35,6 +42,7 @@ Override the default EmailOctopus styles to match site design
     align-items: flex-end;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
   }
 
   /* Remove padding from all form field containers */
@@ -42,6 +50,7 @@ Override the default EmailOctopus styles to match site design
   .emailoctopus-form-fields {
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
   }
 
   /* Style form rows to match switcher layout */
