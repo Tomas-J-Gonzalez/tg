@@ -15,12 +15,17 @@ Override the default EmailOctopus styles to match site design
 /* Target the EmailOctopus form container */
 .emailoctopus-form-wrapper,
 .emailoctopus-form {
+  padding: 0 !important;
+  margin: 0 !important;
+
   /* Use switcher layout for form fields */
   .main-form {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-s);
     align-items: flex-end;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   /* Style form rows to match switcher layout */
@@ -110,9 +115,17 @@ Override the default EmailOctopus styles to match site design
     color: white;
   }
 
-  /* Hide the "Powered by EmailOctopus" text */
-  .emailoctopus-form-footer {
-    display: none;
+  /* Hide the "Powered by EmailOctopus" text and footer */
+  .emailoctopus-form-footer,
+  .emailoctopus-footer,
+  .emailoctopus-attribution,
+  .eo-footer,
+  [class*="powered"],
+  [class*="attribution"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
   /* Style the required asterisk */
