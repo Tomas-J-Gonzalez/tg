@@ -14,5 +14,86 @@
     {{ end }}
   </p>
 
-  <script async src="https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7.js" data-form="54470b64-ac74-11f0-83c2-85c01e4c72d7"></script>
+  <form class="Subscribe switcher validate" data-layout="33x3" id="custom-newsletter-form" novalidate aria-labelledby="newsletter-heading">
+    <div>
+      <label for="name">First Name <span aria-label="required" class="sr-only">(required)</span></label>
+      <input id="name" name="field_0" placeholder="e.g. Tomás" type="text" aria-required="true" autocomplete="off" spellcheck="false" data-form-type="other" required>
+    </div>
+
+    <div>
+      <label for="email">Email Address <span aria-label="required" class="sr-only">(required)</span></label>
+      <input id="email" name="field_1" placeholder="e.g. your.email@example.com" type="email" aria-required="true" autocomplete="off" spellcheck="false" data-form-type="other" required>
+    </div>
+    
+    <div>
+      <!-- Add merge tag to show what page folks sign up on -->
+      <input class="visually-hidden" name="field_2" value="{{ .Title }}" type="hidden" id="location">
+      
+      <!-- EmailOctopus API Key -->
+      <input type="hidden" name="api_key" value="{{ .Site.Data.settings.signup.api_key }}">
+      
+      <div id="form-messages">
+        <div id="success-message" style="display:none; color: green; margin-top: 1rem;">
+          Thanks for subscribing! Check your email to confirm.
+        </div>
+        <div id="error-message" style="display:none; color: red; margin-top: 1rem;">
+          Something went wrong. Please try again.
+        </div>
+      </div>
+
+      <button class="w-full" id="subscribe" name="subscribe" type="submit">Subscribe</button>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById('custom-newsletter-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const submitButton = document.getElementById('subscribe');
+      const successMessage = document.getElementById('success-message');
+      const errorMessage = document.getElementById('error-message');
+      
+      // Hide previous messages
+      successMessage.style.display = 'none';
+      errorMessage.style.display = 'none';
+      
+      // Disable submit button
+      submitButton.disabled = true;
+      submitButton.textContent = 'Subscribing...';
+      
+      try {
+        // Submit to EmailOctopus API
+        const response = await fetch('https://emailoctopus.com/api/1.6/lists/{{ .Site.Data.settings.signup.list_id }}/contacts', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            api_key: formData.get('api_key'),
+            email_address: formData.get('field_1'),
+            fields: {
+              'FirstName': formData.get('field_0'),
+              'Location': formData.get('field_2')
+            },
+            status: 'SUBSCRIBED'
+          })
+        });
+        
+        if (response.ok) {
+          successMessage.style.display = 'block';
+          this.reset();
+        } else {
+          throw new Error('Subscription failed');
+        }
+      } catch (error) {
+        errorMessage.style.display = 'block';
+        console.error('Subscription error:', error);
+      } finally {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.textContent = 'Subscribe';
+      }
+    });
+  </script>
 </section>
