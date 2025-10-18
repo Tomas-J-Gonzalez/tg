@@ -130,7 +130,4 @@
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  
-  <!-- EmailOctopus Form Script -->
-  <script async src="https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7.js" data-form="54470b64-ac74-11f0-83c2-85c01e4c72d7"></script>
 </head>

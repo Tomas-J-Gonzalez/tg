@@ -14,36 +14,5 @@
     {{ end }}
   </p>
 
-  <form class="Subscribe switcher validate" data-layout="33x3" action="https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7" method="post" novalidate aria-labelledby="newsletter-heading">
-      
-    <div>
-      <label for="name">First Name <span aria-label="required" class="sr-only">(required)</span></label>
-      <input id="name" name="field_0" placeholder="e.g. Tomás" type="text" aria-required="true" autocomplete="off" spellcheck="false" data-form-type="other">
-    </div>
-
-    <div>
-      <label for="email">Email Address <span aria-label="required" class="sr-only">(required)</span></label>
-      <input id="email" name="field_1" placeholder="e.g. your.email@example.com" type="email" aria-required="true" autocomplete="off" spellcheck="false" data-form-type="other">
-    </div>
-    <div>
-    
-      <!-- Add merge tag to show what page folks sign up on -->
-      <input class="visually-hidden" name="field_2" value="{{ .Title }}" type="hidden" id="location">
-  
-      <div id="emailoctopus-responses" class="clear">
-        <div class="response" id="emailoctopus-error-response" style="display:none"></div>
-        <div class="response" id="emailoctopus-success-response" style="display:none"></div>
-      </div>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <label for="emailoctopus-bot-field">Prevent bot signups</label>
-        <input type="text" id="emailoctopus-bot-field" name="emailoctopus-bot-field" tabindex="-1" value="">
-      </div>
-
-      <div>
-        <label class="visually-hidden" for="subscribe">{{ with .Params.signup_button_text }}{{ . }}{{ else }}Subscribe{{ end }}</label>
-        <button class="w-full" id="subscribe" name="subscribe" type="submit" value="{{ with .Params.signup_button_text }}{{ . }}{{ else }}Subscribe{{ end }}">Subscribe</button>
-      </div>
-    </div>
-  </form>
+  <script async src="https://eomail5.com/form/54470b64-ac74-11f0-83c2-85c01e4c72d7.js" data-form="54470b64-ac74-11f0-83c2-85c01e4c72d7"></script>
 </section>
