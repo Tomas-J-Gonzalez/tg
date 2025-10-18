@@ -19,14 +19,20 @@ Override the default EmailOctopus styles to match site design
   .main-form {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-s-m);
+    gap: var(--space-s);
     align-items: flex-end;
   }
 
   /* Style form rows to match switcher layout */
   .emailoctopus-form-row {
-    flex: 1 1 200px; /* Flexible but minimum 200px */
+    flex: 1 1 auto;
     min-width: 0;
+  }
+
+  /* Make button container not grow */
+  .emailoctopus-form-row:has(button[type="submit"]),
+  .emailoctopus-form-row:has(input[type="submit"]) {
+    flex: 0 0 auto;
   }
 
   /* Style labels */
@@ -72,11 +78,11 @@ Override the default EmailOctopus styles to match site design
     padding: var(--space-3xs) var(--space-s) !important;
     display: inline-block !important;
     text-decoration: none !important;
-    text-align: left !important;
+    text-align: center !important;
     white-space: nowrap !important;
     font-family: inherit !important;
     font-size: inherit !important;
-    width: 100% !important;
+    width: auto !important;
     margin-top: 0 !important;
     
     &:hover,
