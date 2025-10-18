@@ -20,18 +20,31 @@ Override the default EmailOctopus styles to match site design
   max-width: 527px !important;
   width: 527px !important;
 
-  /* Remove any container padding and spacing from ALL elements */
+  /* Remove any container padding and spacing from ALL elements - NUCLEAR OPTION */
   *,
   > *,
   > div,
   > form,
   div,
-  form {
+  form,
+  [class*="emailoctopus"],
+  [class*="eo-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
     box-sizing: border-box !important;
+  }
+
+  /* Specifically target the main form container */
+  form[class*="emailoctopus"],
+  div[class*="emailoctopus"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 527px !important;
+    max-width: 527px !important;
   }
 
   /* Use switcher layout for form fields */
@@ -148,17 +161,35 @@ Override the default EmailOctopus styles to match site design
     color: white;
   }
 
-  /* Hide the "Powered by EmailOctopus" text and footer */
+  /* Hide the "Powered by EmailOctopus" text and footer - NUCLEAR OPTION */
   .emailoctopus-form-footer,
   .emailoctopus-footer,
   .emailoctopus-attribution,
   .eo-footer,
   [class*="powered"],
-  [class*="attribution"] {
+  [class*="attribution"],
+  [class*="emailoctopus"][class*="footer"],
+  [class*="emailoctopus"][class*="attribution"],
+  div:contains("Powered by"),
+  div:contains("EmailOctopus"),
+  p:contains("Powered by"),
+  span:contains("Powered by"),
+  small:contains("Powered by") {
     display: none !important;
     visibility: hidden !important;
     height: 0 !important;
     overflow: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  /* Hide any element containing the text */
+  *:contains("Powered by EmailOctopus"),
+  *:contains("Powered by"),
+  *:contains("EmailOctopus") {
+    display: none !important;
+    visibility: hidden !important;
   }
 
   /* Style the required asterisk */
