@@ -46,4 +46,35 @@
       </div>
     </div>
   </form>
+  
+  <script>
+    // Redirect to thanks page after successful EmailOctopus signup
+    window.addEventListener('load', function() {
+      var form = document.getElementById('emailoctopus-form-54470b64-ac74-11f0-83c2-85c01e4c72d7');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          // Listen for successful submission
+          var successResponse = document.getElementById('emailoctopus-success-response');
+          if (successResponse) {
+            var observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                if (successResponse.style.display !== 'none' && successResponse.textContent.trim() !== '') {
+                  // Redirect to thanks page after a brief delay
+                  setTimeout(function() {
+                    window.location.href = '{{ .Site.BaseURL }}thanks';
+                  }, 1000);
+                }
+              });
+            });
+            observer.observe(successResponse, { 
+              attributes: true, 
+              childList: true, 
+              characterData: true,
+              subtree: true 
+            });
+          }
+        });
+      }
+    });
+  </script>
 </section>
