@@ -25,7 +25,7 @@ card_image = "img/card-image.png"
 # Set Cloudinary URL for image hosting
 cloudinary_url = "https://res.cloudinary.com/tomasgo/image/upload"
 # EmailOctopus API key for local development
-emailoctopus_api_key = "eo_3b91eefa4cf584cca7c45a177c6ac34549ae874e65c3d78ac2d48b633a4b3544"
+emailoctopus_api_key = "eo_8d3f25f41b3d01107af54688cef9e41825ad3195f3d57cffe6bb46d26fa4fdf6"
 
 # Font Awesome configuration
 # Point to your self-hosted FA7 Sharp CSS (place files in static/fa7/...)
