@@ -1,0 +1,6 @@
+# Production configuration for Netlify
+# This file overrides config.toml for production builds
+
+[params]
+# EmailOctopus API key from environment variable
+emailoctopus_api_key = "{{ getenv "EMAILOCTOPUS_API_KEY" }}"
