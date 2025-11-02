@@ -130,4 +130,71 @@
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+  
+  <!-- Structured Data for SEO -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tomás González",
+    "jobTitle": "Experience Designer",
+    "description": "Experience designer and creative technologist based in Auckland, New Zealand, specializing in UX/UI design, design systems, and user research.",
+    "url": "https://www.tomasjgonzalez.com",
+    "image": "https://www.tomasjgonzalez.com/img/tg.jpg",
+    "email": "admin@tomasjgonzalez.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auckland",
+      "addressRegion": "Auckland",
+      "addressCountry": "NZ"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AKQA Tāmaki Makaurau"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Auckland University of Technology",
+      "url": "https://www.aut.ac.nz/"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/tomasjgo/",
+      "https://www.are.na/tomas-jkctpndhbng/channels"
+    ],
+    "knowsAbout": [
+      "UX Design",
+      "UI Design",
+      "Experience Design",
+      "Design Systems",
+      "User Research",
+      "Accessibility",
+      "Creative Technology",
+      "Brand Identity"
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Tomás González",
+    "url": "https://www.tomasjgonzalez.com",
+    "description": "Experience designer and creative technologist. Portfolio, design writing, and case studies.",
+    "author": {
+      "@type": "Person",
+      "name": "Tomás González"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.tomasjgonzalez.com/writing/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {{ end }}
+  
+  <!-- Breadcrumb Schema for Section Pages -->
+  {{ partial "schema-breadcrumb.html" . }}
 </head>

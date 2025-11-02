@@ -55,6 +55,11 @@ projects = "/:section/:slug/"
 updates = "/:section/:slug/"
 page = "/:slug/"
 
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
+
 [markup]
 [markup.goldmark]
 duplicateResourceFiles = false

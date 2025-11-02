@@ -1,6 +1,6 @@
 ---
-title: "Bio"
-description: "Learn more about Tomás González - Designer and Creative Technologist in Auckland, New Zealand"
+title: "About Tomás González – Experience Designer & Technologist"
+description: "Learn about Tomás González: experience designer and creative technologist from Auckland, focusing on inclusive, ethical digital design."
 template: "page"
 ---
 
