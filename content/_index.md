@@ -1,7 +1,7 @@
 ---
-title: "Tomás González – Experience Designer | Portfolio & Writing"
+title: "Hi, I'm Tomás, an experience designer solving problems with creative & data-driven solutions."
 date: "2016-10-24T17:23:17+01:00"
-description: "Experience designer crafting creative & data-driven solutions. View portfolio case studies and design articles from Auckland, New Zealand."
+description: "Tomás González is an Experience designer and Creative technologist based in Auckland, New Zealand. Read articles and notes on design and the web."
 draft: false
 ---
 
@@ -18,12 +18,3 @@ Find out [what I'm up to right now](/now/). Check out some of the [social projec
 Elsewhere on the web, you can find me on [LinkedIn](https://www.linkedin.com/in/tomasjgo/), [Are.na](https://www.are.na/tomas-jkctpndhbng/channels). [Get in touch](/contact) if you have any questions or use the reply by email button at the end of any post.
 
 Head over to my [RSS feeds](/feeds/) page to subscribe to the content I publish on this site. Or sign up to my newsletter below, if that's more your thing.
-
-## Quick Links
-
-- **[Portfolio](/portfolio/)** – Selected client work & case studies
-- **[Writing](/writing/)** – Design thinking, web, and technology
-- **[About Me](/bio/)** – Background, philosophy, and values
-- **[CV](/cv/)** – Experience and education
-- **[Contact](/contact/)** – Get in touch
-- **[Newsletter](/newsletter/)** – Monthly design & tech updates

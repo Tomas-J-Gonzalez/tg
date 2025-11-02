@@ -1,9 +1,9 @@
 ---
-title: "CV – Experience & Education | Tomás González"
+title: "Tomás González"
 date: 2024-10-24T09:45:40+01:00
 draft: false
 slug: "cv"
-description: "View the CV of Tomás González: experience designer at AKQA with expertise in UX/UI, design systems, accessibility, and user research."
+description: "Tomás' CV"
 layout: cv
 ---
 

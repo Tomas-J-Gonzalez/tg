@@ -39,10 +39,11 @@ User-agent: Seekr
 User-agent: YouBot
 Disallow: /
 
-# Exclude draft content from all bots
+# Exclude draft content and CV from all bots
 User-agent: *
 Disallow: /newsletter/draft-newsletter/
 Disallow: /now/draft-now/
+Disallow: /cv/
 
 # Sitemap
 Sitemap: https://www.tomasjgonzalez.com/sitemap.xml

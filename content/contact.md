@@ -1,6 +1,6 @@
 ---
-title: "Contact Tomás González – Get in Touch"
-description: "Have a question about design, web development, or collaboration? Send a message to Tomás González, experience designer in Auckland."
+title: "Ask me anything"
+description: "Ask me a question about coding website, static sites, building design systems or pretty much anything you think I might be able to help with."
 slug: "contact"
 layout: "page"
 ---
