@@ -1,4 +1,30 @@
 // Theme toggle functionality with smooth transitions
+function playClickSound() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (ctx.state === 'suspended') ctx.resume();
+    const t = ctx.currentTime;
+    const noise = ctx.createBufferSource();
+    const buf = ctx.createBuffer(1, ctx.sampleRate * 0.008, ctx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      data[i] = (Math.random() * 2 - 1) * Math.exp(-i / 50);
+    }
+    noise.buffer = buf;
+    const filter = ctx.createBiquadFilter();
+    filter.type = 'bandpass';
+    filter.frequency.value = 4000 + Math.random() * 1000;
+    filter.Q.value = 3;
+    const gain = ctx.createGain();
+    gain.gain.value = 0.5 + Math.random() * 0.15;
+    noise.connect(filter);
+    filter.connect(gain);
+    gain.connect(ctx.destination);
+    noise.start(t);
+  } catch {}
+}
+
 const THEMES = {
   LIGHT: 'light',
   DARK: 'dark'
@@ -110,10 +136,12 @@ function initTheme() {
   // Handle toggle click with smooth transition
   themeToggle.addEventListener('click', (e) => {
     e.preventDefault();
-    
+
     // Prevent rapid clicking during transition
     if (themeToggle.classList.contains('theme-switching')) return;
-    
+
+    playClickSound();
+
     const currentTheme = localStorage.getItem(STORAGE_KEY) || THEMES.DARK;
     const newTheme = currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
     updateTheme(newTheme);

@@ -12,6 +12,7 @@ static/vendor/fa7/
 
 # Hugo binary (too large for GitHub)
 hugo
+bin/
 
 # macOS system files
 .DS_Store
