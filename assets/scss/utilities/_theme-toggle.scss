@@ -123,6 +123,13 @@ nav[data-variant="main"] #theme-toggle {
       filter: none !important;
       transform: none !important;
     }
+
+    .theme-dark & {
+      &:hover {
+        background-color: oklch(65% .12 132) !important;
+        border-color: oklch(65% .12 132) !important;
+      }
+    }
     
     .theme-icon {
       transform: rotate(0deg); // -90deg base + 180deg for pressed state

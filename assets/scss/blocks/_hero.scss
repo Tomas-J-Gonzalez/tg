@@ -4,4 +4,10 @@ Hero
 
 .Hero {
   --region-space: var(--space-3xl);
+
+  h1 {
+    @include breakpoint(md) {
+      max-width: 42ch;
+    }
+  }
 }

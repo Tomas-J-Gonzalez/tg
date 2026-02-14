@@ -1156,6 +1156,212 @@ Subscribe
   --switcher-vertical-alignment: flex-end; }
 
 /*
+EmailOctopus Form Custom Styling
+Override the default EmailOctopus styles to match site design
+*/
+/* Target the EmailOctopus form container */
+.emailoctopus-form-wrapper,
+.emailoctopus-form {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 527px !important;
+  width: 527px !important;
+  /* Remove any container padding and spacing from ALL elements - NUCLEAR OPTION */
+  /* Specifically target the main form container */
+  /* Use switcher layout for form fields */
+  /* Remove padding from all form field containers */
+  /* Style form rows to match switcher layout */
+  /* Make button container not grow */
+  /* Remove form-group padding */
+  /* Style labels */
+  /* Style input fields to match site forms */
+  /* Style submit button to match site buttons */
+  /* Hide EmailOctopus branding/messages by default */
+  /* Hide the "Powered by EmailOctopus" text and footer - NUCLEAR OPTION */
+  /* Hide any element containing the text */
+  /* Style the required asterisk */
+  /* reCAPTCHA styling adjustments */ }
+  .emailoctopus-form-wrapper *,
+  .emailoctopus-form-wrapper > *,
+  .emailoctopus-form-wrapper > div,
+  .emailoctopus-form-wrapper > form,
+  .emailoctopus-form-wrapper div,
+  .emailoctopus-form-wrapper form,
+  .emailoctopus-form-wrapper [class*="emailoctopus"],
+  .emailoctopus-form-wrapper [class*="eo-"],
+  .emailoctopus-form *,
+  .emailoctopus-form > *,
+  .emailoctopus-form > div,
+  .emailoctopus-form > form,
+  .emailoctopus-form div,
+  .emailoctopus-form form,
+  .emailoctopus-form [class*="emailoctopus"],
+  .emailoctopus-form [class*="eo-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important; }
+  .emailoctopus-form-wrapper form[class*="emailoctopus"],
+  .emailoctopus-form-wrapper div[class*="emailoctopus"],
+  .emailoctopus-form form[class*="emailoctopus"],
+  .emailoctopus-form div[class*="emailoctopus"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 527px !important;
+    max-width: 527px !important; }
+  .emailoctopus-form-wrapper .main-form,
+  .emailoctopus-form .main-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    align-items: flex-end;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important; }
+  .emailoctopus-form-wrapper [eo-form-fields-container],
+  .emailoctopus-form-wrapper .emailoctopus-form-fields,
+  .emailoctopus-form [eo-form-fields-container],
+  .emailoctopus-form .emailoctopus-form-fields {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important; }
+  .emailoctopus-form-wrapper .emailoctopus-form-row,
+  .emailoctopus-form .emailoctopus-form-row {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0 !important;
+    margin: 0 !important; }
+  .emailoctopus-form-wrapper .emailoctopus-form-row:has(button[type="submit"]),
+  .emailoctopus-form-wrapper .emailoctopus-form-row:has(input[type="submit"]),
+  .emailoctopus-form .emailoctopus-form-row:has(button[type="submit"]),
+  .emailoctopus-form .emailoctopus-form-row:has(input[type="submit"]) {
+    flex: 0 0 auto; }
+  .emailoctopus-form-wrapper .form-group,
+  .emailoctopus-form .form-group {
+    padding: 0 !important;
+    margin: 0 !important; }
+  .emailoctopus-form-wrapper label,
+  .emailoctopus-form label {
+    display: block;
+    margin-bottom: var(--space-2xs);
+    color: var(--color-text);
+    font-size: inherit; }
+  .emailoctopus-form-wrapper input[type="text"],
+  .emailoctopus-form-wrapper input[type="email"],
+  .emailoctopus-form input[type="text"],
+  .emailoctopus-form input[type="email"] {
+    background: var(--color-bg-mod-2) !important;
+    border: solid 0.2rem var(--color-border) !important;
+    border-radius: 0 !important;
+    outline: 2px solid var(--color-border) !important;
+    outline-offset: 0 !important;
+    padding: 4px var(--space-s) !important;
+    width: 100% !important;
+    color: var(--color-text) !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    box-sizing: border-box !important; }
+  .emailoctopus-form-wrapper input::placeholder,
+  .emailoctopus-form input::placeholder {
+    color: var(--color-text-mod-1) !important; }
+  .emailoctopus-form-wrapper button[type="submit"],
+  .emailoctopus-form-wrapper input[type="submit"],
+  .emailoctopus-form button[type="submit"],
+  .emailoctopus-form input[type="submit"] {
+    background-color: var(--color-text) !important;
+    border: solid 0.2rem var(--color-text) !important;
+    border-radius: var(--border-radius) !important;
+    color: var(--color-bg) !important;
+    cursor: pointer !important;
+    padding: var(--space-3xs) var(--space-s) !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    width: auto !important;
+    margin-top: 0 !important; }
+    .emailoctopus-form-wrapper button[type="submit"]:hover, .emailoctopus-form-wrapper button[type="submit"]:focus,
+    .emailoctopus-form-wrapper input[type="submit"]:hover,
+    .emailoctopus-form-wrapper input[type="submit"]:focus,
+    .emailoctopus-form button[type="submit"]:hover,
+    .emailoctopus-form button[type="submit"]:focus,
+    .emailoctopus-form input[type="submit"]:hover,
+    .emailoctopus-form input[type="submit"]:focus {
+      filter: brightness(1.2) !important;
+      transform: translateY(-2px) !important; }
+  .emailoctopus-form-wrapper .emailoctopus-success-message,
+  .emailoctopus-form-wrapper .emailoctopus-error-message,
+  .emailoctopus-form .emailoctopus-success-message,
+  .emailoctopus-form .emailoctopus-error-message {
+    margin-top: var(--space-xs);
+    padding: var(--space-2xs);
+    border-radius: var(--border-radius); }
+  .emailoctopus-form-wrapper .emailoctopus-success-message,
+  .emailoctopus-form .emailoctopus-success-message {
+    background-color: var(--color-success, #10b981);
+    color: white; }
+  .emailoctopus-form-wrapper .emailoctopus-error-message,
+  .emailoctopus-form .emailoctopus-error-message {
+    background-color: var(--color-error, #ef4444);
+    color: white; }
+  .emailoctopus-form-wrapper .emailoctopus-form-footer,
+  .emailoctopus-form-wrapper .emailoctopus-footer,
+  .emailoctopus-form-wrapper .emailoctopus-attribution,
+  .emailoctopus-form-wrapper .eo-footer,
+  .emailoctopus-form-wrapper [class*="powered"],
+  .emailoctopus-form-wrapper [class*="attribution"],
+  .emailoctopus-form-wrapper [class*="emailoctopus"][class*="footer"],
+  .emailoctopus-form-wrapper [class*="emailoctopus"][class*="attribution"],
+  .emailoctopus-form-wrapper div:contains("Powered by"),
+  .emailoctopus-form-wrapper div:contains("EmailOctopus"),
+  .emailoctopus-form-wrapper p:contains("Powered by"),
+  .emailoctopus-form-wrapper span:contains("Powered by"),
+  .emailoctopus-form-wrapper small:contains("Powered by"),
+  .emailoctopus-form .emailoctopus-form-footer,
+  .emailoctopus-form .emailoctopus-footer,
+  .emailoctopus-form .emailoctopus-attribution,
+  .emailoctopus-form .eo-footer,
+  .emailoctopus-form [class*="powered"],
+  .emailoctopus-form [class*="attribution"],
+  .emailoctopus-form [class*="emailoctopus"][class*="footer"],
+  .emailoctopus-form [class*="emailoctopus"][class*="attribution"],
+  .emailoctopus-form div:contains("Powered by"),
+  .emailoctopus-form div:contains("EmailOctopus"),
+  .emailoctopus-form p:contains("Powered by"),
+  .emailoctopus-form span:contains("Powered by"),
+  .emailoctopus-form small:contains("Powered by") {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important; }
+  .emailoctopus-form-wrapper *:contains("Powered by EmailOctopus"),
+  .emailoctopus-form-wrapper *:contains("Powered by"),
+  .emailoctopus-form-wrapper *:contains("EmailOctopus"),
+  .emailoctopus-form *:contains("Powered by EmailOctopus"),
+  .emailoctopus-form *:contains("Powered by"),
+  .emailoctopus-form *:contains("EmailOctopus") {
+    display: none !important;
+    visibility: hidden !important; }
+  .emailoctopus-form-wrapper .required-asterisk,
+  .emailoctopus-form .required-asterisk {
+    color: var(--color-error, #ef4444); }
+  .emailoctopus-form-wrapper .emailoctopus-form-recaptcha,
+  .emailoctopus-form .emailoctopus-form-recaptcha {
+    margin-top: var(--space-xs); }
+
+/*
 Pullquote
 */
 .PullQuote {
@@ -1206,7 +1412,9 @@ Hero
 */
 .Hero {
   --region-space: var(--space-3xl); }
-
+  @media (min-width: 48em) {
+    .Hero h1 {
+      max-width: 42ch; } }
 .case-study-card {
   display: flex;
   align-items: flex-start;
@@ -2042,6 +2250,9 @@ nav[data-variant="main"] #theme-toggle {
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       filter: none !important;
       transform: none !important; }
+    .theme-dark nav[data-variant="main"] #theme-toggle[aria-pressed="true"]:hover {
+      background-color: oklch(65% 0.12 132) !important;
+      border-color: oklch(65% 0.12 132) !important; }
     nav[data-variant="main"] #theme-toggle[aria-pressed="true"] .theme-icon {
       transform: rotate(0deg); }
     nav[data-variant="main"] #theme-toggle[aria-pressed="true"]::before {
