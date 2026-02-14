@@ -9,8 +9,9 @@ description: "What I'm doing now"
 ## Latest Updates
 
 - Listening to the "Dungeon Crawler Carl" audiobook series.
+- Listening to the "Red Rising" audiobook series.
 - Learning animation.
-- Creating things with Cursor AI. 
+- Creating things with Cursor AI Code Editor. 
 
 ---
 

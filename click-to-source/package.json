@@ -1,0 +1,28 @@
+{
+  "name": "click-to-source",
+  "version": "1.0.0",
+  "description": "Universal click-to-source workflow for Cursor IDE - Ctrl+Alt+Click any element to open source file",
+  "main": "src/bridge.js",
+  "bin": {
+    "click-to-source": "./src/bridge.js"
+  },
+  "files": [
+    "src",
+    "adapters"
+  ],
+  "scripts": {
+    "start": "node src/bridge.js",
+    "bridge": "node src/bridge.js"
+  },
+  "keywords": [
+    "cursor",
+    "vscode",
+    "click-to-source",
+    "dev-tools",
+    "localhost"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

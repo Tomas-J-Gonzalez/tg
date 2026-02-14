@@ -9,7 +9,7 @@
   {{- partial "promo-banner.html" . -}}
   {{ partial "header.html" . }}
 
-  <main id="main-content" role="main" aria-label="Main content">
+  <main id="main-content" role="main" aria-label="Main content" data-file="themes/hc-starter/layouts/_default/baseof.html:12">
   
     {{ block "main" . }}{{ end }}
 
@@ -20,6 +20,7 @@
   {{ partialCached "footer.html" . .Type }}
   {{ $defaultJS := resources.Get "js/theme-toggle.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $defaultJS.RelPermalink }}" integrity="{{ $defaultJS.Data.Integrity }}"></script>
+  {{- partial "click-to-source.html" . -}}
 
 </body>
 </html>
