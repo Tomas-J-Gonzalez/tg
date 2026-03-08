@@ -14,16 +14,6 @@
       <span>{{ delimit .Params.topics ", " }}</span>
       {{ end }}
     </div>
-
-    <div>
-      {{ if and .Date (ne .Date.Year 1) }}
-        {{ $published := .Date | time.Format ":date_medium" }}
-        {{ $modified := .Lastmod | time.Format ":date_medium" }}
-        {{ if ne $published $modified }}
-        <span class="Badge"> Updated: {{ $modified }} </span>
-        {{ end }}
-      {{ end }}
-    </div>
   </header>
 
   <section class="e-content flow">

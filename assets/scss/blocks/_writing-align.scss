@@ -34,11 +34,16 @@ Writing post alignment toggle
   color: var(--color-text, currentColor);
 }
 
-.writing-post[data-align="center"] header,
-.writing-post[data-align="center"] .e-content {
+.writing-post[data-align="center"] header {
   text-align: center;
 }
 
 .writing-post[data-align="center"] header .cluster {
   --cluster-horizontal-alignment: center;
+}
+
+.writing-post[data-align="center"] .e-content {
+  margin-inline: auto;
+  max-width: 65ch;
+  text-align: left;
 }
