@@ -364,20 +364,29 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
   min-width: 2.5rem;
   min-height: 2.5rem;
   padding: 0;
-  background: var(--color-bg-mod-2);
+  background-color: var(--color-bg-mod-2);
   border: none;
   border-radius: 50%;
   color: var(--color-text);
-  opacity: 0.9;
-  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px oklch(0% 0 0 / 0.15);
   overflow: hidden;
 }
 
 .scroll-to-top:hover {
-  opacity: 1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  box-shadow: 0 4px 12px oklch(0% 0 0 / 0.2);
+}
+
+.scroll-to-top:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.scroll-to-top:active {
+  transform: scale(0.96);
 }
 
 .scroll-to-top i {
@@ -417,20 +426,29 @@ a.scroll-to-top-floating {
   min-width: 2.5rem;
   min-height: 2.5rem;
   padding: 0;
-  background: var(--color-bg-mod-2);
+  background-color: var(--color-bg-mod-2);
   border: none;
   border-radius: 50%;
   color: var(--color-text);
-  opacity: 0.9;
-  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px oklch(0% 0 0 / 0.15);
   overflow: hidden;
 }
 
 .scroll-to-top-floating:hover {
-  opacity: 1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  box-shadow: 0 4px 12px oklch(0% 0 0 / 0.2);
+}
+
+.scroll-to-top-floating:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.scroll-to-top-floating:active {
+  transform: scale(0.96);
 }
 
 .scroll-to-top-floating i {
