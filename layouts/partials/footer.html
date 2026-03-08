@@ -12,9 +12,8 @@
       {{ end }}
       </ul>
       <span id="scroll-to-top-wrapper" class="scroll-to-top-wrapper" hidden>
-        <a href="#top" class="scroll-to-top" data-variant="naked" aria-label="Scroll to top of page">
-          <i class="fas fa-arrow-up" aria-hidden="true" role="img" aria-label="Scroll to top"></i>
-          <span>Top</span>
+        <a href="#top" class="scroll-to-top" aria-label="Scroll to top of page">
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </a>
       </span>
     </div>
@@ -23,10 +22,12 @@
 </footer>
 <script>
 (function() {
-  var threshold = 1.5;
+  var minViewportMultiplier = 2.5;
+  var minHeightPx = 2000;
+  var scrollHeight = document.documentElement.scrollHeight;
+  var viewportHeight = window.innerHeight;
+  var isLongPage = scrollHeight > viewportHeight * minViewportMultiplier && scrollHeight > minHeightPx;
   var wrapper = document.getElementById('scroll-to-top-wrapper');
-  if (wrapper && document.documentElement.scrollHeight > window.innerHeight * threshold) {
-    wrapper.removeAttribute('hidden');
-  }
+  if (wrapper && isLongPage) wrapper.removeAttribute('hidden');
 })();
 </script>

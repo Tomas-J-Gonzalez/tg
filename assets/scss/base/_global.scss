@@ -219,9 +219,9 @@ a[data-variant="naked"]:hover {
   text-decoration: underline;
 }
 
-/* Special case for scroll-to-top to prevent any underline */
-.scroll-to-top[data-variant="naked"]:hover {
-  text-decoration: none;
+/* Scroll-to-top: prevent link underline */
+a.scroll-to-top {
+  border-bottom: none;
 }
 
 
@@ -358,18 +358,30 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
 .scroll-to-top {
   display: flex;
   align-items: center;
-  gap: 0.5em;
-  font-size: 0.9em;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  padding: 0;
+  background: var(--color-bg-mod-2);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text);
+  opacity: 0.9;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .scroll-to-top:hover {
   opacity: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.scroll-to-top .fa-arrow-up {
-  font-size: 0.8em;
+.scroll-to-top i {
+  font-size: 0.75rem;
 }
 
 /* Mobile and tablet breakpoints - stack scroll to top above footer items */

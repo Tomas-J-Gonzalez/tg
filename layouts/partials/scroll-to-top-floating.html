@@ -3,9 +3,11 @@
 </a>
 <script>
 (function() {
-  var longPageThreshold = 1.5;
-  var scrollThreshold = 0.5;
-  var isLongPage = document.documentElement.scrollHeight > window.innerHeight * longPageThreshold;
+  var minViewportMultiplier = 2.5;
+  var minHeightPx = 2000;
+  var scrollHeight = document.documentElement.scrollHeight;
+  var viewportHeight = window.innerHeight;
+  var isLongPage = scrollHeight > viewportHeight * minViewportMultiplier && scrollHeight > minHeightPx;
 
   if (!isLongPage) return;
 
