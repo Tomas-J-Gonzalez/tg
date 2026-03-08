@@ -68,3 +68,17 @@ Writing post alignment toggle
 .writing-post[data-align="center"] .e-content {
   text-align: left;
 }
+
+@media (max-width: 47.9375em) {
+  .writing-post[data-align="center"] {
+    display: block;
+  }
+
+  .writing-post[data-align="center"] header {
+    text-align: left;
+  }
+
+  .writing-post[data-align="center"] header .cluster {
+    --cluster-horizontal-alignment: flex-start;
+  }
+}
