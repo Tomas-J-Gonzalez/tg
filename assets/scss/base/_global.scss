@@ -376,8 +376,12 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
 
 .scroll-to-top:hover {
   background-color: var(--color-text);
-  color: var(--color-bg);
+  color: var(--color-bg) !important;
   box-shadow: 0 4px 12px oklch(0% 0 0 / 0.2);
+}
+
+.scroll-to-top:hover i {
+  color: var(--color-bg) !important;
 }
 
 .scroll-to-top:focus-visible {
@@ -391,6 +395,7 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
 
 .scroll-to-top i {
   font-size: 0.75rem;
+  color: inherit;
 }
 
 /* Mobile and tablet breakpoints - stack scroll to top above footer items */
