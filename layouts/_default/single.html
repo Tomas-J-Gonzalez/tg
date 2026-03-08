@@ -1,13 +1,6 @@
 {{ define "main" }}
 
-<article class="h-entry{{ if eq .Section "writing" }} writing-post{{ end }}" {{ if eq .Section "writing" }}id="writing-article" data-align="left"{{ end }}>
-  {{ if eq .Section "writing" }}
-  <div class="writing-align-controls" aria-label="Text alignment">
-    <button type="button" class="align-btn align-left" data-align="left" aria-pressed="true" title="Left align"><i class="fa-solid fa-align-left" aria-hidden="true"></i></button>
-    <button type="button" class="align-btn align-center" data-align="center" aria-pressed="false" title="Center align"><i class="fa-solid fa-align-center" aria-hidden="true"></i></button>
-  </div>
-  {{ end }}
-
+<article class="h-entry">
   <header class="Hero region flow">
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
@@ -75,31 +68,5 @@
   {{ partial "reply-by-email.html" (dict "button_text" "Reply by email" ) }}
 
 </article>
-
-{{ if eq .Section "writing" }}
-<script>
-(function() {
-  const STORAGE_KEY = 'writing-align';
-  const article = document.getElementById('writing-article');
-  const btns = document.querySelectorAll('.align-btn');
-  if (!article || !btns.length) return;
-
-  const saved = localStorage.getItem(STORAGE_KEY) || 'left';
-  article.dataset.align = saved;
-  btns.forEach(btn => {
-    btn.setAttribute('aria-pressed', btn.dataset.align === saved ? 'true' : 'false');
-  });
-
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const align = btn.dataset.align;
-      article.dataset.align = align;
-      localStorage.setItem(STORAGE_KEY, align);
-      btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.align === align ? 'true' : 'false'));
-    });
-  });
-})();
-</script>
-{{ end }}
 
 {{ end }}
