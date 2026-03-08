@@ -6,11 +6,11 @@ slug: "subscribed"
 layout: "page"
 ---
 
-Thanks for signing up for my monthly newsletter, it’s great to have you on board.
+Thanks for signing up for my bi-monthly newsletter, it’s great to have you on board.
 
 ## What to expect
 
-At the beginning of each month, I’ll send you an email containing a round up of what I’ve been up to the past month, things that have caught my interest online and what I have planned for the month ahead. That’s it.
+Every two months, I’ll send you an email containing a round up of what I’ve been up to, things that have caught my interest online and what I have planned ahead. That’s it.
 
 ## A little housekeeping
 
@@ -20,6 +20,6 @@ Please "whitelist" messages from your newsletter email address in your email cli
 
 If you have a minute, I’d love to know... what are you working on right now? Maybe it’s something I can help you with. Just hit the button below to send me an email.
 
-With that said, I look forward to seeing you again at the beginning of the month.
+With that said, I look forward to seeing you again in a couple of months.
 
 {{< reply-by-email >}}

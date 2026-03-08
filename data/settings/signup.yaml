@@ -1,6 +1,6 @@
 ---
-title: Monthly Newsletter
-desc: Once a month I curate a newsletter about design, creative technologies, web, and anything that catches my interest. Check out [past issues](/newsletter) to get an idea.
+title: Bi-monthly Newsletter
+desc: Every two months I curate a newsletter about design, creative technologies, web, and anything that catches my interest.
 list_url: /subscribe
 list_id: "54b5a14e-913c-11f0-85b2-e91a664bc27a"
 api_key: "{{ .Site.Params.emailoctopus_api_key }}"

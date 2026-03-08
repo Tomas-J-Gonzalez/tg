@@ -3,7 +3,7 @@
 {{ $anchor := .Anchor }}
 
 {{ if or (eq $level 1) (eq $level 2) }}
-  <h{{ $level }} id="{{ $anchor }}">{{ $text }}</h{{ $level }}>
+  <h{{ $level }} id="{{ $anchor }}" tabindex="0">{{ $text }}</h{{ $level }}>
 {{ else }}
-  <h{{ $level }}>{{ $text }}</h{{ $level }}>
+  <h{{ $level }} tabindex="0">{{ $text }}</h{{ $level }}>
 {{ end }}
