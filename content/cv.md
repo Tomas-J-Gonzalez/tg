@@ -52,10 +52,10 @@ Work primarily consisted of web projects and logo designs: Wireframing, UI desig
 
 #### Software
 - Figma
-- Illustrator / InDesign
-- Miro
-- Cusor
+- Adobe Illustrator
 - Jitter
+- Miro
+- Cursor AI Code Editor
 
 #### Process
 - Sketching / Illustration

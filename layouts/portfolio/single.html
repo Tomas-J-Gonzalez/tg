@@ -1,0 +1,140 @@
+{{ define "main" }}
+{{ if eq .Layout "brandmarks" }}
+  <main id="main-content" class="region flow">
+    <article class="flow">
+      <header class="flow">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+      </header>
+
+      {{ if .Params.description }}
+      <div class="project-overview">
+        <p>{{ .Params.description }}</p>
+      </div>
+      {{ end }}
+
+      <div class="accordion-container">
+        {{ range .Params.blocks }}
+          {{ if eq .template "body-copy" }}
+            {{ if and .heading (not (eq .heading "Project Overview")) (not (eq .heading "Design Collection")) (not (eq .heading "Design Process")) (not (eq .heading "Results")) (not (eq .heading "Technologies Used")) }}
+              {{ $anchor := .heading | urlize }}
+              <div class="accordion-card" data-brand="{{ $anchor }}">
+                <div class="accordion-header">
+                  <h3 id="{{ $anchor }}" class="accordion-title">{{ .heading }}&nbsp;<a class="heading-anchor" href="#{{ $anchor }}" aria-label="Anchor">#</a></h3>
+                  <div class="accordion-controls">
+                    <button class="accordion-toggle" aria-expanded="false" aria-controls="content-{{ $anchor }}">
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <button class="accordion-share" aria-label="Share {{ .heading }}">
+                      <i class="fas fa-share" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="accordion-content" id="content-{{ $anchor }}">
+                  <div class="accordion-body">
+                    {{ if .content }}
+                      <div class="brand-description">
+                        {{ .content | markdownify }}
+                      </div>
+                    {{ end }}
+                    <div class="brand-images">
+                      {{ range $.Params.blocks }}
+                        {{ if and (eq .template "image") (eq .brand .heading) }}
+                          <figure class="brand-image">
+                            <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+                            {{ if .caption }}
+                              <figcaption>{{ .caption }}</figcaption>
+                            {{ end }}
+                          </figure>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{ range .Params.blocks }}
+        {{ if eq .template "body-copy" }}
+          {{ if or (eq .heading "Design Process") (eq .heading "Results") (eq .heading "Technologies Used") }}
+            {{ $anchor := .heading | urlize }}
+            <section class="project-section">
+              <h2 id="{{ $anchor }}">{{ .heading }}&nbsp;<a class="heading-anchor" href="#{{ $anchor }}" aria-label="Anchor">#</a></h2>
+              {{ .content | markdownify }}
+            </section>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </article>
+  </main>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+    accordionToggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const card = this.closest('.accordion-card');
+        const content = card.querySelector('.accordion-content');
+        const icon = this.querySelector('i');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        accordionToggles.forEach(otherToggle => {
+          if (otherToggle !== this) {
+            const otherCard = otherToggle.closest('.accordion-card');
+            const otherContent = otherCard.querySelector('.accordion-content');
+            const otherIcon = otherToggle.querySelector('i');
+
+            otherToggle.setAttribute('aria-expanded', 'false');
+            otherContent.style.maxHeight = '0';
+            otherIcon.classList.remove('fa-chevron-up');
+            otherIcon.classList.add('fa-chevron-down');
+          }
+        });
+
+        if (isExpanded) {
+          this.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = '0';
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        } else {
+          this.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        }
+      });
+    });
+
+    const shareButtons = document.querySelectorAll('.accordion-share');
+    shareButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const card = this.closest('.accordion-card');
+        const title = card.querySelector('.accordion-title').textContent;
+        const url = window.location.href + '#' + card.dataset.brand;
+
+        if (navigator.share) {
+          navigator.share({
+            title: title,
+            url: url
+          });
+        } else {
+          navigator.clipboard.writeText(url).then(() => {
+            const notification = document.createElement('div');
+            notification.className = 'share-notification';
+            notification.textContent = 'Link copied to clipboard';
+            document.body.appendChild(notification);
+            setTimeout(() => notification.remove(), 2000);
+          });
+        }
+      });
+    });
+  });
+  </script>
+{{ else }}
+  {{ partial "blocks/content.html" . }}
+{{ end }}
+{{ end }}

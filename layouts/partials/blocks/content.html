@@ -1,0 +1,9 @@
+{{ $anchor := .Params.heading | urlize }}
+<section class="grid region" data-layout="50-50">
+  <div>
+    <h2 id="{{ $anchor }}">{{ .Params.heading | markdownify }}&nbsp;<a class="heading-anchor" href="#{{ $anchor }}" aria-label="Anchor">#</a></h2>
+  </div>
+  <div class="flow">
+    {{ .Params.content | markdownify }}
+  </div>
+</section>
