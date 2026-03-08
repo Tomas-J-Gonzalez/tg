@@ -388,6 +388,10 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
 }
 
 /* Floating scroll-to-top (shown when scrolled halfway, hidden when footer visible) */
+a.scroll-to-top-floating {
+  border-bottom: none;
+}
+
 .scroll-to-top-floating {
   position: fixed;
   bottom: var(--space-m);
@@ -403,14 +407,18 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
   border-radius: 50%;
   color: var(--color-text);
   opacity: 0.9;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .scroll-to-top-floating:hover {
   opacity: 1;
-  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top-floating i {
+  font-size: 0.75rem;
 }
 
 .scroll-to-top-floating[hidden],

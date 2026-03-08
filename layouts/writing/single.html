@@ -10,9 +10,7 @@
     <h1 class="p-name">{{ .Title }}</h1>
     <div class="cluster">
       <span>{{ .Date | time.Format "Jan 2, 2006" }}</span>
-      {{ if .Params.topics }}
-      <span>{{ delimit .Params.topics ", " }}</span>
-      {{ end }}
+      {{ partial "post/topics.html" . }}
     </div>
   </header>
 
