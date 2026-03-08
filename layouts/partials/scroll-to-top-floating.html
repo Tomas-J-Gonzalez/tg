@@ -1,0 +1,40 @@
+<a href="#top" id="scroll-to-top-floating" class="scroll-to-top-floating" hidden aria-label="Scroll to top of page">
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</a>
+<script>
+(function() {
+  var longPageThreshold = 1.5;
+  var scrollThreshold = 0.5;
+  var isLongPage = document.documentElement.scrollHeight > window.innerHeight * longPageThreshold;
+
+  if (!isLongPage) return;
+
+  var footer = document.getElementById('site-footer');
+  var footerWrapper = document.getElementById('scroll-to-top-wrapper');
+  var floating = document.getElementById('scroll-to-top-floating');
+
+  if (footerWrapper) footerWrapper.removeAttribute('hidden');
+
+  if (!footer || !floating) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      floating.classList.toggle('is-hidden', entry.isIntersecting);
+    });
+  }, { threshold: 0, rootMargin: '0px' });
+
+  observer.observe(footer);
+
+  function onScroll() {
+    var halfway = (document.documentElement.scrollHeight - window.innerHeight) * scrollThreshold;
+    if (window.scrollY > halfway) {
+      floating.removeAttribute('hidden');
+    } else {
+      floating.setAttribute('hidden', '');
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
