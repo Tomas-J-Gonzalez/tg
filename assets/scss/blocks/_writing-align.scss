@@ -3,11 +3,17 @@ Writing post alignment toggle
 */
 
 .writing-align-controls {
-  display: flex;
+  display: none;
   gap: var(--space-2xs, 0.25rem);
-  margin-bottom: var(--space-s, 0.5rem);
+  margin-bottom: var(--space-2xs);
   opacity: 0.7;
   transition: opacity 0.2s ease;
+}
+
+@include breakpoint(md) {
+  .writing-align-controls {
+    display: flex;
+  }
 }
 
 .writing-align-controls:hover,
@@ -40,8 +46,17 @@ Writing post alignment toggle
   max-width: 75ch;
 }
 
+.writing-post .e-content {
+  max-width: 75ch;
+}
+
+.writing-post[data-align="center"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .writing-post[data-align="center"] header {
-  margin-inline: auto;
   text-align: center;
 }
 
@@ -49,15 +64,6 @@ Writing post alignment toggle
   --cluster-horizontal-alignment: center;
 }
 
-.writing-post[data-align="center"] .writing-align-controls {
-  justify-content: center;
-}
-
-.writing-post .e-content {
-  max-width: 75ch;
-}
-
 .writing-post[data-align="center"] .e-content {
-  margin-inline: auto;
   text-align: left;
 }
