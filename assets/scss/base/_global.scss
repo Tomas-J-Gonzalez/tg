@@ -402,14 +402,18 @@ a.scroll-to-top-floating {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  padding: 0;
   background: var(--color-bg-mod-2);
-  border: solid 0.2rem var(--color-border);
+  border: none;
   border-radius: 50%;
   color: var(--color-text);
   opacity: 0.9;
   transition: opacity 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .scroll-to-top-floating:hover {
