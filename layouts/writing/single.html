@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<article class="h-entry writing-post" id="writing-article" data-align="left">
+  <div class="writing-align-controls" aria-label="Text alignment">
+    <button type="button" class="align-btn align-left" data-align="left" aria-pressed="true" title="Left align"><i class="fa-solid fa-align-left" aria-hidden="true"></i></button>
+    <button type="button" class="align-btn align-center" data-align="center" aria-pressed="false" title="Center align"><i class="fa-solid fa-align-center" aria-hidden="true"></i></button>
+  </div>
+
+  <header class="Hero region flow">
+    <h1 class="p-name">{{ .Title }}</h1>
+    <div class="cluster">
+      <span>{{ .Date | time.Format "Jan 2, 2006" }}</span>
+      {{ if .Params.topics }}
+      <span>{{ delimit .Params.topics ", " }}</span>
+      {{ end }}
+    </div>
+
+    <div>
+      {{ if and .Date (ne .Date.Year 1) }}
+        {{ $published := .Date | time.Format ":date_medium" }}
+        {{ $modified := .Lastmod | time.Format ":date_medium" }}
+        {{ if ne $published $modified }}
+        <span class="Badge"> Updated: {{ $modified }} </span>
+        {{ end }}
+      {{ end }}
+    </div>
+  </header>
+
+  <section class="e-content flow">
+    {{ if .Params.blocks }}
+      {{- range .Params.blocks -}}
+          {{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url ) }}{{- end -}}
+          {{- if eq .template "image-full" -}}{{ partial "blocks/img-full" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url ) }}{{- end -}}
+          {{- if eq .template "body-copy" -}}{{ partial "blocks/content" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "image-grid-two" -}}{{ partial "blocks/img-grid-two" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url) }}{{- end -}}
+          {{- if eq .template "image-grid-four" -}}{{ partial "blocks/img-grid-four" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url) }}{{- end -}}
+          {{- if eq .template "quote" -}}{{ partial "blocks/quote" (dict "Params" . "baseURL" $.Site.Params.cloudinary_url) }}{{- end -}}
+          {{- if eq .template "link-big" -}}{{ partial "blocks/link-big" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "video" -}}{{ partial "blocks/video" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "image" -}}{{ partial "blocks/image" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "iframe-full" -}}{{ partial "blocks/iframe-full" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "iframe-grid-one" -}}{{ partial "blocks/iframe-grid-one" (dict "Params" .) }}{{- end -}}
+          {{- if eq .template "iframe-grid-two" -}}{{ partial "blocks/iframe-grid-two" (dict "Params" .) }}{{- end -}}
+      {{- end -}}
+    {{ else }}
+      {{ partial "heading-anchor.html" .Content }}
+    {{ end }}
+
+    {{ if and .Params.topics (in .Params.topics "Hugo") }}
+      <aside>
+        <hr>
+        <strong>Interested in learning Hugo?</strong> I'm working on a free course
+        over at <a href="https://practicalhugo.com/">practicalhugo.com</a>.
+        <hr>
+      </aside>
+    {{ end }}
+  </section>
+
+  {{ partial "reply-by-email.html" (dict "button_text" "Reply by email" ) }}
+
+</article>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'writing-align';
+  const article = document.getElementById('writing-article');
+  const btns = document.querySelectorAll('.align-btn');
+  if (!article || !btns.length) return;
+
+  const saved = localStorage.getItem(STORAGE_KEY) || 'left';
+  article.dataset.align = saved;
+  btns.forEach(btn => {
+    btn.setAttribute('aria-pressed', btn.dataset.align === saved ? 'true' : 'false');
+  });
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const align = btn.dataset.align;
+      article.dataset.align = align;
+      localStorage.setItem(STORAGE_KEY, align);
+      btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.align === align ? 'true' : 'false'));
+    });
+  });
+})();
+</script>
+
+{{ end }}
