@@ -55,7 +55,8 @@ Work primarily consisted of web projects and logo designs: Wireframing, UI desig
 - Adobe Illustrator
 - Jitter
 - Miro
-- Cursor AI Code Editor
+- Cursor IDE
+- Claude Code
 
 #### Process
 - Sketching / Illustration

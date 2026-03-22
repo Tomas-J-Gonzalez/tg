@@ -1,0 +1,26 @@
+---
+description: Hugo site project context and conventions
+alwaysApply: true
+---
+
+# Project: Tomás González — Hugo Site
+
+## Stack
+- **Hugo** static site generator
+- **Theme**: hc-starter (`themes/hc-starter/`)
+- **Config**: `config.toml` + env-specific (`config.development.toml`, `config.production.toml`)
+- **Deploy**: Netlify
+
+## Structure
+- `content/` — Markdown content (writing, portfolio, newsletter, etc.)
+- `layouts/` — Site layouts and partials
+- `assets/` — CSS, JS source files
+- `static/` — Static assets (images, fonts)
+- `data/` — YAML/JSON data (e.g. `settings` for signup copy)
+- `click-to-source/` — Custom feature module
+
+## Conventions
+- Use Hugo templating: `{{ .Params }}`, `{{ .Site.Data }}`, `{{ partial "..." . }}`
+- Prefer `region`, `flow`, `switcher` layout utilities from the theme
+- Keep comments minimal; be precise in code
+- Use `en-gb` language code where relevant
