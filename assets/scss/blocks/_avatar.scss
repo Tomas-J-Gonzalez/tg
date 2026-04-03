@@ -4,6 +4,7 @@ Avatar
 
 .Avatar {
   border-radius: 50%;
+  @include ios-corner-round;
   display: inline-block;
   position: relative;
   margin-right: 30px;

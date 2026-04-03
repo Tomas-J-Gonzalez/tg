@@ -13,6 +13,7 @@ input[type="button"] {
   background-color: var(--color-text);
   border: solid .2rem var(--color-text);
   border-radius: var(--border-radius);
+  @include ios-corner-smooth;
   color: var(--color-bg);
   cursor: pointer;
   padding: var(--space-3xs) var(--space-s);
@@ -153,6 +154,7 @@ Iconoir Icons:
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
+  @include ios-corner-smooth;
   font-weight: 600;
   transition-property: transform, background-color, border-color, color, box-shadow;
   transition-duration: 0.2s;
@@ -185,6 +187,7 @@ Iconoir Icons:
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  @include ios-corner-round;
   padding: 0;
   min-height: auto;
 }

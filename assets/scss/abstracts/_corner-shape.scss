@@ -1,0 +1,12 @@
+/* iOS/Figma-like smoothing: ~60% between circular corners (K=1) and squircle (K≈2). Chromium `corner-shape` (e.g. Chrome 139+). */
+@mixin ios-corner-smooth {
+  @supports (corner-shape: superellipse(1.6)) {
+    corner-shape: superellipse(1.6);
+  }
+}
+
+@mixin ios-corner-round {
+  @supports (corner-shape: round) {
+    corner-shape: round;
+  }
+}

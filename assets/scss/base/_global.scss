@@ -37,6 +37,7 @@ html {
 ::-webkit-scrollbar-thumb {
 	background-color: var(--color-border);
 	border-radius: 4px;
+	@include ios-corner-smooth;
 	border: 2px solid transparent;
 	background-clip: content-box;
 }
@@ -425,6 +426,7 @@ a[data-variant="desaturate"] .external-link-wrapper .fa-external-link-alt {
   background-color: var(--color-bg-mod-2);
   border: none;
   border-radius: 50%;
+  @include ios-corner-round;
   color: var(--color-text);
   transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   text-decoration: none;
@@ -492,6 +494,7 @@ a.scroll-to-top-floating {
   background-color: var(--color-bg-mod-2);
   border: none;
   border-radius: 50%;
+  @include ios-corner-round;
   color: var(--color-text);
   transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   text-decoration: none;

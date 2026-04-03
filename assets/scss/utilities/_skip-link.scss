@@ -16,6 +16,7 @@ Accessibility: Skip links for keyboard navigation
   transition: top 0.3s ease;
   z-index: 9999;
   border-radius: 4px;
+  @include ios-corner-smooth;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 

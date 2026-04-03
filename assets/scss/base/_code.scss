@@ -10,7 +10,8 @@ samp {
   background-color: var(--color-bg-mod-2);
   color: var(--color-text);
   font-size: 90%;
-  border-radius: 2px
+  border-radius: 2px;
+  @include ios-corner-smooth;
 }
 
 pre {

@@ -29,6 +29,7 @@ Writing post alignment toggle
   color: var(--color-text-mod-1, currentColor);
   font-size: 0.75rem;
   border-radius: var(--border-radius, 0.25rem);
+  @include ios-corner-smooth;
   transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 

@@ -125,6 +125,7 @@ Override the default EmailOctopus styles to match site design
     background-color: var(--color-text) !important;
     border: solid .2rem var(--color-text) !important;
     border-radius: var(--border-radius) !important;
+    @include ios-corner-smooth;
     color: var(--color-bg) !important;
     cursor: pointer !important;
     padding: var(--space-3xs) var(--space-s) !important;
@@ -150,6 +151,7 @@ Override the default EmailOctopus styles to match site design
     margin-top: var(--space-xs);
     padding: var(--space-2xs);
     border-radius: var(--border-radius);
+    @include ios-corner-smooth;
   }
 
   .emailoctopus-success-message {
