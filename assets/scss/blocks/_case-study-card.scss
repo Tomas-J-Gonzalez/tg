@@ -26,20 +26,24 @@
   &__title-link {
     display: inline-block;
     text-decoration: none;
-    color: inherit;
+    color: var(--color-text);
     transition: color 0.2s ease;
-    
+
+    .case-study-card__title {
+      color: currentColor;
+    }
+
     &:hover {
       color: var(--color-brand);
       text-decoration: underline;
     }
-    
+
     &:focus-visible {
       outline: dotted 2px var(--color-text);
       outline-offset: 3px;
     }
   }
-  
+
   // Title styling
   &__title {
     font-size: var(--step-2);
@@ -100,11 +104,13 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
     
-    // Enhanced shadow on hover
-    .case-study-card__image-link:hover & {
+    // Enhanced shadow on hover (image link or title focus/hover — grouped card)
+    .case-study-card__image-link:hover &,
+    .case-study-card:has(.case-study-card__title-link:hover) &,
+    .case-study-card:has(.case-study-card__title-link:focus-visible) & {
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     }
-    
+
     // Image styling
     img {
       width: 100%;
@@ -131,10 +137,24 @@
     transition: box-shadow 0.3s ease;
     
     // Enhanced shadow on hover
-    .case-study-card__image-link:hover & {
+    .case-study-card__image-link:hover &,
+    .case-study-card:has(.case-study-card__title-link:hover) &,
+    .case-study-card:has(.case-study-card__title-link:focus-visible) & {
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     }
   }
+}
+
+// Title + image behave as one group (cross-hover via :has)
+.case-study-card:has(.case-study-card__title-link:hover) .case-study-card__image-link,
+.case-study-card:has(.case-study-card__title-link:focus-visible) .case-study-card__image-link {
+  transform: translateY(-4px);
+}
+
+.case-study-card:has(.case-study-card__image-link:hover) .case-study-card__title-link,
+.case-study-card:has(.case-study-card__image-link:focus-visible) .case-study-card__title-link {
+  color: var(--color-brand);
+  text-decoration: underline;
 }
 
 // Portfolio container and grid layout
@@ -196,7 +216,12 @@
       height: auto;
     }
   }
-  
+
+  .case-study-card:has(.case-study-card__title-link:hover) .case-study-card__image-link,
+  .case-study-card:has(.case-study-card__title-link:focus-visible) .case-study-card__image-link {
+    transform: translateY(-2px);
+  }
+
   .portfolio-grid {
     gap: 3rem;
   }
@@ -228,7 +253,12 @@
       }
     }
   }
-  
+
+  .case-study-card:has(.case-study-card__title-link:hover) .case-study-card__image-link,
+  .case-study-card:has(.case-study-card__title-link:focus-visible) .case-study-card__image-link {
+    transform: translateY(-3px);
+  }
+
   .portfolio-grid {
     gap: 4rem;
   }
