@@ -7,7 +7,8 @@ project: https://cube.fyi/css.html
 */
 
 html {
-	background-color: var(--color-brand);
+	/* Match body canvas so gutters stay correct when body.wrapper is max-width centred */
+	background-color: var(--color-bg-mod-1);
 	
 	/* Cross-platform scrollbar styling - make Windows scrollbars slimmer and overlay-style like macOS */
 	scrollbar-width: thin;
