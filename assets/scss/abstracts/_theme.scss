@@ -3,9 +3,9 @@ Global theme tokens
 */
 
 :root {
-  /* Typography - Prioritize Apple system fonts for cross-platform consistency */
-  --font-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-display: var(--font-base);
+  /* Inter / Source Serif 4 + metric fallbacks (next/font-style), then system stacks */
+  --font-base: "Inter", "Inter Fallback", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-display: "Source Serif 4", "Source Serif 4 Fallback", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-accent: "SF Mono", "Menlo", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
