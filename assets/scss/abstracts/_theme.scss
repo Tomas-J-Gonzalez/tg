@@ -15,8 +15,8 @@ Global theme tokens
   --line-height-loose: 1.7;
   --width-compact: 35ch;
   --width-longform: 60ch;
-  /* Outer page column (~1536px at 16px root) */
-  --site-max-width: 96rem;
+  /* Outer page column (~1440px at 16px root) */
+  --site-max-width: 90rem;
   /* Homepage float headshot: never larger than this (paired with responsive `sizes` on the img) */
   --home-headshot-max: 24rem;
   --tracking: -0.001ch;

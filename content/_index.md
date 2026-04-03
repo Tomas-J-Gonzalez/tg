@@ -1,13 +1,11 @@
 ---
-title: "Hi, I'm Tomás, an experience designer solving problems with creative & data-driven solutions."
+title: "Hi, I'm Tomás, an experience designer in New Zealand, currently designing at AKQA."
 date: "2016-10-24T17:23:17+01:00"
 description: "Tomás González is an Experience designer and Creative technologist based in Auckland, New Zealand. Read articles and notes on design and the web."
 draft: false
 ---
 
 {{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" priority=true >}}
-
-Currently designing at AKQA Tāmaki Makaurau.
 
 Here on my personal site, I write about [design and web](/writing/) and [my past and current work](/portfolio/).
 

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ "<!-- @source layouts/index.html -->" | safeHTML }}
+  <article>
+    <header class="Hero region">
+      <h1>{{ replace .Title "New Zealand" (htmlUnescape "New&#160;Zealand") }}</h1>
+    </header>
+
+    <section class="region flow home-content">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}

@@ -1,0 +1,28 @@
+/*
+Homepage: portrait column + prose column (no float overlap into image)
+*/
+
+@include breakpoint(sm) {
+  .home-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, var(--home-headshot-max));
+    column-gap: 3rem;
+    align-items: start;
+  }
+
+  .home-content > .Image[data-layout='pull-right'] {
+    float: none;
+    width: 100%;
+    max-width: var(--home-headshot-max);
+    margin-left: 0;
+    margin-bottom: 0;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    justify-self: end;
+  }
+
+  .home-content > *:not(.Image[data-layout='pull-right']) {
+    grid-column: 1;
+    min-width: 0;
+  }
+}
