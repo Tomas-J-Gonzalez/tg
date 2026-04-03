@@ -1,5 +1,5 @@
 {{ $priority := .Get "priority" }}
-<figure class="Image" data-layout="pull-right">
+<figure class="Image" data-layout="pull-right"{{ with .Get "circle" }} data-shape="circle"{{ end }}>
   <div class="aspect-ratio-headshot">
     {{ if $priority }}
       <img

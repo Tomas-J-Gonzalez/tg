@@ -7,6 +7,19 @@ Image
     padding-top: 22.721px;
     padding-bottom: 16px;
   }
+
+  /* Circular headshot: 1:1 crop, bias upward so face stays inside the circle */
+  &[data-shape='circle'] .aspect-ratio-headshot {
+    padding-bottom: 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &[data-shape='circle'] .aspect-ratio-headshot > img {
+    object-fit: cover;
+    object-position: center 28%;
+  }
 }
 
 @include breakpoint(sm) {
