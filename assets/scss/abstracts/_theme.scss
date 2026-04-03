@@ -15,6 +15,8 @@ Global theme tokens
   --line-height-loose: 1.7;
   --width-compact: 35ch;
   --width-longform: 60ch;
+  /* Homepage main copy beside headshot — slightly tighter than longform */
+  --width-home-prose: 50ch;
   /* Outer page column (~1440px at 16px root) */
   --site-max-width: 90rem;
   /* Homepage float headshot: never larger than this (paired with responsive `sizes` on the img) */

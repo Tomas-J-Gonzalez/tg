@@ -142,6 +142,15 @@ blockquote:not([class]) {
   max-width: var(--width-longform);
 }
 
+.home-content {
+  p,
+  li,
+  blockquote:not([class]),
+  hr {
+    max-width: var(--width-home-prose);
+  }
+}
+
 /* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
   padding: 0;
