@@ -3,7 +3,7 @@
   <div class="aspect-ratio-headshot">
     {{ if $priority }}
       <img
-        sizes="(min-width: 37.5em) 55vw, 100vw"
+        sizes="(min-width: 37.5em) min(24rem, 40vw), 100vw"
         srcset="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_256/{{ .Get "src" }} 256w,
                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/{{ .Get "src" }} 512w,
                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_768/{{ .Get "src" }} 768w,
@@ -16,7 +16,7 @@
         decoding="async" />
     {{ else }}
       <img
-        data-sizes="(min-width: 37.5em) 55vw, 100vw"
+        data-sizes="(min-width: 37.5em) min(24rem, 40vw), 100vw"
         data-srcset="{{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_256/{{ .Get "src" }} 256w,
                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_512/{{ .Get "src" }} 512w,
                 {{ .Site.Params.cloudinary_url }}/f_auto,q_70,w_768/{{ .Get "src" }} 768w,

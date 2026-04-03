@@ -1,13 +1,16 @@
 /*
-Wrapper
+Wrapper — max-width shell + horizontal inset; content stays centred on large screens
 */
- 
+
 .wrapper {
-    padding: 0 4% 0 4%;
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin-inline: auto;
+  padding-inline: 4%;
 }
 
 @include breakpoint(md) {
-    .wrapper {
-        padding: 0 7% 0 7%;
-    }
+  .wrapper {
+    padding-inline: 7%;
+  }
 }

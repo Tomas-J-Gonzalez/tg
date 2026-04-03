@@ -10,12 +10,13 @@ Image
 }
 
 @include breakpoint(sm) {
-.Image {
+  .Image {
     &[data-layout='pull-right'] {
-      width: 40%; 
-      float: right; 
-      margin-left: 48px; 
-      margin-bottom: 32px; 
+      float: right;
+      width: 40%;
+      max-width: var(--home-headshot-max);
+      margin-left: 48px;
+      margin-bottom: 32px;
       margin-top: 0;
     }
   }
