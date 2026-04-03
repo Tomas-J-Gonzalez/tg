@@ -9,7 +9,16 @@ project: https://cube.fyi/css.html
 html {
 	/* Match body canvas so gutters stay correct when body.wrapper is max-width centred */
 	background-color: var(--color-bg-mod-1);
-	
+
+	/*
+	 * Closer to Safari / Retina macOS type (grayscale AA, kerning/ligatures) on Windows/Linux WebKit & Blink.
+	 * -moz-osx-font-smoothing only affects Firefox on macOS; other Firefox uses OS ClearType.
+	 */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-optical-sizing: auto;
+
 	/* Cross-platform scrollbar styling - make Windows scrollbars slimmer and overlay-style like macOS */
 	scrollbar-width: thin;
 	scrollbar-color: var(--color-border) transparent;
@@ -84,11 +93,6 @@ body {
 	line-height: var(--line-height-base);
   letter-spacing: var(--tracking);
 	min-height: 100vh;
-	text-rendering: optimizeSpeed;
-	
-	/* Cross-platform font smoothing for consistent rendering */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 h1,
