@@ -5,7 +5,7 @@ description: "Tomás González is an Experience designer and Creative technologi
 draft: false
 ---
 
-{{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" priority=true circle=true >}}
+{{< pullImage src="v1756520916/tomas-master/img/sunny-me_c7izsz.png" alt="Tomás González – Experience designer" caption="" priority=true >}}
 
 Here on my personal site, I write about [design and web](/writing/) and [my past and current work](/portfolio/).
 

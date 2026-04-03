@@ -151,6 +151,28 @@ blockquote:not([class]) {
   }
 }
 
+@include breakpoint(md) {
+  .home-content {
+    p,
+    li,
+    blockquote:not([class]),
+    hr {
+      max-width: var(--width-home-prose-md);
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  .home-content {
+    p,
+    li,
+    blockquote:not([class]),
+    hr {
+      max-width: var(--width-home-prose-lg);
+    }
+  }
+}
+
 /* Remove padding and margin on ul, ol elements with a list role */
 [role='list'] {
   padding: 0;
