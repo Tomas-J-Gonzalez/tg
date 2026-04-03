@@ -20,4 +20,9 @@ Image
       margin-top: 0;
     }
   }
+
+  /* Float wrap lets copy flow beside the portrait; grid put one short p in a row as tall as the photo */
+  .home-content {
+    display: flow-root;
+  }
 }
