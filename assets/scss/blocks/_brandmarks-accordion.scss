@@ -11,7 +11,9 @@
   border: 1px solid var(--color-container-border, #404040);
   border-radius: 8px;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition-property: border-color, transform, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
   position: relative;
 }
 
@@ -29,7 +31,9 @@
   cursor: pointer;
   background: transparent;
   border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
+  transition-property: border-color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
   min-height: 60px;
   width: 100%;
   text-align: left;
@@ -78,17 +82,19 @@
   background: transparent;
   border: 1px solid var(--color-container-border, #404040);
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
-  max-width: 32px;
-  max-height: 32px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition-property: border-color, background-color, color, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
   color: var(--color-text-mod-1, #b0b0b0);
   position: relative;
   flex-shrink: 0;
@@ -106,7 +112,7 @@
 }
 
 .accordion-toggle:active {
-  transform: scale(0.95);
+  transform: scale(0.96);
 }
 
 .accordion-toggle:focus {
@@ -162,7 +168,9 @@
   overflow: hidden;
   background: transparent;
   border: 1px solid var(--color-container-border, #404040);
-  transition: all 0.2s ease;
+  transition-property: border-color, transform, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 /* Uniform square canvas for all brand images */
@@ -219,12 +227,12 @@
   }
   
   .accordion-toggle {
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
-    min-height: 28px;
-    max-width: 28px;
-    max-height: 28px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
   }
   
   .accordion-body {

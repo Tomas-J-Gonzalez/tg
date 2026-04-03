@@ -20,6 +20,9 @@ input[type="button"] {
   text-decoration: none;
   text-align: left;
   white-space: nowrap;
+  transition-property: filter, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
 }
 
 button:hover,
@@ -34,6 +37,14 @@ input[type="button"]:hover,
 input[type="button"]:focus {
   filter: brightness(1.2);
   transform: translateY(-2px);
+}
+
+button:active:not(:disabled),
+.button:active:not([aria-disabled="true"]),
+input[type="submit"]:active:not(:disabled),
+input[type="reset"]:active:not(:disabled),
+input[type="button"]:active:not(:disabled) {
+  transform: translateY(0) scale(0.96);
 }
 
 
@@ -79,7 +90,9 @@ Theme-aware button styles
 For buttons that need to adapt to theme changes
 */
 .button--theme-aware {
-  transition: all 0.3s ease;
+  transition-property: background-color, border-color, color, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
   
   // Light theme styles
   .theme-light & {
@@ -141,7 +154,9 @@ Iconoir Icons:
   justify-content: center;
   border-radius: 0.5rem;
   font-weight: 600;
-  transition: all 0.2s ease-in-out;
+  transition-property: transform, background-color, border-color, color, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
   cursor: pointer;
   border: 1px solid transparent !important;
   text-decoration: none;
@@ -162,7 +177,7 @@ Iconoir Icons:
   }
   
   &:active {
-    transform: translateY(0);
+    transform: translateY(0) scale(0.96);
   }
 }
 

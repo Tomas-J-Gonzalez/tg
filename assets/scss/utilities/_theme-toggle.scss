@@ -27,7 +27,7 @@ html.theme-transitioning * {
 
 // Button switching animation
 #theme-toggle.theme-switching {
-  transform: scale(0.95);
+  transform: scale(0.96);
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -87,7 +87,7 @@ nav[data-variant="main"] #theme-toggle {
   .theme-icon {
     font-size: 1rem;
     line-height: 1;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 1;
     transform: rotate(0deg); // Make moon face right side (curved edge left, horns right)
@@ -98,7 +98,7 @@ nav[data-variant="main"] #theme-toggle {
   }
   
   &:active .theme-icon {
-    transform: scale(0.95) rotate(-80deg); // Keep base rotation
+    transform: scale(0.96) rotate(-80deg);
   }
   
   // Toggle button pressed state
@@ -130,6 +130,11 @@ nav[data-variant="main"] #theme-toggle {
     &::before {
       background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
     }
+  }
+
+  /* .btn:active scale is skipped — icon press feedback uses scale(0.96) on .theme-icon */
+  &.btn:active {
+    transform: none;
   }
 }
 

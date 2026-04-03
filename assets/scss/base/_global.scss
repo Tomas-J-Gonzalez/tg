@@ -105,6 +105,7 @@ h6 {
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--tracking-s);
   max-width: 35ch;
+  text-wrap: balance;
 }
 
 h1,
@@ -144,6 +145,27 @@ p,
 li,
 blockquote:not([class]) {
   max-width: var(--width-longform);
+  text-wrap: pretty;
+}
+
+/* Post meta dates — aligned digits when month/day widths differ */
+article .Hero .cluster > span:first-of-type {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle image edge (skill: depth on varied backgrounds); skip nested card thumbs */
+.theme-light img {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+}
+
+.theme-dark img {
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: -1px;
+}
+
+.brand-image img {
+  outline: none;
 }
 
 .home-content {
