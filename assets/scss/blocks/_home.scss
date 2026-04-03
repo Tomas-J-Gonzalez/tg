@@ -17,7 +17,9 @@ Homepage: portrait column + prose column (no float overlap into image)
     margin-left: 0;
     margin-bottom: 0;
     grid-column: 2;
-    grid-row: 1 / -1;
+    /* Single row only — 1 / -1 made every row absorb the portrait height and blew out vertical gaps */
+    grid-row: 1;
+    align-self: start;
     justify-self: end;
   }
 
